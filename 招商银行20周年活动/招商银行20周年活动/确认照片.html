@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no">
+        <meta content="telephone=no,email=no" name="format-detection">
+         <script>
+		(function (doc, win) {
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function () {
+					var clientWidth = docEl.clientWidth;
+					if (!clientWidth) return;
+					if (clientWidth >= 640) {
+						docEl.style.fontSize = '100px';
+					} else {
+						docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+					}
+				};
+		
+			if (!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+		</script>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+        <link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/bank.css"/>
+       
+		<title>确认照片</title>
+	</head>
+	<body class="red">
+		<div class="confirmPic">
+			<div class="confirmPicHead" id="savebox">
+				<div class="confirmPicHeadTop">
+					<img src="images/confirmPicHeadTop.jpg">
+				</div>
+				<div class="confirmPicHeadBot flexbox">
+					<div class="confirmPicHeadBot_left"><img src="images/confirmPicHeadBot_left.jpg"></div>
+					<div class="confirmPicHeadBot_right">
+						<div class="confirmPicHeadBot_rightTop"><img src="images/confirmPicHeadBot_right1.jpg"></div>
+						<div class="confirmPicHeadBot_rightBot flexbox changebox"><img src="images/pic2.jpg"></div>
+					</div>
+				</div>
+			</div>
+			<div class="confirmPicToggle">
+				<div class="swiper-container">
+			        <div class="swiper-wrapper">
+			            <div class="swiper-slide"><img src="images/pic1.jpg"></div>
+			            <div class="swiper-slide"><img src="images/pic2.jpg"></div>
+			            <div class="swiper-slide"><img src="images/pic3.jpg"></div>
+			        </div>
+			    </div>
+		     	<img class="next_btn" src="images/next.png" />
+		     	<img class="prev_btn" src="images/next.png" />
+    		</div>
+    		<div class="confirmPicFoot flexbox">
+    			<div class="confirmPicFootBtn">重新选择</div>
+    			<div class="confirmPicFootBtn querimg">确认照片</div>
+    		</div>
+		</div>
+		<!--导出图片实例-->
+		<script src="js/zepto.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/html2canvas.js" type="text/javascript" charset="utf-8"></script>
+	 	<script>
+	 	//swiper插件初始化
+		    var mySwiper = new Swiper('.swiper-container', {
+	         	direction : 'horizontal',//拉伸方向为横向
+	         	nextButton: '.next_btn',//定义向下按钮
+		        prevButton: '.prev_btn',//定义向上按钮
+		        slidesPerView: 3,//一次显示sider个数
+		    });
+		    
+		//图片地址数组    
+			var arr=["images/pic1.jpg","images/pic2.jpg","images/pic3.jpg"]
+	    	
+	    	//根据选择的标语填充照片下面
+		    $('.swiper-slide').click(function(){
+		    	var aNum=$(this).index();
+		    	$('.changebox img').attr('src',arr[aNum]);
+		    })
+		
+		//div转图片
+			function toImages(){
+				html2canvas($('#savebox'), {
+				            onrendered: function(canvas) {
+				            var imgUrl = canvas.toDataURL();
+		                        $('.expimg').attr('src',imgUrl); 
+				            }
+				});
+			}
+			
+		//点击确认，开始导出    
+		    $('.querimg').click(function(){
+		    	toImages()
+		    })
+	   </script>
+	</body>
+</html>

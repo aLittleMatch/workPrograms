@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+        <link rel="stylesheet" type="text/css" href="css/online.css"/>
+        <script src="js/jquery3.0.min.js"></script>
+        <script src="js/rem.js"></script>
+		<title>在线办理</title>
+	</head>
+	<body class="gray">
+		<div class="online">
+			<!--个人信息-->
+			<div class="onlineNav">
+				<div class="onlineNavLi flexbox">
+					<div class="onlineNavLiLt"><img src="images/onlineIcon1.jpg"></div>
+					<div class="onlineNavLiRt flexright flexbox">
+						<p>姓名</p>
+						<input type="text" value="" placeholder="请输入姓名" />
+					</div>
+				</div>
+				<div class="onlineNavLi flexbox">
+					<div class="onlineNavLiLt"><img src="images/onlineIcon2.jpg"></div>
+					<div class="onlineNavLiRt flexright flexbox">
+						<p>性别</p>
+						<div class="recType recType2 flexbox">
+							<div class="recTypeLi flexbox"><div class="recTypeLiCir"></div><p>男</p></div>
+							<div class="recTypeLi flexbox"><div class="recTypeLiCir" id="personal"></div><p>女</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="onlineNavLi flexbox">
+					<div class="onlineNavLiLt"><img src="images/onlineIcon3.jpg"></div>
+					<div class="onlineNavLiRt flexright flexbox">
+						<p>民族</p>
+						<select>
+							<option>汉</option>
+						</select>
+					</div>
+				</div>
+				<div class="onlineNavLi flexbox borderBotNone">
+					<div class="onlineNavLiLt"><img src="images/onlineIcon4.jpg"></div>
+					<div class="onlineNavLiRt flexright flexbox">
+						<p>手机</p>
+						<input type="text" value="" placeholder="请输入手机号" />
+					</div>
+				</div>
+			</div>
+			<!--类型-->
+			<div class="onlineNav">
+				<div class="onlineNavLi flexbox">
+					<div class="onlineNavLiLt"><img src="images/onlineIcon5.jpg"></div>
+					<div class="onlineNavLiRt flexright flexbox">
+						<p>类型</p>
+						<div class="recType recType1 flexbox">
+							<div class="recTypeLi flexbox"><div class="recTypeLiCir"></div><p>单位</p></div>
+							<div class="recTypeLi flexbox"><div class="recTypeLiCir" id="personal"></div><p>个人</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="onlineNavLi flexbox" id="haha">
+					<div class="onlineNavLiRt flexright flexbox">
+						<input style="text-align: left;width: 100%;" type="text" value="" placeholder="请输入单位名称" />
+					</div>
+				</div>
+			</div>
+			
+			<div class="onlineNav">
+				<div class="onlineNavLi flexbox">
+					<div class="onlineNavLiLt"><img src="images/onlineIcon6.jpg"></div>
+					<div class="onlineNavLiRt flexright flexbox">
+						<p>户籍地址</p>
+						<input type="text" value="" placeholder="请输入户籍地址" />
+					</div>
+				</div>
+				<div class="onlineNavLi flexbox">
+					<div class="onlineNavLiLt"><img src="images/onlineIcon7.jpg"></div>
+					<div class="onlineNavLiRt flexright flexbox">
+						<p>身份证号码</p>
+						<input type="text" value="" placeholder="请输入身份证号" />
+					</div>
+				</div>
+				<div class="onlineNavLi flexbox borderBotNone">
+					<div class="onlineNavLiLt"><img src="images/onlineIcon8.jpg"></div>
+					<div class="onlineNavLiRt flexright flexbox">
+						<p>学历</p>
+						<input type="text" value="" placeholder="请输入学历" />
+					</div>
+				</div>
+			</div>
+			
+			<!--底部按钮-->
+			<div class="onlineFoot flexbox">
+				<div class="onlineFootLt flexbox">
+					<img src="images/onlineIcon9.jpg">
+					<p>资讯</p>
+				</div>
+				<div class="onlineFootRt">
+					在线缴费
+				</div>
+			</div>
+		</div>
+		<script>
+			$(function(){
+				$(".recType1 .recTypeLi").click(
+					function(){
+						
+						if($(this).index()== 1){
+							$("#haha").hide();
+							$(this).parents(".recType").find(".recTypeLiCir").removeClass("nike");
+							$(".recTypeLiCir").siblings("p").css("color","#929292");
+							$(this).find(".recTypeLiCir").addClass("nike");
+							$(this).find("p").css("color","#313131");
+							$(this).parents(".onlineNavLi").addClass("borderBotNone");
+						}else{
+							$("#haha").show();
+							$(this).parents(".recType").find(".recTypeLiCir").removeClass("nike");
+							$(".recTypeLiCir").siblings("p").css("color","#929292");
+							$(this).find(".recTypeLiCir").addClass("nike");
+							$(this).find("p").css("color","#313131");
+							$(this).parents(".onlineNavLi").removeClass("borderBotNone");
+						}
+					}
+				);
+				$(".recType2 .recTypeLi").click(
+					function(){
+							$(this).parents(".recType").find(".recTypeLiCir").removeClass("nike");
+							$(".recTypeLiCir").siblings("p").css("color","#929292");
+							$(this).find(".recTypeLiCir").addClass("nike");
+							$(this).find("p").css("color","#313131");
+					}
+				);
+			})
+		</script>
+	</body>
+</html>

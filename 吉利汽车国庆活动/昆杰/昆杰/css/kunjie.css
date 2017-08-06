@@ -1,0 +1,914 @@
+/*********首页开始***********/
+*{
+	font-family: "微软雅黑";
+}
+.gray{
+	background: #f0f5f9;
+}
+.index{
+	width: 100%;
+}
+.indexBanner{
+	width: 100%;
+}
+.indexBanner img{
+	width: 100%;
+	display: block;
+}
+/*搜索框开始*/
+.indexSearchBox{
+	width: 100%;
+	height: 0.95rem;
+	padding: 0.15rem;
+	box-sizing: border-box;
+}
+.indexSearch{
+	width: 6.15rem;
+	height: 0.66rem;
+	margin: 0 auto;
+	overflow: hidden;
+	border: 1px solid #d9dce0;
+	box-sizing: border-box;
+	-webkit-border-radius: 0.06rem;
+}
+.indexSearch_left{
+	width: 78%;
+	padding: 0.15rem 0.3rem;
+	background: #fff;
+	box-sizing: border-box;
+	-webkit-box-pack: start;
+}
+.indexSearch_left img{
+	width: 0.24rem;
+	height: 0.24rem;
+	display: block;
+}
+.indexSearch_left input{
+	width: 80%;
+	font-size: 0.26rem;
+	padding-left: 0.14rem;
+	color: #b2b2b2;
+	display: block;
+}
+.indexSearch_right{
+	width: 22%;
+	background: #ed5564;
+	color: #fff;
+	font-size: 0.26rem;
+	line-height: 0.65rem;
+	text-align: center;
+}
+/*书籍列表开始*/
+.indexBookList{
+	width: 100%;
+	display: block;
+	background: #fff;
+	overflow: hidden;
+	padding-bottom: 0.98rem;
+}
+.indexBookList li{
+	width: 33.33%;
+	float: left;
+	box-sizing: border-box;
+	border-right: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 0.16rem 0.25rem;
+	box-sizing: border-box;
+}
+.indexBookList li:nth-child(3n){
+	border-right: none;
+}
+.indexBookList li h1{
+	width: 100%;
+	font-size: 0.24rem;
+	color: #262626;
+	margin-bottom: 0.1rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.indexBookList li h2{
+	font-size: 0.2rem;
+	color: #f41e33;
+	margin-bottom: 0.1rem;
+}
+.indexBookList li img{
+	width: 1.25rem;
+	height: 1.64rem;
+	display: block;
+	margin: 0 auto;
+}
+/*底部导航*/
+.indexFoot{
+	width: 100%;
+	height: 0.98rem;
+	position: fixed;
+	bottom: 0;
+	background: #fff;
+	-webkit-box-shadow: 0 -0.1rem 0.15rem rgba(0,0,0,0.1);
+}
+.indexFoot li{
+	width: 33.33%;
+	float: left;
+}
+.indexFoot li img{
+	height: 0.43rem;
+	margin: 0 auto;
+	margin-top: 0.1rem;
+	margin-bottom: 0.08rem;
+	display: block;
+}
+.indexFoot li p{
+	width: 100%;
+	font-size: 0.2rem;
+	color: #7b7b83;
+	text-align: center;
+}
+.indexCurrent{
+	color: #ed5564!important;
+}
+
+
+/**********新闻页面开始*************/
+.news{
+	width: 100%;
+}
+/*新闻banner*/
+.newsBanner{
+	width: 100%;
+}
+.newsBanner img{
+	width: 100%;
+	display: block;
+}
+/*新闻信息列表*/
+.newsNav{
+	width: 100%;
+	margin-top: 0.15rem;
+	background: #fff;
+	padding-bottom: 0.98rem;
+}
+.newsNavLi{
+	width: 92%;
+	padding: 0.2rem 0;
+	margin: 0 auto;
+	border-bottom: 1px solid #ebebeb;
+}
+.newsNavLi_left{
+	width: 1.6rem;
+	height: 1.07rem;
+	margin-right: 0.15rem;
+}
+.newsNavLi_left img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.newsNavLi_right h1{
+	font-size: 0.3rem;
+	line-height: 0.4rem;
+	color: #000;
+	margin-bottom: 0.15rem;
+}
+.newsNavLi_right p{
+	font-size: 0.24rem;
+	color: #8d8d8d;
+}
+
+/*********新闻详情***********/
+.newsDetail{
+	width: 100%;
+}
+.newsDetailHead{
+	width: 100%;
+	padding: 0.3rem;
+	box-sizing: border-box;
+	border-bottom: 1px solid #f1f1f1;
+}
+.newsDetailHead h1{
+	font-size: 0.36rem;
+	color: #000;
+	margin-bottom: 0.2rem;
+}
+.newsDetailHead h2{
+	font-size: 0.24rem;
+	line-height: 0.4rem;
+	color: #888;
+}
+.newsDetailNav{
+	width: 100%;
+	padding: 0.15rem;
+	box-sizing: border-box;
+}
+.newsDetailNav p{
+	padding: 0.15rem;
+	font-size: 0.3rem;
+	line-height: 0.45rem;
+	color: #888;
+}
+.newsDetailNav img{
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+
+
+/*********订单详情页面***********/
+.orderDetail{
+	width: 100%;
+	padding-bottom: 1.2rem;
+}
+/*订单详情头部*/
+.orderDetailHead{
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #fff;
+	border-top: 3px solid #ed5867;
+	background-image: url(../images/orderDetailHeadBg.jpg);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: 100% 0.07rem;
+	margin-bottom: 0.2rem;	
+}
+.orderDetailHeadLi{
+	width: 100%;
+	-webkit-box-align: inherit;
+	margin-bottom: 0.4rem;
+}
+.orderDetailHeadLiTxt{
+	width: 48%;
+}
+.orderDetailHeadLiTxt h1{
+	font-size: 0.3rem;
+	color: #b8b8b8;
+	margin-bottom: 0.2rem;
+}
+.orderDetailHeadLiTxt h2{
+	font-size: 0.3rem;
+	color: #000;
+}
+.padd1{
+	padding: 0.35rem 0.4rem 0.25rem;
+}
+/*订单详情书籍*/
+.orderDetailNav{
+	width: 100%;	
+}
+.orderDetailNavLi{
+	width: 100%;
+	padding: 0.1rem 0.45rem 0.15rem 0.45rem;
+	box-sizing: border-box;
+	-webkit-box-pack: start;
+	margin-bottom: 0.05rem;
+	background: #fff;
+}
+.orderDetailNavLi_left{
+	width: 1.14rem;
+	height: 1.62rem;
+	margin-right: 0.36rem;
+}
+.orderDetailNavLi_left img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.orderDetailNavLi_right h1{
+	font-size: 0.3rem;
+	line-height: 0.55rem;
+	color: #000;
+	margin-bottom: 0.5rem;
+}
+.orderDetailNavLi_right h2{
+	-webkit-box-pack: start;
+}
+.orderDetailNavLi_right h2 i{
+	font-size: 0.32rem;
+	color: #000;
+	display: block;
+}
+.orderDetailNavLi_right h2 b{
+	font-size: 0.32rem;
+	color: #eb1207;
+	display: block;
+}
+/*配送方式*/
+.orderDetailWay{
+	width: 100%;
+	padding: 0.4rem 0.6rem 0.4rem 0.25rem;
+	background: #fff;
+	font-size: 0.32rem;
+	color: #000;
+	-webkit-box-pack: justify;
+	box-sizing: border-box;
+	margin-top: 0.2rem;
+}
+.orderDetailWay_right img{
+	width: 0.4rem;
+	height: 0.36rem;
+	display: block;
+	margin-right: 0.4rem;
+}
+/*商品总额及件数*/
+.orderDetailTotal{
+	width: 100%;
+	padding: 0.2rem 0.3rem 0.2rem 0.25rem;
+	box-sizing: border-box;
+	background: #fff;
+	margin-top: 0.2rem;
+}
+.orderDetailTotalLi{
+	font-size: 0.26rem;
+	-webkit-box-pack: justify;
+	line-height: 0.5rem;
+}
+.orderDetailTotalLi_left{
+	color: #8d8d8d;
+}
+.orderDetailTotalLi_right{
+	color: #eb1207;
+}
+/*确认收货*/
+.orderDetailConfirm{
+	width: 100%;
+	padding: 0.12rem 0.25rem;
+	border-top: 1px solid #d9dbd8;
+	background: #fff;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+}
+.orderDetailConfirmBtn{
+	width: 2.12rem;
+	line-height: 0.8rem;
+	font-size: 0.32rem;
+	text-align: center;
+	color: #fff;
+	-webkit-border-radius: 0.1rem;
+	background: #ed5867;
+}
+
+
+/*********订单填写页面***********/
+.orderWriteHeadLi{
+	width: 92%;
+	margin: 0 auto;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 0.35rem 0;
+}
+.orderWriteHeadLi:last-child{
+	border-bottom:none;
+}
+.orderWriteHeadLi input{
+	width: 100%;
+	font-size: 0.3rem;
+	display: block;
+	padding-left: 0.06rem;
+	box-sizing: border-box;
+}
+.orderWriteHeadLi input:-webkit-input-placeholder{
+	color: #b8b8b8;
+}
+.padd2{
+	padding-bottom: 0.07rem;
+}
+.orderDetailNavLi_right h2 b p{
+	display: inline-block;
+}
+.orderDetailNavLi_right h2 b img{
+	width: 0.48rem;
+	height: 0.48rem;
+	display: inline-block;
+	-webkit-transform: translateY(0.12rem);
+}
+.orderDetailNavLi_right h2 b strong{
+	font-weight: normal;
+	width: 0.5rem;
+	text-align: center;
+	display: inline-block;
+}
+.orderSubmit{
+	width: 100%;
+	height: 1rem;
+	border-top: 1px solid #d9dbd8;
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	-webkit-box-pack: justify;
+}
+.orderSubmitNav{
+	-webkit-box-pack: start;
+}
+.orderSubmitNav p{
+	font-size: 0.28rem;
+	color: #000;
+	margin-left: 0.3rem;
+	margin-right: 0.6rem;
+}
+.orderSubmitNav p span{
+	color: #fc9316;
+}
+.orderSubmitNav h1{
+	font-size: 0.28rem;
+}
+.orderSubmitNav h1 i{
+	font-size: 0.36rem;
+	color: #eb1207;
+}
+.orderSubmitNav h1 i span{
+	font-size: 0.24rem;
+}
+.orderSubmitBtn{
+	width: 2.2rem;
+	line-height: 1rem;
+	font-size: 0.34rem;
+	text-align: center;
+	color: #fff;
+	background: #ed5867;
+}
+
+
+/*********我的订单（无数据）***********/
+.myOrder{
+	width: 100%;
+}
+.myOrderHead{
+	width: 100%;
+	display:-webkit-flex ;
+	-webkit-justify-content: space-around;
+	background: #fff;
+}
+.myOrderHead li{
+	font-size: 0.3rem;
+	color: #232326;
+	padding: 0.25rem 0.15rem 0.2rem 0.15rem;
+	box-sizing: border-box;
+}
+.active{
+	border-bottom: 0.05rem solid #ed5867;
+	color: #ed5867!important;
+}
+.myOrderNav{
+	width: 100%;
+	padding-bottom: 1.18rem;
+}
+.noData{
+	width: 3.2rem;
+	margin:0 auto;
+	margin-top: 1.9rem;
+}
+.noData img{
+	width:1.86rem;
+	height: 1.86rem;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 0.3rem;
+}
+.noData h1{
+	font-size: 0.26rem;
+	color: #666666;
+	text-align: center;
+	margin-bottom: 0.25rem;
+}
+.noData p{
+	font-size: 0.24rem;
+	color: #a6a7a8;
+	text-align: center;
+	margin-bottom: 0.4rem;
+}
+.noDataBtn{
+	width: 1.94rem;
+	line-height: 0.58rem;
+	font-size: 0.26rem;
+	color: #fff;
+	text-align: center;
+	background: #ed5867;
+	margin: 0 auto;
+	-webkit-border-radius: 0.1rem;
+}
+
+
+/**********我的订单**********/
+.myOrderNavLi{
+	width: 100%;
+	background: #fff;
+	margin-top: 0.2rem;
+	border-top: 1px solid #e3e5e9;
+	border-bottom: 1px solid #e3e5e9;
+}
+.myOrderNavLiHead{
+	width: 100%;
+	padding: 0.25rem 0.3rem;
+	box-sizing: border-box;
+	-webkit-box-pack: justify;
+}
+.myOrderNavLiHead_left{
+	font-size: 0.26rem;
+	color: #959596;
+}
+.myOrderNavLiHead_right p{
+	font-size: 0.26rem;
+	color: #ed5867;
+}
+.myOrderNavLiTxt{
+	width: 100%;
+	padding: 0.1rem 0.3rem;
+	box-sizing: border-box;
+	background: #f8f8f8;
+}
+.myOrderNavLiTxt_left{
+	width: 1.5rem;
+	height: 1.6rem;
+	-webkit-border-radius: 0.06rem;
+	background: #fff;
+	margin-right: 0.3rem;
+}
+.myOrderNavLiTxt_left img{
+	width: 1.14rem;
+	margin: 0 auto;
+	display: block;
+}
+.myOrderNavLiTxt_right h1{
+	font-size: 0.3rem;
+	color: #000;
+	margin-bottom: 0.6rem;
+}
+.myOrderNavLiTxt_right h2{
+	font-size: 0.28rem;
+	-webkit-box-pack: justify;
+}
+.myOrderNavLiTxt_right h2 i{
+	color: #eb1207;
+	margin-right: 0.85rem;
+}
+.myOrderNavLiTxt_right h2 b{
+	color: #666668;
+}
+.myOrderNavLiFoot{
+	padding: 0.25rem 0;
+	-webkit-box-pack: end;
+}
+.myOrderNavLiFoot p{
+	font-size: 0.26rem;
+	color: #2c2c2f;
+}
+.myOrderNavLiFoot h1{
+	width: 2.6rem;
+	font-size: 0.26rem;
+	color: #2c2c2f;
+	margin-left: 0.15rem;
+}
+.myOrderNavLiFoot h1 span{
+	font-size: 0.28rem;
+	color: #eb1207;
+}
+.myOrderNavLiEnd{
+	width: 100%;
+	padding: 0.1rem 0.3rem;
+	box-sizing: border-box;
+	border-top: 1px solid #e3e5e9;
+	-webkit-box-pack: end;
+}
+.myOrderNavLiEndBtn{
+	width: 1.48rem;
+	line-height: 0.54rem;
+	font-size: 0.26rem;
+	color: #ed5867;
+	text-align: center;
+	border: 1px solid #ed5867;
+	-webkit-border-radius: 0.05rem;
+}
+.trash{
+	width: 0.5rem;
+	height: 0.29rem;
+	margin-left: 0.2rem;
+}
+.trash img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.yellow{
+	color: #f0c125!important;
+}
+
+
+/*********购物车页面***********/
+.shopCar{
+	width: 100%;
+}
+.shopCarNav{
+	width: 100%;
+	padding-top: 0.25rem;
+	padding-bottom: 1.25rem;
+}
+.shopCarNavLi{
+	width: 100%;
+	background: #fff;
+	overflow: hidden;	
+	margin-bottom: 0.25rem;
+}
+.shopCarNavLiTop{
+	-webkit-box-pack: start;
+	padding: 0.1rem 0.25rem;
+}
+.shopCarNavLiTop_left{
+	width: 0.38rem;
+	height: 0.38rem;
+	border:0.02rem solid #c4c5c3;
+	-webkit-border-radius: 50%;
+	box-sizing: border-box;
+}
+.shopCarNavLiTop_right{
+	width: 1.14rem;
+	height: 1.62rem;
+	-webkit-box-pack: start;
+}
+.shopCarNavLiTop_rightPic{
+	width: 1.14rem;
+	height: 1.62rem;
+	margin-right: 0.5rem;
+	margin-left: 0.35rem;
+}
+.shopCarNavLiTop_rightPic img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.shopCarNavLiTop_rightTxt h1{
+	font-size: 0.3rem;
+	margin-bottom: 0.65rem;
+}
+.shopCarNavLiTop_rightTxt h2{
+	font-size: 0.28rem;
+	color: #eb1207;
+}
+.shopCarNavLiBot{
+	width: 94%;
+	border-top: 1px solid #dbdbda;
+	padding: 0.18rem 0;
+	float: right;
+	-webkit-box-pack: end;
+}
+.shopNum{
+	margin-right: 0.45rem;
+}
+.shopNum p{
+	font-size: 0.26rem;
+	color: #000;
+	margin-right: 0.15rem;
+}
+.shopNum i{
+	width: 0.5rem;
+	text-align: center;
+	font-size: 0.26rem;
+	color: #000;
+	display:block;
+}
+.shopNum img{
+	width: 0.48rem;
+	height: 0.48rem;
+	display: block;
+}
+.selectAll{
+	padding-left: 0.22rem;
+	margin-right: 0.4rem;
+}
+.selectAll i{
+	font-size: 0.26rem;
+	color: #000;
+	display: block;
+	margin-left: 0.15rem;
+}
+.gou{
+	background: url(../images/gou.png)no-repeat center;
+	background-size: 100% 100%;
+	border: none!important;
+}
+
+/***********弹窗页面**************/
+.cover{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.6);
+}
+.notice{
+	width: 4.9rem;
+	height: 3.95rem;
+	-webkit-border-radius: 0.1rem;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+.noticeHead{
+	width: 0.65rem;
+	font-size: 0.3rem;
+	line-height: 0.54rem;
+	color: #a3a3a3;
+	text-align: center;
+	border-bottom: 0.04rem solid #ed5564;
+	margin: 0 auto;
+	margin-top: 0.15rem;
+}
+.noticeNav{
+	font-size: 0.3rem;
+	text-align: center;
+	margin: 0.75rem 0 1.1rem 0;
+}
+.noticeBtn{
+	width: 2.6rem;
+	line-height: 0.6rem;
+	font-size: 0.3rem;
+	color: #fff;
+	text-align: center;
+	background: #ed5564;
+	-webkit-border-radius: 999rem;
+	margin: 0 auto;
+	-webkit-box-shadow: -0.05rem 0.05rem 0.1rem #f9cbd0;
+}
+.close{
+	position: absolute;
+	right: 0.15rem;
+	top: 0;
+}
+.close img{
+	width: 0.54rem;
+	height: 0.58rem;
+	display: block;
+}
+
+
+/**********图书详情页**********/
+.bookDetail{
+	width: 100%;
+	padding-bottom: 1.25rem;
+}
+.bookDetailHead{
+	width: 100%;
+	background: #fff;
+	margin-bottom: 0.25rem;
+}
+.bookDetailHeadBanner{
+	width: 100%;
+	border-bottom: 1px solid #e5e5e5;
+}
+.bookDetailHeadBanner img{
+	width: 100%;
+	display: block;
+}
+.bookDetailHeadTxt{
+	width: 100%;
+	padding: 0.35rem 0.3rem;
+	box-sizing: border-box;
+	position: relative;
+}
+.bookDetailHeadTxt h1{
+	width: 80%;
+	font-size: 0.34rem;
+	margin-bottom: 0.23rem;
+}
+.bookDetailHeadTxt h2{
+	font-size: 0.26rem;
+	color: #343434;
+	margin-bottom: 0.25rem;
+}
+.bookDetailHeadTxt h3{
+	font-size: 0.26rem;
+	color: #f08f48;
+	-webkit-box-pack: justify;
+}
+.bookDetailHeadTxt h3 span{
+	display: block;
+}
+.bookDetailPrice{
+	font-size: 0.46rem;
+	line-height: 0.46rem;
+	color: #eb1207;
+	position: absolute;
+	right: 0.55rem;
+	top:0.35rem;
+}
+.bookDetailPrice span{
+	font-size: 0.3rem;
+}
+.bookDetailNav{
+	width: 100%;
+	padding: 0.4rem;
+	box-sizing: border-box;
+	background: #fff;
+}
+.bookDetailNavHead{
+	width: 100%;
+	-webkit-box-pack: start;
+	margin-bottom: 0.2rem;
+}
+.bookDetailNavHead_left{
+	font-size: 0.24rem;
+	color: #666666;
+}
+.bookDetailNavHead_left span{
+	width: 0.08rem;
+	height: 0.28rem;
+	background: #f41e33;
+	display: block;
+	margin-right: 0.16rem;
+}
+.bookDetailNavHead_right{
+	height: 0px;
+	border-bottom: 1px solid #ccc;
+	margin-left: 0.27rem;
+}
+.bookDetailNavBot{
+	width: 100%;
+}
+.bookDetailNavBot p{
+	font-size: 0.24rem;
+	line-height: 0.38rem;
+	color: #333333;
+}
+.bookDetailEnd{
+	width: 100%;
+	height: 1rem;
+	position: fixed;
+	bottom: 0;
+	background: #fff;
+	border-top: 1px solid #d9dbd8;
+}
+.bookDetailEndLi{
+	width: 33.33%;
+	text-align: center;
+	font-size: 0.3rem;
+}
+.shoppingCar img{
+	width: 0.42rem;
+	height: 0.38rem;
+	display: block;
+	margin: 0 auto;
+}
+.shoppingCar p{
+	font-size: 0.2rem;
+	color: #525452;
+	text-align: center;
+}
+.joinShopCar{
+	color: #fff;
+	background: #f08f48;
+	line-height: 1rem;
+}
+.buyNow{
+	color: #fff;
+	background: #ed5867;
+	line-height: 1rem;
+}
+.shoppingCar{
+	position: relative;
+}
+.shoppingCarNum{
+	width: 0.56rem;
+	height: 0.56rem;
+	background:#ed5564;
+	-webkit-border-radius: 50%;
+	font-size: 0.44rem;
+	line-height: 0.56rem;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	right: 0.55rem;
+	top: -0.2rem;
+	-webkit-transform: scale(0.5);
+}
+/*****已加入购物车*****/
+.container{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0);
+}
+.shopCarJoined{
+	width: 2.77rem;
+	height: 1.62rem;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+.shopCarJoined img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.marginRight1{
+	margin-right: 0.5rem;
+}

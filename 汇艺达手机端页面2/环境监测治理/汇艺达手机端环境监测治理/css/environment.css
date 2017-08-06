@@ -1,0 +1,180 @@
+.c{
+	clear: both;
+}
+.flexright {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  /* Firefox */
+  box-flex: 1;
+  flex: 1;
+}
+.fBox {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+}
+/*垂直居中*/
+.alignCenterBox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/*左右居中*/
+.justifyCenterBox {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+}
+/*分居左右，垂直居中*/
+.justifyBetweenBox {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-between;
+}
+
+/*环境监测页面开始*/
+.gray{
+	background: #eeeeee;
+}
+select{
+	-webkit-appearance: none;
+}
+input{
+	-webkit-appearance: none;
+}
+.environment{
+	width: 100%;
+}
+.environmentHead{
+	width: 100%;
+	background: #fff;
+	overflow: hidden;
+	border-bottom: 1px solid #e5e5e5;
+}
+.environmentHead li{
+	width: 33.33%;
+	font-size: 0.3rem;
+	color: #7d7d7d;
+	float: left;
+	text-align: center;
+	line-height: 0.88rem;
+	border-right: 1px solid #eeeeee;
+	box-sizing: border-box;
+}
+.environmentHead li:last-child{
+	border-right: none;
+}
+.environmentNav{
+	width: 100%;
+	margin-top: 0.15rem;
+}
+.environmentNavTop{
+	width: 100%;
+	background: #67aa07;
+	overflow: hidden;
+	padding: 0.22rem 0;
+}
+.environmentNavTopSelect{
+	width: 50%;
+	border-right: 1px solid #fff;
+	float: left;
+	box-sizing: border-box;
+}
+.environmentNavTopSelect:last-child{
+	border-right: none;
+}
+.environmentNavTopSelect select{	
+	width: 60%;
+	-webkit-appearance: none;
+	background: none;
+	color: #fff;
+	font-size: 0.3rem;
+	line-height: 0.46rem;	
+	display: block;
+	background: url(../images/environmentArrowDown.png) no-repeat right center;
+	background-size: 0.32rem 0.18rem;
+}
+.environmentNavBot{
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+}
+.environmentNavBotLi{
+	width: 95.3%;
+	float: right;
+	border-bottom: 1px solid #eeeeee;
+	padding: 0.3rem 0;
+}
+.environmentNavBotLi_left{
+	font-size: 0.28rem;
+	color: #313131;
+}
+.environmentNavBotLi_right input{
+	font-size: 0.28rem;
+	color: #7d7d7d;
+	display: block;
+	text-align: right;
+	padding-right: 0.33rem;
+}
+.environmentNavBotLi_right input:-webkit-input-placeholder{
+	color: #c9c9c9;
+}
+.environmentNavBotLi_right select{
+	display: block;
+	font-size: 0.28rem;
+	color: #7d7d7d;
+	-webkit-appearance: none;
+	background: url(../images/environmentArrowDown_black.png) no-repeat right center;
+	background-size: 0.25rem 0.15rem;
+	padding-right: 0.5rem;
+	float: left;
+	margin-right: 0.33rem;
+	margin-left: 0.67rem;
+}
+.environmentNavBotLi_right input[type="datetime-local"]{
+	background: none;
+}
+.environmentNavEnd{
+	width:100% ;
+	background: #fff;
+	padding-top: 0.45rem;
+	padding-bottom: 1.4rem;
+	margin-top: 0.15rem;
+}
+.environmentNavEndBtn{
+	width: 2.9rem;
+	height: 0.74rem;
+	font-size: 0.3rem;
+	color: #fff;
+	-webkit-border-radius: 1rem;
+	background: #fdd14a;
+	margin:0 auto;
+	border-top: 1px solid #e5e5e5;
+}
+.environmentNavEndBtn img{
+	width: 0.46rem;
+	height: 0.46rem;
+	padding:0 0.25rem 0 0.1rem ;
+}
+.confirmSubmit{
+	width: 100%;
+	line-height: 0.9rem;
+	font-size: 0.3rem;
+	color: #fff;
+	text-align: center;
+	background: #67aa07;
+	position: fixed;
+	bottom: 0;
+}

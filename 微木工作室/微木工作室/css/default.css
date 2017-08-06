@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+  font-family:"微软雅黑",sans-serif;
+  outline:0;
+  padding:0;
+  margin:0;
+  border:0;
+  -webkit-tap-highlight-color: transparent;
+}
+html { 
+  width: 100%;
+  height: 100%;
+  }
+body{ 
+  -webkit-overflow-scrolling: touch;
+  -webkit-user-select: none;
+  user-select: none;
+  width: 100%;
+  min-height: 100%;
+}
+button { cursor:pointer;}
+form { display:inline;}
+/* remember to define focus styles! */   
+:focus { outline:0;}
+ol, ul { list-style:none;}
+/* tables still need cellspacing="0" in the markup */   
+table {
+  border-collapse:separate;
+  border-spacing:0;
+}
+caption, th, td {
+  font-weight:normal;
+  text-align:left;
+}
+a img { border:0;}
+/* remove possible quote marks (") from <q> & <blockquote> */   
+blockquote:before, blockquote:after, q:before, q:after { content: "";}
+blockquote, q { quotes: "" "";}
+/* fenix' basic classes */
+/* 基本框 */
+a {
+  color:#727171;
+  text-decoration:none;
+  cursor:pointer;
+}
+a:hover {
+  color:#727171;
+  text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6,i,b{ 
+	font-weight: normal;
+	font-style: normal;
+}
+
+input[type="submit"], button,input[type="text"],input[type="number"]{
+	-webkit-appearance: none;
+}
+/********common css************/
+.box100{
+	width:100%;
+}
+.c{ 
+	clear:both;
+	height: 0; 
+	line-height: 0; 
+	font-size: 0
+}
+.flexbox{
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+}
+.flexright{
+	-webkit-box-flex: 1;
+}
+.container{
+	width: 100%;
+	min-height: 100%;
+	box-sizing: border-box;
+}
+.widthbox{
+	width: 100%;
+	box-sizing: border-box;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+/********loading css************/
+.loading{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+.loading .loading-box{
+	width: 1.8rem;
+	height: 3rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	text-align: center;
+}
+.loading .loading-box img{
+	width: 1.8rem;
+	height: 1.8rem;
+	display: block;
+}
+.loading .loading-box .loading-text{
+	font-size: 0.26rem;
+	color: #6C6C6C;
+}
+.loading .loading-box .point-box{
+	width: 0.5rem;
+	height: 0.2rem;
+	position: relative;
+}
+.loading .loading-box .loading-text .point:nth-child(1){
+	display: none;
+	color: #6C6C6C;
+	position: absolute;
+	left: 0.1rem;
+	bottom: 0;
+}
+.loading .loading-box .loading-text .point:nth-child(2){
+	display: none;
+	color: #6C6C6C;
+	position: absolute;
+	left: 0.2rem;
+	bottom: 0;
+}
+.loading .loading-box .loading-text .point:nth-child(3){
+	display: none;
+	color: #6C6C6C;
+	position: absolute;
+	left: 0.3rem;
+	bottom: 0;
+}
+/********loading css************/

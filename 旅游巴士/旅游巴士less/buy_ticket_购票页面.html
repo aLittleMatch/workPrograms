@@ -1,0 +1,262 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/flexible_css.debug.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/default.css"/>
+		<link rel="stylesheet/less" type="text/css" href="css/tickerstyle.less"/>
+		<script src="js/less.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>检票</title>
+	</head>
+	<body>
+		<div class="container widthBox buyticbg">
+			<!--头部买票信息-->
+			<div class="ticket-select flexbox">
+				<div class="ticket-select-items">
+					<h1 class="select-sta">望美旅游巴士L1</h1>
+					<h1 class="select-sta-del flexbox">
+						<div class="del-sta">阅江楼</div>
+						<img class="goback" src="img/goback.png"/>
+						<div class="del-end">牛首山站</div>
+					</h1>
+				</div>
+				<div class="day-btn day-checked">一日票</div>
+				<div class="day-btn">二日票</div>
+			</div>	
+			<!--日历-->
+			<div class="buyTickets-getDate">
+				<h2 class="getDateTop flexbox">
+					<img class="beforeDate" src="img/beforeDatepic.png">
+					<div class="nowDate"></div>
+					<img class="afterDate" src="img/afterDatepic.png">
+				</h2>
+				<div class="buyTickets-weeks-wrapper">
+					<ul class="buyTickets-weeks flexbox">
+						<li>日</li>
+						<li>一</li>
+						<li>二</li>
+						<li>三</li>
+						<li>四</li>
+						<li>五</li>
+						<li>六</li>
+					</ul>
+				</div>
+				<div class="buyTickets-day-list">
+					<ul class="day-list-ul" id="js-date-list"></ul>
+				</div>
+			</div>	
+			<!--购买数量-->
+			<div class="purchaseBox flexbox">
+				<div class="purchase-wrapper">
+					<div class="purchase-wr flexbox">
+						<div class="purchase-fn">购票数量</div>
+						<div class="purchase-size">一日票</div>
+						<div class="purchase-price">¥<span class="price-re">10.00</span></div>
+					</div>
+				</div>
+				<div class="purchase-amount flexbox">
+					<div class="amount-less">-</div>
+					<div class="amount-wra">1</div>
+					<div class="amount-more">+</div>
+				</div>
+			</div>
+		</div>
+		<!--底部支付-->
+		<div class="bottom-pay flexbox">
+			<div class="sider-left flexright">
+				<div class="left-wrapper">
+					<div class="left-wrapper-fl flexbox">
+						<h1 class="left-count">应付总额</h1>
+						<h1 class="count-total-prices">
+							¥<span class="total-prices">10.00</span>
+						</h1>
+					</div>
+				</div>
+			</div>
+			<div class="sider-right">支付</div>
+		</div>
+		<script type="text/javascript">
+			$('.day-btn').click(function(){
+				$(this).siblings().removeClass('day-checked');
+				$(this).addClass('day-checked');
+
+				if($(this).index()==1){
+					$('.purchase-size').text('一日票');
+				}else{
+					$('.purchase-size').text('二日票');
+				}
+			});
+			
+			var numAcount=$('.amount-wra').text();
+			$('.amount-less').click(function(){
+				var acount=$('.price-re').text();
+				numAcount--;
+				if(numAcount>0){
+					$('.amount-wra').text(numAcount);
+					var numAcount2=numAcount*acount;
+					var totlPrice=numAcount2.toFixed(2);
+					$('.total-prices').text(totlPrice);
+				}
+			});
+			
+			$('.amount-more').click(function(){
+				var acount=$('.price-re').text();
+				numAcount++;
+				$('.amount-wra').text(numAcount);
+				var numAcount2=numAcount*acount;
+				var totlPrice=numAcount2.toFixed(2);
+				$('.total-prices').text(totlPrice);
+			});
+			
+			
+			$(function() {
+				function signFun(m,n,abtn) {	
+		    		var $dateBox = $("#js-date-list"),//日期表单
+		        		_html = '';
+		        		myDate = new Date();
+		        		
+					var monthFirst = new Date(myDate.getFullYear()+m, parseInt(myDate.getMonth()+n), 1).getDay();
+		    		var d = new Date(myDate.getFullYear()+m, parseInt(myDate.getMonth() + n+1), 0);
+		    		var totalDay = d.getDate(); //获取当前月的天数
+					var yearDate=d.getFullYear();//获取当前年份
+					var monthDate=d.getMonth()+1;//获取当前月份
+					var dayDate=myDate.getDate();//获取当前天数
+					var arr=[];
+					if(abtn==1){
+						for (var i=0;i<arryDate1.length;i++) {
+							arr.push(arryDate1[i]);
+						}
+					}else if(abtn==2){
+						for (var i=0;i<arryDate2.length;i++) {
+							arr.push(arryDate2[i]);
+						}
+					}else{
+						for (var i=0;i<arryDate3.length;i++) {
+							arr.push(arryDate3[i]);
+						}
+					}
+					
+					//头部年月
+					$('.nowDate').text(yearDate+'年'+monthDate+'月');
+					        
+			        for (var i = 0; i < 42; i++) {
+			            _html += ' <li></li>'
+			        }
+			        
+			        $dateBox.html(_html) //生成日历项目
+							
+			        var $dateLi = $dateBox.find("li");
+			        var d2=new Date(myDate.getFullYear()+m, parseInt(myDate.getMonth() + n), 0);//上一个月
+			       	var d3=new Date(myDate.getFullYear()+m, parseInt(myDate.getMonth() + n+1), 0);//下一个月
+			       	var totalDayBefore=d2.getDate();
+			       	var totalDayafter=d3.getDate();
+			       	
+	
+			       	//循环出前一个月的日期
+			        for (var j=0;j<monthFirst;j++) {
+			        	 $dateLi.eq(j).addClass("dateBefore");
+			        	 $dateLi.eq(monthFirst-1-j).text(totalDayBefore-j);
+			        }
+			        //循环出当前月的日期
+			        for (var i = 0; i < totalDay; i++) {
+			        	//当月过去的天数与上月保持一致
+			        	if(i+1<dayDate && n==0){
+			        		$dateLi.eq(i + monthFirst).addClass('date date-now-before');
+			        	}else{
+			        		for(j=0;j<arr.length;j++){
+			        			if(arr[j]==i+1){
+			        				$dateLi.eq(i + monthFirst).addClass('date canSelect');
+			        			}else{
+			        				$dateLi.eq(i + monthFirst).addClass('date');
+			        			}
+			        		}
+			        	}
+			        	
+			            $dateLi.eq(i + monthFirst).text(i+1);
+			            if(parseInt(i + 1)==dayDate && n==0){
+			            	$dateLi.eq(i + monthFirst).addClass('now-date now-adte-st');
+			            }
+			        } 
+			        //循环出下一个月的日期
+			        for(var z=0;z<totalDayafter;z++){
+			        	$dateLi.eq(totalDay+monthFirst+z).addClass("dateafter");
+			        	$dateLi.eq(totalDay+monthFirst+z).text(z+1);
+			        }
+			        
+			        //一日票与二日票点击效果
+			        $dateLi.click(function(){
+			        	if(n>=0){
+			        		if(n==0){
+			        			if($(this).index()<$('.now-adte-st').index()){
+			        				alert('不能选择之前的日期');
+			        				return false;
+			        			}
+			        		}
+		        			if($(this).hasClass('canSelect')){
+		        				if($('.day-btn').eq(0).hasClass('day-checked')){
+				        			$dateLi.removeClass('now-date');
+				        			$(this).addClass('now-date');
+						        }else{
+						        	if($(this).next().hasClass('canSelect')){
+						        		$dateLi.removeClass('now-date');
+						        		$(this).addClass('now-date');
+						        		$(this).next().addClass('now-date')
+						        	}else{
+						        		alert('您选择的日期相邻日期不在可选择范围内')
+						        	}		
+						        }
+			        		}else{
+			        			alert('您选择的日期不在可选择范围内')
+			        		}
+			        	}else{
+			        		alert('不能选择之前的日期');
+			        	}
+			        });	        
+		        };
+		     
+
+			    var m=0;
+			    var n=0;
+			    var abtn=true;
+			    var arryDate1=[8,7,6,5,12,22];//可以选择的日期，当前月份
+			    var arryDate2=[9,5,21,25,26,27,28,29];//下一个月份
+			    var arryDate3=[];//无可选日期
+			    
+			    signFun(0,0,1);//当前时间
+			    
+			    
+		        $('.afterDate').click(function(){
+		       		var n1=0;
+		       		n++;
+		       		n1=n%12;
+		       		if(n1==0){ //完成1个周期，年份前进1位
+		       			m++;
+		       		}
+		       		if(n>=2){
+		       			signFun(m,n,3); //无可选日期
+		       		}else{
+		       			signFun(m,n,2); //循环出下月可选日期
+		       		}
+		       		
+		        })
+	        
+			    $('.beforeDate').click(function(){
+		       		n--;
+		       		if(n==0){
+		       			signFun(m,n,1);  //循环出当月所选日期
+		       		}else if(n==1){
+		       			signFun(m,n,2);  //循环出下月所选日期
+		       		}else{
+		       			signFun(m,n,3);  //循环出无可选日
+		       		}
+		       		
+		       	})   	
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,1159 @@
+/*==========less 公式==========*/
+@baserem:1rem/64;
+/*==========less 公式==========*/
+/*==========检票 开始==========*/
+.checkTic{
+    background-color: #efefef;
+    padding: 25*@baserem 4% 100*@baserem 4%;
+}
+.onedayTic{
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden; 
+    margin-bottom: 30*@baserem;
+    border-top-left-radius: 20*@baserem;
+    border-top-right-radius: 20*@baserem;
+    border-bottom-left-radius: 20*@baserem;
+    border-bottom-right-radius: 20*@baserem;
+    box-shadow: 0*@baserem 5*@baserem 3*@baserem #dddcdc;  
+}
+.twodayTic .tic-time{
+    background: url(../img/tictimepic2.png) center center no-repeat;
+    background-size: cover; 
+    position: relative;
+}
+.tic-time .unuseSign{
+  width: 144*@baserem;
+  display: block;
+  position: absolute;
+  top: 10*@baserem;
+  right: 10*@baserem;  
+}
+.twodayTic .tic-time-item1{
+    color: #fff;
+    text-shadow: none;
+}
+.tic-time{
+    width: 100%;
+    height: 208*@baserem;
+    padding: 16*@baserem 35*@baserem 30*@baserem 35*@baserem;
+    border-top-left-radius: 20*@baserem;
+    border-top-right-radius: 20*@baserem;
+    box-sizing: border-box;
+    background: url(../img/tictimepic1.png) center center no-repeat;
+    background-size: cover; 
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: justify;  
+}
+.paymentTic-part1{
+    width: 100%;
+}
+.tic-time-item1{
+    font-size: 11px;
+    color: #397904;
+    text-align: center; 
+    
+}
+[data-dpr="2"] .tic-time-item1{
+    font-size: 22px;
+}
+[data-dpr="3"] .tic-time-item1{
+    font-size: 33px;
+}
+.tic-time-item2{
+    font-size: 36px;
+    text-align: center;
+    color: #ffffff;
+}
+[data-dpr="2"] .tic-time-item2{
+    font-size: 72px;
+}
+[data-dpr="3"] .tic-time-item2{
+    font-size: 108px;
+}
+.tic-time-item3{
+    font-size: 11px;
+    color: #ffffff;
+    text-align: center;
+}
+[data-dpr="2"] .tic-time-item3{
+    font-size: 22px;
+}
+[data-dpr="3"] .tic-time-item3{
+    font-size: 33px;
+}
+.startPlace,.endPlace{
+    font-size: 13px;
+    color: #000;
+    position: relative;
+    padding-left: 25*@baserem;
+    width: 110*@baserem;
+    box-sizing: border-box;
+    word-break: break-all;
+}
+.startPlace{
+    background: url(../img/startbg.png) left center no-repeat;
+    background-size: 16*@baserem 16*@baserem;
+}
+.endPlace{
+    background: url(../img/endbg.png) left center no-repeat;
+    background-size: 16*@baserem 16*@baserem;
+}
+[data-dpr="2"] .startPlace{
+    font-size: 26px;
+}
+[data-dpr="3"] .startPlace{
+    font-size: 39px;
+}
+[data-dpr="2"] .endPlace{
+    font-size: 26px;
+}
+[data-dpr="3"] .endPlace{
+    font-size: 39px;
+}
+.tic-place-left,.tic-place-right{
+    float: left;
+    width: 60%;
+    box-sizing: border-box;
+}
+.tic-place-left{
+    padding: 0 20*@baserem;
+    box-sizing: border-box;
+}
+.tic-place-right{
+    width: 40%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10*@baserem;
+}
+.tic-place-right img{
+    width: 100%;
+}
+.tic-place{
+    overflow: hidden;
+    padding: 0 10*@baserem;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+    border-bottom-left-radius: 20*@baserem;
+    border-bottom-right-radius: 20*@baserem; 
+    min-height: 100*@baserem;
+}
+.line_place{
+    width: 25*@baserem;
+    height: 18*@baserem;
+    display: block;
+    margin: 0 25*@baserem;
+}
+.start-end{
+    padding: 20*@baserem 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eeeeee;
+}
+.start-end-time{
+    width: 100%;
+}
+.start-time,.end-time{
+    color: #959595;
+    font-size: 12px;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    height: 42*@baserem;
+    line-height: 42*@baserem;
+}
+[data-dpr="2"] .start-time{
+    font-size: 24px;
+}
+[data-dpr="3"] .start-time{
+    font-size: 36px;
+}
+[data-dpr="2"] .end-time{
+    font-size: 24px;
+}
+[data-dpr="3"] .end-time{
+    font-size: 36px;
+}
+.queryInTime{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100*@baserem;
+    color: #fff;
+    text-align: center;
+    line-height: 100*@baserem;
+    font-size: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+[data-dpr="2"] .queryInTime{
+    font-size: 30px;
+}
+[data-dpr="3"] .queryInTime{
+    font-size: 45px;
+}
+.queryInTimeSide{
+    width: 50%;
+    text-align: center;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #7bc70d;
+    float: left;
+}
+.queryInTimeSide:nth-child(2){
+    background-color:#f46610;
+}
+/*==========检票 结束==========*/
+/*==========支付页面 开始==========*/
+.paybg{
+    background-color: #efefef;
+}
+.paymentTic{
+    background-color: #fff;
+    padding: 0 8%;
+    box-sizing: border-box;
+    padding-top: 55*@baserem;
+    padding-bottom: 100*@baserem;
+    -webkit-box-orient: vertical;
+}
+.payPart1Box{
+    padding: 20*@baserem 0;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 20*@baserem;
+}
+.bus{
+   width: 45*@baserem;
+   height: 41*@baserem;
+   display: block; 
+   margin-right: 14*@baserem;
+}
+.payPart1Box{
+    font-size: 17px;
+    color: #000;
+}
+[data-dpr="2"] .payPart1Box{
+    font-size: 34px;
+}
+[data-dpr="3"] .payPart1Box{
+    font-size: 51px;
+}
+.busStation{
+    font-size: 12px;
+    color: #959595;
+    margin-bottom: 46*@baserem;
+    text-align: center;
+}
+[data-dpr="2"] .busStation{
+    font-size: 24px;
+}
+[data-dpr="3"] .busStation{
+    font-size: 36px;
+}
+.station{
+    margin-right: 18*@baserem;
+}
+.busStation .start-time-stat{
+    margin-right: 20*@baserem;
+}
+.tic-style{
+    width: 340*@baserem;
+    height: 82*@baserem;
+    text-align: center;
+    line-height: 82*@baserem;
+    background-color: #f46610;
+    border-radius: 30*@baserem;
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 46*@baserem;
+}
+[data-dpr="2"] .tic-style{
+    font-size: 30px;
+}
+[data-dpr="3"] .tic-style{
+    font-size: 45px;
+}
+.paymentTic-part2{
+    font-size: 15px;
+    color: #959595;
+    font-weight: normal;
+    margin-bottom: 25*@baserem;
+}
+[data-dpr="2"] .paymentTic-part2{
+    font-size: 30px;
+}
+[data-dpr="3"] .paymentTic-part2{
+    font-size: 45px;
+}
+.paymentStyle{
+    -webkit-box-orient: vertical;
+    padding-top: 90*@baserem;
+}
+.weixing,.zhifubao{ 
+    width: 485*@baserem;
+    height: 90*@baserem;
+    border-radius: 35*@baserem;
+    background-color: #7bc70d;
+}
+.zhifubao{
+    background-color: #0294e7;
+    margin-top: 25*@baserem;
+}
+[data-dpr="2"] .weixingBox{
+    font-size: 30px;
+}
+[data-dpr="3"] .weixingBox{
+    font-size: 45px;
+}
+[data-dpr="2"] .zhifubaoBox{
+    font-size: 30px;
+}
+[data-dpr="3"] .zhifubaoBox{
+    font-size: 45px;
+}
+.weixingBox,.zhifubaoBox{
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    color: #fff;
+}
+.weixingbg{
+    width: 44*@baserem;
+    height: 36*@baserem;
+    display: block;
+    margin-right: 15*@baserem;
+}
+.zhifubaobg{
+    width: 41*@baserem;
+    height: 41*@baserem;
+    display: block;
+    margin-right: 20*@baserem;
+}
+/*==========支付页面 结束==========*/
+/*==========路线实时 开始==========*/
+.part_route{
+    -webkit-box-pack: start;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.distance-car_route{
+    padding: 25*@baserem 5%;
+}
+.routeBox{
+    padding-left: 5%;
+    padding-right: 4%;
+}
+.starpic{
+    width: 24*@baserem;
+    height: 73*@baserem;
+    display: block;
+    margin-right: 30*@baserem;
+}
+.route-station-start,.route-station-end{
+    -webkit-box-pack: start;
+    padding-left: 96*@baserem;
+    box-sizing: border-box;
+    height: 73*@baserem;
+    background: url(../img/starpic.jpg) 46*@baserem center no-repeat;
+    background-size: 24*@baserem 73*@baserem;
+    font-size: 14px;
+}
+[data-dpr="2"] .route-station-start{
+    font-size: 28px;
+}
+[data-dpr="3"] .route-station-start{
+    font-size: 42px;
+}
+.route-station-end{
+    background: url(../img/endpic.jpg) 46*@baserem center no-repeat;
+    background-size: 24*@baserem 73*@baserem;
+    font-size: 14px;
+}
+[data-dpr="2"] .route-station-end{
+    font-size: 28px;
+}
+[data-dpr="3"] .route-station-end{
+    font-size: 42px;
+}
+.route-station-common{
+    -webkit-box-pack: start;
+    padding-left: 96*@baserem;
+    box-sizing: border-box;
+    height: 72*@baserem;
+    background: url(../img/commonpic.jpg) 46*@baserem center no-repeat;
+    background-size: 24*@baserem 72*@baserem;
+}
+[data-dpr="2"] .route-station-common{
+    font-size: 28px;
+}
+[data-dpr="3"] .route-station-common{
+    font-size: 42px;
+}
+.route-station-special{
+    -webkit-box-pack: justify;
+    padding-left: 96*@baserem;
+    box-sizing: border-box;
+    height: 112*@baserem;
+    background: url(../img/specialpic.jpg) 46*@baserem center no-repeat;
+    background-size: 24*@baserem 112*@baserem;
+}
+[data-dpr="2"] .route-station-special{
+    font-size: 28px;
+}
+[data-dpr="3"] .route-station-special{
+    font-size: 42px;
+}
+.route-station-lately{
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: start;
+    -webkit-box-align: start;
+    padding-left: 96*@baserem;
+    box-sizing: border-box;
+    height: 135*@baserem;
+    background: url(../img/latelypic.jpg) 46*@baserem center no-repeat;
+    background-size: 24*@baserem 135*@baserem;
+    font-size: 14px;
+}
+[data-dpr="2"] .route-station-lately{
+    font-size: 28px;
+}
+[data-dpr="3"] .route-station-lately{
+    font-size: 42px;
+}
+.station-lately-box{
+    width: 100%;
+    box-sizing: border-box;
+}
+.station-lately{ 
+    width: 100%;
+    -webkit-box-pack: start;
+    padding-top: 26*@baserem;
+    margin-bottom: 35*@baserem;
+    color: #7bc70d;
+}
+.lately-subway{
+    -webkit-box-pack: justify;
+    padding-top: 15*@baserem;
+    margin-bottom: 30*@baserem;
+}
+.subway{
+    width: 140*@baserem;
+    height: 44*@baserem;
+    line-height: 44*@baserem;
+    text-align: center;
+    border-radius: 20*@baserem;
+    border: 1px solid #f46610;
+    color: #f46610;
+}
+[data-dpr="2"] .subway{
+    font-size: 22px;
+}
+[data-dpr="3"] .subway{
+    font-size: 33px;
+}
+.recentlyBus{
+    font-size: 11px;
+    color: #f46610;
+}
+[data-dpr="2"] .recentlyBus{
+    font-size: 22px;
+}
+[data-dpr="3"] .recentlyBus{
+    font-size: 33px;
+}
+.first-recently,.sec-recently{
+    background: url(../img/recbus.png) left center no-repeat;
+    background-size: 29*@baserem 20*@baserem;
+    padding-left: 40*@baserem;
+}
+.first-recently{
+    margin-right: 40*@baserem;
+}
+.route-station{
+    padding: 20*@baserem 4% 20*@baserem 4%;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+.route-station-part1{
+    -webkit-box-pack: start;
+    margin-bottom: 10*@baserem;
+}
+.station-part1-start,.station-part1-end{
+    font-size: 13px;
+    color: #000000;
+}
+[data-dpr="2"] .station-part1-start{
+    font-size: 26px;
+}
+[data-dpr="3"] .station-part1-start{
+    font-size: 39px;
+}
+[data-dpr="2"] .station-part1-end{
+    font-size: 26px;
+}
+[data-dpr="3"] .station-part1-end{
+    font-size: 39px;
+}
+.contact_line{
+    width: 40*@baserem;
+    height: 9*@baserem;
+    display: block;
+    margin-left: 23*@baserem;
+    margin-right: 23*@baserem;
+}
+.setEndTime{
+    font-size: 12px;
+    color: #959595;
+}
+[data-dpr="2"] .setEndTime{
+    font-size: 24px;
+}
+[data-dpr="3"] .setEndTime{
+    font-size: 36px;
+}
+.route-set-time{
+    margin-right: 50*@baserem;
+}
+.exchange-btn3 img{
+    width: 62*@baserem;
+    height: 62*@baserem;
+    display: block;
+    position: absolute;
+    right: 4%;
+    top: 50%;
+    margin-top: -31*@baserem;
+}
+/*==========路线实时 结束==========*/
+/*==========旅游巴士 开始==========*/
+.tourbusbg{
+    background-color: #efefef;
+    padding-bottom: 100*@baserem;
+}
+.toursbus-toparea{
+    width: 100%;
+    padding: 26*@baserem 4%;
+    background-color: #fff;
+    font-size: 15px;
+    color: #000000;
+    -webkit-box-pack: justify;
+    box-sizing: border-box;
+}
+[data-dpr="2"] .toursbus-toparea{
+    font-size: 30px;
+}
+[data-dpr="3"] .toursbus-toparea{
+    font-size: 45px;
+}
+.check-route{
+    font-size: 12px;
+    color: #959595;
+    text-decoration: underline;
+}
+[data-dpr="2"] .check-route{
+    font-size: 24px;
+}
+[data-dpr="3"] .check-route{
+    font-size: 36px;
+}
+.check-route-pic1{
+    width: 45*@baserem;
+    height: 41*@baserem;
+    display: block;
+    margin-right: 10*@baserem;
+}
+.check-route-pic2{
+    width: 16*@baserem;
+    height: 18*@baserem;
+    display: block;
+    margin-left: 10*@baserem;
+}
+.arrive-station{
+    background-color: #fff;
+    margin-top: 20*@baserem;
+    margin-bottom: 20*@baserem; 
+    overflow: hidden;   
+}
+.scen-station{
+    padding: 30*@baserem 0;
+    -webkit-box-pack: start;
+    position: relative;
+    border-bottom: 1px solid #dcdcdc;
+}
+.scen_station{
+    width: 51*@baserem;
+    height: 51*@baserem;
+    display: block;
+    margin: 0 55*@baserem;    
+}
+.scen-station-start,.scen-station-end{
+    padding-left: 40*@baserem;
+    font-size: 13px;
+    color: #000;
+}
+.scen-station-start{
+    background: url(../img/startbg.png) left center no-repeat;
+    background-size: 16*@baserem 16*@baserem;
+}
+.scen-station-end{
+    background: url(../img/endbg.png) left center no-repeat;
+    background-size: 16*@baserem 16*@baserem;
+}
+[data-dpr="2"] .scen-station-start, [data-dpr="2"] .scen-station-end{
+    font-size: 26px;
+}
+[data-dpr="3"] .scen-station-start, [data-dpr="3"] .scen-station-end{
+    font-size: 39px;
+}
+.needtoknow{
+    width: 140*@baserem;
+    height: 60*@baserem;
+    line-height: 60*@baserem;
+    text-align: center;
+    border-top-left-radius: 30*@baserem;
+    border-bottom-left-radius: 30*@baserem;
+    background-color: #f46610;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -30*@baserem;
+    right: -5%;
+}
+.time-sider-station{
+    width: 115*@baserem;
+    font-size: 12px;
+    color: #959595;
+    word-break: break-all;
+    padding-left: 30*@baserem;
+    background: url(../img/round22.png) left center no-repeat;
+    background-size: 15*@baserem 15*@baserem;
+}
+[data-dpr="2"] .time-sider-station{
+    font-size: 24px;
+}
+[data-dpr="3"] .time-sider-station{
+    font-size: 36px;
+}
+.arrive-time-sider{
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    padding: 17*@baserem 0;
+    -webkit-box-pack: start;
+}
+.route-wrapper{
+    background-color: #fff;
+    padding: 23*@baserem 0;
+}
+.introduction-title{
+    font-size: 13px;
+    color: #000;
+    margin-bottom: 23*@baserem;
+    padding: 0 4%;
+}
+[data-dpr="2"] .introduction-title{
+    font-size: 26px;
+}
+[data-dpr="3"] .introduction-title{
+    font-size: 39px;
+}
+.introduction-content{
+    font-size: 11px;
+    color: #959595;
+    margin-bottom: 10*@baserem;
+    padding: 0 4%;
+}
+[data-dpr="2"] .introduction-content{
+    font-size: 22px;
+}
+[data-dpr="3"] .introduction-content{
+    font-size: 33px;
+}
+.route-distribute-wrapper{
+    margin-top: 20*@baserem;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.route-distribute{
+    width: 999*@baserem;
+    display: block
+}
+/*---------------------------------*/
+.route-distribute li{   
+    width: 64*@baserem;
+    display: block;
+    float: left;
+    vertical-align: top;
+    padding-top: 25*@baserem;
+    box-sizing: border-box;
+    text-align: center; 
+    white-space: pre-wrap;  
+    background: url(../img/linestyle.png) center top no-repeat,url(../img/linestylebg.png) center 9*@baserem no-repeat;
+    background-size: 20*@baserem 20*@baserem,100% 2px;
+    position: relative;
+}
+.route-distribute .linestyle1{
+    background: url(../img/linestyle.png) center top no-repeat,url(../img/linestylebg.png) center 9*@baserem no-repeat;
+    background-size: 20*@baserem 20*@baserem,100% 2px;
+}
+.route-distribute .linestyle2{
+    background: url(../img/linestyle2.png) center top no-repeat,url(../img/linestylebg.png) center 9*@baserem no-repeat;
+    background-size: 20*@baserem 20*@baserem,100% 2px; 
+    color: #7bc70d;
+}
+.route-distribute .linestyle1-top{
+    background: url(../img/linestyleTop.png) center top no-repeat,url(../img/linestylebg.png) center 9*@baserem no-repeat;
+    background-size: 20*@baserem 20*@baserem,100% 2px;
+}
+.route-distribute .linestyle2-top{
+    background: url(../img/linestyle2Top.png) center top no-repeat,url(../img/linestylebg.png) center 9*@baserem no-repeat;
+    background-size: 20*@baserem 20*@baserem,100% 2px;
+}
+.route-distribute .linestyle1-bottom{
+    background: url(../img/linestyleBottom.png) center top no-repeat,url(../img/linestylebg.png) center 9*@baserem no-repeat;
+    background-size: 20*@baserem 20*@baserem,100% 2px;
+}
+.route-distribute .linestyle2-bottom{
+    background: url(../img/linestyle2Bottom.png) center top no-repeat,url(../img/linestylebg.png) center 9*@baserem no-repeat;
+    background-size: 20*@baserem 20*@baserem,100% 2px;
+}
+.route-distribute .linestyle2 .route-location{
+    color: #7bc70d;
+}
+.route-distribute .linestyle2-top .route-location{
+    color: #7bc70d;
+}
+.route-distribute .linestyle2-bottom .route-location{
+    color: #7bc70d;
+}
+/*---------------------------------*/
+.route-location{   
+    margin: 0 auto;
+    font-size: 11px;
+    color: #313131;
+    text-align: center;
+}
+[data-dpr="2"] .route-location{
+    font-size: 22px;
+}
+[data-dpr="3"] .route-location{
+    font-size: 33px;
+}
+.scenicspot{
+    margin-top: 30*@baserem;
+    padding: 60*@baserem 4% 30*@baserem 4%;
+    position: relative;
+    height: 350*@baserem;
+    overflow: hidden;
+}
+.inspectTipes{
+    width: 100%;
+    font-size: 13px;
+    color: #313131;  
+    position: absolute;
+    top: 12*@baserem;
+    right: 100%;  
+    padding-left: 4%;
+    box-sizing: border-box;
+}
+[data-dpr="2"] .inspectTipes{
+    font-size: 26px;
+}
+[data-dpr="3"] .inspectTipes{
+    font-size: 39px;
+}
+@-webkit-keyframes lightSpeedIn{
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes lightSpeedIn{
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.lightSpeedIn{
+  -webkit-animation: lightSpeedIn 2s ease-out 1s backwards;
+  animation: lightSpeedIn 2s ease-out 1s backwards;
+}
+
+
+
+
+
+
+
+
+.scenic-spot-pic1,.scenic-spot-pic2{
+    width: 100%;
+    height: 100%;
+    display: block;  
+}
+.scenic-spot-pic2{
+    position: absolute;
+    bottom: 30*@baserem;
+    left: 104%;
+    z-index: 10;
+}
+.shadeBox{
+    width: 92%;
+    height: 100*@baserem;
+    line-height: 100*@baserem;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    bottom: 30*@baserem;
+    left: 4%;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    z-index: 20;
+}
+[data-dpr="2"] .shadeBox{
+    font-size: 30px;
+}
+[data-dpr="3"] .shadeBox{
+    font-size: 45px;
+}
+.scenery-tourbus .scenery-left{
+    float: right;
+}
+.scenery-tourbus .scenery-right{
+    float: left;
+}
+/*==========旅游巴士 结束==========*/
+/*==========购票页面 开始==========*/
+.buyticbg{
+    background-color: #efefef;
+    padding-bottom: 100*@baserem;
+}
+.ticket-select{
+    background-color: #fff;
+    padding: 40*@baserem 4%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 20*@baserem;
+    -webkit-box-pack: justify;
+}
+.ticket-select-items{
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+}
+.select-sta{
+    padding-left: 66*@baserem;
+    height: 66*@baserem;
+    line-height: 66*@baserem;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eeeeee;
+    background: url(../img/bus.png) left center no-repeat;
+    background-size: 45*@baserem 41*@baserem;
+    -webkit-box-pack: start;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 15px;
+}
+[data-dpr="2"] .select-sta{
+    font-size: 30px;
+}
+[data-dpr="3"] .select-sta{
+    font-size: 45px;
+}
+.goback{
+    width: 27*@baserem;
+    height: 18*@baserem;
+    display: block;
+    margin: 0 16*@baserem;
+}
+.select-sta-del{
+    font-size: 13px;
+    padding: 16*@baserem 0;
+    -webkit-box-pack: start;
+}
+[data-dpr="2"] .select-sta-del{
+    font-size: 26px;
+}
+[data-dpr="3"] .select-sta-del{
+    font-size: 39px;
+}
+.del-sta,.del-end{
+    width: 110*@baserem;
+    word-break: break-all;
+    text-align: center;
+}
+.day-btn{
+    font-size: 15px;
+    width: 130*@baserem;
+    height: 100*@baserem; 
+    line-height: 100*@baserem;
+    text-align: center;
+    color: #a0a0a0;  
+    background-color: #e5e5e5;
+    border-radius: 15*@baserem; 
+}
+.day-btn:nth-child(1){
+    margin-right: 50*@baserem;
+}
+.day-checked{
+    color: #fff;
+    background-color: #f46610;
+}
+[data-dpr="2"] .day-btn{
+    font-size: 30px;
+}
+[data-dpr="3"] .day-btn{
+    font-size: 45px;
+}
+.buyTickets-getDate{
+    background-color: #fff;
+}
+.getDateTop{
+    padding: 22*@baserem 20*@baserem;
+    -webkit-box-pack: justify;
+}
+.beforeDate,.afterDate{
+    width: 24*@baserem;
+    height: 28*@baserem;
+    display: block;
+}
+.nowDate{
+    font-size: 16px;
+    color: #7bc70d;
+}
+[data-dpr="2"] .nowDate{
+    font-size: 32px;
+}
+[data-dpr="3"] .nowDate{
+    font-size: 48px;
+}
+.buyTickets-weeks-wrapper,.buyTickets-day-list{
+    padding: 0 2%;
+    box-sizing: border-box;  
+}
+.buyTickets-weeks{
+    background-color: #7bc70d;
+}
+.buyTickets-weeks>li{
+    width: 14.2857143%;
+    color: #fff;
+    background-color: #7bc70d;
+    box-sizing: border-box;
+    padding-top: 10*@baserem;
+    padding-bottom: 10*@baserem;
+    text-align: center;
+    font-size: 16px;
+}
+[data-dpr="2"] .buyTickets-weeks>li{
+    font-size: 32px;
+}
+[data-dpr="3"] .buyTickets-weeks>li{
+    font-size: 48px;
+}
+.buyTickets-day-list{
+    margin-top: 20*@baserem;
+}
+.day-list-ul>li{
+    width: 14.2857143%;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 18*@baserem;
+    padding-bottom: 18*@baserem;
+    text-align: center;
+    font-size: 16px;
+}
+.now-date{
+    color: #fff !important;
+    background-color: #7bc70d;
+}
+.day-list-ul{
+    overflow: hidden;
+}
+[data-dpr="2"] .day-list-ul>li{
+    font-size: 32px;
+}
+[data-dpr="3"] .day-list-ul>li{
+    font-size: 48px;
+}
+.date{
+    color: #000000;
+}
+.dateBefore,.dateafter,.date-now-before{
+    color: #d3d3d3;
+}
+.purchaseBox{
+    background-color: #fff;  
+    margin-top: 30*@baserem; 
+    -webkit-box-pack: justify;
+    padding: 26*@baserem 4%;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+.purchase-wrapper{
+    font-size: 14px;
+    color: #000000;
+}
+[data-dpr="2"] .purchase-wrapper{
+    font-size: 28px;
+}
+[data-dpr="3"] .purchase-wrapper{
+    font-size: 42px;
+}
+.purchase-wr{
+    -webkit-box-pack: start;
+}
+.purchase-fn{
+    margin-right: 28*@baserem;
+}
+.purchase-size{
+    margin-right: 20*@baserem;
+}
+.purchase-price{
+    color: #f46610;
+}
+.amount-less,.amount-more,.amount-wra{
+    width: 62*@baserem;
+    height: 62*@baserem;
+    line-height: 62*@baserem;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid #d2d2d2;
+}
+.amount-less{
+    border-radius: none;
+}
+.amount-more{
+    border-left: none;
+}
+[data-dpr="2"] .amount-less{
+    font-size: 30px;
+}
+[data-dpr="3"] .amount-less{
+    font-size: 45px;
+}
+[data-dpr="2"] .amount-more{
+    font-size: 30px;
+}
+[data-dpr="3"] .amount-more{
+    font-size: 45px;
+}
+.amount-wra{
+    width: 95*@baserem;
+    height: 62*@baserem;
+    line-height: 62*@baserem;
+    text-align: center;
+    font-size: 62px;
+    border: 1px solid #7bc70d;
+    background-color: #7bc70d;
+    color: #fff;
+    font-size: 15px;
+}
+[data-dpr="2"] .amount-wra{
+    font-size: 30px;
+}
+[data-dpr="3"] .amount-wra{
+    font-size: 45px;
+}
+.bottom-pay{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    -webkit-box-pack: justify;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    padding-left: 4%;
+    box-sizing: border-box;
+}
+.left-count{
+    font-size: 14px;
+    color: #000000;
+}
+.count-total-prices{
+    font-size: 14px;
+    color: #f46610;
+    margin-left: 22*@baserem;
+}
+[data-dpr="2"] .count-total-prices{
+    font-size: 28px;
+}
+[data-dpr="3"] .count-total-prices{
+    font-size: 42px;
+}
+[data-dpr="2"] .left-count{
+    font-size: 28px;
+}
+[data-dpr="3"] .left-count{
+    font-size: 42px;
+}
+.sider-right{
+    font-size: 15px;
+    color: #fff;
+    width: 240*@baserem;
+    height: 100*@baserem;
+    line-height: 100*@baserem;
+    text-align: center;
+    background-color: #7bc70d;
+}
+[data-dpr="2"] .sider-right{
+    font-size: 30px;
+}
+[data-dpr="3"] .sider-right{
+    font-size: 45px;
+}
+.left-wrapper-fl{
+    width: 100%;
+    -webkit-box-pack: start;
+    box-sizing: border-box;
+}
+.canSelect{
+    color: #00ABED;
+}
+
+
+/*==========购票页面 结束==========*/

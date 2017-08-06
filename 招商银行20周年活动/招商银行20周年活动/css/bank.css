@@ -1,0 +1,391 @@
+.wh100{
+	width: 100%;
+	height: 100%;
+}
+.uploadPic{
+	width: 100%;
+	height: 90%;
+	padding-top: 0.45rem;
+}
+.uploadPicTop{
+	width: 6rem;
+	margin: 0 auto;
+	line-height: 0.76rem;
+	background: #c8132d;
+	-webkit-border-radius: 0.16rem;
+	font-size: 0.32rem;
+	color: #fff;
+	text-align: center;
+}
+.uploadPicNav{
+	width: 100%;
+	height: 7.18rem;
+	margin-top: 0.5rem;
+}
+.uploadPicNav img{
+	width: 100%;
+	display: block;
+}
+.uploadPicBot{
+	width: 6rem;
+	margin: 0 auto;
+	font-size: 0.24rem;
+	color: #fff;
+	margin-top: 6.35rem;
+	position: fixed;
+	bottom: 0.4rem;
+	left: 0;
+	right: 0;
+	display: none;
+}
+.uploadPicBotUp{
+	background: #C8132D;
+	-webkit-border-radius: 0.16rem;
+}
+.uploadPicBotUpTop{
+	width: 5.55rem;
+	margin: 0 auto;
+	line-height: 0.66rem;
+	padding-left: 0.25rem;
+}
+.borderBottom{
+	border-bottom: 1px solid #fff;
+}
+.uploadPicBotDown{
+	line-height: 0.75rem;
+	background: #C8132D;
+	text-align: center;
+	-webkit-border-radius: 0.16rem;
+	margin-top: 0.2rem;
+}
+
+
+/*确认照片页面*/
+.red{
+	background: #c8132d;
+}
+.confirmPic{
+	width: 100%;
+	padding:0 0.3rem;
+	padding-top: 0.35rem;
+	box-sizing: border-box;
+}
+.confirmPicHead{
+	width: 100%;
+	margin: 0 auto;
+	background: #fff;
+	padding: 0.3rem;
+	box-sizing: border-box;
+}
+.confirmPicHeadTop{
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.confirmPicHeadTop img{
+	width: 100%;
+	display: block;
+}
+.confirmPicHeadBot{
+	width: 100%;
+	margin-top: 0.25rem;
+	padding-bottom: 0.35rem;
+	-webkit-box-pack: justify;
+}
+.confirmPicHeadBot_left{
+	width: 30%;
+}
+.confirmPicHeadBot_left img{
+	width: 100%;
+	display: block;
+}
+.confirmPicHeadBot_right{
+	width: 60%;
+}
+.confirmPicHeadBot_rightTop{
+	width: 100%;
+	margin-bottom: 0.1rem;
+	text-align: center;
+}
+.confirmPicHeadBot_rightTop img{
+	width: 100%
+}
+.confirmPicHeadBot_rightBot img{
+	height: 0.93rem;
+	display: block;
+	margin: 0 auto;
+}
+.confirmPicToggle{
+	width: 100%;
+	margin-top: 0.3rem;
+	box-sizing: border-box;
+	position: relative;
+}
+.confirmPicToggle .swiper-container{
+	width: 100%;
+	height: 0.6rem;
+	padding: 0.3rem 0;
+	background: #fff;
+	-webkit-border-radius: 0.2rem;
+}
+.confirmPicToggle .swiper-slide{
+	border-right: 1px solid #59514f;
+	box-sizing: border-box;
+	position: relative;
+}
+.confirmPicToggle .swiper-slide:last-child{
+	border-right: none;
+}
+.confirmPicToggle .swiper-slide img{
+	height: 0.6rem;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.confirmPicFoot{
+	width: 100%;
+	margin-top: 0.2rem;
+	margin-top: 0.3rem;
+}
+.confirmPicFootBtn{
+	width: 48%;
+	font-size: 0.26rem;
+	line-height: 0.75rem;
+	color: #000;
+	text-align: center;
+	background: #fff;
+	-webkit-border-radius: 0.15rem;
+}
+.next_btn{
+	width: 0.14rem;
+	height: 0.48rem;
+	display: block;	
+	position: absolute;
+	top: 50%;
+	margin-top: -0.24rem;
+	right: -0.22rem;
+}
+.prev_btn{
+	width: 0.14rem;
+	height: 0.48rem;
+	display: block;	
+	position: absolute;
+	top: 50%;
+	margin-top: -0.24rem;
+	left: -0.22rem;
+	transform: rotate(180deg);
+}
+/*保存图片界面开始*/
+.gray{
+	background: #cbcbcc;
+}
+.savePic{
+	width: 100%;
+	padding: 0 0.3rem;
+	padding-top: 0.5rem;
+	box-sizing: border-box;
+}
+.querimg{
+	margin-left: 4%;
+}
+#share{
+	margin-right: 4%;
+}
+/*确认资料界面开始*/
+.confirmInfo{
+	width: 100%;
+	background: url(../images/confirmInfoBg.jpg) no-repeat;
+	background-size: 100% 100%;	
+}
+/*iphone4竖屏*/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+and (orientation : portrait){
+	.confirmInfo{
+		width: 100%;
+		height: 100%;
+		background: url(../images/confirmInfoBg.jpg) no-repeat;
+		background-size: 100% 100%;	
+	}
+	.confirmInfoFoot{
+	margin-top: 0.2rem;
+	}
+}
+/*ipad竖屏*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait){
+	.confirmInfo{
+		width: 100%;
+		height: 100%;
+		background: url(../images/confirmInfoBg.jpg) no-repeat;
+		background-size: 100% 100%;	
+	}
+}
+.confirmInfoHeadBox{
+	padding-top: 0.75rem;
+}
+.confirmInfoHead{
+	width: 5.8rem;
+	margin:0 auto;
+}
+.confirmInfoHead h1{
+	font-size: 0.24rem;
+	margin-bottom: 0.3rem;
+	padding-left: 0.25rem;
+	color: #fff;
+}
+.confirmInfoHeadInput{
+	width: 100%;
+	padding: 0.22rem 0;
+	background: #fff;
+	margin-bottom: 0.22rem;
+	-webkit-border-radius: 0.2rem;
+}
+.confirmInfoHeadInput input{
+	width: 80%;
+	margin-left: 0.4rem;
+	background: none;
+	display: block;
+	font-size: 0.24rem;
+	color: #231815;
+}
+.confirmInfoHeadInput input::-webkit-input-placeholder{
+	color: #231815;
+}
+.confirmInfoNav{
+	width: 5.2rem;
+	margin: 0 auto;
+	margin-top: 1rem;
+}
+.confirmInfoNav img{
+	width: 5.2rem;
+	display: block;
+}
+.confirmInfoFoot{
+	width: 2.85rem;
+	line-height: 0.65rem;
+	color: #231815;
+	font-size: 0.24rem;
+	text-align: center;
+	background: #fff;
+	margin: 0 auto;
+	margin-top: 1rem;
+	-webkit-border-radius: 0.15rem;
+}
+
+/*大屏手机兼容*/
+@media only screen and (max-device-width : 320px){
+/*iPhone 5s Portrait*/	
+.confirmPicFoot{
+	padding-bottom: 0.4rem;
+}
+
+}
+@media screen  and (max-device-width : 375px){
+/*iPhone 6 Portrait*/	
+	
+}
+@media only screen and (max-device-width: 414px){
+/*iPhone 6plus Portrait*/
+
+
+}
+/*规则页面*/
+.rule{
+	width: 100%;
+	background: url(../images/confirmInfoBg.jpg) no-repeat;
+	background-size: 100% 100%;
+	padding-bottom: 0.75rem;
+}
+.ruleHead{
+	width: 100%;
+}
+.ruleHead img{
+	width: 5.61rem;
+	display: block;
+	margin: 0 auto;
+	padding-top: 0.5rem;
+}
+.ruleNav{
+	width: 5.5rem;
+	margin: 0 auto;
+	margin-top: 1.35rem;
+}
+.ruleTxt{
+	margin-bottom: 0.45rem;
+	overflow: hidden;
+}
+.ruleTxt h1{
+	font-size: 0.38rem;
+	color: #fff;
+	font-weight: bold;
+	font-family: "microsoft yahei";
+	margin-bottom: 0.1rem;
+}
+.ruleTxt h2{
+	font-size: 0.34rem;
+	color: #fff;
+	font-weight: bold;
+	font-family: "microsoft yahei";
+}
+.ruleTxt p{
+	width: 100%;
+	font-size: 0.26rem;
+	line-height: 0.36rem;
+	color: #fff;
+	font-family: "microsoft yahei";
+	float: left;
+}
+.ruleTxt p span{
+	float: left;
+	display: block;
+}
+.ruleTxt p i{
+	width: 90%;
+	float: left;
+	padding-left: 0.15rem;
+}
+/*分享蒙层*/
+.shareCover{
+	width: 100%;
+	height: 100%;
+	background: #5c5757;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.shareCoverImgBox{
+	padding-top: 0.15rem;
+}
+.shareCoverImgBox img{
+	width: 4.14rem;
+	height: 5.27rem;
+	display: block;
+	margin-left: 28%;
+}
+
+.confirmPicHead2{
+	width: 5.8rem;
+	margin: 0 auto;
+	
+}
+.confirmPicHead2 img{
+	width: 5.8rem;
+	display: block;
+}
+.confirmPicTxt{
+	font-size: 0.24rem;
+	color: #868484;
+	text-align: center;
+	margin-top: 0.25rem;
+}
+
+

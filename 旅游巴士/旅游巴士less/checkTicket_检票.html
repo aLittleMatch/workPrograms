@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/flexible_css.debug.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/default.css"/>
+		<link rel="stylesheet/less" type="text/css" href="css/tickerstyle.less"/>
+		<script src="js/less.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>检票</title>
+	</head>
+	<body>
+		<div class="container widthBox checkTic">
+			<!--一日票-->
+			<div class="onedayTic">
+				<div class="tic-time flexbox">
+					<h1 class="tic-time-item1">望美金陵旅游巴士L1</h1>
+					<h1 class="tic-time-item2">一日票</h1>
+					<h1 class="tic-time-item3">2016年6月22日</h1>
+				</div>
+				<div class="tic-place">
+					<div class="tic-place-left">
+						<div class="start-end flexbox">
+							<h1 class="startPlace">阅江楼阅江楼</h1>
+							<img class="line_place" src="img/line_place.png"/>
+							<h1 class="endPlace">牛首山牛首山</h1>
+						</div>
+						<div class="start-end-time">
+							<div class="start-time">06:00-22:00</div>
+							<div class="end-time">06:00-22:00</div>
+						</div>
+					</div>
+					<div class="tic-place-right flexbox">
+						<img src="img/erweima.png"/>
+					</div>
+				</div>
+			</div>
+			<!--二日票-->
+			<div class="onedayTic twodayTic">
+				<div class="tic-time flexbox">
+					<h1 class="tic-time-item1">望美金陵旅游巴士L1</h1>
+					<h1 class="tic-time-item2">二日票</h1>
+					<h1 class="tic-time-item3">6月22日-6月23日</h1>
+					<img class="unuseSign" src="img/unuse.png"/>
+				</div>
+				<div class="tic-place">
+					<div class="tic-place-left">
+						<div class="start-end flexbox">
+							<h1 class="startPlace">阅江楼</h1>
+							<img class="line_place" src="img/line_place.png"/>
+							<h1 class="endPlace">牛首山</h1>
+						</div>
+						<div class="start-end-time">
+							<div class="start-time">06:00-22:00</div>
+							<div class="end-time">06:00-22:00</div>
+						</div>
+					</div>
+					<div class="tic-place-right flexbox">
+						<img src="img/erweima.png"/>
+					</div>
+				</div>
+			</div>
+			
+			<!--路况实时查询-->
+			<div class="queryInTime">
+				<div class="queryInTimeSide">线路实时状态查询</div>
+				<div class="queryInTimeSide">退票</div>
+			</div>
+		</div>
+	</body>
+</html>

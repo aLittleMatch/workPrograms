@@ -1,0 +1,56 @@
+<!doctype html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>里约奥运</title>
+			<meta content="yes" name="apple-mobile-web-app-capable" /><!-- iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览 -->
+			<meta content="telephone=no" name="format-detection" /><!-- 告诉设备忽略将页面中的数字识别为电话号码 -->
+			<meta content="black" name="apple-mobile-web-app-status-bar-style" /><!-- iphone的私有标签，它指定的iphone中safari顶端的状态条的样式 -->
+			<script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+			<link href="css/default.css" rel="stylesheet" type="text/css" media="screen"/>
+			<link rel="stylesheet/less" type="text/css" href="css/style.less"/>
+			<script src="js/less.min.js" type="text/javascript" charset="utf-8"></script>
+			<script src="js/jquery.js"></script>
+		</head>
+
+	<body>
+		<div class="bgBox">
+			<div class="musicBox">
+				<img src="images/musicIcon.png">
+				<img src="images/guideIcon.png">
+			</div>
+			<img src="images/indexImg1.png" class="indexImg1">
+			<img src="images/indexImg2.png" class="indexImg2">
+			<img src="images/indexImg3.png" class="indexImg3">
+			<div class="indexbtnBox flexbox indextaggle">
+				<div class="flexright">
+					<img src="images/enterBtn.png">
+				</div>
+				<div class="flexright" id="signBtn">
+					<img src="images/signBtn.png">
+				</div>
+			</div>
+		</div>
+		
+		<!--签到弹窗开始-->
+		<div class="indexHover">
+			<div class="indexHoverNav"><p>今天签过啦，明天再来吧</p></div>
+			<div class="select-btn flexbox">
+				<div class="flexright" id="sure"><img src="images/sure.png"></div>
+			</div>
+		</div>
+		<!--签到弹窗结束-->
+		<script>
+			$(function(){
+				$("#signBtn").click(
+					function(){
+						$(".indexHover").css("display","block");
+					})
+				$("#sure").click(
+					function(){
+						$(".indexHover").css("display","none");
+					})				
+			})
+		</script>
+	</body>
+</html>

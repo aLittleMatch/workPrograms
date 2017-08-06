@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/flexible_css.debug.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/default.css"/>
+		<link rel="stylesheet/less" type="text/css" href="css/chartered.less"/>
+		<link rel="stylesheet/less" type="text/css" href="css/order.less"/>
+		<script src="js/less.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>信息提交</title>
+	</head>
+	<body>
+		<!--头部选择-->
+		<div class="order_select widthBox">
+			<li class="order_items selected-order">全部</li>
+			<li class="order_items">审核中</li>
+			<li class="order_items">待支付</li>
+			<li class="order_items">待派车</li>
+			<li class="order_items">已派车</li>
+			<li class="order_items">已完成</li>
+		</div>
+		<div class="container widthBox orderbg">
+			<!--列表-->
+			<div class="order_list">
+				<!--待审核-->
+				<div class="orderItems check_pending">
+					<div class="serial-number">编号 JNGJ2016062805</div>
+					<div class="serial-wrapper">
+						<div class="serial-box">
+							<h1 class="serial-start">阅江楼</h1>
+							<h1 class="serial-end">牛首山</h1>
+							<div class="serial-sign">往返</div>
+						</div>
+						<div class="order-state">待审核</div>
+					</div>
+					<div class="serial-date widthBox">
+						<div class="side-date">
+							<h1 class="side-date-info">出发时间</h1>
+							<h2 class="side-date-info">2016-06-25 06:30:00</h2>
+						</div>
+						<div class="side-date">
+							<h1 class="side-date-info">返程时间</h1>
+							<h1 class="side-date-info">2016-06-28 06:30:00</h1>
+						</div>
+					</div>
+				</div>
+				<!--待支付-->
+				<div class="orderItems payment_pending">
+					<div class="serial-number">编号 JNGJ2016062805</div>
+					<div class="serial-wrapper">
+						<div class="serial-box">
+							<h1 class="serial-start">翠屏山</h1>
+							<h1 class="serial-end">玄武湖</h1>
+							<div class="serial-sign">单程</div>
+						</div>
+						<div class="order-state">待支付</div>
+					</div>
+					<div class="payment-box widthBox">
+						<div class="payment-side">报价 ¥2671.00</div>
+						<div class="payment-side payment-imm">立即支付</div>
+						<div class="c"></div>
+					</div>
+					<div class="serial-date widthBox">
+						<div class="payment_serial-date">出发时间 2016-06-25 06:30:00</div>
+					</div>
+				</div>
+				<!--待派车-->
+				<div class="orderItems send_car_pending">
+					<div class="serial-number">编号 JNGJ2016062805</div>
+					<div class="serial-wrapper">
+						<div class="serial-box">
+							<h1 class="serial-start">阅江楼</h1>
+							<h1 class="serial-end">牛首山</h1>
+							<div class="serial-sign">往返</div>
+						</div>
+						<div class="order-state">待派车</div>
+					</div>
+					<div class="serial-date widthBox">
+						<div class="side-date">
+							<h1 class="side-date-info">出发时间</h1>
+							<h2 class="side-date-info">2016-06-25 06:30:00</h2>
+						</div>
+						<div class="side-date">
+							<h1 class="side-date-info">返程时间</h1>
+							<h1 class="side-date-info">2016-06-28 06:30:00</h1>
+						</div>
+					</div>
+				</div>
+				<!--已派车-->
+				<div class="orderItems send_car_finish_pending">
+					<div class="serial-number">编号 JNGJ2016062805</div>
+					<div class="serial-wrapper">
+						<div class="serial-box">
+							<h1 class="serial-start">阅江楼</h1>
+							<h1 class="serial-end">牛首山</h1>
+							<div class="serial-sign">往返</div>
+						</div>
+						<div class="order-state">已派车</div>
+					</div>
+					<div class="serial-date widthBox">
+						<div class="side-date">
+							<h1 class="side-date-info">出发时间</h1>
+							<h2 class="side-date-info">2016-06-25 06:30:00</h2>
+						</div>
+						<div class="side-date">
+							<h1 class="side-date-info">返程时间</h1>
+							<h1 class="side-date-info">2016-06-28 06:30:00</h1>
+						</div>
+					</div>
+				</div>
+				<!--已完成-->
+				<div class="orderItems finish_pending">
+					<div class="serial-number">编号 JNGJ2016062805</div>
+					<div class="serial-wrapper">
+						<div class="serial-box">
+							<h1 class="serial-start">阅江楼</h1>
+							<h1 class="serial-end">牛首山</h1>
+							<div class="serial-sign">包天</div>
+						</div>
+						<div class="order-state">已完成</div>
+					</div>
+					<div class="serial-date widthBox">
+						<div class="side-date">
+							<h1 class="side-date-info">出发时间</h1>
+							<h2 class="side-date-info">2016-06-25 06:30:00</h2>
+						</div>
+						<div class="side-date">
+							<h1 class="side-date-info">返程时间</h1>
+							<h1 class="side-date-info">2016-06-28 06:30:00</h1>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!--底部联系电话-->
+		<div class="contact-tel">
+			<div class="contact-side date-side flexbox">
+				<img class="time_side_bg" src="img/time_side_bg.png" />
+				<div class="time_side_info">
+					<div class="info-text">周一 ~ 周五 08:30-23:00</div>
+					<div class="info-text">周六 ~ 周日 09:30-22:00</div>
+				</div>
+			</div>
+			<a href="tel:1111" class="contact-side tel-side flexbox">
+				<img class="contactTelbg" src="img/contactTelbg.png"/>
+				联系我们
+			</a>
+		</div>
+		<!--支付弹窗-->
+		<div class="successful-sub immediate-payment">
+			<div class="sub-info">
+				<img class="zhifubg" src="img/zhifubg.png"/>
+				<h1 class="sign-text text-payment">请选择支付方式</h1>
+				<div class="weixing-payment payment-btn flexbox"><img class="weixingbg" src="img/weixingbg.png"/>微信支付</div>
+				<div class="zhifubao-payment payment-btn flexbox"><img class="zhifubaobg" src="img/zhifubaobg.png"/>支付宝支付</div>
+				<img class="no_sub" src="img/no_sub.png"/>
+			</div>
+		</div>
+		<script>
+			$('.order_items').click(function(){
+				$('.order_items').removeClass('selected-order');
+				$(this).addClass('selected-order');
+			})
+					
+						
+			$('.order_items').eq(0).click(function(){
+				$('.order_list').children().show();
+			});
+			
+			$('.order_items').eq(1).click(function(){
+				$('.check_pending').siblings().hide();
+				$('.check_pending').show();
+			});
+			
+			$('.order_items').eq(2).click(function(){
+				$('.payment_pending').siblings().hide();
+				$('.payment_pending').show();
+			});
+			
+			$('.order_items').eq(3).click(function(){
+				$('.send_car_pending').siblings().hide();
+				$('.send_car_pending').show();
+			});
+			
+			$('.order_items').eq(4).click(function(){
+				$('.send_car_finish_pending').siblings().hide();
+				$('.send_car_finish_pending').show();
+			});
+			
+			$('.order_items').eq(5).click(function(){
+				$('.finish_pending').siblings().hide();
+				$('.finish_pending').show();
+			});
+			
+			$('.payment-imm').click(function(){
+				$('.immediate-payment').show();
+			});
+			
+			$('.no_sub').click(function(){
+				$('.immediate-payment').hide();
+			})
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,1652 @@
+body,
+html {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: #efefef;
+}
+table,
+th,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.c {
+  clear: both;
+}
+.Box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+}
+.flexbox {
+  display: -moz-box;
+  /* Firefox */
+  display: -webkit-box;
+  /* Safari and Chrome */
+  display: -ms-flexbox;
+  /* Internet Explorer 10 */
+  display: box;
+  -webkit-box-align: center;
+}
+.flexleft {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  /* Firefox */
+  box-flex: 1;
+  position: relative;
+}
+.flexright {
+  position: relative;
+  color: #8f8f8f;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+}
+/*垂直居中*/
+.alignCenterBox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/*分居左右，垂直居中*/
+.justifyBetweenBox {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-between;
+}
+.margin1 {
+  margin-top: 0.234375rem;
+}
+.padding1 {
+  padding-top: 1.40625rem;
+}
+.green {
+  background: #7bc70d;
+}
+.blue {
+  background: #0294e7;
+}
+.orange {
+  background: #f46610!important;
+  color: #fff!important;
+}
+/*旅游巴士首页开始*/
+.index {
+  width: 100%;
+  padding-bottom: 1.703125rem;
+}
+.indexBanner {
+  width: 100%;
+}
+.indexBanner img {
+  width: 100%;
+  display: block;
+}
+.indexSearchBox {
+  width: 100%;
+  height: 1.71875rem;
+  background: #fff;
+}
+.indexSearch {
+  width: 9.53125rem;
+  height: 1.0625rem;
+  border: 1px solid #d2d2d2;
+  -webkit-border-radius: 0.390625rem;
+}
+.indexSearch input[type="text"] {
+  width: 7.5rem;
+  height: 0.46875rem;
+  font-size: 30px;
+  color: #a0a0a0;
+  background: none;
+  padding: 0.296875rem 0 0.296875rem 0.53125rem;
+}
+[data-dpr="1"] .indexSearch input[type="text"] {
+  font-size: 15px;
+}
+[data-dpr="3"] .indexSearch input[type="text"] {
+  font-size: 45px;
+}
+.indexSearch input[type="text"]:-webkit-input-placeholder {
+  font-size: 30px;
+  color: #a0a0a0;
+}
+[data-dpr="1"] .indexSearch input[type="text"]:-webkit-input-placeholder {
+  font-size: 15px;
+}
+[data-dpr="3"] .indexSearch input[type="text"]:-webkit-input-placeholder {
+  font-size: 45px;
+}
+.indexSearch button {
+  width: 0.625rem;
+  height: 0.609375rem;
+  background: url(../images/indexSearchBtn.png) no-repeat;
+  background-size: 100% 100%;
+  float: right;
+  margin-right: 0.34375rem;
+  margin-top: 0.21875rem;
+}
+.indexNearest {
+  width: 100%;
+  background: #f8f8f8;
+  padding: 0.34375rem 0;
+  border-bottom: 1px solid #fff;
+}
+.indexNearestLeft {
+  width: 0.375rem;
+  height: 0.4375rem;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0.3125rem 0 0.703125rem;
+}
+.indexNearestLeft img {
+  width: 0.375rem;
+  height: 0.4375rem;
+}
+.indexNearestRight {
+  display: inline-block;
+}
+.indexNearestRight h1 {
+  font-size: 26px;
+  line-height: 0.5rem;
+  margin-bottom: 0.234375rem;
+  color: #000;
+}
+[data-dpr="1"] .indexNearestRight h1 {
+  font-size: 13px;
+}
+[data-dpr="3"] .indexNearestRight h1 {
+  font-size: 39px;
+}
+.indexNearestRight h1 span {
+  color: #7bc70d;
+}
+.indexNearestRight h2 {
+  font-size: 22px;
+  color: #7d7d7d;
+}
+[data-dpr="1"] .indexNearestRight h2 {
+  font-size: 11px;
+}
+[data-dpr="3"] .indexNearestRight h2 {
+  font-size: 33px;
+}
+.indexTicketBox {
+  width: 100%;
+  padding: 0.09375rem 0;
+}
+.indexTicket {
+  width: 95%;
+  border: 1px solid #dcdcdc;
+  -webkit-border-radius: 0.125rem;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 0.15625rem;
+}
+.indexTicketTop {
+  height: 1.09375rem;
+  border-bottom: 1px solid #eeeeee;
+}
+.indexTicketTop h1 {
+  font-size: 28px;
+  color: #000;
+}
+[data-dpr="1"] .indexTicketTop h1 {
+  font-size: 14px;
+}
+[data-dpr="3"] .indexTicketTop h1 {
+  font-size: 42px;
+}
+.indexTicketTop h1 img {
+  width: 0.484375rem;
+  height: 0.4375rem;
+  padding-right: 0.234375rem;
+  padding-left: 0.390625rem;
+  -webkit-transform: translateY(0.046875rem);
+}
+.indexTicketTop h2 {
+  font-size: 24px;
+  color: #959595;
+  padding-right: 0.3125rem;
+}
+[data-dpr="1"] .indexTicketTop h2 {
+  font-size: 12px;
+}
+[data-dpr="3"] .indexTicketTop h2 {
+  font-size: 36px;
+}
+.indexTicketTop h2 img {
+  width: 0.4375rem;
+  height: 0.4375rem;
+  padding-right: 0.234375rem;
+  -webkit-transform: translateY(0.046875rem);
+}
+.indexTicketMid_Left {
+  width: 4.375rem;
+  margin-left: 0.46875rem;
+  float: left;
+  position: relative;
+}
+.indexTicketMid_Left .site p {
+  width: 1.484375rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.lineHeight1 {
+  line-height: 0.96875rem;
+}
+.borderBot1 {
+  border-bottom: 1px solid #e5e5e5;
+}
+#margin1{
+	margin: 0 0.3125rem 0 0.3125rem!important;
+}
+.circleBtn {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+}
+.circleBtn img {
+  width: 0.75rem;
+  height: 0.75rem;
+  display: block;
+}
+.indexTicketMid_Right {
+  width: 2.03125rem;
+  height: 0.9375rem;
+  font-size: 32px;
+  line-height: 0.9375rem;
+  color: #fff;
+  background: #7bc70d;
+  text-align: center;
+  -webkit-border-radius: 0.3125rem;
+  margin-right: 0.3125rem;
+}
+[data-dpr="1"] .indexTicketMid_Right {
+  font-size: 16px;
+}
+[data-dpr="3"] .indexTicketMid_Right {
+  font-size: 48px;
+}
+.indexTicketBot {
+  padding: 0 0.9375rem;
+  border-top: 1px solid #eeeeee;
+}
+.indexTicketBot h1 {
+  font-size: 22px;
+  line-height: 0.78125rem;
+  color: #959595;
+}
+[data-dpr="1"] .indexTicketBot h1 {
+  font-size: 11px;
+}
+[data-dpr="3"] .indexTicketBot h1 {
+  font-size: 33px;
+}
+.indexFooter {
+  width: 100%;
+  height: 1.546875rem;
+  border-top: 1px solid #dcdcdc;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+}
+.indexFooter a {
+  width: 50%;
+  height: 1.546875rem;
+  display: block;
+  float: left;
+  font-size: 20px;
+  color: #626262;
+  text-align: center;
+}
+[data-dpr="1"] .indexFooter a {
+  font-size: 10px;
+}
+[data-dpr="3"] .indexFooter a {
+  font-size: 30px;
+}
+.indexFooter a img {
+  height: 0.71875rem;
+  display: block;
+  padding: 0.171875rem 0;
+  margin: 0 auto;
+}
+.indexCurrent {
+  color: #7bc70d!important;
+}
+/*旅游巴士首页结束*/
+/*检查页面开始*/
+.check {
+  width: 100%;
+  background: #efefef;
+}
+.checkNav {
+  width: 9.234375rem;
+  margin: 0 auto;
+  padding-top: 0.3125rem;
+  padding-bottom: 1.5625rem;
+}
+.checkLi {
+  width: 100%;
+  -webkit-box-shadow: 1px 5px 5px #dddcdc;
+  -webkit-border-radius: 10px;
+  background: #fff;
+  border: 1px solid #fff;
+  margin-bottom: 0.390625rem;
+}
+.checkLiTop {
+  width: 100%;
+  height: 3.234375rem;
+  background: url(../images/checkLiTopBg.jpg) no-repeat;
+  -webkit-border-radius: 10px 10px 0 0;
+  background-size: 100%;
+}
+.bg {
+  background: url(../images/checkLiTopBg2.jpg) !important;
+  background-repeat: no-repeat !important;
+  -webkit-border-radius: 10px 10px 0 0;
+  background-size: 100%!important;
+}
+.checkLiTop h1 {
+  font-size: 22px;
+  color: #4b9a03;
+  text-align: center;
+  padding: 0.25rem 0 0.40625rem;
+}
+[data-dpr="1"] .checkLiTop h1 {
+  font-size: 11px;
+}
+[data-dpr="3"] .checkLiTop h1 {
+  font-size: 33px;
+}
+.checkLiTop h2 {
+  font-size: 74px;
+  font-family: "黑体";
+  color: #fff;
+  text-align: center;
+  padding-bottom: 0.359375rem;
+}
+[data-dpr="1"] .checkLiTop h2 {
+  font-size: 37px;
+}
+[data-dpr="3"] .checkLiTop h2 {
+  font-size: 111px;
+}
+.checkLiTop h3 {
+  font-size: 22px;
+  font-family: "黑体";
+  color: #f9f8f8;
+  text-align: center;
+}
+[data-dpr="1"] .checkLiTop h3 {
+  font-size: 11px;
+}
+[data-dpr="3"] .checkLiTop h3 {
+  font-size: 33px;
+}
+.white {
+  color: #e5e5e5!important;
+}
+.black {
+  color: #000!important;
+}
+.checkLiBot {
+  width: 100%;
+}
+.checkLiBotLeft {
+  width: 5.15625rem;
+  display: inline-block;
+  padding-top: 0.15625rem;
+  display: table-cell;
+}
+.checkLiBotRight {
+  width: 3.875rem;
+  display: inline-block;
+  display: table-cell;
+}
+.checkLiBotRight img {
+  width: 3.875rem;
+  height: 1.4375rem;
+  padding-right: 0.234375rem;
+  padding-top: 0.15625rem;
+  vertical-align: middle;
+}
+.checkLiBotAddress {
+  width: 94%;
+  margin: 0 auto;
+  border-bottom: 1px solid #bfbfbf;
+}
+.checkLiBotAddress .site p{
+	width: 1.40625rem!important;
+}
+.site {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  padding: 0.3125rem 0;
+}
+.site p {
+  width: 1.5625rem;
+  font-size: 26px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+[data-dpr="1"] .site p {
+  font-size: 13px;
+}
+[data-dpr="3"] .site p {
+  font-size: 39px;
+}
+.checkLiBotAddress img {
+  width: 0.390625rem;
+  height: 0.28125rem;
+  margin:0 0.15625rem;
+}
+.greenBorder {
+  width: 0.3125rem;
+  height: 0.3125rem;
+  border: 0.09375rem solid #7bc70d;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  margin-right: 0.125rem;
+  transform: scale(0.5);
+}
+.orangeBorder {
+  width: 0.3125rem;
+  height: 0.3125rem;
+  border: 0.09375rem solid #f46610;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  margin-right: 0.125rem;
+  transform: scale(0.5);
+}
+.checkLiBotDate {
+  width: 100%;
+  display: block;
+  display: -webkit-flex;
+  -webkit-justify-content: space-around;
+}
+.checkLiBotDate h5 {
+  font-size: 20px;
+  line-height: 0.5625rem;
+  color: #959595;
+  display: inline-block;
+}
+[data-dpr="1"] .checkLiBotDate h5 {
+  font-size: 10px;
+}
+[data-dpr="3"] .checkLiBotDate h5 {
+  font-size: 30px;
+}
+.checkMore {
+  width: 100%;
+  background: #7bc70d;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  line-height: 1.5625rem;
+  position: fixed;
+  bottom: 0;
+}
+[data-dpr="1"] .checkMore {
+  font-size: 15px;
+}
+[data-dpr="3"] .checkMore {
+  font-size: 45px;
+}
+/*检查页面结束*/
+/*景点详情页面开始*/
+.viewDetail {
+  width: 100%;
+  height: 100%;
+  background: #efefef;
+}
+.viewDetailTop {
+  background: #fff;
+  border-bottom: 1px solid #dcdcdc;
+  margin-bottom: 0.234375rem;
+}
+.viewDetailTop img {
+  width: 94%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 0.25rem;
+}
+.viewDetailTop h1 {
+  font-size: 28px;
+  line-height: 1.09375rem;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+[data-dpr="1"] .viewDetailTop h1 {
+  font-size: 14px;
+}
+[data-dpr="3"] .viewDetailTop h1 {
+  font-size: 42px;
+}
+.viewDetailTop span {
+  margin-left: 0.46875rem;
+}
+.viewDescripe {
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  margin-bottom: 0.234375rem;
+}
+.viewDescripe p {
+  font-size: 24px;
+  line-height: 0.5625rem;
+  color: #626262;
+  padding: 0.390625rem;
+}
+[data-dpr="1"] .viewDescripe p {
+  font-size: 12px;
+}
+[data-dpr="3"] .viewDescripe p {
+  font-size: 36px;
+}
+.viewDetailList {
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #dcdcdc;
+  padding-bottom: 1.5625rem;
+}
+.viewDetailLi {
+  width: 95.3%;
+  margin: 0 auto;
+  border-bottom: 1px solid #eeeeee;
+}
+.viewDetailLi:last-child {
+  border-bottom: none;
+}
+.viewDetailLiTop {
+  width: 97.5%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.390625rem 0;
+  position: relative;
+}
+.viewDetailLiTop h1 {
+  font-size: 28px;
+  color: #313131;
+  display: flex;
+  align-items: center;
+}
+[data-dpr="1"] .viewDetailLiTop h1 {
+  font-size: 14px;
+}
+[data-dpr="3"] .viewDetailLiTop h1 {
+  font-size: 42px;
+}
+.orangeCircle {
+  width: 0.3125rem;
+  height: 0.3125rem;
+  display: inline-block;
+  background: #fff;
+  border: 0.1875rem solid #f46610;
+  -webkit-border-radius: 50%;
+  margin-right: 0.234375rem;
+  transform: scale(0.5);
+}
+.viewDetailLiTop h2 {
+  width: 0.4375rem;
+  height: 0.375rem;
+  margin-right: 0.34375rem;
+}
+.viewDetailLiTop h2 img {
+  width: 0.4375rem;
+  height: 0.375rem;
+}
+.viewDetailLiNav {
+  width: 97.5%;
+  margin: 0 auto;
+  padding-bottom: 0.390625rem;
+  display: none;
+}
+.viewDetailLiNav p {
+  padding: 0.3125rem;
+  font-size: 24px;
+  line-height: 0.5625rem;
+  background: #f8f8f8;
+  -webkit-border-radius: 0.15625rem;
+  display: block;
+  color: #626262;
+}
+[data-dpr="1"] .viewDetailLiNav p {
+  font-size: 12px;
+}
+[data-dpr="3"] .viewDetailLiNav p {
+  font-size: 36px;
+}
+.arrowUp {
+  width: 0;
+  height: 0;
+  border-left: 0.625rem solid transparent;
+  border-right: 0.625rem solid transparent;
+  border-bottom: 0.390625rem solid #f8f8f8;
+  position: absolute;
+  bottom: 0;
+  left: 0.625rem;
+  display: none;
+}
+.change {
+  transform: rotate(180deg);
+  margin-right: 0.34375rem;
+}
+.viewDetailFoot {
+  width: 100%;
+  height: 1.5625rem;
+  background: #fff;
+  border-top: 1px solid #dcdcdc;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.viewDetailBtn {
+  width: 4.53125rem;
+  height: 1.25rem;
+  -webkit-border-radius: 0.15625rem;
+  background: #7bc70d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+}
+[data-dpr="1"] .viewDetailBtn {
+  font-size: 15px;
+}
+[data-dpr="3"] .viewDetailBtn {
+  font-size: 45px;
+}
+.viewDetailBtn img {
+  width: 0.75rem;
+  height: 0.71875rem;
+  padding-right: 0.34375rem;
+}
+.orange {
+  background: #f46610!important;
+}
+/*景点详情页面结束*/
+/*景点详情分享页面开始*/
+.viewShare {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  display: none;
+}
+.viewShareMid {
+  width: 100%;
+}
+.viewShareMid img {
+  width: 5.625rem;
+  height: 4.75rem;
+  display: block;
+  margin: 0 auto;
+  padding-top: 0.546875rem;
+}
+.viewShareMid p {
+  width: 2.8125rem;
+  margin: 0 auto;
+  display: block;
+  font-size: 28px;
+  color: #fff;
+  white-space: wrap;
+  margin-top: 0.078125rem;
+  text-align: center;
+}
+[data-dpr="1"] .viewShareMid p {
+  font-size: 14px;
+}
+[data-dpr="3"] .viewShareMid p {
+  font-size: 42px;
+}
+.viewShareArrow {
+  position: absolute;
+  top: 0.078125rem;
+  right: 0.546875rem;
+}
+.viewShareArrow img {
+  width: 1.9375rem;
+  height: 1.921875rem;
+}
+/*景点详情分享页面结束*/
+/*我的车票页面开始*/
+.myTickets {
+  width: 100%;
+  height: 100%;
+}
+.ticketsBox {
+  width: 100%;
+  padding-top: 0.34375rem;
+  padding-bottom: 1.5625rem;
+}
+.ticket {
+  width: 9.21875rem;
+  height: 3.59375rem;
+  margin: 0 auto;
+  margin-bottom: 0.3125rem;
+}
+.ticketLeft {
+  width: 7.34375rem;
+  height: 3.59375rem;
+  float: left;
+}
+.ticketLeftTop {
+  width: 100%;
+  height: 1.03125rem;
+  border-bottom: 1px solid #dcdcdc;
+}
+.ticketLeftTop h1 {
+  font-size: 28px;
+  line-height: 1.09375rem;
+  color: #000;
+  display: inline-block;
+}
+[data-dpr="1"] .ticketLeft h1 {
+  font-size: 14px;
+}
+[data-dpr="3"] .ticketLeft h1 {
+  font-size: 42px;
+}
+.ticketLeftTop h1 img {
+  width: 0.484375rem;
+  height: 0.4375rem;
+  padding-right: 0.234375rem;
+  padding-left: 0.390625rem;
+  -webkit-transform: translateY(0.0625rem);
+}
+.ticketLeftTop h2 {
+  padding: 0.0625rem 0.15625rem;
+  -webkit-border-radius: 0.1875rem;
+  background: #7bc70d;
+  font-size: 24px;
+  color: #fff;
+  margin-left: 0.234375rem;
+}
+[data-dpr="1"] .ticketLeftTop h2 {
+  font-size: 12px;
+}
+[data-dpr="3"] .ticketLeftTop h2 {
+  font-size: 36px;
+}
+.ticketLeftBot_left {
+  width: 4.375rem;
+  margin-left: 0.46875rem;
+  float: left;
+  position: relative;
+}
+.ticketLeftBot_left .site p {
+  width: 1.875rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.ticketLeftPrice {
+  font-size: 36px;
+  color: #f5a335;
+  float: right;
+  margin-top: 1.328125rem;
+  font-weight: bold;
+}
+[data-dpr="1"] .ticketLeftPrice {
+  font-size: 18px;
+}
+[data-dpr="3"] .ticketLeftPrice {
+  font-size: 54px;
+}
+.ticketLeftL {
+  width: 7.125rem;
+  height: 3.59375rem;
+  float: left;
+  background: #fff;
+  -webkit-border-radius: 0.125rem 0 0 0.125rem;
+}
+.ticketLeftR {
+  width: 0.21875rem;
+  height: 3.59375rem;
+  background: url(../images/ticketLeft.png) no-repeat;
+  background-position: right;
+  background-size: 0.21875rem 100%;
+  float: left;
+}
+.ticketRight {
+  width: 1.875rem;
+  height: 3.59375rem;
+  float: left;
+  background: url(../images/ticketRight.png) no-repeat;
+  background-size: 1.875rem 100%;
+}
+.ticketRight p {
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  margin: 0.703125rem 0 0.234375rem 0;
+}
+[data-dpr="1"] .ticketRight p {
+  font-size: 11px;
+}
+[data-dpr="3"] .ticketRight p {
+  font-size: 33px;
+}
+.ticketRight h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 0.3125rem;
+}
+[data-dpr="1"] .ticketRight h1 {
+  font-size: 12px;
+}
+[data-dpr="3"] .ticketRight h1 {
+  font-size: 36px;
+}
+.ticketRight button {
+  width: 1.734375rem;
+  height: 0.78125rem;
+  background: #67aa07;
+  -webkit-border-radius: 0.25rem;
+  font-size: 24px;
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+}
+[data-dpr="1"] .ticketRight button {
+  font-size: 12px;
+}
+[data-dpr="3"] .ticketRight button {
+  font-size: 36px;
+}
+/*我的车票页面结束*/
+/*支付页面开始*/
+.pay {
+  width: 100%;
+  padding-bottom: 1.5625rem;
+}
+.payTop {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 1.484375rem;
+}
+.payTop h1 {
+  width: 86%;
+  margin: 0 auto;
+  font-size: 34px;
+  line-height: 1.0625rem;
+  color: #000;
+  text-align: center;
+  border-bottom: 1px solid #eeeeee;
+  padding-top: 0.9375rem;
+}
+[data-dpr="1"] .payTop h1 {
+  font-size: 17px;
+}
+[data-dpr="3"] .payTop h1 {
+  font-size: 51px;
+}
+.payTop h1 img {
+  width: 0.484375rem;
+  height: 0.4375rem;
+  padding-right: 0.171875rem;
+}
+.payTop h3 {
+  width: 86%;
+  margin: 0 auto;
+}
+.payTop h3 span {
+  font-size: 24px;
+  line-height: 0.90625rem;
+  color: #959595;
+  text-align: center;
+  margin: 0 0.15625rem;
+}
+[data-dpr="1"] .payTop h3 span {
+  font-size: 12px;
+}
+[data-dpr="3"] .payTop h3 span {
+  font-size: 36px;
+}
+.payTopTicket {
+  width: 5.3125rem;
+  height: 1.25rem;
+  margin: 0 auto;
+  margin-top: 0.390625rem;
+  margin-bottom: 0.546875rem;
+  -webkit-border-radius: 0.390625rem;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.25rem;
+}
+[data-dpr="1"] .payTopTicket {
+  font-size: 15px;
+}
+[data-dpr="3"] .payTopTicket {
+  font-size: 45px;
+}
+.oneDayTicket {
+  background: #f46610;
+}
+.payTop h2 {
+  width: 4.765625rem;
+  font-size: 30px;
+  line-height: 0.84375rem;
+  color: #959595;
+  text-align: left;
+  margin: 0 auto;
+}
+[data-dpr="1"] .payTop h2 {
+  font-size: 15px;
+}
+[data-dpr="3"] .payTop h2 {
+  font-size: 45px;
+}
+.payBtn {
+  width: 7.53125rem;
+  height: 1.40625rem;
+  -webkit-border-radius: 0.46875rem;
+  margin: 0 auto;
+  margin-bottom: 0.390625rem;
+}
+.payBtn img {
+  width: 0.703125rem;
+  height: 0.703125rem;
+  display: inline-block;
+}
+.payBtn p {
+  font-size: 30px;
+  color: #fff;
+  width: 2.578125rem;
+  text-align: center;
+  display: inline-block;
+}
+[data-dpr="1"] .payBtn p {
+  font-size: 15px;
+}
+[data-dpr="3"] .payBtn p {
+  font-size: 45px;
+}
+/*支付页面结束*/
+/*购票页面开始*/
+.ticketsBuy {
+  width: 100%;
+  padding-bottom: 1.703125rem;
+}
+.ticketsBuy_top {
+  width: 100%;
+  padding: 0.71875rem 0;
+  background: #fff;
+  border-bottom: 1px solid #dcdcdc;
+  overflow: hidden;
+  margin-bottom: 0.3125rem;
+}
+.ticketsBuy_top_left {
+  width: 4.0625rem;
+  padding: 0 0.390625rem;
+}
+.ticketsBuy_top_left h1 {
+  width: 100%;
+  line-height: 0.9375rem;
+  font-size: 30px;
+  color: #000;
+  border-bottom: 1px solid #eeeeee;
+}
+[data-dpr="1"] .ticketsBuy_top_left h1 {
+  font-size: 15px;
+}
+[data-dpr="3"] .ticketsBuy_top_left h1 {
+  font-size: 45px;
+}
+.ticketsBuy_top_left h1 img {
+  width: 0.484375rem;
+  height: 0.4375rem;
+  padding-right: 0.1875rem;
+}
+.ticketsBuy_top_left h2 {
+  width: 100%;
+  padding-top: 0.1875rem;
+}
+.ticketsBuy_top_left h2 p {
+  width: 1.40625rem;
+  font-size: 26px;
+  color: #000;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+[data-dpr="1"] .ticketsBuy_top_left h2 p {
+  font-size: 13px;
+}
+[data-dpr="3"] .ticketsBuy_top_left h2 p {
+  font-size: 39px;
+}
+.ticketsBuy_top_left h2 img {
+  width: 0.390625rem;
+  height: 0.28125rem;
+  display: inline-block;
+  margin: 0 0.234375rem;
+}
+.ticketsBuy_top_right {
+  margin-right: 0.234375rem;
+}
+.ticketsKind {
+  width: 2.34375rem;
+  line-height: 1.5625rem;
+  -webkit-border-radius: 0.125rem;
+  font-size: 30px;
+  color: #a0a0a0;
+  text-align: center;
+  display: inline-block;
+  background: #e5e5e5;
+}
+[data-dpr="1"] .ticketsKind {
+  font-size: 15px;
+}
+[data-dpr="3"] .ticketsKind {
+  font-size: 45px;
+}
+.ticketsBuy_mid {
+  width: 100%;
+  margin-bottom: 0.3125rem;
+  background: #fff;
+  padding-bottom: 0.234375rem;
+}
+.ticketsBuy_mid table {
+  width: 96.875%;
+  margin: 0 auto;
+}
+.ticketsBuy_mid h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #7bc70d;
+  line-height: 1.15625rem;
+}
+[data-dpr="1"] .ticketsBuy_mid h1 {
+  font-size: 16px;
+}
+[data-dpr="3"] .ticketsBuy_mid h1 {
+  font-size: 48px;
+}
+.ticketsBuy_mid table tr {
+  width: 100%;
+}
+.ticketsBuy_mid table tr th {
+  width: 14.285%;
+  font-size: 32px;
+  line-height: 0.9375rem;
+  color: #fff;
+  background: #7bc70d;
+  text-align: center;
+}
+[data-dpr="1"] .ticketsBuy_mid table tr th {
+  font-size: 16px;
+}
+[data-dpr="3"] .ticketsBuy_mid table tr th {
+  font-size: 48px;
+}
+.ticketsBuy_mid table tr td {
+  font-size: 32px;
+  line-height: 0.9375rem;
+  border-top: 0.21875rem solid #fff;
+  border-bottom: 0.21875rem solid #fff;
+  color: #cecece;
+  text-align: center;
+}
+[data-dpr="1"] .ticketsBuy_mid table tr td {
+  font-size: 16px;
+}
+[data-dpr="3"] .ticketsBuy_mid table tr td {
+  font-size: 48px;
+}
+.ticketsBuy_midCurrent {
+  color: #fff!important;
+  background: #7bc70d!important;
+}
+.ticketsBuy_bot {
+  width: 100%;
+  background: #fff;
+  padding: 0.40625rem 0;
+  overflow: hidden;
+}
+.ticketsBuy_bot_left {
+  height: 1rem;
+  float: left;
+}
+.ticketsBuy_bot_left h1 {
+  font-size: 28px;
+  line-height: 1rem;
+  color: #000;
+  display: inline-block;
+  padding-left: 0.4rem;
+}
+[data-dpr="1"] .ticketsBuy_bot_left h1 {
+  font-size: 14px;
+}
+[data-dpr="3"] .ticketsBuy_bot_left h1 {
+  font-size: 42px;
+}
+.ticketsBuy_bot_left p {
+  font-size: 28px;
+  line-height: 1rem;
+  color: #f46610;
+  display: inline-block;
+  padding-left: 0.2rem;
+}
+[data-dpr="1"] .ticketsBuy_bot_left p {
+  font-size: 14px;
+}
+[data-dpr="3"] .ticketsBuy_bot_left p {
+  font-size: 42px;
+}
+.ticketsBuy_bot_right {
+  width: 3.40625rem;
+  height: 1rem;
+  float: right;
+  border: 1px solid #d2d2d2;
+  margin-right: 0.390625rem;
+}
+.ticketsBuy_bot_right span {
+  display: block;
+  width: 0.953125rem;
+  font-size: 0.46875rem;
+  line-height: 1rem;
+  height: 100%;
+  text-align: center;
+  float: left;
+}
+.ticketsBuy_bot_right p {
+  width: 1.484375rem;
+  height: 100%;
+  background: #7bc70d;
+  font-size: 30px;
+  line-height: 1rem;
+  text-align: center;
+  color: #fff;
+  float: left;
+}
+[data-dpr="1"] .ticketsBuy_bot_right p {
+  font-size: 15px;
+}
+[data-dpr="3"] .ticketsBuy_bot_right p {
+  font-size: 45px;
+}
+.ticketsBuy_foot {
+  width: 100%;
+  height: 1.546875rem;
+  background: #fff;
+  border-top: 1px solid #dcdcdc;
+  position: fixed;
+  bottom: 0;
+}
+.ticketsBuy_foot p {
+  font-size: 28px;
+  line-height: 1.546875rem;
+  color: #000;
+  display: inline-block;
+  padding-left: 0.375rem;
+}
+[data-dpr="1"] .ticketsBuy_foot p {
+  font-size: 14px;
+}
+[data-dpr="3"] .ticketsBuy_foot p {
+  font-size: 42px;
+}
+.ticketsBuy_foot h1 {
+  font-size: 32px;
+  line-height: 1.546875rem;
+  color: #f46610;
+  font-weight: bold;
+  display: inline-block;
+  padding-left: 0.34375rem;
+}
+[data-dpr="1"] .ticketsBuy_foot h1 {
+  font-size: 16px;
+}
+[data-dpr="3"] .ticketsBuy_foot h1 {
+  font-size: 48px;
+}
+.ticketsBuy_foot button {
+  float: right;
+  width: 3.828125rem;
+  height: 100%;
+  color: #fff;
+  font-size: 30px;
+  background: #7bc70d;
+}
+[data-dpr="1"] .ticketsBuy_foot button {
+  font-size: 15px;
+}
+[data-dpr="3"] .ticketsBuy_foot button {
+  font-size: 45px;
+}
+/*购票页面结束*/
+/*线路实时状态开始*/
+.lineStatus {
+  width: 100%;
+  background: #fff;
+}
+.ticketTit {
+  width: 100%;
+  height: 1.21875rem;
+  border-bottom: 1px solid #dcdcdc;
+  background: #fff;
+}
+.ticketTit img {
+  width: 0.484375rem;
+  height: 0.4375rem;
+  display: inline-block;
+  padding-right: 0.21875rem;
+  padding-left: 0.390625rem;
+  -webkit-transform: translateY(-0.046875rem);
+  vertical-align: middle;
+}
+.ticketTit p {
+  font-size: 30px;
+  color: #000;
+  display: inline-block;
+}
+[data-dpr="1"] .ticketTit p {
+  font-size: 15px;
+}
+[data-dpr="3"] .ticketTit p {
+  font-size: 45px;
+}
+.lineStatus_top {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 0.234375rem 0;
+  overflow: hidden;
+}
+.lineStatus_top_left {
+  padding-left: 0.46875rem;
+}
+.lineStatus_top_left h1 {
+  font-size: 26px;
+  color: #000;
+  padding-bottom: 0.3125rem;
+}
+[data-dpr="1"] .lineStatus_top_left h1 {
+  font-size: 13px;
+}
+[data-dpr="3"] .lineStatus_top_left h1 {
+  font-size: 39px;
+}
+.lineStatus_top_left h1 p {
+  width: 1.640625rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.lineStatus_top_left h1 img {
+  display: inline-block;
+  width: 0.625rem;
+  height: 0.140625rem;
+  padding: 0 0.3125rem;
+}
+.lineStatus_top_left h2 {
+  font-size: 24px;
+  color: #959595;
+  display: -webkit-flex;
+  -webkit-justify-content: space-between;
+}
+[data-dpr="1"] .lineStatus_top_left h2 {
+  font-size: 12px;
+}
+[data-dpr="3"] .lineStatus_top_left h2 {
+  font-size: 36px;
+}
+.lineStatus_top_left h2 p {
+  display: inline-block;
+}
+.lineStatus_top_right {
+  width: 0.96875rem;
+  height: 0.96875rem;
+  background: #f6f6f6;
+  -webkit-border-radius: 50%;
+  margin-right: 0.390625rem;
+}
+.lineStatus_top_right img {
+  -webkit-transform: rotate(90deg);
+  width: 0.46875rem;
+  height: 0.34375rem;
+}
+.lineStation {
+  width: 100%;
+}
+.lineStationNav {
+  padding-left: 0.9375rem;
+}
+.lineStation_original {
+  width: 100%;
+}
+.lineStation_original p {
+  font-size: 28px;
+  line-height: 1.546875rem;
+  color: #626262;
+  padding-left: 0.546875rem;
+}
+[data-dpr="1"] .lineStation_original p {
+  font-size: 14px;
+}
+[data-dpr="3"] .lineStation_original p {
+  font-size: 42px;
+}
+.lineStation_original i {
+  font-size: 22px;
+  color: #f46610;
+  border: 1px solid #f46610;
+  -webkit-border-radius: 0.390625rem;
+  padding: 0.15625rem 0.3125rem;
+  margin-right: 0.390625rem;
+}
+[data-dpr="1"] .lineStation_original i {
+  font-size: 11px;
+}
+[data-dpr="3"] .lineStation_original i {
+  font-size: 33px;
+}
+.lineStation_top {
+  height: 1.546875rem;
+  background: url(../images/lineStation_top.jpg) no-repeat;
+  background-size: 0.3125rem 100%;
+}
+.lineStation_common {
+  height: 1.5rem;
+  background: url(../images/lineStation_common.jpg) no-repeat;
+  background-size: 0.3125rem 100%;
+}
+.lineStation_bot {
+  height: 1.546875rem;
+  background: url(../images/lineStation_bot.jpg) no-repeat;
+  background-size: 0.3125rem 100%;
+}
+.lineStation_current {
+  height: 2.109375rem;
+  background: url(../images/lineStation_current.jpg) no-repeat;
+  background-size: 0.3125rem 100%;
+}
+.lineStation_current .lineStation_original p {
+  color: #7bc70d!important;
+  line-height: 1.25rem !important;
+}
+.lineStation_append {
+  padding-top: 0.15625rem;
+}
+.lineStation_append h1 {
+  font-size: 22px;
+  line-height: 0.34375rem;
+  color: #f46610;
+  display: inline-block;
+  padding-left: 0.859375rem;
+}
+[data-dpr="1"] .lineStation_append h1 {
+  font-size: 11px;
+}
+[data-dpr="3"] .lineStation_append h1 {
+  font-size: 33px;
+}
+.lineStation_append h1 img {
+  width: 0.453125rem;
+  height: 0.3125rem;
+  padding-right: 0.15625rem;
+  vertical-align: middle;
+}
+/*线路实时状态结束*/
+/*旅游巴士详情开始*/
+.busDetail {
+  width: 100%;
+  padding-bottom: 1.5625rem;
+}
+.busDetail_top {
+  padding: 0.390625rem 0.359375rem;
+  background: #fff;
+  border-bottom: 1px solid #dcdcdc;
+  margin-bottom: 0.3125rem;
+  overflow: hidden;
+}
+.busDetail_top h1 {
+  float: left;
+  font-size: 30px;
+  color: #000;
+}
+[data-dpr="1"] .busDetail_top h1 {
+  font-size: 15px;
+}
+[data-dpr="3"] .busDetail_top h1 {
+  font-size: 45px;
+}
+.busDetail_top h2 {
+  float: right;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+}
+.busDetail_top h2 a {
+  font-size: 24px;
+  color: #959595;
+  text-decoration: underline;
+}
+[data-dpr="1"] .busDetail_top h2 a {
+  font-size: 12px;
+}
+[data-dpr="3"] .busDetail_top h2 a {
+  font-size: 36px;
+}
+.busDetail_topimg1 {
+  width: 0.484375rem;
+  height: 0.4375rem;
+  padding-right: 0.125rem;
+}
+.busDetail_topimg2 {
+  width: 0.25rem;
+  height: 0.28125rem;
+  padding-left: 0.125rem;
+}
+.busDetail_mid {
+  background: #fff;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  margin-bottom: 0.3125rem;
+}
+.busDetail_mid .site p{
+	width: 1.8rem!important;
+}
+.busDetail_mid_up {
+  padding: 0.46875rem 0;
+  padding-left: 0.390625rem;
+  display: -webkit-flex;
+  -webkit-align-items: center ;
+  position: relative;
+}
+.busDetail_mid_up img {
+  width: 0.796875rem;
+  height: 0.796875rem;
+  padding: 0 0.78125rem;
+}
+.ticketRule {
+  font-size: 22px;
+  color: #fff;
+  padding: 0.3125rem 0.34375rem;
+  background: #f46610;
+  -webkit-border-radius: 0.46875rem 0 0 0.46875rem;
+  position: absolute;
+  right: 0;
+}
+[data-dpr="1"] .ticketRule {
+  font-size: 11px;
+}
+[data-dpr="3"] .ticketRule {
+  font-size: 33px;
+}
+.busDetail_mid_down {
+  width: 92%;
+  margin: 0 auto;
+  padding: 0.234375rem 0;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  border-top: 1px solid #dcdcdc;
+}
+.busDetail_mid_down p {
+  font-size: 24px;
+  color: #959595;
+}
+[data-dpr="1"] .busDetail_mid_down p {
+  font-size: 12px;
+}
+[data-dpr="3"] .busDetail_mid_down p {
+  font-size: 36px;
+}
+.busDetail_mid_down p span {
+  width: 0.234375rem;
+  height: 0.234375rem;
+  display: inline-block;
+  margin-right: 0.15625rem;
+  background: #bfbfbf;
+  -webkit-border-radius: 50%;
+}
+.busDetail_bot {
+  width: 100%;
+  background: #fff;
+}
+.busDetail_bot h1 {
+  font-size: 26px;
+  color: #000;
+  padding: 0.359375rem 0.390625rem;
+}
+[data-dpr="1"] .busDetail_bot h1 {
+  font-size: 13px;
+}
+[data-dpr="3"] .busDetail_bot h1 {
+  font-size: 39px;
+}
+.busDetail_bot_descripe {
+  padding: 0 0.390625rem 0.390625rem 0.390625rem;
+}
+.busDetail_bot_descripe p {
+  font-size: 22px;
+  line-height: 0.46875rem;
+  color: #959595;
+}
+[data-dpr="1"] .busDetail_bot_descripe p {
+  font-size: 11px;
+}
+[data-dpr="3"] .busDetail_bot_descripe p {
+  font-size: 33px;
+}
+.busDetail_station {
+  background: url(../images/lineStationBg.jpg) repeat-x;
+  background-position: 0 0.09375rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.busDetail_station ul {
+  height: 2.421875rem;
+  display: block;
+}
+.busDetail_station ul li {
+  width: 0.84375rem;
+  height: 2.421875rem;
+  float: left;
+}
+.busDetail_station ul li span {
+  width: 0.25rem;
+  height: 0.25rem;
+  background: #959595;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.28125rem;
+  -webkit-border-radius: 50%;
+}
+.busDetail_station ul li p {
+  width: 0.34375rem;
+  font-size: 22px;
+  color: #000;
+  text-align: center;
+  margin: 0 auto;
+}
+[data-dpr="1"] .busDetail_station ul li p {
+  font-size: 11px;
+}
+[data-dpr="3"] .busDetail_station ul li p {
+  font-size: 33px;
+}
+.busDetail_stationImgBox {
+  width: 95%;
+  height: 5.25rem;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 0.3125rem;
+}
+.busDetail_stationImgBox img {
+  width: 100%;
+  height: 5.25rem;
+  display: block;
+}
+.busDetail_stationImgTxt {
+  width: 100%;
+  font-size: 30px;
+  line-height: 1.484375rem;
+  color: #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  bottom: 0.3125rem;
+}
+[data-dpr="1"] .busDetail_stationImgTxt {
+  font-size: 15px;
+}
+[data-dpr="3"] .busDetail_stationImgTxt {
+  font-size: 45px;
+}
+.busDetailCurrent {
+  color: #7bc70b!important;
+}
+.busDetailSpanCurrent {
+  background: #7bc70b!important;
+}
+/*旅游巴士详情结束*/
+

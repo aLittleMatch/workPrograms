@@ -1,0 +1,456 @@
+.grayBg{
+	background: #f2f2f2;
+}
+.personalCenter{
+	width: 100%;
+}
+.personalCenterHead{
+	background: #1f85e7;
+	padding: 0.5rem 0.3rem 0.35rem 0.45rem;
+	-webkit-box-pack: justify;
+	margin-bottom: 0.2rem;
+}
+.headPicBox{
+	width: 1.12rem;
+	height: 1.13rem;
+	background: url(../images/personalCenterHead.png) no-repeat;
+	background-size: 100% 100%;
+}
+.headPic{
+	width: 0.75rem;
+	height: 0.75rem;
+	border: 0.05rem solid #1F85E7;
+	-webkit-border-radius: 50%;
+	overflow: hidden;
+}
+.headPic img{
+	width: 0.75rem;
+	height: 0.75rem;
+	display: block;
+}
+.headNav{
+	margin-left: 0.3rem;
+}
+.headNav h1{
+	width: 4rem;
+	font-size: 0.38rem;
+	color: #fff;
+	margin-bottom: 0.2rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.headTel{
+	-webkit-box-pack: start;
+}
+.headTel img{
+	width: 0.19rem;
+	height: 0.32rem;
+	display: block;
+}
+.headTel p{
+	font-size: 0.22rem;
+	color: #fff;
+	margin-left: 0.13rem;
+}
+.personalCenterHead_right img{
+	width: 0.16rem;
+	height: 0.26rem;
+	display: block;
+}
+
+.personalCenterList{
+	margin-bottom: 0.3rem;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	background: #fff;
+}
+.personalCenterList li{
+	-webkit-box-pack: start;
+}
+.personalCenterListLi_left{
+	width: 1rem;
+}
+.personalCenterListLi_left img{
+	width: 0.45rem;
+	height: 0.45rem;
+	display: block;
+}
+.personalCenterListLiText{
+	-webkit-box-pack: justify!important;
+}
+.personalCenterListLiText p{
+	font-size: 0.3rem;
+	color: #323232;
+}
+.personalCenterListLi_right{
+	-webkit-box-pack: justify;
+	padding: 0.3rem 0;
+	border-bottom: 1px solid #dddddd;
+}
+.personalCenterArrowRight img{
+	width: 0.16rem;
+	height: 0.26rem;
+	padding-right: 0.3rem;
+	display: block;
+}
+.borderBottomNone{
+	border-bottom: none!important;
+}
+.listNum{
+	padding:0.03rem 0.08rem;
+	-webkit-border-radius: 0.1rem;
+	background: #5da3f8;
+	font-size: 0.20rem;
+	color: #fff;
+	margin-right: 0.38rem;
+}
+.myPoints{
+	font-size: 0.22rem;
+	color: #f16c59;
+	margin-right: 0.35rem;
+}
+.myPoints img{
+	width: 0.3rem;
+	height: 0.3rem;
+	display: block;
+	padding-right: 0.05rem;
+}
+.copyRight{
+	width: 100%;
+	font-size: 0.24rem;
+	line-height: 0.5rem;
+	color: #9a9a9a;
+	text-align: center;
+	margin-top: 1rem;
+}
+/*弹窗界面开始*/
+.container2{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.notice{
+	width: 5.45rem;
+	height: 4.4rem;
+	-webkit-border-radius: 0.1rem;
+	background: #fff;
+	margin-top: 2rem;
+	position: fixed;
+	margin:auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.notice h1{
+	font-size: 0.3rem;
+	color: #737373;
+	text-align: center;
+	padding: 0.95rem 0 0.4rem 0;
+}
+.noticeTelNum{
+	font-size: 0.36rem;
+	color: #0080ff;
+	text-align: center;
+	margin-bottom: 0.9rem;
+}
+.noticeTelNum p{
+	display: inline-block;
+	padding-left: 0.3rem;
+}
+.noticeConfirm{
+	width: 3.4rem;
+	line-height: 0.85rem;
+	font-size: 0.36rem;
+	color: #fff;
+	background: #1f85e7;
+	text-align: center;
+	margin: 0 auto;
+	-webkit-border-radius: 0.1rem;
+	-webkit-box-shadow: 0 0.05rem 0.1rem #bfc0fc;
+}
+.noticeClose{
+	position: absolute;
+	top: 0;
+	right: 0.2rem;
+}
+.noticeClose img{
+	width: 0.6rem;
+	height: 0.68rem;
+	display: block;
+}
+/*弹窗界面结束*/
+
+/*我的驾照页面开始*/
+.myLicense{
+	width: 100%;
+}
+.myLicenseNav{
+	font-size: 0.3rem;
+	color: #323232;
+	background: #fff;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+.justify{
+	-webkit-box-pack: justify;
+}
+.padding1{
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+}
+.padding2{
+	padding-top: 0.35rem;
+	padding-bottom: 0.35rem;
+}
+.padding3{
+	padding-top: 0.15rem;
+	padding-bottom: 0.15rem;
+}
+.padding6{
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+}
+.padding7{
+	padding-top: 0.15rem;
+}
+.padding8{
+	padding-top: 0.06rem;
+	padding-bottom: 0.06rem;
+}
+.padding4{
+	padding-top: 0.3rem;
+}
+.padding5{
+	padding-bottom: 0.3rem;
+}
+.padding9{
+	padding-top: 0.2rem;
+}
+.padding10{
+	padding-bottom: 0.2rem;
+}
+.marginBottom{
+	margin-bottom: 0.2rem;
+}
+.orange{
+	color: #f56f1f!important;
+}
+.blue{
+	color: #1f85e7;
+}
+/*我的驾照页面结束*/
+
+/*个人信息页面开始*/
+.jifen{
+	font-size: 0.3rem;
+	color: #f16c59;
+}
+.jifen img{
+	width: 0.32rem;
+	height: 0.32rem;
+	display: block;
+	padding-right: 0.2rem;
+}
+/*个人信息页面结束*/
+
+/*预约详情页面开始*/
+.order{
+	width: 100%;
+}
+.borderBottom{
+	border-bottom: 1px solid #e5e5e5;
+}
+.telephone{
+	position: fixed;
+	bottom: 2rem;
+	right: 0.35rem;
+	z-index: 999;
+}
+.telephone img{
+	width: 0.97rem;
+	height: 0.97rem;
+	display: block;
+}
+/*预约详情页面结束*/
+
+
+/*订单详情页面开始*/
+.orderDetail{
+	width: 100%;
+}
+.orderDetailIcon1{
+	width: 0.29rem;
+	height: 0.28rem;
+	display: block;
+	padding-right: 0.2rem;
+}
+.flow{
+	background: #fff;
+}
+.flowLi{
+	-webkit-box-pack: start;
+}
+.flowLi_left{
+	margin-left: 0.4rem;
+	margin-right: 0.4rem;
+}
+.flowLi_left img{
+	width: 0.48rem;
+	height: 1.25rem;
+	display: block;
+}
+.flowLi_right{
+	border-bottom: 1px solid #dcdcdc;
+}
+.flowLi_right h1{
+	font-size: 0.28rem;
+	color: #323232;
+	margin-bottom: 0.1rem;
+	margin-top: 0.2rem;
+}
+.flowLi_right p{
+	font-size: 0.26rem;
+	color: #9e9e9e;
+	margin-bottom: 0.2rem;
+}
+.addressWidth{
+	width: 4.4rem;
+	text-align: right;
+}
+/*订单详情页面结束*/
+
+/*我的车辆页面开始*/
+.myCars{
+	width: 100%;
+}
+.myCarsLi{
+	background: #fff;
+	margin-bottom: 0.2rem;
+}
+.myCarsLiHead{
+	padding: 0.2rem 0.35rem 0.2rem 0.22rem;
+	border-bottom: 1px solid #e5e5e5;
+}
+.myCarsLiHead p{
+	font-size: 0.3rem;
+	color: #323232;
+}
+.myCarsLiNav{
+	padding: 0rem 0.35rem 0rem 0.2rem;
+}
+.myCarsLiNav_left{
+
+}
+.myCarsLiNav_left img{
+	width: 1.2rem;
+	height: 1.15rem;
+	display: block;
+}
+.myCarsLiNav_right{
+	padding-left: 0.25rem;
+}
+.myCarsLiNav_rightNav{
+	padding: 0.2rem 0;
+}
+.myCarsLiNav_rightNav p{
+	font-size: 0.3rem;
+	color: #000;
+
+}
+/*我的车辆结束*/
+
+/*下载弹窗页面开始*/
+/*.downloadType{
+	width: 5.45rem;
+	height: 4.4rem;
+	-webkit-border-radius: 0.1rem;
+	background: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+.downloadTypeHead{
+	width: 3.1rem;
+	line-height: 0.5rem;
+	text-align: center;
+	font-size: 0.36rem;
+	color: #fff;
+	background: #1f85e7;
+	margin: 0 auto;
+	-webkit-border-bottom-right-radius: 0.1rem;
+	-webkit-border-bottom-left-radius: 0.1rem;
+}
+.downloadTypeNav{
+	width: 4.75rem;
+	margin: 0 auto;
+	margin-top: 0.55rem;
+}
+.downloadTypeNavLi{
+	width: 4.75rem;
+	padding: 0.2rem 0;
+	font-size: 0.36rem;
+	color: #fff;
+	background: #1f85e7;
+	margin-bottom: 0.4rem;
+	-webkit-border-radius: 0.1rem;
+	-webkit-box-shadow: 0 0.05rem 0.1rem #c5c6fc;
+}
+.downloadTypeNavLi img{
+	width: 0.7rem;
+	height: 0.76rem;
+	display: block;
+	padding-right: 0.5rem;
+}
+.downloadTypeNavLi p{
+	width: 2.5rem;
+	text-align: center;
+}*/
+/*下载弹窗页面结束*/
+/*下载弹窗页面开始*/
+.download{
+	width: 100%;
+}
+.downloadHead{
+	width: 100%;
+}
+.downloadHead img{
+	width: 100%;
+	display: block;
+}
+.downloadNav{
+	width: 100%;
+	padding-top: 0.85rem;
+}
+.downloadNavLi{
+	width: 4.75rem;
+	height: 1.15rem;
+	margin: 0 auto;
+	-webkit-border-radius: 0.1rem;
+	background: #1f85e7;
+	margin-bottom: 0.35rem;
+}
+.downloadNavLi_left{
+	width: 0.7rem;
+	height: 0.76rem;
+	margin-left: 0.5rem;
+}
+.downloadNavLi_left img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.downloadNavLi_right{
+	font-size: 0.36rem;
+	color: #fff;
+	text-align: center;
+}
+/*下载页面结束*/

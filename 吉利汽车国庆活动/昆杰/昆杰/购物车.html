@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/rem.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+        <link rel="stylesheet" type="text/css" href="css/kunjie.css"/>
+        <script src="js/zepto.min.js"></script>
+		<title>购物车</title>
+	</head>
+	<body class="gray">
+		<div class="shopCar">
+			<!--购物车商品区域-->
+			<div class="shopCarNav">
+				<!--购物车的单件商品-->
+				<div class="shopCarNavLi">
+					<div class="shopCarNavLiTop flexbox">
+						<div class="shopCarNavLiTop_left"></div>
+						<div class="shopCarNavLiTop_right flexbox flexright">
+							<div class="shopCarNavLiTop_rightPic">
+								<img src="images/orderDetailNavLi_left.jpg">
+							</div>
+							<div class="shopCarNavLiTop_rightTxt">
+								<h1>《最好的方法给孩子》</h1>
+								<h2>￥<span>15.00</span></h2>
+							</div>
+						</div>
+					</div>
+					<div class="shopCarNavLiBot flexbox">
+						<div class="shopNum flexbox">
+							<p>购买数量：</p>
+							<img class="sub" src="images/sub.png">
+							<i>1</i>
+							<img class="add" src="images/add.png">
+						</div>
+					</div>
+				</div>
+				<div class="shopCarNavLi">
+					<div class="shopCarNavLiTop flexbox">
+						<div class="shopCarNavLiTop_left"></div>
+						<div class="shopCarNavLiTop_right flexbox flexright">
+							<div class="shopCarNavLiTop_rightPic">
+								<img src="images/orderDetailNavLi_left.jpg">
+							</div>
+							<div class="shopCarNavLiTop_rightTxt">
+								<h1>《最好的方法给孩子》</h1>
+								<h2>￥<span>30.00</span></h2>
+							</div>
+						</div>
+					</div>
+					<div class="shopCarNavLiBot flexbox">
+						<div class="shopNum flexbox">
+							<p>购买数量：</p>
+							<img class="sub" src="images/sub.png">
+							<i>1</i>
+							<img class="add" src="images/add.png">
+						</div>
+					</div>
+				</div>
+				<div class="shopCarNavLi">
+					<div class="shopCarNavLiTop flexbox">
+						<div class="shopCarNavLiTop_left"></div>
+						<div class="shopCarNavLiTop_right flexbox flexright">
+							<div class="shopCarNavLiTop_rightPic">
+								<img src="images/orderDetailNavLi_left.jpg">
+							</div>
+							<div class="shopCarNavLiTop_rightTxt">
+								<h1>《最好的方法给孩子》</h1>
+								<h2>￥<span>15.20</span></h2>
+							</div>
+						</div>
+					</div>
+					<div class="shopCarNavLiBot flexbox">
+						<div class="shopNum flexbox">
+							<p>购买数量：</p>
+							<img class="sub" src="images/sub.png">
+							<i>1</i>
+							<img class="add" src="images/add.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--购物车结算-->
+			<div class="orderSubmit flexbox">
+				<div class="orderSubmitNav flexbox">
+					<div class="selectAll flexbox">
+						<div class="shopCarNavLiTop_left"></div><i>全选</i>
+					</div>
+					<h1>合计:<i><span>￥</span>00.00</i></h1>
+				</div>
+				<div class="orderSubmitBtn">结算</div>
+			</div>
+		</div>
+		<script>
+			$(function(){
+				
+				var calculate =	function(){                         //计算价格
+					var num = new Array();
+					var sum = 0;
+					for(var i=0;i<$(".shopCarNavLi").length;i++){
+						if($(".shopCarNavLiTop .shopCarNavLiTop_left").eq(i).hasClass("gou")){
+							num[i] = parseFloat($(".shopNum").eq(i).find("i").text())*parseFloat($(".shopCarNavLiTop").eq(i).find(".shopCarNavLiTop_rightTxt").find("h2 span").text());
+						}else{
+							num[i] = 0;
+						}
+						sum = parseFloat(sum + num[i]);	
+					}
+					sum = sum.toFixed(2);
+					$(".orderSubmitNav h1 i").html('<span>￥</span>' + sum);
+				};
+					
+				$(".shopCarNavLiTop .shopCarNavLiTop_left").click(         //对订单单选
+					function(){
+						if($(this).hasClass("gou")){
+							$(this).removeClass("gou");
+						}else{
+							$(this).addClass("gou");	
+						}	
+					}
+				);
+				$(".selectAll .shopCarNavLiTop_left").click(               //对订单全选
+					function(){
+						if($(this).hasClass("gou")){
+							$(".shopCarNavLiTop .shopCarNavLiTop_left").removeClass("gou");
+							$(this).removeClass("gou");
+						}else{
+							$(".shopCarNavLiTop .shopCarNavLiTop_left").addClass("gou");
+							$(this).addClass("gou");
+						}
+						
+					}
+				);
+				$(".add").click(                                      //加
+					function(){
+						$(this).siblings("i").text(parseInt($(this).siblings("i").text())+1);
+						calculate();
+					}
+				);
+				$(".sub").click(                                      //减
+					function(){
+						if($(this).siblings("i").text()<=0){
+							$(this).siblings("i").text(0);
+						}else{
+							$(this).siblings("i").text(parseInt($(this).siblings("i").text())-1);
+						}
+						calculate();	
+					}
+				);	
+				$(".shopCarNavLiTop_left").click(    
+					function(){
+						calculate();
+					}
+				);
+			})
+		</script>
+	</body>
+</html>

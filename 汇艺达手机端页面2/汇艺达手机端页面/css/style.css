@@ -1,0 +1,209 @@
+/*==========less 公式==========*/
+/*==========less 公式==========*/
+* {
+  font-family: "微软雅黑", helvetica;
+}
+.flexbox {
+  display: -moz-box;
+  /* Firefox */
+  display: -webkit-box;
+  /* Safari and Chrome */
+  display: -ms-flexbox;
+  /* Internet Explorer 10 */
+  display: box;
+  -webkit-box-align: center;
+}
+.flexright {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  /* Firefox */
+  box-flex: 1;
+  flex: 1;
+}
+.fBox {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+}
+/*垂直居中*/
+.alignCenterBox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/*左右居中*/
+.justifyCenterBox {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+}
+/*分居左右，垂直居中*/
+.justifyBetweenBox {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-between;
+}
+/*工程师服务证开始*/
+.certificate {
+  width: 100%;
+  padding-bottom: 1.640625rem;
+}
+.certificateHead {
+  padding-top: 0.3125rem;
+}
+.certificateHead .logo img {
+  width: 1.6875rem;
+  height: 1.671875rem;
+  padding-right: 0.25rem;
+}
+.title {
+  width: 6.125rem;
+}
+.title p {
+  width: 6.125rem;
+  font-size: 32px;
+  color: #000;
+  display: block;
+  font-weight: bold;
+}
+[data-dpr="1"] .title p {
+  font-size: 16px;
+}
+[data-dpr="3"] .title p {
+  font-size: 48px;
+}
+.xixi {
+  letter-spacing: 0.1em;
+}
+.portraitBox {
+  width: 4.203125rem;
+  margin: 0 auto;
+}
+.portrait {
+  width: 4.203125rem;
+  height: 4.734375rem;
+  overflow: hidden;
+}
+.portrait img {
+  width: 4.203125rem;
+  height: 4.734375rem;
+}
+.portraitBox p {
+  width: 4.203125rem;
+  height: 0.78125rem;
+  line-height: 0.78125rem;
+  background: #3e8f66;
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+}
+[data-dpr="1"] .portraitBox p {
+  font-size: 14px;
+}
+[data-dpr="3"] .portraitBox p {
+  font-size: 42px;
+}
+.certificateTxt {
+  width: 7.65625rem;
+  margin: 0 auto;
+  margin-top: 0.15625rem;
+}
+.certificateTxt li {
+  width: 7.65625rem;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 0.15625rem 0;
+}
+.certificateTxt li b {
+  display: inline-block;
+  padding: 0 0.5625rem 0 0.234375rem;
+  font-size: 28px;
+  line-height: 0.5625rem;
+  color: #313131;
+  vertical-align: top;
+}
+[data-dpr="1"] .certificateTxt li b {
+  font-size: 14px;
+}
+[data-dpr="3"] .certificateTxt li b {
+  font-size: 42px;
+}
+.certificateTxt li p {
+  width: 78%;
+  line-height: 0.5625rem;
+  display: inline-block;
+  font-size: 28px;
+  color: #000000;
+}
+[data-dpr="1"] .certificateTxt li p {
+  font-size: 14px;
+}
+[data-dpr="3"] .certificateTxt li p {
+  font-size: 42px;
+}
+.webSite {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.3125rem 0;
+}
+.webSiteLi p {
+  font-size: 20px;
+  line-height: 0.4375rem;
+  color: #959595;
+  display: inline-block;
+}
+[data-dpr="1"] .webSite p {
+  font-size: 10px;
+}
+[data-dpr="3"] .webSite p {
+  font-size: 30px;
+}
+.certificateFoot {
+  width: 100%;
+  line-height: 1.640625rem;
+  position: fixed;
+  bottom: 0;
+  background: #3e8f66;
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+[data-dpr="1"] .certificateFoot {
+  font-size: 16px;
+}
+[data-dpr="3"] .certificateFoot {
+  font-size: 48px;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .certificateHead {
+    margin-bottom: 0.9375rem;
+  }
+  .certificateTxt {
+    margin-top: 0.9375rem;
+  }
+  .webSite {
+    width: 70%;
+    padding: 1.171875rem 0 0.703125rem 0;
+  }
+  .certificateHead .logo img {
+    padding-right: 0.703125rem;
+  }
+}
+@media only screen and (min-device-width: 412px) and (-webkit-min-device-pixel-ratio: 3) {
+  .certificateHead {
+    margin-bottom: 0.46875rem;
+  }
+}
+/*工程师服务证结束*/

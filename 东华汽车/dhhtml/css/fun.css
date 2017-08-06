@@ -1,0 +1,385 @@
+.undisplay{
+	display: none;
+}
+.color1{
+	color: #1f85e7;
+}
+.detection-color{
+	color: #49dab1;
+}
+.service-color{
+	color: #f56f1f;
+}
+.logbg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/logbg.jpg) center center no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+.flexbox{
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+}
+.flexible{
+	-webkit-box-flex: 1;
+}
+.login-cut{
+	width: 5.3rem;
+	height: 0.67rem;
+	line-height: 0.67rem;
+	margin: auto;
+	margin-top: 0.53rem;
+	color: #1f85e7;
+	box-sizing: border-box;
+}
+.login-cut .login-items{
+	font-size: 0.3rem;
+	width: 50%;
+	text-align: center;
+	border: 1px solid #1f85e7;
+}
+.login-cut .login-items:nth-child(1){
+	border-top-left-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+}
+.login-cut .login-items:nth-child(2){
+	border-top-right-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+}
+.login-select{
+	color: #fff;
+	background-color: #1f85e7;
+}
+.import-box{
+	width: 5.3rem;
+	margin: auto;
+	margin-top: 0.67rem;
+}
+.bindingbox{
+	margin-top: 0.67rem;
+}
+.bindingbox .binding-inp{
+	width: 5.3rem;
+	font-size: 0.3rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	padding: 0.4rem 0.6rem;
+	display: block;
+	margin: auto;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	border: 1px solid #dcdcdc;
+	margin-bottom: 0.45rem;
+	border-radius: 0.2rem;
+	background: #ffffff url(../images/phone.png) 0.35rem center no-repeat;
+	background-size: 0.2rem 0.31rem;
+	padding-left: 0.9rem;
+}
+.bindingbox .security-code{
+	position: relative;
+}
+.bindingbox .binding-inp::-webkit-input-placeholder{
+	color: #b4b4b4;
+}
+.bindingbox .binding-yanzheng{
+	background: #ffffff url(../images/yanzhen.png) 0.35rem center no-repeat;
+	background-size: 0.3rem 0.3rem;
+	padding-right: 2.3rem;
+	padding-left: 0.9rem;
+}
+.bindingbox .new-password{
+	background: #ffffff url(../images/lock.png) 0.35rem center no-repeat;
+	background-size: 0.24rem 0.27rem;
+	display: none;
+}
+.bindingbox .quer-password{
+	background: #ffffff url(../images/unlock.png) 0.35rem center no-repeat;
+	background-size: 0.24rem 0.27rem;
+	display: none;
+}
+.bindingbox .security-code .get-code{
+	font-size: 0.3rem;
+	color: #fff;
+	background-color: #1f85e7;
+	padding: 0 0.2rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	box-sizing: border-box;
+	border-radius: 0.15rem;
+	position: absolute;
+	right: 10%;
+	top: 50%;
+	margin-top: -0.3rem;
+}
+.bindingbox  .binding-btn{
+	width: 5.3rem;
+	font-size: 0.36rem;
+	height: 0.8rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.8rem;
+	padding: 0px 0.86rem;
+	display: block;
+	margin: auto;
+	box-sizing: border-box;
+	margin-top: 1rem;
+	border-radius: 0.2rem;
+	background-color: #1f85e7;
+}
+.binding-tips{
+	font-size: 10px;
+	color: #898989;
+	position: absolute;
+	bottom: 15px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+}
+/***********聚合页面******************/
+.carouselbox{
+	width: 100%;
+}
+.contain-page1{
+	background-color: #f2f2f2;
+}
+.carouselbox .swiper-container{
+	width: 100%;
+}
+.carouselbox .swiper-container .swiper-slide img{
+	width: 100%;
+	height: 3.2rem;
+	display: block;
+}
+.swiper-pagination-bullet{
+	background: #fff;
+	opacity:0.66;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+	bottom: -5px;
+}
+.swiper-pagination-bullet-active{
+	background: #51b3fc;
+}
+.severbox{
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #fff;
+	padding: 0.12rem 0;
+}
+.severbox .sever-items{
+	width: 3rem;
+	height: 1rem;
+	border-radius: 0.15rem;
+	font-size: 0.32rem;
+	color: #fff;
+	background: #1f85e7 url(../images/severbg1.png) 2.12rem 0.14rem no-repeat;
+	background-size: 1.2rem 1.22rem;
+}
+.severbox .sever-items:nth-child(2){
+	margin-left: 0.22rem;
+	background: #f16c59 url(../images/severbg2.png) 2.12rem 0.14rem no-repeat;
+	background-size: 0.96rem 1.22rem;
+}
+.severbox .sever-items .severimg1,.severbox .sever-items .severimg2{
+	height: 0.31rem;
+	display: block;
+	margin-right: 0.05rem;
+}
+.severbox .sever-items .severimg2{
+	height: 0.32rem;
+	display: block;
+	margin-right: 0.11rem;
+}
+.module{
+	width: 100%;
+	margin-top: 0.23rem;
+	background-color: #fff;
+}
+.module .module-ul{
+	overflow: hidden;
+	border-top: 1px solid #ebebeb;
+}
+.module .module-sign{
+	font-size: 0.26rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	color: #6c6c6c;
+	padding-left: 0.26rem;
+	box-sizing: border-box;
+}
+.module .module-ul .module-items{
+	width: 25%;
+	height: 1.52rem;
+	float: left;
+	font-size: 0.22rem;
+	color: #000000;
+	-webkit-box-orient: vertical;
+	box-sizing: border-box;
+}
+.module .module-ul .module-items:not(:last-child){
+	border-right: 1px solid #ebebeb;
+}
+.module .module-ul .module-items img{
+	width: 0.5rem;
+	display: block;
+	margin-bottom: 0.22rem;
+}
+.statement-footer{
+	font-size: 0.24rem;
+	color: #8f8f8f;
+	position: fixed;
+	bottom: 0.13rem;
+	right: 0;
+	left: 0;
+	margin: auto;
+	text-align: center;
+}
+.no_content{
+	width: 2.84rem;
+	display: block;
+	margin: 1.34rem auto;
+}
+/***********订单列表******************/
+.classify-choose{
+	width: 100%;
+	font-size: 0.3rem;
+	color: #9e9e9e;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.18);
+}
+.classify2{
+	height: 100%;
+}
+.classify-choose .order-box{
+	width: 100%;
+	height: 0.8rem;
+	box-sizing: border-box;
+	-webkit-box-pack: justify;
+	background: #fff;
+	padding-left: 0.36rem;
+	padding-right: 0.1rem;
+	box-sizing: border-box;
+}
+.classify-choose .classify-show{
+	width: 1.5rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	color: #1f85e7;
+	text-align: right;
+	padding-right: 0.27rem;
+	background: url(../images/uparrows.png) right center no-repeat;
+	background-size: 0.16rem 0.1rem;
+}
+.classify-choose .classify-show2{
+	background: url(../images/downarrows.png) right center no-repeat;
+	background-size: 0.16rem 0.1rem;
+}
+.select-bg{
+	position: relative;
+	height: 100%;
+	background: rgba(0,0,0,0.18);
+}
+.classify-choose .select-box{
+	width: 100%;
+	position: absolute;
+	top: 0.82rem;
+	left: 0;
+	overflow: hidden;
+	background: #fff;
+	display:none;
+}
+.classify-choose .select-box li{
+	float: left;
+	width: 25%;
+	text-align: center;
+	height: 0.72rem;
+	line-height: 0.72rem;
+}
+.classify-choose .select-box .selected{
+	color: #1f85e7;
+}
+.order-list{
+	width: 100%;
+	padding-top: 0.8rem;
+	padding-bottom: 0.2rem;
+}
+.order-list .order-items{
+	background: #fff;
+	margin-top: 0.2rem;
+}
+.order-list .order-items .order-time{
+	height: 0.6rem;
+	padding: 0 0.36rem;
+	box-sizing: border-box;
+	-webkit-box-pack: justify;
+	border-bottom: 1px solid #dcdcdc;
+}
+.order-list .order-items .order-time-del{
+	font-size: 0.3rem;
+	color: #323232;
+}
+.order-list .order-items .order-state{
+	font-size: 0.3rem;
+}
+.order-list .order-items .car-details{
+	background: url(../images/next-btn.png) 6.15rem center no-repeat;
+	background-size: 0.16rem 0.27rem;
+}
+.order-list .order-items .car-details .car-details-state1{
+	-webkit-box-pack: justify;
+	font-size: 0.3rem;
+	height: 0.66rem;
+	color: #323232;
+	padding: 0 0.36rem;
+	box-sizing: border-box;
+}
+.order-list .order-items .order-state-box{
+	width: 100%;
+	-webkit-box-pack: justify;
+	height: 0.6rem;
+    padding: 0 0.36rem;
+    box-sizing: border-box;
+    border-top: 1px solid #dcdcdc;
+}
+.order-list .order-items .order-state-box .order-state-del{
+	font-size: 0.3rem;
+    color: #323232;
+}
+.order-list .order-items .order-state-box .order-stateing{
+	font-size: 0.3rem;
+    color: #1f85e7;
+}
+.order-time-middle{
+	margin-left: 0.4rem;
+	margin-right: 0.4rem;
+}
+.order-list .order-items .order-particulars{
+	text-align: right;
+	line-height: 0.6rem;
+	font-size: 0.24rem;
+	color: #1f85e7;
+}
+.order-list .order-items .order-particulars .rightarrows{
+	width: 0.1rem;
+	display: block;
+	margin-left: 0.15rem;
+}
+.order-list .order-items .car-details2{
+	background: #fff;
+}
+.curs-phone{
+	color: #1f85e7;
+	text-decoration: underline;
+}
+.order-list .order-items .order-time2{
+	height: 0.8rem;
+}
+

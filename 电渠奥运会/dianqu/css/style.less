@@ -1,0 +1,503 @@
+@baserem: 1rem/64;
+.Box{
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+}
+.flexbox{
+    display:-moz-box; /* Firefox */
+    display:-webkit-box; /* Safari and Chrome */
+    display:-ms-flexbox; /* Internet Explorer 10 */
+    display:box;
+    -webkit-box-align:center;
+}
+.flexleft{
+    -webkit-box-flex: 1;
+    -moz-box-flex:1; /* Firefox */
+    box-flex:1;
+    position:relative;
+    }  
+.flexright{
+    position:relative;
+    color: #8f8f8f;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+}  
+
+
+//二维码页面开始          
+.codeBg{
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+.code{
+    width: 85%;
+    height: 78%;
+    border-radius: 15*@baserem;
+    -webkit-border-radius: 15*@baserem;
+    background: url(../images/codeBg.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+.codeTit{
+    width: 459*@baserem;
+    height: 93*@baserem;
+    margin:55*@baserem auto 45*@baserem;
+}
+.codeTit img{
+    width: 459*@baserem;
+    height: 93*@baserem;
+}
+.codeNav{
+    width: 411*@baserem;
+    height: 411*@baserem;
+    border: 7*@baserem solid #f1d62d;
+    -webkit-border-radius: 10*@baserem;
+    margin: 0 auto;
+    -webkit-box-shadow: -2*@baserem 2*@baserem 0 #f0c808;
+}
+.codeNav img{
+    width: 411*@baserem;
+    height: 411*@baserem;
+}
+.codeFooter{
+    width: 100%;
+    margin-top: 4%;
+}
+.codeFooter p{
+    font-size: 36px;
+    line-height: 50*@baserem;
+    color: #fff;
+    text-shadow:1*@baserem 1*@baserem 0 rgba(0,0,0,0.2);
+    text-align: center;
+}
+[data-dpr="1"] .codeFooter p{
+    font-size: 18px;
+}
+[data-dpr="3"] .codeFooter p{
+    font-size: 54px;
+}
+//二维码页面结束  
+
+//个人中心页面开始
+.personalCenterBg{
+    width: 100%;
+    height: 100%;
+    background: url(../images/personalCenterBg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.personalLogo{
+    width: 281*@baserem;
+    height: 256*@baserem;
+    position: absolute;
+    left: -56*@baserem;
+    top: -62*@baserem;
+    z-index: 1;
+}
+.personalLogo img{
+    width: 281*@baserem;
+    height: 256*@baserem;
+}
+.personalMusic{
+    width: 60*@baserem;
+    height: 60*@baserem;
+    background: #fc5e00;
+    position: absolute;
+    top: 40*@baserem;
+    right: 20*@baserem;
+    -webkit-border-radius: 50%;
+}
+.personalMusic img{
+    width: 34*@baserem;
+    height: 34*@baserem;
+    margin: 12*@baserem 11*@baserem;
+}
+.personalRule{
+    width: 60*@baserem;
+    height: 60*@baserem;
+    background: #008de8;
+    color: #fff;
+    position: absolute;
+    top: 130*@baserem;
+    right: 20*@baserem;
+    -webkit-border-radius: 50%;
+}
+.personalTotal{
+    width: 242*@baserem;
+    height: 200*@baserem;
+    position: absolute;
+    top:100*@baserem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.personalTotal img{
+    width: 242*@baserem;
+    height: 152*@baserem;
+}
+.personalTotal p{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+}
+[data-dpr="1"] .personalTotal p{
+    font-size: 14px;
+}
+[data-dpr="3"] .personalTotal p{
+    font-size: 42px;
+}
+.personalCenterDesc{
+    width: 118*@baserem;
+    height: 121*@baserem;
+    position: absolute;
+    left: 0;
+    top: 27.7%;
+    z-index: 3;
+}
+.personalCenterDesc img{
+    width: 118*@baserem;
+    height: 121*@baserem;
+}
+.personalFooter{
+    width: 100%;
+    height: 204*@baserem;
+    position: absolute;
+    bottom: 0;
+    background:url(../images/personalFooter.png) no-repeat bottom;
+    background-size: 100% 100%;
+    z-index: 2;
+}
+.personalBack{
+    margin: 0 auto;
+    margin-top: 85*@baserem;
+    width: 237*@baserem;
+    height: 110*@baserem;
+    background: url(../images/personalCenterBack.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.personalBack p{
+    font-size: 28px;
+    color: #fff;
+    margin-left: 125*@baserem;
+    line-height: 100*@baserem;
+    letter-spacing: 5*@baserem;
+}
+[data-dpr="1"] .personalBack p{
+    font-size: 14px;
+}
+[data-dpr="3"] .personalBack p{
+    font-size: 42px;
+}
+.personalLogo2{
+    width: 80*@baserem;
+    height: 103*@baserem;
+    position: absolute;
+    right: 10*@baserem;
+    bottom: 15*@baserem;
+}
+.personalLogo2 img{
+    width: 80*@baserem;
+    height: 103*@baserem;
+}
+.personalList{
+    width: 600*@baserem;
+    height: 68%;
+    background: rgba(0,0,0,0.2);
+    border-radius: 20*@baserem 20*@baserem 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 0;
+    -webkit-box-shadow: 5*@baserem 30*@baserem 30*@baserem rgba(0,0,0,0.2);
+}
+.personalListNav{
+    height: 100%;
+}
+.personalListNav h1{
+    width: 91%;
+    margin: 0 auto;
+    font-size: 36px;
+    line-height: 80*@baserem;
+    color: #fed500;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #f4e879;
+}
+[data-dpr="1"] .personalListNav h1{
+    font-size: 18px;
+}
+[data-dpr="3"] .personalListNav h1{
+    font-size: 54px;
+}
+.personalListUlBox{
+    width: 91%;
+    height: 65%;
+    overflow-y: auto;
+    margin: 0 auto;
+}
+.personalListNav ul{
+    width: 100%;
+    margin: 0 auto;
+}
+.personalListNav ul li{
+    display: inline-block;
+    width: 100%;
+    font-size: 28px;
+    line-height: 80*@baserem;
+    color: #fff;
+}
+
+[data-dpr="1"] .personalListNav ul li{
+    font-size: 14px;
+}
+[data-dpr="3"] .personalListNav ul li{
+    font-size: 42px;
+}
+.personalListNav ul li p{
+    width:410*@baserem;    
+    white-space:nowrap; 
+    text-overflow:ellipsis; 
+    -webkit-text-overflow:ellipsis; 
+    overflow: hidden; 
+    float: left;
+    margin-left: 5*@baserem;
+}
+.personalListNav ul li i{
+    float: right;
+    margin-right: 5*@baserem;
+}
+//个人中心页面结束
+
+//活动规则页面开始
+.activityRule{
+    width: 100%;
+    height: 100%;
+    background: url(../images/personalCenterBg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.activityRuleLogo{
+    width: 184*@baserem;
+    height: 152*@baserem;
+    position: absolute;
+    left: 25*@baserem;
+    top: 0;
+    z-index: 1;
+}
+.activityRuleLogo img{
+    width: 184*@baserem;
+    height: 152*@baserem;
+}
+.activityRuleTxt{
+    position: absolute;
+    top: 12.8%;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    margin: 0 auto;
+    width: 600*@baserem;
+    height: 74%;
+    -webkit-border-radius: 15*@baserem;
+    background: rgba(210,235,249,0.8);
+    box-shadow: 12*@baserem 18*@baserem 18*@baserem rgba(0,0,0,0.4);
+}
+.activityRuleTxtNav{
+    width: 525*@baserem;
+    height: 95%;
+    overflow-y: auto;
+    margin: 0 auto;
+    margin: 4% 0;
+    padding: 0 35*@baserem;
+}
+.activityRuleTxtNav h1{
+    font-size: 28px;
+    line-height: 70*@baserem;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+[data-dpr="1"] .activityRuleTxtNav h1{
+    font-size: 14px;
+}
+[data-dpr="3"] .activityRuleTxtNav h1{
+    font-size: 42px;
+}
+.activityRuleTxtNav p{
+    font-size: 24px;
+    letter-spacing: 1*@baserem;
+    line-height: 46*@baserem;
+    color: #000;
+}
+[data-dpr="1"] .activityRuleTxtNav p{
+    font-size: 12px;
+}
+[data-dpr="3"] .activityRuleTxtNav p{
+    font-size: 36px;
+}
+//活动规则页面结束
+
+//竞猜选择页面开始
+.choose{
+    width: 100%;
+    height: 100%;
+    background: url(../images/chooseBg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.finalPre{
+    width: 475*@baserem;
+    height: 219*@baserem;
+    position: absolute;
+    top: 23.76%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.finalPre img{
+    width: 475*@baserem;
+    height: 219*@baserem;
+}
+.hotPre{
+    width: 488*@baserem;
+    height: 226*@baserem;
+    position: absolute;
+    top: 46.53%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.hotPre img{
+    width: 488*@baserem;
+    height: 226*@baserem;
+}
+.personalCent{
+    width: 253*@baserem;
+    height: 101*@baserem;
+    position: absolute;
+    top: 72.30%;
+    left: 7.8%;
+}
+.personalCent img{
+    width: 253*@baserem;
+    height: 101*@baserem;
+}
+.mall{
+    width: 254*@baserem;
+    height: 101*@baserem;
+    position: absolute;
+    top: 72.30%;
+    right: 7.8%;
+}
+.mall img{
+    width: 254*@baserem;
+    height: 101*@baserem;
+}
+//竞猜选择页面结束
+
+//竞猜开始页面开始
+.guessBegin{
+    width: 100%;
+    height: 100%;
+    background: url(../images/guessBeginBg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.play{
+    width: 166*@baserem;
+    height: 98*@baserem;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.play img{
+    width: 166*@baserem;
+    height: 98*@baserem;
+}
+//竞猜开始页面结束
+
+//下注页面开始
+.cathectic{
+    width: 100%;
+    height: 100%;
+    background: url(../images/cathecticBg.jpg) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.cathecticSubmit{
+    width: 249*@baserem;
+    height: 102*@baserem;
+    position: absolute;
+    bottom: 5.5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.cathecticSubmit img{
+    width: 249*@baserem;
+    height: 102*@baserem;
+}
+.cathecticNum{
+    width: 340*@baserem;
+    height: 120*@baserem;  
+    position: absolute;
+    top: 42.6%;
+    left: 0;
+    right: 0;
+    margin: 0 auto; 
+    display: table-cell;
+    text-align: center;
+}
+.cathecticNum .sub{
+    width: 74*@baserem;
+    height: 84*@baserem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.cathecticNum .sub img{
+    width: 74*@baserem;
+    height: 84*@baserem;
+}
+.cathecticNum .add{
+    width: 74*@baserem;
+    height: 84*@baserem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.cathecticNum .add img{
+    width: 74*@baserem;
+    height: 84*@baserem;
+}
+.cathecticNum .circle{
+    width: 120*@baserem;
+    height: 120*@baserem;
+    background: #fff;
+    -webkit-border-radius: 50%;
+    display: inline-block;
+    margin:0 20*@baserem;  
+    vertical-align: middle;  
+}
+.cathecticNum .circle input{
+    display: block;
+    width: 100*@baserem;
+    height: 120*@baserem;
+    font-size: 40px;
+    line-height: 120*@baserem;
+    text-align: center;
+    color:#e14227;
+    background: none;
+    margin: 0 auto;
+}
+[data-dpr="1"] .cathecticNum .circle input{
+    font-size: 20px;
+}
+[data-dpr="3"] .cathecticNum .circle input{
+    font-size: 60px;
+}
+//下注页面结束

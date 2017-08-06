@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/default.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/jquery.js"></script>
+		<title>旅游巴士详情</title>
+	</head>
+	<body>
+		<div class="busDetail">
+			<div class="busDetail_top">
+				<h1>望美旅游巴士L1</h1>
+				<h2><img class="busDetail_topimg1" src="images/indexIcon2.png"><a>线路实时状态</a><img class="busDetail_topimg2" src="images/busDetailIcon1.png"></h2>				
+			</div>
+			<div class="busDetail_mid">
+				<div class="busDetail_mid_up">
+					<div class="site"><span class="greenBorder"></span><p>阅江楼站</p></div>
+					<img src="images/busDetailIcon2.png">
+					<div class="site"><span class="orangeBorder"></span><p>牛首山站</p></div>
+					<a class="ticketRule">购票须知</a>
+				</div>
+				<div class="busDetail_mid_down">
+					<p><span></span>阅江楼站  06:00-22:00</p>
+					<p><span></span>牛首山站  06:15-23:00</p>
+				</div>
+			</div>
+			<div class="busDetail_bot">
+				<h1>线路简介</h1>
+				<div class="busDetail_bot_descripe">
+					<p>望美金陵旅游巴士L1线路途径南京主城区13个A级景点;购买即可全日无限制乘坐LI旅游巴士。</p>
+				</div>
+				<div class="busDetail_station">
+					<ul>
+						<li><span class="busDetailSpanCurrent"></span><p class="busDetailCurrent">阅江楼</p></li>
+						<li><span></span><p>鸡鸣寺</p></li>
+						<li><span></span><p>燕子矶</p></li>
+						<li><span></span><p>玄武湖</p></li>
+						<li><span></span><p>中华门</p></li>
+						<li><span></span><p>中山陵</p></li>
+						<li><span></span><p>明故宫</p></li>
+						<li><span></span><p>莫愁湖</p></li>
+						<li><span></span><p>1912街区</p></li>
+						<li><span></span><p>隆昌寺</p></li>
+						<li><span></span><p>牛首山</p></li>
+						<li><span></span><p>鸡鸣寺</p></li>
+						<li><span></span><p>牛首山</p></li>	
+						<li><span></span><p>鸡鸣寺</p></li>
+						<li><span></span><p>牛首山</p></li>
+						<li><span></span><p>鸡鸣寺</p></li>
+						<li><span></span><p>牛首山</p></li>
+						<div class="c"></div>
+					</ul>
+				</div>
+				<div class="busDetail_stationImgBox">
+					<ul>
+						<li style="display: block;"><img src="images/busDetailImg1.jpg"></li>
+						<li style="display: none;"><img src="images/busDetailImg2.jpg"></li>
+						<li style="display: none;"><img src="images/busDetailImg1.jpg"></li>
+						<li style="display: none;"><img src="images/busDetailImg2.jpg"></li>
+					</ul>
+					<div class="busDetail_stationImgTxt">【阅江楼】</div>
+				</div>
+			</div>
+			<div class="viewDetailFoot">				
+				<div class="viewDetailBtn orange shareBtn"><img src="images/btn2.png">分享</div>
+				<div class="viewDetailBtn"><img src="images/btn1.png">购票</div>
+			</div>
+		</div>
+		<script>
+			$(function(){
+				$(".busDetail_station ul li").click(
+					function(){
+						$(".busDetail_station ul li").find("p").removeClass("busDetailCurrent");
+						$(".busDetail_station ul li").find("span").removeClass("busDetailSpanCurrent");
+						$(this).find("p").addClass("busDetailCurrent");
+						$(this).find("span").addClass("busDetailSpanCurrent");
+						$(".busDetail_stationImgTxt").text("【"+$(this).text()+"】");
+						$(".busDetail_stationImgBox ul li").hide();
+						$(".busDetail_stationImgBox ul li").eq($(this).index()).show();
+					}
+				);
+				var len=$('.busDetail_station ul').children('li').length;
+				var screenWidth=$(window).width();
+				var widlen1=0.85*len+'rem';
+				var widlen2=100/len+'%'; 
+				var widlen3=100+'%';
+				var widbtn=false;
+
+				if(len<=10){
+					$('.busDetail_station ul').css('width',widlen3); //小于10个，屏幕固定
+					$('.busDetail_station ul').children('li').css('width',widlen2);
+				}else if(10<len<=20){
+					if(screenWidth<768){
+						$('.busDetail_station ul').css('width',widlen1); //大于10个小于20个，屏幕为ipad以下，屏幕滚动
+						widbtn=true;
+					}else{
+						$('.busDetail_station ul').css('width',widlen3); //大于10个小于20个，屏幕为ipad，屏幕固定
+						$('.busDetail_station ul').children('li').css('width',widlen2);
+						widbtn=false;
+					}
+				}else if(len>20){
+					$('.busDetail_station ul').css('width',widlen1); //大于20个，不管是否为ipad，屏幕横向滚动
+					widbtn=true;
+				}
+			})
+		</script>
+	</body>
+</html>

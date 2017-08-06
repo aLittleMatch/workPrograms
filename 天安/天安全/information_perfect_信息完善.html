@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/judgeLoss.css"/>
+		<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>用户定损确认</title>
+	</head>
+	<body>
+		<div class="container consignbg">
+			<!--头部-->
+			<div class="counter-number">
+				<div class="counter-number-info">
+					<div class="counter-info-left">报案号</div>
+					<div class="counter-info-right">07603008022016002361</div>
+				</div>
+				<div class="licens-plate">车牌号：苏A-87459</div>
+			</div>
+			<!--详情-->
+			<div class="counter-del">
+				<div class="judge-content1">
+					<div class="judge-side flexbox">
+						<div class="judge-side-left">姓名</div>
+						<div class="judge-side-right flexright">微小宝</div>
+					</div>
+					<div class="judge-side flexbox">
+						<div class="judge-side-left">手机号</div>
+						<div class="judge-side-right flexright">13755645534</div>
+					</div>
+					<div class="judge-side flexbox judge-side-content">
+						<div class="judge-side-left">事故地点</div>
+						<div class="judge-side-right flexright">南京市江宁开发区将军大道麻田路口</div>
+					</div>
+				</div>
+			</div>
+			<div class="send_card">
+				<div class="send_card_box flexbox widthBox">
+					<div class="send_card_sider_left id-card"></div>
+					<!--不合格添加id-card提示-->
+					<div class="send_card_sider_right bank-card"></div>	
+					<!--不合格添加bank-card提示-->
+				</div>
+				<!--不合格提示-->
+				<div class="send-again">请重新上传照片</div>
+			</div>
+			<!--提交-->
+			<div class="submit-wrapper widthBox send-submit-wrapper">
+				<div class="confir-sub">提 交</div>
+			</div>
+			
+		</div>
+		<script type="text/javascript">
+			$('.select-confir-sider').click(function(){
+				$(this).siblings().removeClass('confir-sider-haved');
+				$(this).addClass('confir-sider-haved');
+			})
+		</script>
+	</body>
+</html>

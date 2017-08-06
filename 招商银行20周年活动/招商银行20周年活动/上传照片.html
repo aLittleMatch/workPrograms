@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script>
+		(function (doc, win) {
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function () {
+					var clientWidth = docEl.clientWidth;
+					if (!clientWidth) return;
+					if (clientWidth >= 640) {
+						docEl.style.fontSize = '100px';
+					} else {
+						docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+					}
+				};
+		
+			if (!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+		</script>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+        <link rel="stylesheet" type="text/css" href="css/bank.css"/>
+		<title>上传照片</title>
+		
+	</head>
+	<body class="wh100">
+		<div class="uploadPic">
+			<div class="uploadPicTop">上传我的照片</div>
+			<div class="uploadPicNav"><img src="images/uploadImgBg.png"></div>
+			<div class="uploadPicBot">
+				<div class="uploadPicBotUp">
+					<div class="uploadPicBotUpTop borderBottom">拍照</div>
+					<div class="uploadPicBotUpTop">照片图库</div>
+				</div>
+				<div class="uploadPicBotDown">取消</div>
+			</div>
+		</div>
+		<script src="js/zepto.min.js"></script>
+		<script>
+			$(function(){
+				$(".uploadPicTop").click(
+					function(){
+						$(".uploadPicBot").show();
+					}
+				);
+				$(".uploadPicBotDown").click(
+					function(){
+						$(".uploadPicBot").hide();
+					}
+				)
+			})
+		</script>
+	</body>
+</html>

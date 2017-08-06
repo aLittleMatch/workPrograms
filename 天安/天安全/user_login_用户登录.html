@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户登录</title>
+		<meta content="yes" name="apple-mobile-web-app-capable" /><!-- iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览 -->
+		<meta content="telephone=no" name="format-detection" /><!-- 告诉设备忽略将页面中的数字识别为电话号码 -->
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" /><!-- iphone的私有标签，它指定的iphone中safari顶端的状态条的样式 -->
+		<link href="css/default.css" rel="stylesheet" type="text/css" media="screen"/>
+		<link rel="stylesheet" href="css/style.css"/>
+		<script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/jquery-1.10.1.min.js" ></script>
+		<script>
+		var height = $(window).height();
+	        $(window).resize(function() {
+	            $('.user_login').height(height);
+	        });
+		</script>
+	</head>
+	<body>
+		<div class="user_login">
+			<div class="user_login_top">
+				<img src="images/user_login.jpg">
+			</div>
+			<div class="user_login_nav">
+				<span><img src="images/icon11.png"><input class="user_login_code" type="text" value="" placeholder="请输入验证码"></span>
+				<button>提交</button>
+			</div>
+			<div class="copyright">
+				<p>Copyright©天安财产保险股份有限公司</p>
+			</div>
+		</div>		
+	</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/default.css"/>
+		<link rel="stylesheet/less" type="text/css" href="css/style.less"/>
+		<script src="js/less.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.js"></script>
+		<title>竞猜下注</title>
+	</head>
+	<body>
+		<div class="bgBox cathectic">
+			<div class="cathecticSubmit"><img src="images/cathecticBtn.png"></div>
+			<div class="cathecticNum">
+				<div class="sub"><img src="images/sub.png"></div>
+				<div class="circle">
+					<input id="NUM" type="number" value="0" onblur="chkvalue(this)">
+				</div>
+				<div class="add"><img src="images/add.png"></div>
+			</div>
+		</div>
+		<script>
+			$(function(){					
+				$(".sub").click(function(){
+				var n=$("#NUM").val();
+				var m=parseInt(n);
+				var num=m-1;
+				if(num < 0){alert("金牌数不得小于0"); num=0;};
+				if(num > 999){alert("金牌数不得大于999"); num=999;};
+				$("#NUM").val(num);
+				});
+				$(".add").click(function(){
+				var n=$("#NUM").val();
+				var m=parseInt(n);
+				var num=m+1;
+				if(num < 0){alert("金牌数不得小于0"); num=0;};
+				if(num > 999){alert("金牌数不得大于999"); num=999;};
+				$("#NUM").val(num);
+				});
+			})
+			
+			var height = $(window).height();
+	        $(window).resize(function() {
+	            $('.cathectic').height(height);
+	        });
+	        
+	        function chkvalue(txt) {
+   				if(txt.value=="") alert("文本框里必须填写内容!");
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,594 @@
+/***********工程师上门***********/
+/*头部*/
+.callin{
+	width: 100%;
+	height: 645px;
+	background-color: #fff;
+	width: 740px;
+    padding: 1px 3px 250px 3px;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+}
+.callin-header{
+	border-bottom: 2px solid #008529;
+    height: 40px;
+    line-height: 40px;
+}
+.callin-header b{
+	background: #008529;
+    color: #fff;
+    font-weight: normal;
+    float: left;
+    padding: 0 15px;
+}
+.callin-conten{
+	width: 100%;
+	box-sizing: border-box;
+}
+/*查询*/
+.en-query{
+	margin-top: 16px;
+	margin-bottom: 13px;
+}
+.en-query-content{
+	width: 630px;
+	float: left;
+	background-color: #f3f3f3;
+	padding: 3px 0;
+	border-radius: 10px;
+}
+.en-query-content .query-condition{
+	width: 120px;
+	font-size: 12px;
+	text-align: center;
+	color: #000000;
+	line-height: 26px;
+	padding-left: 14px;
+	background: url(../images/querbg.jpg) 110px center no-repeat;
+	display: inline-block;
+	border-right: 1px solid #959595;
+}
+.en-query-content .query-inp{
+	width: 480px;
+	padding-left: 10px;
+	line-height: 26px;
+	background: none;
+	outline: none;
+	font-size: 12px;
+}
+.en-query-btn{
+	width: 50px;
+	font-size: 12px;
+	color: #fff;
+	border-radius: 5px;
+	height: 33px;
+	line-height: 33px;
+	background-color: #008e00;
+	text-align: center;
+}
+.query-result{
+	font-size: 12px;
+	width: 731px;
+	box-sizing: border-box;
+	table-layout: fixed;
+}
+.en-query .en-query-content .search-show{
+	width: 125px;
+	text-align: center;
+	display: none;
+	top: 91px;
+	left: 12px;
+}
+/*table th*/
+.query-result tbody tr th{
+	color: #fff;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: #008e00;
+}
+.query-result tbody tr th img{
+	vertical-align: middle;
+	font-size: 0;
+	margin-left: 5px;
+}
+.query-result tbody tr th:nth-child(1){
+	width: 147px;
+	border-right: 1px solid;
+}
+.query-result tbody tr th:nth-child(2){
+	width: 89px;
+	border-right: 1px solid;
+}
+.query-result tbody tr th:nth-child(3){
+	width: 148px;
+	border-right: 1px solid;
+}
+.query-result tbody tr th:nth-child(4){
+	width: 84px;
+	border-right: 1px solid;
+}
+.query-result tbody tr th:nth-child(5){
+	width: 84px;
+	border-right: 1px solid;
+	background: #008e00;
+}
+.query-result tbody tr th:nth-child(6){
+	width: 89px;
+	border-right: 1px solid;
+}
+.query-result tbody tr th:nth-child(7){
+	width: 90px;
+	background: #008e00;
+}
+/*table td*/
+.query-result tbody tr td:nth-child(1){
+	width: 147px;
+}
+.query-result tbody tr td:nth-child(2){
+	width: 89px;
+}
+.query-result tbody tr td:nth-child(3){
+	width: 148px;
+}
+.query-result tbody tr td:nth-child(4){
+	width: 84px;
+}
+.query-result tbody tr td:nth-child(5){
+	width: 84px;
+}
+.query-result tbody tr td:nth-child(6){
+	width: 89px;
+}
+.query-result tbody tr td:nth-child(7){
+	width: 90px;
+}
+.query-result tbody tr td{
+	font-size: 12px;
+	color: #000000;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	background-color: #fff;
+	padding: 0 5px;
+	box-sizing: border-box;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.query-result tbody tr:nth-child(2n+1) td{
+	background-color: #e2f1e6;
+}
+.query-result tbody tr td:nth-child(7) a{
+	color: #0294e7;
+	text-decoration: underline;
+}
+
+
+/*底部翻页模块*/
+.list_page{
+	width: 100%;
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+.list_page a{
+	padding: 2px 8px;
+    margin: 0 5px;
+    color: #5e5e5e;
+    text-decoration: underline;
+}
+.linkNormal{
+	text-decoration: none!important;
+}
+.go{
+	border: 1px solid #a0a0a0;
+}
+.go:hover{
+	background: #008529;
+	color: #fff;
+}
+.pageNum{
+	width: 63px; 
+	line-height: 19px; 
+	padding: 2px 8px; 
+	margin: 0 5px; 
+	background: #fff; 
+	font-size: 16px; 
+	border: 1px solid #cccccc; 
+	border-radius: 2px;
+}
+
+/*遮罩层*/
+.coverbox{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.6);
+	z-index: 10000;
+	display: none;
+}
+.cover-wrapper{
+	width: 360px;
+	height: 240px;
+	background-color: #fff;
+	position: absolute;
+	top: 20%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.shut-btn{
+	position: absolute;
+	bottom: -210px;
+	left: 50%;
+	margin-left: -25px;
+}
+img{ border:0 !important;}
+.wxs_img { padding-left:15px;}
+.wxs_img img { border:1px solid #d5d5d5;}
+.wxs_text{ width:435px; line-height:26px;}
+.wxs_box { padding:25px 0;}
+.wxs_text img{ vertical-align:middle; padding-bottom:3px;}
+.wxs_text b{ color:#F00; padding-left:10px;}
+.card{
+	width:320px;
+	overflow:hidden;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	border-top:2px solid #388e63;
+	position:relative;
+	}
+.topBox{
+	width:100%;
+	}
+.topBox .topimg{
+	width:100%;
+	display:block;
+}
+.mainBox{
+	width:100%;
+	padding-left:6px;
+	padding-right:6px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	border-bottom:1px solid #4a9872;
+	padding-bottom:15px;
+	}
+.mainBox .left{
+	float:left;
+	}
+.mainBox .photo{
+	width:62px;
+	border:1px solid #388e63;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	}
+.mainBox .right{
+	float:left;
+	margin-left:20px;
+	width:226px;
+
+	}
+
+.userBox .flexleft{
+	width:62px;
+	text-align:left;
+	float:left;
+	min-height:18px;
+	line-height:18px;
+    box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	font-size:11px;
+	-webkit-text-size-adjust:none;
+	}
+.userBox .flexright{
+	width:150px; /*下划线的长度 原始为133*/
+	border-bottom:1px solid #cfcfcf;
+	float:left;
+	min-height:18px;
+	line-height:18px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	font-size:11px;
+	-webkit-text-size-adjust:none;
+	}
+.userBox{
+	box-sizing:border-box;
+	display: block;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	}
+.bottomBox{
+	width:100%;
+	overflow:hidden;
+	background:#388e63;
+	padding:3px 0;
+	margin-top:1px;
+	}
+.bottomBox .adimg{
+	width:100%;
+	}
+
+.ewm{
+	position:absolute;
+	bottom:4px;
+	left:6px;
+	width:62px;
+	border:1px solid #388e63;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+
+	}
+.bb{ display:none;}
+.printBtn{
+	background: #008529;
+    padding: 8px 15px;
+    margin: 5px 10px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 15px;
+	}
+
+/***********申请入会***********/
+.apply-jion{
+	width: 100%;
+	background-color: #fff;
+}
+.items-nav{
+	width: 100%;
+	height: 42px;
+	padding-top: 1px;
+	padding-left: 2px;
+	border-bottom: 2px solid #008529;
+	box-sizing: border-box;
+}
+.location-nav{
+	padding: 0 16px;
+	height: 41px;
+	line-height: 41px;
+	background-color: #008529;
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+}
+.location-nav-place{
+	float: right;
+	height: 41px;
+	line-height: 41px;
+}
+.location-nav-place{
+	font-size: 12px;
+	padding-left: 22px;
+	padding-right: 10px;
+	background: url(../images/locationnav.jpg) left center no-repeat;
+}
+.apply-info{
+	width: 100%;
+	padding: 10px 13px;
+	box-sizing: border-box;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+.formbox{
+	width: 100%;
+	border-left: 1px solid #ebebeb;
+	border-top: 1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
+}
+.formbox-items{
+	height: 42px;
+	overflow: hidden;
+	border-bottom: 1px solid #ebebeb;
+}
+.items1-sider{
+	float: left;
+	width: 400px;
+	height: 42px;
+}
+.items1-sider2{
+	width: 100%;
+	line-height: 42px;
+}
+.items2-sider{
+	width: 480px;
+	float: left;
+	height: 42px;
+	line-height: 42px;
+}
+.sider-inp-box{
+	float: right;
+	line-height: 42px;
+}
+.sider-inp{
+	width: 152px;
+	height: 24px;
+	border: 1px solid #ebebeb;
+}
+.sider-file{
+	width: 167px;
+	height: 24px;
+}
+.sider-select{
+	width: 152px;
+	text-align: center;
+	border: 1px solid #ebebeb;
+}
+.sider-select option{
+	text-align: center;
+}
+.tips-sider{
+	color: #ff0000;
+	margin-left: 70px;
+}
+.sider-select2{
+	width: 70px;
+	text-align: center;
+	border: 1px solid #ebebeb;
+	margin-right: 85px;
+}
+.sider-file1{
+	margin-right: -12px;
+}
+.left-items-sider{
+	margin-left: 70px;
+}
+.sider2-inp{
+	width: 630px;
+}
+.long-inp{
+	margin-left: 136px;
+}
+.formbox-items-sub{
+	height: 92px;
+	position: relative;
+}
+.submit-box{
+	width: 152px;
+	height: 38px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.btn-sub1,.btn-sub2{
+	color: #fff;
+	background-color: #008529;
+	width: 64px;
+	height: 38px;
+	text-align: center;
+	line-height: 38px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.btn-sub1{float: left;}
+.btn-sub2{float: right;}
+/***********投诉直通车***********/
+.tecnology{
+	width: 100%;
+	padding: 40px 80px 80px 60px;
+	box-sizing: border-box;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+.complain-info{
+	width: 100%;
+	padding: 65px 65px 60px 65px;
+	box-sizing: border-box;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+.complain-obj{
+	width: 100%;
+	height: 100px;
+	border-bottom: 1px dashed #b9b9b9;
+}
+.obj-title{
+	font-size: 14px;
+	font-weight: normal;
+}
+.obj-style{
+	color: #008529;
+}
+.obj-info{
+	font-size: 14px;
+	line-height: 1.8em;
+	margin-top: 10px;
+}
+.complain-content{
+	width: 100%;
+}
+.complain-items1,.complain-items2,.complain-items3,.complain-items4{
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	margin-left: 160px;
+	margin-top: 48px;
+}
+.complain-theme,.complain-theme2{
+	width: 150px;
+	height: 20px;
+	border: 1px solid #d5d5d5;
+}
+.complain-items2{
+	margin-top: 20px;
+}
+.check-inp{
+	border: 1px solid #d5d5d5;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+label{
+	height: 36px;
+	line-height: 36px;
+	margin-right: 20px;
+	
+}
+.complain-items3{
+	height: 75px;
+	line-height: 75px;
+	margin-top: 20px;
+	vertical-align: middle;
+}
+.area-inp{
+	height: 75px;
+	width: 340px;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #d5d5d5;
+	vertical-align: middle;
+}
+.complain-items4{
+	margin-top: 15px;
+}
+.complain-theme2{
+	width: 95px;
+	text-align: center;
+	margin-left: 11px;
+}
+.aynz{
+	vertical-align: middle;
+}
+.complain-sub{
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background-color: #008529;
+	color: #fff;
+	margin: 30px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

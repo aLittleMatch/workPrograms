@@ -1,0 +1,499 @@
+.bgBox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  background-image: url(../images/bg.jpg);
+  background-attachment: inherit;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.musicBox {
+  position: absolute;
+  right: 0.3125rem;
+  top: 0.625rem;
+  z-index: 6;
+  width: 0.9375rem;
+  text-align: center;
+}
+.musicBox img {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  margin-bottom: 0.46875rem;
+}
+/*排行榜*/
+.rankBox {
+  background-image: url(../images/rankbg.jpg);
+  background-size: 100% 100%;
+}
+.rankTop {
+  width: 96%;
+  margin: 0 auto;
+  height: 1.34375rem;
+  line-height: 1.34375rem;
+  color: #fff;
+  font-size: 34px;
+}
+[data-dpr="1"] .rankTop {
+  font-size: 17px;
+}
+[data-dpr="3"] .rankTop {
+  font-size: 51px;
+}
+.rankContent {
+  width: 96%;
+  margin: 0 auto;
+  text-align: center;
+}
+.rankContent .rankBoxs {
+  background: #fff;
+  height: 13rem;
+  position: relative;
+  padding-bottom: 2.21875rem;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.rankContent .rankList .rank:first-child,
+.rankContent .title .rank:first-child {
+  width: 2.1875rem;
+}
+.rankContent .rankList .rank:last-child,
+.rankContent .title .rank:last-child {
+  width: 2.625rem;
+}
+.rankContent .rankList {
+  border-bottom: 1px solid #dfdfdf;
+}
+.rankContent .rankList .rank {
+  border-right: 1px solid #dfdfdf;
+  padding-top: 0.390625rem;
+  padding-bottom: 0.390625rem;
+  position: relative;
+}
+.rankContent .rankList .rank:nth-child(3n) {
+  border-right: none;
+}
+.rankContent .title {
+  width: 100%;
+  height: 1.40625rem;
+  line-height: 1.40625rem;
+  font-size: 30px;
+  color: #000;
+  text-align: center;
+  border-bottom: 1px solid #dfdfdf;
+  background: url(../images/rankTitle.png) no-repeat left top;
+  background-size: 100%;
+  box-sizing: border-box;
+  padding-top: 0.125rem;
+}
+[data-dpr="1"] .rankContent .title {
+  font-size: 15px;
+}
+[data-dpr="3"] .rankContent .title {
+  font-size: 45px;
+}
+.rankContent .title .rank {
+  border-right: 1px solid #dfdfdf;
+}
+.rankContent .title .rank:nth-child(3n) {
+  border-right: none;
+}
+.rankContent .bgBottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.rankList .rankImg {
+  width: 1.140625rem;
+  height: 1.140625rem;
+}
+.rankList .userphoto {
+  width: 1.09375rem;
+  height: 1.09375rem;
+  border-radius: 50%;
+  margin-left: 0.3125rem;
+  margin-right: 0.234375rem;
+}
+.rankList .number {
+  position: relative;
+  color: #666666;
+  font-size: 28px;
+}
+[data-dpr="1"] .rankList .number {
+  font-size: 14px;
+}
+[data-dpr="3"] .rankList .number {
+  font-size: 42px;
+}
+.rankList .number.r1 {
+  color: #e3b419;
+}
+.rankList .number.r2 {
+  color: #818b9b;
+}
+.rankList .number.r3 {
+  color: #fe712f;
+}
+.rankList .number .arrowRight {
+  position: absolute;
+  right: 0.3125rem;
+  top: 50%;
+  margin-top: -0.109375rem;
+  border-width: 0.03125rem 0.03125rem 0 0;
+}
+.rankList .member {
+  width: 4.0625rem;
+  margin: 0 auto;
+  text-align: left;
+}
+.rankList .member p {
+  font-size: 24px;
+  line-height: 0.53125rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+[data-dpr="1"] .rankList .member p {
+  font-size: 12px;
+}
+[data-dpr="3"] .rankList .member p {
+  font-size: 36px;
+}
+.rankList .member p a {
+  color: #65b7f1;
+  text-decoration: underline;
+}
+.rankList .rankNumber {
+  font-size: 40px;
+  color: #bbbbbb;
+  font-weight: bold;
+  display: inline-block;
+  width: 1.140625rem;
+  height: 1.140625rem;
+  text-align: center;
+  line-height: 1.140625rem;
+}
+[data-dpr="1"] .rankList .rankNumber {
+  font-size: 20px;
+}
+[data-dpr="3"] .rankList .rankNumber {
+  font-size: 60px;
+}
+.rankBottom {
+  width: 100%;
+  background: url(../images/rankBotm.png) no-repeat left top;
+  background-size: 100%;
+  height: 2.21875rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 22;
+}
+.rankBottom .flexbox {
+  margin-top: 0.375rem;
+  text-align: center;
+}
+.rankBottom .flexbox img {
+  height: 2rem;
+}
+/*排行榜*/
+/*兑换地址*/
+.addressBox {
+  background-image: url(../images/addressBg.jpg);
+  background-size: 100% 100%;
+}
+.address {
+  width: 92%;
+  margin: 0 auto;
+  height: 14.21875rem;
+  overflow: auto;
+  padding-top: 0.15625rem;
+}
+.addressList {
+  width: 100%;
+  height: 2.171875rem;
+  background: url(../images/addressListBg.png) no-repeat left top;
+  background-size: 100% 100%;
+  color: #000;
+  padding-left: 16%;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 0.4375rem;
+  margin-bottom: 0.21875rem;
+}
+[data-dpr="1"] .addressList {
+  font-size: 10px;
+}
+[data-dpr="3"] .addressList {
+  font-size: 30px;
+}
+.addressList .title {
+  font-size: 30px;
+  line-height: 1.09375rem;
+}
+[data-dpr="1"] .addressList .title {
+  font-size: 15px;
+}
+[data-dpr="3"] .addressList .title {
+  font-size: 45px;
+}
+.addressList a {
+  color: #1f82fd;
+}
+/*兑换地址*/
+/*首页*/
+.indexbtnBox {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 2.421875rem;
+  left: 0;
+  -webkit-animation: taggle 1s linear 3.5s backwards;
+  animation: taggle 1s linear 3.5s backwards;
+}
+.indexbtnBox img {
+  height: 1.84375rem;
+}
+.indexImg1 {
+  width: 100%;
+  position: absolute;
+  top: 0.78125rem;
+  left: 0;
+  z-index: 4;
+  -webkit-animation: cube-spin 3s forwards linear;
+  animation: cube-spin 3s forwards linear;
+}
+.indexImg2 {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 3;
+  margin-top: -1.59375rem;
+  -webkit-animation: taggle 2s linear 1.45s backwards;
+  animation: taggle 2s linear 1.45s backwards;
+}
+.indexImg3 {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 4.40625rem;
+  z-index: 6;
+  -webkit-animation: movefromtop 0.5s linear 3s backwards;
+  animation: movefromtop 0.5s linear 3s backwards;
+}
+@-webkit-keyframes cube-spin {
+  0% {
+    -webkit-transform: rotateY(0);
+    opacity: 0;
+  }
+  25% {
+    -webkit-transform: rotateY(80deg);
+    opacity: 0.8;
+  }
+  50% {
+    -webkit-transform: rotateY(0deg);
+    opacity: 1;
+  }
+  75% {
+    -webkit-transform: rotateY(-60deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+@keyframes cube-spin {
+  0% {
+    transform: rotateY(0);
+    opacity: 0;
+  }
+  25% {
+    transform: rotateY(80deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+  75% {
+    transform: rotateY(-60deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes taggle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes taggle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes movefromtop {
+  from {
+    top: -10rem;
+    opacity: 0;
+  }
+}
+@keyframes movefromtop {
+  from {
+    top: -10rem;
+    opacity: 0;
+  }
+}
+/*首页*/
+/*赛事预测*/
+.guessBox {
+  background-image: url(../images/guessBg.jpg);
+  background-size: 100% 100%;
+}
+.swiper-container {
+  width: 100%;
+  height: 9.375rem;
+  margin-top: 2.8125rem;
+}
+.swiper-slide {
+  /* Center slide text vertically 
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;*/
+}
+.imgBox {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 34px;
+  padding-bottom: 0.15625rem;
+}
+[data-dpr="1"] .imgBox {
+  font-size: 17px;
+}
+[data-dpr="3"] .imgBox {
+  font-size: 51px;
+}
+.imgBox img {
+  height: 2.609375rem;
+}
+.platform {
+  width: 8.3125rem;
+  height: 4.140625rem;
+  background: url(../images/platformbg.png) no-repeat left top;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.platform .silver {
+  width: 1.796875rem;
+  position: absolute;
+  top: 0.984375rem;
+  left: 0.78125rem;
+}
+.platform .silver img {
+  width: 1.796875rem;
+}
+.platform .gloden {
+  width: 1.84375rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -0.859375rem;
+}
+.platform .gloden img {
+  width: 1.84375rem;
+}
+.platform .copper {
+  width: 1.734375rem;
+  position: absolute;
+  top: 1.28125rem;
+  right: 0.78125rem;
+}
+.platform .copper img {
+  width: 1.734375rem;
+}
+.number {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: -0.78125rem;
+  color: #fc5e00;
+  font-size: 30px;
+  font-weight: bold;
+}
+[data-dpr="1"] .number {
+  font-size: 15px;
+}
+[data-dpr="3"] .number {
+  font-size: 45px;
+}
+.tips {
+  text-align: center;
+  color: #fff;
+  font-size: 34px;
+  margin-top: 15px;
+}
+[data-dpr="1"] .tips {
+  font-size: 17px;
+}
+[data-dpr="3"] .tips {
+  font-size: 51px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  width: 0.625rem;
+  height: 1rem;
+  margin-top: -0.5rem;
+  z-index: 10;
+  cursor: pointer;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.swiper-button-next {
+  background: url(../images/next.png) no-repeat left top;
+  right: 0.15625rem;
+}
+.swiper-button-prev {
+  background: url(../images/pre.png) no-repeat left top;
+  left: 0.15625rem;
+}
+.guessBtn {
+  width: 100%;
+  text-indent: 2%;
+}
+.guessBtn .flexright:nth-child(2) {
+  text-align: right;
+  text-indent: 0;
+}
+.guessBtn img {
+  height: 1.84375rem;
+}
+.guessBtn .flexright:nth-child(2) img {
+  margin-right: 4%;
+}
+/*赛事预测*/

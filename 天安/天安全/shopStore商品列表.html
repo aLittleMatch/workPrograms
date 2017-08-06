@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" /><!-- initial-scale:页面初始缩放程度;user-scalable 禁止用户手动缩放 -->
+		<meta content="yes" name="apple-mobile-web-app-capable" /><!-- iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览 -->
+		<meta content="telephone=no" name="format-detection" /><!-- 告诉设备忽略将页面中的数字识别为电话号码 -->
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" /><!-- iphone的私有标签，它指定的iphone中safari顶端的状态条的样式 -->
+		<link href="css/default.css" rel="stylesheet" type="text/css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/shops.css"/>
+		<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>积分商城</title>
+	</head>
+	<body style="background-color: #f0f0f4;">
+		<div class="container widthbox">
+			<!--今日新品-->
+			<div class="shopRecon widthbox">
+				<a href="#" class="backtrack"><img src="images/backtrack.png" /></a>
+				<span class="shopReconTitle">今日新品<p id="arrow" class="arrowdown_i"></p></span>
+				<!--弹窗框-->
+				<div class="shopReconPopup">
+					<a class="PopupBtn" href="#">数码家电</a>
+					<a class="PopupBtn" href="#">日常家居</a>
+					<a class="PopupBtn" href="#">食品饮料</a>
+					<a class="PopupBtn" href="#">宝妈生活</a>
+				</div>
+				<!--弹窗框-->
+			</div>	
+			<!--今日新品-->
+			<!--在售商品-->
+			<div class="forSale widthbox">
+				<div class="saleItems recommend">
+					<h1 class="saleItemsTitle shopsDet2">萌萌哒的健康秤</h1>
+					<h3 class="saleItemsDes shopsDet2">精准称重 健康家居</h3>
+					<h3 class="saleItemsPri shopsDet2"><span class="price">199</span>积分</h3>
+					<div class="saleItemsPicBox"><img class="shopPic" src="images/shopPic.png"/></div>
+				</div>
+				<div class="saleItems recommend">
+					<h1 class="saleItemsTitle shopsDet2">天然朱砂本命年红...</h1>
+					<h3 class="saleItemsDes shopsDet2">市场售价70元</h3>
+					<h3 class="saleItemsPri shopsDet2"><span class="price">199</span>积分</h3>
+					<div class="saleItemsPicBox"><img  src="images/ballpoint.jpg"/></div>
+				</div>
+				<div class="saleItems">
+					<h1 class="saleItemsTitle shopsDet2">欧美创意黑胶晴雨伞</h1>
+					<h3 class="saleItemsDes shopsDet2">原价99元，防晒防泼水</h3>
+					<h3 class="saleItemsPri shopsDet2"><span class="price">210</span>积分</h3>
+					<div class="saleItemsPicBox"><img src="images/umbrella.jpg"/></div>
+				</div>
+				<div class="saleItems">
+					<h1 class="saleItemsTitle shopsDet2">文娜玛红葡萄酒</h1>
+					<h3 class="saleItemsDes shopsDet2">市场售价188元</h3>
+					<h3 class="saleItemsPri shopsDet2"><span class="price">320</span>积分</h3>
+					<div class="saleItemsPicBox"><img src="images/redwine.jpg"/></div>
+				</div>
+			</div>
+			<!--在售商品-->
+			
+		</div>
+		
+		<script>
+			$('.shopReconTitle').click(function(){
+				$('#arrow').toggleClass('arrowup_i');
+				$('.shopReconPopup').toggle('1000');
+			});
+			$('.PopupBtn').click(function(){
+				$('.shopReconPopup').toggle('1000');
+			})
+		</script>
+	</body>
+</html>

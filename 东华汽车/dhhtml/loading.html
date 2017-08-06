@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+		<title></title>
+	</head>
+	<script type="text/javascript">
+	//判断加载状态
+	 		document.onreadystatechange = completeLoading;
+			function completeLoading(){
+				var oLoading=document.getElementById('loading');
+				var oPint=document.getElementsByClassName('point');
+				var n=0;
+				function pointMove(){
+					var timer=setInterval(function(){
+							for (var i=0;i<oPint.length;i++) {
+								if(i==n%oPint.length){
+									oPint[i].style.display='block';
+								}else{
+									oPint[i].style.display='none';
+								}
+							}
+							n++;
+						},500);
+				}
+				pointMove();
+				if(document.readyState=="complete"){
+					oLoading.style.display='block';
+				}
+			}
+
+	</script>
+	<body>
+		<div class="loading" id="loading">
+			<div class="loading-box">
+				<img src="images/loading.gif"/>
+				<div class="loading-text flexbox">
+					加载中
+					<div class="point-box">
+						<div class="point">.</div>
+						<div class="point">.</div>
+						<div class="point">.</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

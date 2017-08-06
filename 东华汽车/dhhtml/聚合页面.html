@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+        <link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+        <link rel="stylesheet" type="text/css" href="css/fun.css"/>
+		<title>聚合页</title>
+	</head>
+	<body class="contain-page1">
+		<div class="container widthbox">
+			<!--轮播-->
+			<div class="carouselbox widthbox">
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide"><img src="images/carouselexp.png"/></div>
+				        <div class="swiper-slide"><img src="images/carouselexp.png"/></div>
+				        <div class="swiper-slide"><img src="images/carouselexp.png"/></div>
+				    </div>
+				    <!-- 如果需要分页器 -->
+				    <div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<!--服务选择-->
+			<div class="severbox flexbox">
+				<div class="sever-items flexbox"><img class="severimg1" src="images/severimg1.png"/>车享家</div>
+				<div class="sever-items flexbox"><img class="severimg2" src="images/severimg2.png"/>车主服务</div>
+			</div>
+			<!--模块-->
+			<div class="module widthbox">
+				<h1 class="module-sign">汽车服务</h1>
+				<ul class="module-ul">
+					<li class="module-items flexbox">
+						<img src="images/service_car_1.png"/>
+						汽车检测
+					</li>
+					<li class="module-items flexbox">
+						<img src="images/service_car_2.png"/>
+						驾校
+					</li>
+					<li class="module-items flexbox">
+						<img src="images/service_car_3.png"/>
+						汽车租赁
+					</li>
+					<li class="module-items flexbox">
+						<img src="images/service_car_4.png"/>
+						出租车
+					</li>
+				</ul>
+			</div>
+			<div class="module widthbox">
+				<h1 class="module-sign">汽车销售</h1>
+				<ul class="module-ul">
+					<li class="module-items flexbox">
+						<img src="images/market_car_1.png"/>
+						展厅车型
+					</li>
+					<li class="module-items flexbox">
+						<img src="images/market_car_2.png"/>
+						预约试驾
+					</li>
+					<li class="module-items flexbox">
+						<img src="images/market_car_3.png"/>
+						养修预约
+					</li>
+					<li class="module-items flexbox">
+						<img src="images/market_car_4.png"/>
+						活动中心
+					</li>
+				</ul>
+			</div>
+		</div>
+		<p class="statement-footer">©2016 东华汽车实业有限公司</p>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script src="js/swipe.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				//轮播
+				var mySwiper = new Swiper ('.swiper-container', {
+				    direction: 'horizontal',				   
+				    loop: true, //循环播放
+				    autoplay : 4000,//自动播放时间				    
+					speed:300,//滚动速度
+				    autoplayDisableOnInteraction : false,//用户滑动后，是否取消自动播放
+				    // 如果需要分页器
+				    pagination: '.swiper-pagination',
+				});
+			})
+		</script>
+	</body>
+</html>

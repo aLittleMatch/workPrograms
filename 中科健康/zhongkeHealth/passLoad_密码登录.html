@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/default.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/jquery.js"></script>
+		<title>电子病历系统</title>
+		<script>
+			var height = $(window).height();
+	        $(window).resize(function() {
+	            $('.passLoad').height(height);
+	        }) 
+		</script>
+	</head>
+	<body>
+		<div class="passLoad">
+			<div class="passLoadHead fBox">密码登录</div>
+			<div class="passLoadNav">
+				<div class="passBox">
+					<div class="passBox_top">
+						<div class="passBox_top_pic">
+							<img src="images/passBoxHeadPic.jpg">
+						</div>
+						<p>魏琳琳给您分享了病历</p>
+					</div>
+					<div class="passBox_bot fBox">
+						<input type="text" value="" placeholder="请输入密码" />
+						<button>查看</button>
+					</div>	
+				</div>				
+			</div>
+		</div>
+		<div class="copyRight black">© 2016 中科健康产业集团 </div>
+	</body>
+</html>

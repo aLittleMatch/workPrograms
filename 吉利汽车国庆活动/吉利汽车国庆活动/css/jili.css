@@ -1,0 +1,212 @@
+@charset "utf-8";
+.flexbox {
+  display: -moz-box;
+  /* Firefox */
+  display: -webkit-box;
+  /* Safari and Chrome */
+  display: -ms-flexbox;
+  /* Internet Explorer 10 */
+  display: box;
+  -webkit-box-align: center;
+}
+.flexright {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  /* Firefox */
+  box-flex: 1;
+  flex: 1;
+}
+.fBox {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+}
+/*垂直居中*/
+.alignCenterBox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/*分居左右，垂直居中*/
+.justifyBetweenBox {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-between;
+}
+/*二维码开始*/
+.erweima{
+	width: 100%;
+	height: 100%;
+	background: url(../images/erweimaBg.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.erweimaPic{
+	width: 4.11rem;
+	height: 4.11rem;
+	padding: 0.1rem;
+	background: rgba(255,255,255,0.2);
+	-webkit-border-radius: 0.1rem;
+	position: absolute;
+	top: 2.7rem;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.erweimaPic img{
+	width: 4.11rem;
+	height: 4.11rem;
+	display: block;
+}
+/*二维码结束*/
+
+
+/*活动规则开始*/
+.container{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+.activeRule{
+	width: 95%;
+	height: 95%;
+}
+.activeRule img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+/*活动规则结束*/
+
+/*领奖信息提交开始*/
+.infoSubmit{
+	width: 74%;
+	-webkit-border-radius: 0.2rem;
+	background: #fff;
+}
+.infoSubmit h1{
+	font-size: 0.34rem;
+	color: #3d78dc;
+	text-align: center;
+	line-height: .95rem;
+}
+.infoSubmitNav{
+	width: 3.9rem;
+	margin: 0 auto;
+}
+.infoSubmitNav input{
+	width: 3.5rem;
+	padding: 0.22rem 0.2rem;
+	font-size: 0.3rem;
+	line-height: 0.4rem;
+	color: #8c969e;
+	-webkit-border-radius: 0.2rem;
+	background: #dae9f5;
+	display: block;
+	margin-bottom: 0.2rem;
+}
+.infoSubmitNav input:-webkit-input-placeholder{
+	color: #8c969e;
+}
+.infoSubmitNav select{
+	width: 100%;
+	font-size: 0.3rem;
+	padding: 0.22rem 0.2rem;
+	color: #3d78dc;
+	-webkit-border-radius: 0.2rem;
+	background: #dae9f5;
+	-webkit-appearance: none;
+	display: block;
+	background-color: #dae9f5;
+	background-image: url(../images/arrowDown.png);
+	background-repeat: no-repeat;
+	background-position: 86.4% center;
+	background-size: 0.24rem 0.21rem;
+}
+.submit{
+	width: 100%;
+	font-size: 0.36rem;
+	color: #fff;
+	line-height: 0.9rem;
+	background: #4790cc;
+	text-align: center;
+	margin-top: 0.35rem;
+	-webkit-border-bottom-left-radius: 0.2rem;
+	-webkit-border-bottom-right-radius: 0.2rem;
+}
+/*领奖信息提交结束*/
+
+/*中奖弹窗开始*/
+.winPrizeTop{
+	
+}
+.winPrizeTop img{
+	width: 4.01rem;
+	height: 2.54rem;
+	display: block;
+	padding-top: 0.15rem;
+	margin: 0 auto;
+}
+.winPrizeMid h1{
+	font-size: 0.36rem;
+	line-height: 0.74rem;
+	color: #4790cc;
+	text-align: center;
+}
+.winPrizeMid p{
+	font-size: 0.28rem;
+	color: #4790cc;
+	text-align: center;
+	padding-bottom: 0.35rem;
+}
+/*中奖弹窗结束*/
+
+/*核销弹窗开始*/
+.checkDelet{
+	position: relative;
+}
+.checkDeletTop{
+	width: 100%;
+}
+.checkDeletTop p{
+	font-size: 0.3rem;
+	color: #4790cc;
+	text-align: center;
+	margin-top: 0.7rem;
+}
+.checkDeletMid{
+	width: 3.9rem;
+	margin: 0 auto;
+	padding-bottom: 0.35rem;
+}
+.checkDeletMid input{
+	width: 3.2rem;
+	padding: 0.22rem 0.2rem 0.22rem 0.5rem;
+	font-size: 0.3rem;
+	line-height:0.4rem;
+	color: #808e9b;
+	background: #c7ddf0;
+	-webkit-border-radius: 0.2rem;
+}
+.close{
+	position: absolute;
+	top: 0.16rem;
+	right: 0.17rem;
+}
+.close img{
+	width: 0.32rem;
+	height: 0.32rem;
+	display: block;
+}
+/*核销弹窗结束*/

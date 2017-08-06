@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/rem.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+        <link rel="stylesheet" type="text/css" href="css/kunjie.css"/>
+        <script src="js/zepto.min.js"></script>
+		<title>我的订单</title>
+	</head>
+	<body class="gray">
+		<div class="myOrder">
+			<ul class="myOrderHead flexbox">
+				<li class="active">全部</li>
+				<li>待发货</li>
+				<li>已发货</li>
+				<li>已完成</li>
+			</ul>
+			<!--全部-->
+			<div class="myOrderNav">
+				<div class="myOrderNavLi">
+					<div class="myOrderNavLiHead flexbox">
+						<div class="myOrderNavLiHead_left">订单号：188939484</div>
+						<div class="myOrderNavLiHead_right"><p>待发货</p></div>
+					</div>
+					<div class="myOrderNavLiTxt flexbox">
+						<div class="myOrderNavLiTxt_left"><img src="images/orderDetailNavLi_left.jpg"></div>
+						<div class="myOrderNavLiTxt_right flexright">
+							<h1>《最好的方法给孩子》</h1>
+							<h2 class="flexbox"><i>￥15.00</i><b>数量&nbsp;&nbsp;x1</b></h2>
+						</div>
+					</div>
+					<div class="myOrderNavLiFoot flexbox">
+						<p>共1件商品</p>
+						<h1>实付款：<span>￥15.00</span></h1>
+					</div>
+				</div>
+				<div class="myOrderNavLi">
+					<div class="myOrderNavLiHead flexbox">
+						<div class="myOrderNavLiHead_left">订单号：188939484</div>
+						<div class="myOrderNavLiHead_right flexbox"><p class="yellow">已发货</p><div class="trash"><img src="images/trash.jpg"></div></div>
+					</div>
+					<div class="myOrderNavLiTxt flexbox">
+						<div class="myOrderNavLiTxt_left"><img src="images/orderDetailNavLi_left.jpg"></div>
+						<div class="myOrderNavLiTxt_right flexright">
+							<h1>《最好的方法给孩子》</h1>
+							<h2 class="flexbox"><i>￥15.00</i><b>数量&nbsp;&nbsp;x1</b></h2>
+						</div>
+					</div>
+					<div class="myOrderNavLiFoot flexbox">
+						<p>共1件商品</p>
+						<h1>实付款：<span>￥15.00</span></h1>
+					</div>
+					<div class="myOrderNavLiEnd flexbox"><div class="myOrderNavLiEndBtn">确认收货</div></div>
+				</div>
+			</div>
+			<!--待发货-->
+			<div class="myOrderNav" style="display: none;">
+				<div class="noData">
+					<img src="images/myOrder_noData.png">
+					<h1>你还没有相关订单</h1>
+					<p>可以去看看有哪些书想买的</p>
+					<div class="noDataBtn">去看看</div>
+				</div>
+			</div>
+			<!--已发货-->
+			<div class="myOrderNav" style="display: none;">
+				<div class="noData">
+					<img src="images/myOrder_noData.png">
+					<h1>你还没有相关订单</h1>
+					<p>可以去看看有哪些书想买的</p>
+					<div class="noDataBtn">去看看</div>
+				</div>
+			</div>
+			<!--已完成-->
+			<div class="myOrderNav" style="display: none;">
+				<div class="noData">
+					<img src="images/myOrder_noData.png">
+					<h1>你还没有相关订单</h1>
+					<p>可以去看看有哪些书想买的</p>
+					<div class="noDataBtn">去看看</div>
+				</div>
+			</div>
+			<!--indexFoot-->
+			<ul class="indexFoot">
+				<li><img src="images/indexFoot1.jpg"><p>首页</p></li>
+				<li><img src="images/indexFoot2.jpg"><p>新闻</p></li>
+				<li><img src="images/indexFoot3_2.jpg"><p class="indexCurrent">我的</p></li>
+			</ul>
+		</div>
+		<script>
+			$(function(){
+				$(".myOrderHead li").click(
+					function(){
+						$(".myOrderHead li").removeClass("active");
+						$(this).addClass("active");
+						$(".myOrderNav").hide();
+						$(".myOrderNav").eq($(this).index()).show();
+					}
+				)
+			})
+		</script>
+	</body>
+</html>

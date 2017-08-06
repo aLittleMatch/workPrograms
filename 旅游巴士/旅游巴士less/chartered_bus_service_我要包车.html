@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/flexible_css.debug.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/default.css"/>
+		<link rel="stylesheet/less" type="text/css" href="css/chartered.less"/>
+		<script src="js/less.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>	
+		<title>我要包车</title>
+	</head>
+	<body>
+		<div class="container widthBox">
+			<!--头部选择-->
+			<ul class="top_select widthBox">
+				<li class="top_select_items selected_char">单程</li>
+				<li class="top_select_items select_items_double">往返</li>
+				<li class="top_select_items select_items_double">包天</li>
+			</ul>
+			<!--时间选择-->
+			<form action="" method="post" id="form-list"></form>
+			<div class="choose_time_single">
+				<div class="reg_info_box flexbox widthBox">
+					<div class="reg_info_left time_single_start">出发时间</div>
+					<input type="datetime-local" class="reg_info_inp flexright inp_date_time" value="请输入出发日期" form="form-list"/>
+				</div>
+			</div>			
+			<div class="choose_time_double">
+				<div class="reg_info_box flexbox widthBox">
+					<div class="reg_info_left time_single_start">出发时间</div>
+					<input type="datetime-local" class="reg_info_inp flexright inp_date_time" placeholder="请输入出发日期" form="form-list"/>
+				</div>
+				<div class="reg_info_box flexbox widthBox">
+					<div class="reg_info_left time_single_end">返程时间</div>
+					<input type="datetime-local" class="reg_info_inp flexright inp_date_time" placeholder="请输入结束日期" form="form-list"/>
+				</div>
+			</div>
+			<!--信息登记-->
+			<div class="middline"></div>
+			<div class="register_info widthBox">
+				<div class="reg_info_box flexbox widthBox">
+					<div class="reg_info_left">乘车人数</div>
+					<input type="number" class="reg_info_inp flexright" placeholder="请输入人数" form="form-list"/>
+				</div>
+				<div class="reg_info_box flexbox widthBox">
+					<div class="reg_info_left  set_number">包车数量</div>
+					<input type="number" class="reg_info_inp flexright" placeholder="*5台及5台以上需提前一周预定" form="form-list"/>
+				</div>
+			</div>
+			<!--下一步-->
+			<div class="next-step-box widthBox"><div class="next-step widthBox">下一步</div></div>
+		</div>
+
+		<script type="text/javascript">
+			$('.top_select_items').click(function(){
+				$(this).siblings().removeClass('selected_char');
+				$(this).addClass('selected_char');
+			});
+			$('.select_items_double').click(function(){
+				$('.choose_time_double').show();
+				$('.choose_time_single').hide();
+			});
+			$('.top_select_items').eq(0).click(function(){
+				$('.choose_time_double').hide();
+				$('.choose_time_single').show();
+			});
+
+			//点击下一步，出发表格提交
+			$('.next-step-box').click(function(){
+				$('#form-list').submit();
+			});
+			
+			var x=new Date();
+			var setMonth=x.getMonth()+1;
+			var setDate=x.getDate();
+			var setHour=x.getHours();
+			var setMinutes=x.getMinutes();
+			if(setMonth<=9){
+				setMonth='0'+setMonth;		
+			};
+			if(setDate<=9){
+				setDate='0'+setDate;		
+			};
+			if(setHour<=9){
+				setHour='0'+setHour;		
+			};
+			if(setMinutes<=9){
+				setMinutes='0'+setMinutes;		
+			};
+			
+			
+			var a=x.getFullYear()+'-'+setMonth+'-'+setDate+'T'+setHour+':'+setMinutes
+			//设置开始默认时间
+			$('.inp_date_time')[0].value=a;
+			$('.inp_date_time')[1].value=a;
+			$('.inp_date_time')[2].value=a;
+			
+			
+			
+			
+		</script>
+	</body>
+</html>

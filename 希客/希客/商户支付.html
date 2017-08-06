@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+       	<link rel="stylesheet" type="text/css" href="css/xike.css"/>
+       	<script src="js/jquery3.0.min.js"></script>
+       	<script src="js/echarts.simple.min.js"></script>
+       	<script src="js/rem.js"></script>
+		<title>商户支付</title>
+	</head>
+	<body>
+		<div class="mcPay">
+			<div class="mcPayHead">
+				<div class="mcPayHeadPic">
+					<img src="images/QRcodeHead.jpg">
+				</div>
+				<p>向 <span>澳诺雅旗舰店</span> 付款</p>
+			</div>
+			<div class="mcPayMid flexbox">
+				<p>金额 ¥</p><input type="number" value="" placeholder="" />
+			</div>
+			<div class="mcPayBot">
+				<p>最高可返<span>30%</span>希贝</p>
+				<div class="mcPayBotBtn">支付</div>
+			</div>
+			<div class="mcPayEnd flexbox">
+				<div class="mcPayEndLeft">
+					<h1>30%希贝(总)</h1>
+					<div class="mcPayEndLeftBox">
+						<div class="mcPayEndLeftBoxLi mcPayEndLeftBoxLi1" style="background:#23bff2;"><i>首次分享</i><span>3%</span></div>
+						<div class="mcPayEndLeftBoxLi" style="background:#0099cb;"><i>支付</i><span>10%</span></div>
+						<div class="mcPayEndLeftBoxLi" style="background:#0e78b6;"><i>希发现值</i><span>17%</span></div>
+						<div class="triangle-topleft"></div>
+						<div class="triangle-topright"></div>
+					</div>
+					<p>希贝获得途径及所占比例</p>
+				</div>
+				<div class="mcPayEndRight">
+					<div id="echart2" style="width:80%;height:270px;">
+					</div>
+					<p>希发现值越高，获得的希贝越多哦！</p>
+				</div>
+			</div>
+		</div>
+		 <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echart2'));
+        // 指定图表的配置项和数据
+	      var option = {
+		      	textStyle:{
+	     			color:{
+	     				color:"#929292",
+	     				fontSize:20
+	     			}
+	     		},
+	     		myChart:{
+	     			width:200
+	     		},
+			    tooltip : {
+			        trigger: 'axis'
+			    },
+			    legend: {
+			        data:['希贝']
+			    },
+			    toolbox: {
+			        show : true,
+			        feature : {
+			            mark : {show: true},
+			            dataView : {show: true, readOnly: false},
+			            magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+			            restore : {show: true},
+			            saveAsImage : {show: true}
+			        }
+			    },
+			    calculable : true,
+			    xAxis : [
+			        {
+			            type : 'category',
+			            boundaryGap : false,
+			            data : ['0','100','200','300'],
+			            name:"希发现值",
+			    		nameLocation:"middle",
+			    		nameGap:25,
+			    		nameTextStyle:{
+			    			fontSize:20,
+			    			color:"#929292"
+			    		},
+			    		axisLine:{
+			    			lineStyle:{
+			    				color:"#0e78b6",
+			    				width:2
+			    			}
+			    		},
+			    		axisTick:{
+			    			inside:true,
+			    			lineStyle:{
+			    				width:2
+			    			}
+			    		}
+			        }
+			    ],
+			    yAxis : [
+			        {
+			            type : 'value',
+			            name:"付款\n总额/%",
+			    		nameTextStyle:{
+			    			fontSize:20,
+			    			color:"#929292"
+			    		},
+			    		scale:true,
+			    		axisLine:{
+			    			lineStyle:{
+			    				color:"#ec8d1a",
+			    				width:2
+			    			}
+			    		},
+			    		axisTick:{
+			    			inside:true,
+			    			lineStyle:{
+			    				width:2
+			    			}
+			    		}
+			        }
+			    ],
+			    series : [
+			        {
+			            name:'希贝',
+			            type:'line',
+			            stack: '总量',
+			            itemStyle : { normal: {label : {show: true},lineStyle:{ color:"#c9c9c9"},textStyle:{fontSize : "20",color:"#929292"},color:"#c9c9c9"}},
+			            data:[0, 5, 10, 17]
+			            
+			        }]
+			    
+			};
+			
+        // 使用刚指定的配置项和数据显示图表
+        myChart.setOption(option);   
+    </script>
+    <script>
+    	$(function(){
+    		var count =0;
+    		var fun = function(share,pay,find){
+    			for(var i=0;i<3;i++){
+    				if(arguments[i]==0){
+    					$(".mcPayEndLeftBoxLi").eq(i).remove();	//当数值为0时，div移除
+    					count++;
+    				}else{
+    					$(".mcPayEndLeftBoxLi").eq(i).find("span").text(arguments[i]+"%");	
+    				};
+    			}	
+    			if(count == 0)
+	    			{
+	    				$(".mcPayEndLeftBoxLi").css("height",(100/3)+"%");
+	    			}
+					else 
+					{
+						if(count == 2)
+						{
+							$(".mcPayEndLeftBoxLi").css("height","100%");	
+						}
+						else
+						{
+							$(".mcPayEndLeftBoxLi").css("height",(100/2)+"%");
+						}
+					}
+    		};
+ 			fun(0,10,10);      //传入值三个值分别代表 “首次分享” “支付” “希发现值”
+    	})
+    </script>
+	</body>
+</html>

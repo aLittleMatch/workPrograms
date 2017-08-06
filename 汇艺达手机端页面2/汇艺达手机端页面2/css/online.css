@@ -1,0 +1,211 @@
+/***********在线办理页面开始************/
+.gray{
+	background: #eee;
+}
+.online{
+	width: 100%;
+	padding-bottom:45px;
+}
+.onlineNav{
+	width: 100%;
+	padding-left: 0.3rem;
+	box-sizing: border-box;
+	background: #fff;
+	margin-bottom: 0.15rem;
+}
+.onlineNavLi{
+	width: 100%;
+	padding: 0.35rem 0;
+	padding-right: 0.35rem;
+	box-sizing: border-box;
+	border-bottom: 1px solid #e6e6e6;
+}
+.onlineNavLiLt{
+	width: 0.35rem;
+	height: 0.3rem;
+	margin-right: 0.2rem;
+}
+.onlineNavLiLt img{
+	height: 100%;
+	margin: 0 auto;
+	display: block;
+}
+.onlineNavLiRt{
+	-webkit-box-pack: justify;
+}
+.onlineNavLiRt p{
+	font-size: 0.28rem;
+	color: #313131;
+}
+.onlineNavLiRt input{
+	font-size: 0.28rem;
+	color: #7d7d7d;
+	text-align: right;
+	display: block;
+}
+.onlineNavLiRt select{
+	font-size: 0.28rem;
+	color: #313131;
+	display: block;
+	-webkit-appearance: none;
+}
+.borderBotNone{
+	border-bottom: none;
+}
+.recType{
+	
+}
+.recTypeLi{
+	font-size: 0.3rem;
+	color: #929292;
+	margin-left: 0.5rem;
+}
+.recTypeLiCir{
+	width: 0.44rem;
+	height: 0.44rem;
+	border: 0.02rem solid #949494;
+	-webkit-border-radius: 50%;
+	margin-right: 0.22rem;
+	box-sizing: border-box;
+}
+.nike{
+	background: url(../images/nike.jpg) no-repeat;
+	background-size: 100% 100%;
+	border: none!important;
+}
+.onlineFoot{
+	width: 100%;
+	height: 45px;
+	position: fixed;
+	bottom: 0;
+}
+.onlineFootLt{
+	width: 35%;
+	height: 45px;
+	background: #fe9b1c;
+}
+.onlineFootLt p{
+	font-size: 0.3rem;
+	color: #fff;
+}
+.onlineFootLt img{
+	height: 0.44rem;
+	padding-right: 0.12rem;
+	display: block;
+}
+.onlineFootRt{
+	width: 65%;
+	line-height: 45px;
+	background: #67aa07;
+	font-size: 0.3rem;
+	color: #fff;
+	text-align: center;
+}
+/***********在线办理页面结束************/
+
+
+/***********进度查询页面开始************/
+.pro{
+	width: 100%;
+	padding-top: 0.25rem;
+	padding-bottom: 45px;
+}
+.proNav{
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 0.35rem;
+	-webkit-box-shadow: 0 0.05rem 0.1rem rgba(0,0,0,0.1);
+}
+.proNavHead{
+	width: 100%;
+	height: 0.6rem;
+	background: #67aa07;
+	position: relative;
+}
+.proNavHead p{
+	font-size: 0.26rem;
+	line-height: 0.6rem;
+	color: #fff;
+	text-align: center;
+}
+.proNavHead img{
+	height: 0.28rem;
+	display: block;
+	position: absolute;
+	right: 0.25rem;
+	top: 0.16rem;
+}
+.proNavBot{
+	width: 100%;
+	padding: 0.45rem;
+	box-sizing: border-box;
+	background: #fff;
+}
+.proNavBotLi{
+	width: 100%;
+	font-size: 0.26rem;
+	line-height: 0.45rem;
+	-webkit-box-pack: justify;
+}
+.proNavBotLi p{
+	color: #313131;
+}
+.proNavBotLi i{
+	color: #999999;
+}
+.progress{
+	width: 4.6rem;
+	height: 3.5rem;
+	margin: 0 auto;
+	border-left: 0.05rem solid #e5e5e5;
+	position: relative;
+}
+.progressLi{
+	width: 100%;
+	position: absolute;
+	left: -0.26rem;
+}
+.circle{
+	width: 0.36rem;
+	height: 0.36rem;
+	border: 0.06rem solid #e5e5e5;
+	background-color: #999;
+	-webkit-border-radius: 50%;
+	margin-right: 0.25rem;
+}
+.progressLiRt{
+	-webkit-box-pack: justify;
+}
+.progressLiRt p{
+	font-size: 0.26rem;
+	color: #666666;
+}
+.progressLiRt i{
+	font-size: 0.26rem;
+	color: #999999;
+	display: block;
+}
+.progressLiRt i a{
+	color: #fe9b1c;
+	text-decoration: underline;
+}
+.type1{
+	top: 0;
+}
+.type2{
+	top: 0.8rem;
+}
+.type3{
+	top: 1.6rem;
+}
+.type4{
+	top: 2.4rem;
+}
+.type5{
+	top: 3.2rem;
+}
+.nike2{
+	background: url(../images/nike.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+/***********进度查询页面结束************/

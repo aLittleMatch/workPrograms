@@ -1,0 +1,534 @@
+/*==========less 公式==========*/
+/*==========less 公式==========*/
+/*==========核销记录 开始==========*/
+.chargebg {
+  background-color: #f2f2f2;
+}
+.charge-top {
+  width: 100%;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  background-color: #005aab;
+}
+[data-dpr="2"] .charge-top {
+  font-size: 32px;
+}
+[data-dpr="3"] .charge-top {
+  font-size: 48px;
+}
+.charge-record {
+  font-size: 14px;
+  color: #646464;
+  overflow: hidden;
+  box-shadow: 1px 2px 3px #b3b3b3;
+  margin-bottom: 0.15625rem;
+}
+[data-dpr="2"] .charge-record {
+  font-size: 28px;
+}
+[data-dpr="3"] .charge-record {
+  font-size: 42px;
+}
+.record-items {
+  width: 33.333333%;
+  font-family: tahoma;
+  line-height: 0.9375rem;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  vertical-align: baseline;
+  float: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.money-style {
+  color: #e66629;
+}
+.money-items {
+  padding-right: 1.09375rem;
+  box-sizing: border-box;
+  background: #ffffff url(../images/lessthan.png) 80% center no-repeat;
+  background-size: 0.1875rem 0.3125rem;
+  text-align: right;
+}
+.items-name {
+  text-align: left;
+  padding-left: 4%;
+  box-sizing: border-box;
+}
+.items-sum {
+  text-align: right;
+  padding-right: 4%;
+  box-sizing: border-box;
+}
+/*==========核销记录 结束==========*/
+/*==========核销详情 开始==========*/
+.dollar-bg {
+  width: 0.28125rem;
+  height: 2.9375rem;
+  display: block;
+}
+.dollar-box {
+  background-color: #e9e5e5;
+  padding: 0.546875rem 5%;
+  box-sizing: border-box;
+}
+.dollar-content-part1 {
+  width: 60%;
+  height: 2.9375rem;
+  line-height: 2.9375rem;
+  text-align: center;
+  background-color: #e8723d;
+  float: left;
+  color: #FFFFFF;
+}
+.dollar-content-part2 {
+  width: 40%;
+  height: 2.9375rem;
+  background-color: #FFFFFF;
+  float: left;
+}
+.dollar-content {
+  overflow: hidden;
+}
+.dollar-money {
+  color: #FFFFFF;
+  font-size: 35px;
+  font-family: "微软雅黑";
+  margin-right: 0.15625rem;
+  vertical-align: middle;
+}
+[data-dpr="2"] .dollar-money {
+  font-size: 70px;
+}
+[data-dpr="3"] .dollar-money {
+  font-size: 105px;
+}
+.dollar-text {
+  font-size: 14px;
+  color: #fff;
+}
+[data-dpr="2"] .dollar-text {
+  font-size: 28px;
+}
+[data-dpr="3"] .dollar-text {
+  font-size: 42px;
+}
+.dollar-box-items1,
+.dollar-box-items2 {
+  font-size: 12px;
+  padding: 0.234375rem 0;
+  text-align: left;
+  width: 2.5rem;
+  box-sizing: border-box;
+  color: #656565;
+}
+[data-dpr="2"] .dollar-box-items1 {
+  font-size: 24px;
+}
+[data-dpr="3"] .dollar-box-items1 {
+  font-size: 36px;
+}
+[data-dpr="2"] .dollar-box-items2 {
+  font-size: 24px;
+}
+[data-dpr="3"] .dollar-box-items2 {
+  font-size: 36px;
+}
+.dollar-box-items1 {
+  border-bottom: 1px solid #d0d0d0;
+}
+.dollar-part2-box {
+  -webkit-box-orient: vertical;
+  height: 2.9375rem;
+}
+.dollar-detail {
+  padding: 0.28125rem 6%;
+}
+.detail-items-left,
+.detail-items-right {
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+  padding: 0.28125rem 0;
+}
+.detail-items-left {
+  text-align: left;
+}
+.detail-items-right {
+  text-align: right;
+}
+.detail-items {
+  font-size: 14px;
+  color: #646464;
+  overflow: hidden;
+}
+[data-dpr="2"] .detail-items {
+  font-size: 28px;
+}
+[data-dpr="3"] .detail-items {
+  font-size: 42px;
+}
+/*==========核销详情 结束==========*/
+/*==========卡劵核销详情 开始==========*/
+.dollar-top {
+  height: 1.25rem;
+  line-height: 1.25rem;
+  padding: 0 4%;
+  font-size: 16px;
+  box-shadow: 1px 2px 3px #b3b3b3;
+}
+[data-dpr="2"] .dollar-top {
+  font-size: 32px;
+}
+[data-dpr="3"] .dollar-top {
+  font-size: 48px;
+}
+.dollar-box2 {
+  background-color: #f2f2f2;
+}
+.dol-part2 {
+  background-color: #005aab;
+}
+.affirm-btn {
+  width: 96%;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  text-align: center;
+  background-color: #dd6b2d;
+  border-radius: 0.15625rem;
+  margin: 1.40625rem auto;
+  color: #fff;
+  font-size: 16px;
+}
+[data-dpr="2"] .affirm-btn {
+  font-size: 32px;
+}
+[data-dpr="3"] .affirm-btn {
+  font-size: 48px;
+}
+/*==========卡劵核销详情 结束==========*/
+/*==========商户中心==========*/
+.merchant-top {
+  background: url(../images/merchantbg.jpg) left top no-repeat;
+  background-size: 100% 8.59375rem;
+  height: 8.59375rem;
+  width: 100%;
+  padding-top: 1.5625rem;
+  box-sizing: border-box;
+}
+.head-portrait {
+  width: 2.96875rem;
+  height: 2.96875rem;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border: 3px solid #fff;
+  margin: 0 auto;
+  background: #f68a54 url(../images/usernone.png) center bottom no-repeat;
+  background-size: 2.234375rem 2.609375rem;
+  overflow: hidden;
+}
+.name-portrait {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  margin-top: 0.46875rem;
+}
+[data-dpr="2"] .name-portrait {
+  font-size: 32px;
+}
+[data-dpr="3"] .name-portrait {
+  font-size: 48px;
+}
+.housess {
+  width: 0.5rem;
+  height: 0.515625rem;
+  display: block;
+  margin-right: 0.390625rem;
+}
+.content-portrait {
+  font-size: 14px;
+  color: #fff;
+}
+[data-dpr="2"] .content-portrait {
+  font-size: 28px;
+}
+[data-dpr="3"] .content-portrait {
+  font-size: 42px;
+}
+.box-portrait {
+  margin-top: 0.46875rem;
+}
+.cancel-btn1,
+.cancel-btn2 {
+  width: 6.25rem;
+  padding: 0.59375rem 0;
+  text-align: center;
+  border-radius: 0.34375rem;
+  margin: 1.09375rem auto;
+  overflow: hidden;
+  font-family: Tahoma;
+  color: #fff;
+  font-size: 13px;
+  background: #e86614 url(../images/cancelbtn1bg.png) 1.25rem center no-repeat;
+  background-size: 0.65625rem 0.65625rem;
+}
+[data-dpr="2"] .cancel-btn1,
+[data-dpr="2"] .cancel-btn2 {
+  font-size: 26px;
+}
+[data-dpr="3"] .cancel-btn1,
+[data-dpr="3"] .cancel-btn2 {
+  font-size: 39px;
+}
+.cancel-btn2 {
+  background: #0d4b91 url(../images/cancelbtn2bg.png) 1.25rem center no-repeat;
+  background-size: 0.625rem 0.78125rem;
+}
+.statement-bottom {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: #646464;
+  font-size: 12px;
+  padding-bottom: 0.234375rem;
+  font-weight: normal;
+}
+[data-dpr="2"] .statement-bottom {
+  font-size: 24px;
+}
+[data-dpr="3"] .statement-bottom {
+  font-size: 36px;
+}
+/*==========我的卡劵==========*/
+.stockbg {
+  background-color: #f2f2f2;
+}
+.stock-choose-box {
+	width: 100%;
+  background-color: #FFFFFF;
+  padding: 0.4375rem 5%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #005aab;
+}
+.choose-btn {
+  height: 0.9375rem;
+  line-height: 0.9375rem;
+  width: 3.5625rem;
+  text-align: center;
+  font-size: 15px;
+  color: #005aab;
+  border-top: 1px solid #005aab;
+  border-bottom: 1px solid #005aab;
+  border-left: 1px solid #005aab;
+}
+[data-dpr="2"] .choose-btn {
+  font-size: 30px;
+}
+[data-dpr="3"] .choose-btn {
+  font-size: 45px;
+}
+.choose-btn:last-child{
+	border-right: 1px solid #005aab;
+	border-top-right-radius: 0.546875rem;
+  border-bottom-right-radius: 0.546875rem;
+}
+.choose-btn:first-child{
+	 border-top-left-radius: 0.546875rem;
+  border-bottom-left-radius: 0.546875rem;
+}
+.stocking {
+  color: #fff;
+  background-color: #005aab;
+}
+.stock-intro {
+  font-size: 12px;
+  color: #005aab;
+  padding: 0.28125rem 4%;
+  box-sizing: border-box;
+}
+[data-dpr="2"] .stock-intro {
+  font-size: 24px;
+}
+[data-dpr="3"] .stock-intro {
+  font-size: 36px;
+}
+.stock-style1,
+.stock-style2,
+.stock-style3 {
+  padding: 0 5%;
+  margin-bottom: 0.46875rem;
+}
+.stock-style3 .dollar-content-part1 {
+  background-color: #ffa200;
+}
+.scope {
+  font-size: 9px;
+  color: #fff;
+  width: 1.59375rem;
+  height: 0.46875rem;
+  line-height: 0.515625rem;
+  text-align: center;
+  border-radius: 0.3125rem;
+  border: 1px solid #fff;
+  margin-left: 0.703125rem;
+}
+[data-dpr="2"] .scope {
+  font-size: 18px;
+}
+[data-dpr="3"] .scope {
+  font-size: 27px;
+}
+.stock-dol {
+  -webkit-box-orient: vertical;
+  -webkit-box-align: start;
+}
+.dollar-money-box {
+  height: 1.09375rem;
+  line-height: 1.09375rem;
+  margin-bottom: 0.46875rem;
+  margin-left: 0.3125rem;
+}
+.dollar-box-items-time {
+  margin-top: 0.15625rem;
+  font-weight: normal;
+  font-size: 12px;
+  color: 656565;
+}
+[data-dpr="2"] .dollar-box-items-time {
+  font-size: 24px;
+}
+[data-dpr="3"] .dollar-box-items-time {
+  font-size: 36px;
+}
+.dollar-box-next {
+  color: #e66626;
+  margin-top: 0.234375rem;
+  background: url(../images/netxbg.png) left center no-repeat, url(../images/netxbg2.png) right center no-repeat;
+  background-size: 0.3125rem 0.34375rem, 0.171875rem 0.3125rem;
+  padding-left: 0.46875rem;
+  padding-right: 0.3125rem;
+  width: 2.5rem;
+  box-sizing: border-box;
+}
+.stock-used .dollar-content-part1 {
+  background-color: #999a9b;
+}
+.dollar-box-used {
+  color: #999a9b;
+  margin-top: 0.234375rem;
+  text-align: center;
+  width: 2.5rem;
+  box-sizing: border-box;
+}
+.stock-used .dollar-box-items1,
+.dollar-box-items2 {
+  text-align: left;
+}
+.stock-used {
+  display: none;
+}
+.stock-can {
+  display: -webkit-box;
+}
+.stock-can .dollar-content-part1,
+.stock-used .dollar-content-part1 {
+  line-height: normal;
+}
+
+
+.dialog{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.4);
+}
+.couponDialog{
+	width: 6.546875rem;
+	height: 9.34375rem;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	background: url(../images/counponbg.png) no-repeat left top;
+	background-size: 100% 100%;
+}
+.couponDialog .closeIcon{
+	position: absolute;
+	right: -0.3rem;
+	top: -0.5078125rem;
+	width: 1.015625rem;
+}
+.dialogTop{
+	width: 100%;
+	height: 6.25rem;
+	font-size: 36px;
+	color: #000;
+}
+[data-dpr="1"] .dialogTop{
+  font-size: 18px;
+}
+[data-dpr="3"] .dialogTop{
+  font-size: 54px;
+}
+.dialogTop .title{
+	width: 92%;
+	margin: 0 auto;
+	padding-top: 0.46875rem;
+}
+.dialogTop .con{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 0.84375rem;
+	margin-top: 0.3125rem;
+	height: 5.0625rem;
+	overflow: auto;
+}
+.dialogBottom{
+	width: 76%;
+	margin: 0 auto;
+	margin-top: 0.9375rem;
+}
+.dialogBottom .tt{
+	font-size: 30px;
+	color: #353535;
+}
+[data-dpr="1"] .dialogBottom .tt{
+  font-size: 15px;
+}
+[data-dpr="3"] .dialogBottom .tt{
+  font-size: 45px;
+}
+.dialogBottom b{
+	font-size: 24px;
+	font-weight: normal;
+}
+[data-dpr="1"] .dialogBottom b{
+  font-size: 12px;
+}
+[data-dpr="3"] .dialogBottom b{
+  font-size: 36px;
+}
+.dialogBottom .red{
+	color: #d7540c;
+}
+.dialogBottom .tts{
+	font-size: 26px;
+	margin-top: 0.4375rem;
+}
+[data-dpr="1"] .dialogBottom .tts{
+  font-size: 13px;
+}
+[data-dpr="3"] .dialogBottom .tts{
+  font-size: 39px;
+}

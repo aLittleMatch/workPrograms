@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="gray">
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+       	<link rel="stylesheet" type="text/css" href="css/xike.css"/>
+       	<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+       	<script src="js/jquery3.0.min.js"></script>
+       	<script src="js/swiper.min.js"></script>
+       	<script src="js/rem.js"></script>
+       	<script src="js/fun.js"></script>
+		<title>城市分站</title>
+	</head>
+	<body>
+		<div class="cityDiff">
+			<div class="cityDiffHead swiper-container">
+				<div class="swiper-wrapper">
+		            <div class="swiper-slide"><img src="images/cityDiffBanner.jpg"></div>
+		            <div class="swiper-slide"><img src="images/cityDiffBanner.jpg"></div>
+		            <div class="swiper-slide"><img src="images/cityDiffBanner.jpg"></div>
+		        </div>
+		        <!-- Add Pagination -->
+		        <div class="swiper-pagination"></div>
+		        <div class="cityPositionBox flexbox">
+			        <div class="cityPosition flexbox">
+			        	<img src="images/cityDifferIcon1.png">
+			        	<p>南京市</p>
+			        </div>
+			        <div class="cityDiffSearch flexbox">
+			        	<img src="images/cityDifferIcon2.png">
+			        	<input type="text" readonly="readonly" value="" placeholder="搜索" />
+			        </div>
+		        </div>
+			</div>
+			<div class="cityDiffNav">
+				<div class="cityDiffMenu flexbox">
+					<div class="cityDiffMenuLi">
+						<p>家居生活类</p>
+						<img src="images/blackArrowDown.png">
+					</div>
+					<div class="cityDiffMenuLi">
+						<p>正品保障</p>
+						<img src="images/blackArrowDown.png">
+					</div>
+					<div class="cityDiffMenuLi">
+						<p>星级</p>
+						<img src="images/blackArrowDown.png">
+					</div>
+					<div>
+						<ul class="cityDiffMenuNavTxt" style="display: none;">
+							<li>户外</li>
+							<li>美妆</li>
+							<li>家居</li>
+							<li>服饰类</li>
+							<li>美妆护肤类</li>
+							<li>家居生活类</li>
+							<li>家居生活类</li>
+							<li>服饰类</li>
+							<li>美妆护肤类</li>
+							<li>家居生活类</li>
+						</ul>
+						<ul class="cityDiffMenuNavTxt" style="display: none;">
+							<li>户外运动类</li>
+							<li>美妆护肤类</li>
+							<li>家居生活类</li>
+							<li>服饰类</li>
+							<li>美妆护肤类</li>
+						</ul>
+						<ul class="cityDiffMenuNavTxt" style="display: none;">
+							<li>户外运动类</li>
+							<li>美妆护肤类</li>
+							<li>家居生活类</li>
+							<li>服饰类</li>
+						</ul>
+					</div>	
+				</div>
+				<div class="cityDiffNavLi flexbox">
+					<div class="cityDiffNavLiLeft">
+						<img src="images/cityDiffNavLiLeft.jpg">
+					</div>
+					<div class="cityDiffNavLiRight flexright">
+						<div class="cityDiffNavLiRight_top flexbox">
+							<div class="cityDiffNavLiRight_topLeft">
+								<h1>爵味旗舰店</h1>
+								<img src="images/star5.jpg">
+							</div>
+							<div class="cityDiffNavLiRight_topRight">
+								正品保障
+							</div>
+						</div>
+						<div class="cityDiffNavLiRight_bot flexbox">
+							<img src="images/cityDiffNavLiRight_bot.jpg">
+							<p>广东省揭阳爵味旗舰店</p>
+						</div>
+					</div>
+				</div>
+				<div class="cityDiffNavLi flexbox">
+					<div class="cityDiffNavLiLeft">
+						<img src="images/cityDiffNavLiLeft.jpg">
+					</div>
+					<div class="cityDiffNavLiRight flexright">
+						<div class="cityDiffNavLiRight_top flexbox">
+							<div class="cityDiffNavLiRight_topLeft">
+								<h1>爵味旗舰店</h1>
+								<img src="images/star5.jpg">
+							</div>
+							<div class="cityDiffNavLiRight_topRight">
+								正品保障
+							</div>
+						</div>
+						<div class="cityDiffNavLiRight_bot flexbox">
+							<img src="images/cityDiffNavLiRight_bot.jpg">
+							<p>广东省揭阳爵味旗舰店</p>
+						</div>
+					</div>
+				</div>
+				<div class="cityDiffNavLi flexbox">
+					<div class="cityDiffNavLiLeft">
+						<img src="images/cityDiffNavLiLeft.jpg">
+					</div>
+					<div class="cityDiffNavLiRight flexright">
+						<div class="cityDiffNavLiRight_top flexbox">
+							<div class="cityDiffNavLiRight_topLeft">
+								<h1>爵味旗舰店</h1>
+								<img src="images/star5.jpg">
+							</div>
+							<div class="cityDiffNavLiRight_topRight">
+								正品保障
+							</div>
+						</div>
+						<div class="cityDiffNavLiRight_bot flexbox">
+							<img src="images/cityDiffNavLiRight_bot.jpg">
+							<p>广东省揭阳爵味旗舰店</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			var swiper = new Swiper('.swiper-container', {        //banner切换
+		        pagination: '.swiper-pagination',
+		        slidesPerView: 1,
+		        paginationClickable: true,
+		        autoplay: 2500,
+		        loop: true
+		    });
+		</script>
+	</body>
+</html>

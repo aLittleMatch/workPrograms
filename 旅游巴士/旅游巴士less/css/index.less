@@ -1,0 +1,593 @@
+/*==========less 公式==========*/
+@baserem:1rem/64;
+/*==========less 公式==========*/
+/*==========首页 开始==========*/
+.indexbg{
+    background-color: #efefef;
+    padding-bottom: 100*@baserem;
+}
+.index-top img{
+    width: 100%;
+    height: 158*@baserem;
+    display: block;
+}
+.scenery{
+    padding: 20*@baserem 3%;
+    background-color: #fff;
+    position: relative;
+}
+.scenery-search{
+    width: 100%;   
+    padding: 20*@baserem 90*@baserem 20*@baserem 30*@baserem;
+    border-radius: 25*@baserem;
+    box-sizing: border-box;
+    border: 1px solid #d2d2d2;   
+    -webkit-appearance: none;
+}
+.search_img{
+    width: 40*@baserem;
+    height: 39*@baserem;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -20*@baserem;
+    right: 50*@baserem;
+}
+.distance-car{
+    background-color: #f8f8f8;
+    padding: 25*@baserem 8%;
+    box-sizing: border-box;
+}
+.distance-station{
+    -webkit-box-pack: start;
+    margin-bottom: 10*@baserem;
+}
+.locationPic{
+    width: 24*@baserem;
+    height: 28*@baserem;
+    display: block;
+    margin-right: 22*@baserem;
+}
+.location-station{
+    font-size: 13px;
+    color: #000;
+}
+[data-dpr="2"] .location-station{
+    font-size: 26px;
+}
+[data-dpr="3"] .location-station{
+    font-size: 39px;
+}
+.location-style{
+    color: #7bc70d;
+    margin-left: 8*@baserem;
+}
+.prospectTime{
+    font-size: 12px;
+    font-weight: normal;
+    color: #7d7d7d;
+    padding-left: 46*@baserem;
+    box-sizing: border-box;
+}
+[data-dpr="2"] .prospectTime{
+    font-size: 24px;
+}
+[data-dpr="3"] .prospectTime{
+    font-size: 36px;
+}
+.buy-ticBox{
+    padding: 20*@baserem 2%;
+}
+.buy-tic{
+    border: 1px solid #dcdcdc;
+    border-radius: 10*@baserem;
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 15*@baserem;
+}
+.tic-classes{
+    height: 70*@baserem;
+    padding: 0 25*@baserem;
+    overflow: hidden;
+}
+.partbox{
+    width: 50%;
+    height: 70*@baserem;
+    box-sizing: border-box;
+    float: left;
+}
+.classes-part1-box{
+    -webkit-box-pack: start;
+}
+.classes-part2-box{
+    -webkit-box-pack: end;
+}
+.classespic1{
+    width: 31*@baserem;
+    height: 28*@baserem;
+    display: block;
+    margin-right: 25*@baserem;
+}
+.classespic2{
+    width: 28*@baserem;
+    height: 28*@baserem;
+    display: block;
+    margin-right: 25*@baserem;
+}
+.part-bg{
+    background: url(../img/classespic1.png) left center no-repeat;
+    background-size: 31*@baserem 28*@baserem;
+    padding-left: 50*@baserem;
+}
+.tic-classes-box{
+    -webkit-box-pack: start;
+}
+.classes-part1{
+    font-size: 14px;
+}
+[data-dpr="2"] .classes-part1{
+    font-size: 28px;
+}
+[data-dpr="3"] .classes-part1{
+    font-size: 42px;
+}
+.classes-part2{
+    font-size: 14px;
+}
+[data-dpr="2"] .classes-part2{
+    font-size: 28px;
+}
+[data-dpr="3"] .classes-part2{
+    font-size: 42px;
+}
+.check-place{
+    padding: 0 25*@baserem;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    overflow: hidden;
+}
+.check-place-left,.check-place-right{
+    width: 50%;
+    float: left;
+}
+.check-place-right{
+    height: 128*@baserem;
+    -webkit-box-pack: end;
+}
+.check-place-left{
+    position: relative;
+}
+.place-star,.place-end{
+    width: 100%;
+    height: 64*@baserem;
+    line-height: 64*@baserem;
+    padding-left: 50*@baserem;
+    box-sizing: border-box;
+    color: #000000;
+    font-size: 14px;
+}
+[data-dpr="2"] .place-star{
+    font-size: 28px;
+}
+[data-dpr="3"] .place-star{
+    font-size: 42px;
+}
+[data-dpr="2"] .place-end{
+    font-size: 28px;
+}
+[data-dpr="3"] .place-end{
+    font-size: 42px;
+}
+.place-star{
+    background: url(../img/startbg.png) left center no-repeat;
+    background-size: 24*@baserem 24*@baserem;
+    border-bottom: 1px solid #e5e5e5;
+}
+.place-end{
+    background: url(../img/endbg.png) left center no-repeat;
+    background-size: 24*@baserem 24*@baserem;
+}
+.exchange-btn,.exchange-btn2{
+    width: 48*@baserem;
+    height: 48*@baserem;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -24*@baserem;
+    right: 0;
+}
+.buy-btn{
+    width: 130*@baserem;
+    height: 60*@baserem;
+    line-height: 60*@baserem;
+    text-align: center;
+    background-color: #7bc70d;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 15*@baserem;
+}
+[data-dpr="2"] .buy-btn{
+    font-size: 34px;
+}
+[data-dpr="3"] .buy-btn{
+    font-size: 51px;
+}
+.place-start-off{
+    overflow: hidden;
+}
+.place-start,.place-off{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    height: 50*@baserem;
+    line-height: 50*@baserem;
+    text-align: center;
+    word-break: break-all;
+    font-size: 11px;
+    color: #959595;
+}
+[data-dpr="2"] .place-start,[data-dpr="2"] .place-off{
+    font-size: 22px;
+}
+[data-dpr="3"] .place-start,[data-dpr="3"] .place-off{ 
+    font-size: 33px;
+}
+.index-footer{
+    position: fixed;
+    height: 100*@baserem;
+    bottom: 0;
+    left: 0;
+    padding: 0 15%;
+    background-color: #fff;
+}
+.footer-sider{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.footerBox1,.footerBox2{
+    height: 100%;
+    width: 100*@baserem;
+    text-align: center;
+    padding-top: 62*@baserem;
+    box-sizing: border-box;
+}
+.footer-sider .footerBox1{
+    background: url(../img/unindexpic1.png) center 10*@baserem no-repeat;
+    background-size: 57*@baserem 46*@baserem;
+}
+.footer-sider .footerBox2{
+    background: url(../img/unindexpic2.png) center 10*@baserem no-repeat;
+    background-size: 60*@baserem 46*@baserem;
+}
+.hoverfooter .footerBox1{
+    background: url(../img/indexpic1.png) center 10*@baserem no-repeat;
+    background-size: 57*@baserem 46*@baserem;
+    color: #7bc70d;
+}
+.hoverfooter .footerBox2{
+    background: url(../img/indexpic2.png) center 10*@baserem no-repeat;
+    background-size: 60*@baserem 46*@baserem;
+    color: #7bc70d;
+}
+/*==========首页 结束==========*/
+/*==========景点详情 开始==========*/
+.detabg{
+    background-color: #efefef;
+    padding-bottom: 100*@baserem;
+}
+.sceneryPic{
+    background-color: #fff;
+    padding: 0 3%;
+}
+.sceneryBox{
+    padding-top: 18*@baserem;
+}
+.sceneryBox img{
+    width: 100%;
+}
+.sceneryName{
+    font-size: 14px;
+    color: #000;
+    background: url(../img/orsc.png) 10*@baserem center no-repeat;
+    background-size: 23*@baserem 23*@baserem;
+    padding-left: 50*@baserem;
+    height: 70*@baserem;
+    line-height: 70*@baserem;
+}
+[data-dpr="2"] .sceneryName{
+    font-size: 28px;
+}
+[data-dpr="3"] .sceneryName{
+    font-size: 42px;
+}
+.intro{
+    padding: 30*@baserem 4%;
+    background-color: #fff;
+    margin-top: 15*@baserem;
+    margin-bottom: 15*@baserem;
+    line-height: 1.5em;
+    font-size: 12px;
+    color: #626262;
+}
+[data-dpr="2"] .intro{
+    font-size: 24px;
+}
+[data-dpr="3"] .intro{
+    font-size: 36px;
+}
+.originBox{
+    background-color: #fff;
+    padding: 0 3%;
+}
+.origin-items-border{
+    border-bottom: 1px solid #eeeeee;
+}
+.origin-items{
+    width: 100%;
+    box-sizing: border-box;
+    height: 80*@baserem;
+    padding-left: 50*@baserem;
+    padding-right: 40*@baserem;
+    background: url(../img/orsc.png) 10*@baserem center no-repeat;
+    background-size: 23*@baserem 23*@baserem;  
+    -webkit-box-pack: justify;
+    font-size: 14px;
+    color: #313131;
+}
+[data-dpr="2"] .origin-items{
+    font-size: 28px;
+}
+[data-dpr="3"] .origin-items{
+    font-size: 42px;
+}
+.originBox .originBoxImgDown{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+.originBox img{
+    width: 28*@baserem;
+    height: 24*@baserem;
+    display: block;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+}
+.origin-items-content{
+    font-size: 12px;
+    color: #626262;
+    text-align: justify;
+    background-color: #f8f8f8;
+    padding: 23*@baserem;
+    border-radius: 20*@baserem;
+    position: relative;
+    margin-top: 10*@baserem;
+    display: none;
+    line-height: 2em;
+}
+[data-dpr="2"] .origin-items-content{
+    font-size: 24px;
+}
+[data-dpr="3"] .origin-items-content{
+    font-size: 36px;
+}
+.origin-items-content:after{
+    content: '';
+    border-width: 36*@baserem 45*@baserem;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #f8f8f8 transparent; 
+    position: absolute;
+    top: -65*@baserem;
+    left: 40*@baserem;
+}
+.scenery-footer{
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10*@baserem 4%;
+    background-color: #fff;
+    z-index: 30;
+}
+.scenery-footer-side{
+    width: 48%;
+    height: 80*@baserem;
+    line-height: 80*@baserem;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 10*@baserem;
+}
+[data-dpr="2"] .scenery-footer-side{
+    font-size: 30px;
+}
+[data-dpr="3"] .scenery-footer-side{
+    font-size: 45px;
+}
+.scenery-left{
+    background-color: #7bc70d;
+    float: left;
+}
+.scenery-right{
+    background-color: #f46610;
+    float: right;
+}
+.shoppingcart,.sharebackground{
+    width: 48*@baserem;
+    height: 46*@baserem;
+    display: block;
+    margin-right: 25*@baserem;
+}
+.sharebackground{
+    width: 46*@baserem;
+}
+.sharePopup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 999;
+    text-align: right;
+    padding-right: 3%;
+    box-sizing: border-box;
+    display: none;
+}
+.circleFriends{
+    width: 487*@baserem;
+    height: 410*@baserem;
+}
+/*==========景点详情 结束==========*/
+/*==========我的车票 开始==========*/
+.checkTic-get-item{
+    background-color: #efefef;
+    padding: 25*@baserem 4% 100*@baserem 4%;
+    display: none;
+}
+.ticket-items{
+    height: 230*@baserem;
+    width: 100%;
+    border-radius: 15*@baserem;
+    overflow: hidden;
+    box-shadow: 0 8px 3px #dddcdc;  
+    margin-bottom: 25*@baserem;
+    position: relative;
+}
+.ticket-items-left{
+    width: 78%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    float: left;
+    border-right: 2px dashed #7bc70d;
+}
+.ticket-items-right{
+    width: 22%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #7bc70d;
+    float: left;   
+    position: relative;
+}
+.ticket-items-right:after{
+    content: '';
+    width: 24*@baserem;
+    height: 24*@baserem;
+    border-radius: 100%;
+    position: absolute;
+    top: -12*@baserem;
+    left: -12*@baserem;
+    background-color: #efefef;
+}
+.ticket-items-right:before{
+    content: '';
+    width: 24*@baserem;
+    height: 24*@baserem;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -12*@baserem;
+    left: -12*@baserem;
+    background-color: #efefef;
+    box-shadow: inset 0 15px 3px #dddcdc;
+}
+.ticket-items-place{
+    border-bottom: none !important;
+}
+.ticket-price{
+    font-size: 25px;
+    color: #f5a335;
+}
+[data-dpr="2"] .ticket-price{
+    font-size: 50px;
+}
+[data-dpr="3"] .ticket-price{
+    font-size: 75px;
+}
+.check-place-tic{
+    -webkit-box-align: end;
+    box-sizing: border-box;
+    padding-bottom: 10*@baserem;
+}
+.classes-tick1:after{
+    content: '一日票';
+    font-size: 11px;
+    color: #fff;
+    padding: 8*@baserem 10*@baserem;
+    background-color: #7bc70d;
+    border-radius: 15*@baserem;
+    margin-left: 10*@baserem;
+}
+.classes-tick2:after{
+    content: '两日票';
+    font-size: 11px;
+    color: #fff;
+    padding: 8*@baserem 10*@baserem;
+    background-color: #f46610;
+    border-radius: 15*@baserem;
+    margin-left: 10*@baserem;
+}
+[data-dpr="2"] .classes-tick1:after{
+    font-size: 22px;
+}
+[data-dpr="3"] .classes-tick1:after{
+    font-size: 33px;
+}
+[data-dpr="2"] .classes-tick2:after{
+    font-size: 22px;
+}
+[data-dpr="3"] .classes-tick2:after{
+    font-size: 33px;
+}
+.ticket-items-right{
+    -webkit-box-orient: vertical;
+}
+.right-time{
+    font-size: 11px;
+    color: #fff;
+    margin-bottom: 20*@baserem;
+}
+[data-dpr="2"] .right-time{
+    font-size: 22px;
+}
+[data-dpr="3"] .right-time{
+    font-size: 33px;
+}
+.right-weeks{
+    margin-bottom: 20*@baserem;
+}
+.right-weeks,.right-time-btn{
+    font-size: 12px;
+    color: #fff;
+}
+[data-dpr="2"] .right-weeks{
+    font-size: 24px;
+}
+[data-dpr="3"] .right-weeks{
+    font-size: 36px;
+}
+[data-dpr="2"] .right-time-btn{
+    font-size: 24px;
+}
+[data-dpr="3"] .right-time-btn{
+    font-size: 36px;
+}
+.right-time-btn{
+    padding: 13*@baserem 11*@baserem;
+    background-color: #67aa07;
+    border-radius: 20*@baserem;
+}
+/*==========我的车票 结束==========*/
+.scenicspot{
+    position: relative;
+}
+.dec-line{
+    width: 40*@baserem;
+    height: 9*@baserem;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -20*@baserem;
+    display: none;
+}

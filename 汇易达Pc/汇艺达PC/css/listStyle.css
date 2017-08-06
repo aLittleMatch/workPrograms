@@ -1,0 +1,502 @@
+body{
+	font-size: 14px;
+}
+.listNav{
+	width: 1000px;
+	margin: 0 auto;
+}
+.listNavRight{
+	width: 740px;
+    padding: 1px 3px;
+    background: #fff;
+}
+.listNavRight_topic{
+    border-bottom: 2px solid #008529;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+.listNavRight_topic b{
+	background: #008529;
+    color: #fff;
+    font-weight: normal;
+    float: left;
+    padding: 0 15px;
+}
+.listNavRight_txt{
+    min-height: 349px;
+}
+.listNavRight_txt ul{
+    padding: 15px 0;
+}
+.listNavRight_txt ul li{
+    height: 34px;
+    line-height: 34px;
+    background: url(../images/list_icon.jpg) no-repeat 10px;
+    padding-left: 20px;
+}
+.listNavRight_txt ul li span{
+    float: right;
+    color: #adadad;
+    font-size: 12px;
+    padding-right: 10px;
+}
+.listNavRight_txt ul li a{
+	color: #545454;
+}
+.listNavRight_txt ul li a:hover{
+	color: #008529;
+}
+/*底部分页模块*/
+.list_page{
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.list_page a{
+	padding: 2px 8px;
+    margin: 0 5px;
+    color: #5e5e5e;
+    text-decoration: underline;
+}
+.linkNormal{
+	text-decoration: none!important;
+}
+.go{
+	border: 1px solid #a0a0a0;
+}
+.go:hover{
+	background: #008529;
+	color: #fff;
+}
+.pageNum{
+	width: 63px; 
+	line-height: 19px; 
+	padding: 2px 8px; 
+	margin: 0 5px; 
+	background: #fff; 
+	font-size: 16px; 
+	border: 1px solid #cccccc; 
+	border-radius: 2px;
+}
+
+//资质等级评定页面开始
+.listNavRight_topic ul{
+	float: left;
+}
+.listNavRight_topicTit li{
+	width: 150px;
+	background: #bdbdbd;
+    color: #fff;
+    float: left;
+    text-align: center;
+    margin-left: 3px;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+}
+.listNavRight_topicTit li:first-child{
+	margin-left: 0;
+}
+.listNavRight_topicTit li img{
+	padding-left: 10px;
+}
+.application{
+	width: 385px;
+	height: 430px;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+.applicationInput{
+	margin-bottom: 13px;
+	float: left;
+}
+.applicationInput p{
+	width: 50px;
+	font-size: 12px;
+	line-height: 25px;
+	color: #000;
+	text-align: right;
+	display: inline-block;
+	margin-right: 20px;
+	float: left;
+}
+.applicationInput input[type="text"]{
+	width: 294px;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 10px;
+	border: 1px solid #a0a0a0;
+}
+.applicationInput input[type="submit"]{
+	width: 300px;
+	height: 30px;
+	color: #fff;
+	background: #008528;
+	border: none;
+	margin-left: 69px;
+}
+.applicationInput select{
+	width: 305px;
+	height: 25px;
+	padding-left: 10px;
+	border: 1px solid #a0a0a0;
+}
+.applicationInput option{
+	width: 85px;
+}
+.applicationInput h1{
+	font-size: 12px;
+	color: #7e7e7e;
+	font-weight: normal;
+	margin-left: 65px;
+}
+.shortInput{
+	width: 115px!important;
+	height: 25px;
+	float: left;
+	border: 1px solid #a0a0a0;
+	padding-left: 10px;
+}
+.code{
+	width: 92px;
+	height: 26px;
+	border: 1px solid #f3f3f3;
+	float: left;
+	margin-left: 30px;
+}
+.change{
+	font-size: 12px;
+	line-height: 25px;
+	color: #000;
+	float: left;
+	margin-left: 20px;
+}
+.fileBox{
+	width: 92px;
+	height: 26px;
+	float: left;
+	margin-left: 30px;
+	cursor: pointer;
+}
+.fileChoose{
+	width: 92px;
+	height: 26px;
+	font-size: 12px;
+	line-height: 26px;
+	text-align: center;
+	color: #fff!important;
+	background: #008528;
+	float: left;
+	margin-left: 30px;
+	cursor: pointer;
+	position: relative;
+}
+.file-inp{
+	width: 100%;
+	height: 100%;
+	display: block;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.listNavRight_search{
+	width: 660px;
+	height: 32px;
+	margin: 0 auto;
+	margin-top: 16px;
+	margin-bottom: 18px;
+}
+.listNavRight_search_left{
+	width: 595px;
+	height: 32px;
+	-webkit-border-radius: 10px;
+	background: #f3f3f3;
+	float: left;
+}
+.listNavRight_search_left input{
+	width: 430px;
+	font-size: 12px;
+	color: #000;
+	line-height: 24px;
+	margin-top: 4px;
+	margin-left: 25px;
+	background: none;
+}
+.listNavRight_search_left input::-webkit-input-placeholder{
+	color: #000;
+}
+.listNavRight_search_right{
+	width: 52px;
+	height: 32px;
+	background: #008528;
+	-webkit-border-radius: 4px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 32px;
+	float: right;
+	color: #fff;
+}
+.listNavRight_search_leftNav{
+	height: 26px;
+	float: left;
+	border-right: 1px solid #959595;
+	margin-top: 3px;
+}
+.listNavRight_search_leftNav p{
+	font-size: 12px;
+	line-height: 26px;
+	padding:0 11px 0 14px;
+	color: #000;
+	float: left;
+}
+.listNavRight_search_leftNav span{
+	width: 10px;
+	height: 20px;
+	display: block;
+	float: left;
+	margin-top: 3px;
+	margin-right: 15px;
+}
+.listNavRight_search_leftNav span img{
+	width: 10px;
+	height: 9px;
+	float: left;
+	display: block;
+	margin-bottom: 1px;
+}
+
+.searchResult{
+	width: 660px;
+	margin: 0 auto;
+}
+.searchResultList{
+	width: 100%;
+	height: 240px;
+	background: #e4f2e7;
+	position: relative;
+	margin-bottom: 6px;
+}
+.searchResultList_left{
+	padding-top: 15px;
+	margin: 8px 35px 0 27px;
+	float: left;
+}
+.searchResultList_leftImg{
+	width: 235px;
+	height: 190px;
+	border: 3px solid #fff;
+}
+.searchResultList_leftImg img{
+	width: 235px;
+	height: 190px;
+}
+.searchResultList_right{
+	float: left;
+	margin-top: 15px;
+}
+.searchResultList_right p{
+	font-size: 14px;
+	color: #000;
+	line-height: 22px;
+}
+.searchResultList_right p a{
+	color: #0294e7;
+}
+.searchResultList_right p img{
+	vertical-align: middle;
+	padding-left: 5px;
+	-webkit-transform: translateY(-2px);
+}
+.searchResultList_right h1{
+	font-size: 14px;
+	color: #000;
+	padding-top: 10px;
+}
+.slideDown{
+	width: 147px;
+	height: 200px;
+	border: 2px solid #008528;
+	position: absolute;
+	left: 458px;
+	top: 43px;
+	display: none;
+	z-index: 1;
+}
+.slideDown li{
+	width: 147px!important;
+	text-align: center;
+	background: #fff;
+	color: #000000;
+}
+.active{
+	color: #fff!important;
+	background: #008528!important;
+}
+#degree{
+	width: 304px;
+	height: 24px;
+	border: 1px solid #a0a0a0;
+	float: left;
+	position: relative;
+	background:url(../images/blackArrowDown.jpg) no-repeat;
+	background-position: 85% center;
+}
+#degreeNav{
+	width: 80px;
+	border: 2px solid #008528;
+	position: absolute;
+	z-index: 2;
+	right: 0;
+	top: 20px;
+	background: #fff;
+	display: none;
+}
+#degreeNav dd{
+	font-size: 12px;
+	line-height: 34px;
+	color: #000;
+	text-align: center;
+	border-bottom: 1px solid #e5e5e5;
+	list-style: none!important;
+	margin: 0 auto;
+	cursor: pointer;
+}
+#degreeNav dd:last-child{
+	border-bottom: none;
+}
+.degreeBOx{
+	width: 100%;
+	height: 100%;
+	padding-left: 15px;
+	font-size: 12px;
+	line-height: 25px;
+}
+//资质等级评定页面结束
+
+//职业技能大赛页面开始
+.padd3{
+	padding-bottom: 20px;
+}
+//职业技能大赛页面结束
+
+//视频图片栏目开始
+.zoombox {
+	width:686px;
+	margin:20px auto 0 auto;
+}
+.zoompic {
+	border:solid 1px #dfdfdf;
+	width:603px;
+	height:400px;
+	margin: 0 auto;
+	background:url(../images/loading.gif) no-repeat 50% 50%;
+}
+.zoompic img{
+	width: 603px;
+	height: 400px;
+}
+.zoompic video{
+	width: 100%;
+	height: 100%;
+}
+.sliderbox {
+	height:87px;
+	overflow:hidden;
+	margin:6px 0 0 0;
+}
+.sliderbox .arrow-btn {
+	width:38px;
+	height:76px;
+	background:url(../images/arrow-btn.png) no-repeat;
+	cursor:pointer;
+}
+.sliderbox #btn-left {
+	float:left;
+	background-position:0 0;
+	margin-top: 5px;
+}
+.sliderbox #btn-left.dasabled {
+	background-position:0 -76px;
+}
+.sliderbox #btn-right {
+	float:right;
+	background-position:-38px 0;
+	margin-top: 5px;
+}
+.sliderbox #btn-right.dasabled {
+	background-position:-38px -76px;
+}
+.sliderbox .slider {
+	float:left;
+	height:87px;
+	width:605px;
+	position:relative;
+	overflow:hidden;
+	margin:0 0 0 3px;
+	display:inline;
+}
+.sliderbox .slider ul {
+	position:absolute;
+	left:0;
+	top: 0;
+	width:999em;
+	padding: 0!important;
+	float: left;
+}
+.sliderbox .slider li {
+	float:left;
+	width:117px;
+	height:87px;
+	text-align:center;
+	background: none;
+}
+.sliderbox .slider li:first-child{
+	margin: 0;
+	padding: 0;
+}
+.sliderbox .slider li img {
+	width:115px;
+	height:85px;
+	display: block;
+	border:solid 1px #dfdfdf;
+}
+.sliderbox .slider li.current img {
+	border:solid 1px #008528;
+}
+
+
+//视频图片栏目结束
+
+//会员企业开始
+.vipCompany{
+	width: 100%;
+}
+.vipCompanyTop{
+	width: 100%;
+}
+.vipCompanyTop dd{
+	width: 100px;
+	height: 31px;
+	line-height: 31px;
+	text-align: center;
+	background: url(../images/vipCompanyBg2.jpg) no-repeat;
+	float: left;
+	margin-left: 10px;
+}
+.vipCompanyTop dd:first-child{
+	margin-left: 0;
+}
+.vipNow{
+	color: #fff;
+	background: url(../images/vipCompanyBg.jpg) no-repeat!important;
+}
+.vipCompanyNav{
+	width: 100%;
+	padding: 15px 10px 10px 0;
+}
+.vipCompanyNav p{
+	height: 250px;
+}
+//会员企业结束

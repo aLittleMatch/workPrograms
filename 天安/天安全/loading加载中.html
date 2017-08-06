@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>加载中</title>
+<meta content="yes" name="apple-mobile-web-app-capable" /><!-- iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览 -->
+<meta content="telephone=no" name="format-detection" /><!-- 告诉设备忽略将页面中的数字识别为电话号码 -->
+<meta content="black" name="apple-mobile-web-app-status-bar-style" /><!-- iphone的私有标签，它指定的iphone中safari顶端的状态条的样式 -->
+<link href="css/default.css" rel="stylesheet" type="text/css" media="screen"/>
+<script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js" ></script>
+<script>
+	document.onreadystatechange = loading; 
+		function loading(){
+			if(document.readyState == "complete")
+			{ 
+				$(".loadingBox").hide();
+			}
+		}
+</script>
+</head>
+<style>
+	.loadingBox{
+		background: url(images/loadlogo.jpg) no-repeat center 1.71875rem #ffffff;
+		background-size:4.671875rem ;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 99999999;
+	}
+	.wallbg{
+		width: 100%;
+		padding-top: 3.125rem;
+	}
+	.wallbg .car{
+		width: 100%;
+		display: block;
+	}
+	p{
+		color: #323232;
+		text-align: center;
+		font-size: 0.5rem;
+		line-height: 1rem;
+	}
+</style>
+<body>
+<div class="loadingBox">
+	<div class="wallbg">
+		<img src="images/car.gif" class="car">
+	</div>
+	<p>正在加载中...</p>
+</div>
+</body>
+</html>

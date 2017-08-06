@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/flexible_css.debug.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/default.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/tickerstyle.css"/>
+		<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>路线实时状态</title>
+	</head>
+	<body>
+		<div class="container widthBox">
+			<div class="payPart1Box part_route  flexbox">
+				<img class="bus" src="img/bus.png"/>
+				望美旅游巴士L1
+			</div>
+			<div class="route-station">
+				<div class="route-station-part1 flexbox">
+					<div class="station-part1-start">阅江楼站</div>
+					<img class="contact_line" src="img/contact_line.png"/>
+					<div class="station-part1-end">牛首山站</div>
+				</div>
+				<div class="setEndTime">
+					首班<span class="route-set-time">06:30</span>
+					末班<span class="route-end-time">23:30</span>
+				</div>
+				<div class="exchange-btn3"><img src="img/exchange3.png"/></div>
+			</div>
+			<!--距离班车-->
+			<div class="distance-car distance-car_route">
+				<div class="distance-station flexbox">
+					<img class="locationPic" src="img/location.png"/>
+					<div class="location-station">距您最近的站点是<span class="location-style">L1线 中山陵站</span></div>
+				</div>
+				<h1 class="prospectTime">本班车15分钟进站, 下班车预计35分钟进站</h1>
+			</div>
+			<!--路线图-->
+			<div class="routeBox widthBox">
+				<!--开始站点-->
+				<div class="route-station-start flexbox">阅江楼</div>
+				<!--地铁特殊标记-->
+				<div class="route-station-special flexbox">					
+					鸡鸣寺
+					<div class="subway">地铁1号线</div>
+				</div>
+				<!--普通站点-->
+				<div class="route-station-common flexbox">燕子矶</div>					
+				<div class="route-station-common flexbox">玄武湖</div>	
+				<!--最近站点-->
+				<div class="route-station-lately flexbox">
+					<div class="station-lately-box">
+						<!--最近站点存在地铁，lately-subway-->
+						<div class="station-lately flexbox lately-subway">
+							中山陵(最近站点)
+							<div class="subway">地铁1号线</div>
+						</div>						
+					</div>
+					<div class="recentlyBus-box">
+						<div class="recentlyBus flexbox">
+							<h1 class="first-recently">4分钟后进站</h1>
+							<h1 class="sec-recently">15分钟后进站</h1>
+						</div>
+					</div>
+				</div>
+				<div class="route-station-common flexbox">中华门</div>
+				<!--结束站点-->
+				<div class="route-station-end flexbox">玄武湖</div>
+			</div>
+		</div>
+		<script>
+			$('.exchange-btn3').click(function(){
+				var content1=$('.station-part1-start').text();
+				var content2=$('.route-set-time').text();
+					
+					$('.station-part1-start').text($('.station-part1-end').text());
+					$('.station-part1-end').text(content1);
+					$('.route-set-time').text($('.route-end-time').text());
+					$('.route-end-time').text(content2);
+			})
+			
+		</script>
+	</body>
+</html>

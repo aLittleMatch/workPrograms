@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/flexible_css.debug.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/default.css"/>
+		<link rel="stylesheet/less" type="text/css" href="css/chartered.less"/>
+		<script src="js/less.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>信息提交</title>
+	</head>
+	<body>
+		<div class="container widthBox reckonbg">
+			<!--part1-->
+			<div class="reckon-part reckon-top">
+				<div class="reckon-part-items widthBox flexbox">
+					<div class="part1-items-left start-station">起始站</div>
+					<div class="part1-items-right flexright">翠屏山</div>
+				</div>
+				<div class="reckon-part-items widthBox flexbox">
+					<div class="part1-items-left end-station">目的地</div>
+					<div class="part1-items-right flexright">玄武湖</div>
+				</div>
+				<div class="reckon-part-items widthBox flexbox part-items-last">
+					<div class="part1-items-left passenger-type">乘客类型</div>
+					<div class="part1-items-right flexright">成人<span class="no-children">(无儿童)</span></div>
+				</div>
+			</div>
+			<!--中部-->
+			<div class="reckon-part reckon-middle">
+				<div class="reckon-part-items widthBox flexbox">
+					<div class="part1-items-left chartered-bus">包车方式</div>
+					<div class="part1-items-right flexright">往返</div>
+				</div>
+				<div class="reckon-part-items widthBox flexbox">
+					<div class="part1-items-left start-time-reckon">出发时间</div>
+					<div class="part1-items-right flexright">2016-06-22  06:30:00</div>
+				</div>
+				<div class="reckon-part-items widthBox flexbox">
+					<div class="part1-items-left end-time-reckon">返回时间</div>
+					<div class="part1-items-right flexright">2016-06-23  20:30:00</div>
+				</div>
+				<div class="reckon-part-items widthBox flexbox">
+					<div class="part1-items-left riding-bus">乘车人数</div>
+					<div class="part1-items-right flexright">58 人</div>
+				</div>
+				<div class="reckon-part-items widthBox flexbox part-items-last">
+					<div class="part1-items-left bus-nub">包车数量</div>
+					<div class="part1-items-right flexright">2  台</div>
+				</div>
+			</div>
+			<!--费用-->
+			<div class="reckon-part cost-total">本次包车费用约<span class="cost-mon">¥1200.00</span></div>
+		</div>
+		<!--底部包车按钮-->
+		<div class="chartered-bottom-bus">
+			<div class="chartered-bottom">立即包车</div>
+			<div class="none-chartered-bottom">放弃</div>
+		</div>
+		<!--弹窗确认-->
+		<div class="successful-sub">
+			<div class="sub-info giveup-info">
+				<img class="give-up" src="img/giveupbg.png"/>
+				<h1 class="sign-text">您确定放弃包车？</h1>
+				<div class="sign-btn giveup-btn">确定</div>
+				<img class="no_sub" src="img/no_sub.png"/>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$('.chartered-bottom').click(function(){
+				$('.successful-sub').show();
+			})
+			
+			$('.sign-btn').click(function(){
+				$('.successful-sub').hide()
+			})
+			
+			$('.no_sub').click(function(){
+				$('.successful-sub').hide()
+			})
+		</script>
+	</body>
+</html>

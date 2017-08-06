@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/judgeLoss.css"/>
+		<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>用户定损确认</title>
+	</head>
+	<body>
+		<div class="container my_judegebg">
+			<!--头部-->
+			<div class="counter-number">
+				<div class="counter-number-info">
+					<div class="counter-info-left">报案号</div>
+					<div class="counter-info-right">07603008022016002361</div>
+				</div>
+				<div class="licens-plate">车牌号：苏A-87459</div>
+			</div>
+			<!--详情-->
+			<div class="counter-del">
+				<div class="judge-content1">
+					<div class="judge-side flexbox">
+						<div class="judge-side-left">姓名</div>
+						<div class="judge-side-right flexright">微小宝</div>
+					</div>
+					<div class="judge-side flexbox">
+						<div class="judge-side-left">手机号</div>
+						<div class="judge-side-right flexright">13755645534</div>
+					</div>
+					<div class="judge-side flexbox judge-side-content">
+						<div class="judge-side-left">事故地点</div>
+						<div class="judge-side-right flexright">南京市江宁开发区将军大道麻田路口</div>
+					</div>
+				</div>
+			</div>
+			<!--添加事故现场照片-->
+			<div class="send_card">
+				<div class="send_card_box flexbox widthBox">
+					<div class="send_photo_left">
+						<div class="photo_left">
+							<img src="images/case11.jpg"/>
+						</div>
+						<img class="upsend" src="images/upsend.png"/>
+					</div>
+					<div class="send_photo_right">
+						<div class="photo_right">
+							<img src="images/case12.jpg"/>
+						</div>
+						<img class="upsend" src="images/upsend.png"/>
+					</div>	
+				</div>
+				<!--上传图片提示-->
+				<div class="send-reminder">请在此添加事故现场（全图)、车头前45度照片</div>
+			</div>	
+			
+			<!--添加事故现场照片-->
+			<div class="send_card">
+				<div class="send_card_box flexbox widthBox">
+					<div class="send_photo_left">
+						<div class="photo_left">
+							<img src="images/case21.jpg"/>
+						</div>
+						<img class="upsend" src="images/upsend.png"/>
+					</div>
+					<div class="send_photo_right">
+						<div class="photo_right">
+							<img src="images/case22.jpg"/>
+						</div>
+						<img class="upsend" src="images/upsend.png"/>
+					</div>	
+				</div>
+				<!--上传图片提示-->
+				<div class="send-reminder">请在此添加车位后45度照片、车辆损坏部位照片</div>
+			</div>
+			
+			<!--添加事故现场照片-->
+			<div class="send_card">
+				<div class="send_card_box flexbox widthBox">
+					<div class="send_photo_left">
+						<div class="photo_left">
+							<img src="images/case31.jpg"/>
+						</div>
+						<img class="upsend" src="images/upsend.png"/>
+					</div>
+					<div class="send_photo_right">
+						<div class="photo_right">
+							<img src="images/case32.jpg"/>
+						</div>
+						<img class="upsend" src="images/upsend.png"/>
+					</div>	
+				</div>
+				<!--上传图片提示-->
+				<div class="send-reminder">请在此添加车辆碰撞外界物体细节、车架号照片</div>
+			</div>
+			
+			<!--添加驾驶证、行驶证照片-->
+			<div class="send_card driving-licence">
+				<div class="send_card_box flexbox widthBox">
+					<div class="send_photo_left">
+						<div class="photo_left">
+							<img src="images/case41.jpg"/>
+						</div>
+						<img class="upsend" src="images/upsend.png"/>
+					</div>
+					<div class="send_photo_right">
+						<div class="photo_right">
+							<img src="images/case42.jpg"/>
+						</div>
+						<img class="upsend" src="images/upsend.png"/>
+					</div>	
+				</div>
+				<!--上传图片提示-->
+				<div class="send-reminder">请在此添加驾驶证、行驶证照片</div>
+			</div>
+			<!--添加身份证、个人储蓄卡-->
+			<div class="send_card id-card2">
+				<div class="send_card_box flexbox widthBox">
+					<div class="send_photo_left">
+						<div class="photo_left">
+							<img class="caseid11" src="images/caseid11.png"/>
+						</div>
+						<img class="upsend" src="images/upsend.png"/>
+					</div>
+					<div class="send_photo_right">
+						<div class="photo_right">
+							<img class="caseid12" src="images/caseid12.png"/>
+						</div>
+						<img class="upsend" src="images/upsend.png"/>
+					</div>	
+				</div>
+				<!--上传图片提示-->
+				<div class="send-reminder">请在此添加身份证、个人储蓄卡照片</div>
+			</div>
+
+			<!--提交-->
+			<div class="submit-wrapper widthBox send-submit-wrapper">
+				<div class="confir-sub">提 交</div>
+			</div>
+			
+		</div>
+		<script type="text/javascript">
+			$('.select-confir-sider').click(function(){
+				$(this).siblings().removeClass('confir-sider-haved');
+				$(this).addClass('confir-sider-haved');
+			})
+		</script>
+	</body>
+</html>

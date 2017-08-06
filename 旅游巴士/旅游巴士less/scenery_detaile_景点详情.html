@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/flexible_css.debug.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/default.css"/>
+		<link rel="stylesheet/less" type="text/css" href="css/index.less"/>
+		<script src="js/less.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>景点详情页</title>
+	</head>
+	<body>
+		<div class="container widthBox detabg">
+			<!--图片预览-->
+			<div class="sceneryPic">
+				<div class="sceneryBox"><img src="img/scenerybg.jpg"/></div>
+				<div class="sceneryName">阅江楼</div>
+			</div>
+			<p class="intro">南京阅江楼与武汉黄鹤楼、岳阳岳阳楼、南昌滕王阁合称江南四大名楼。位于南京城西北，濒临长江。楼高五十二米，共七层，碧瓦朱楹、檐牙摩空、朱帘凤飞、彤扉彩盈，具有鲜明的明代风格，古典的皇家气派，为江南四大名楼之一。
+			</p>
+			<!--典故来历-->
+			<div class="originBox">
+				<!--历史典故-->
+				<div class="originItems">
+					<div class="origin-items flexbox origin-items-border">
+						<div class="origin-items-title">历史典故</div>
+						<img class="uppic" src="img/uppic.png" />
+					</div>
+					<div class="origin-items-content">
+						阅江楼的特色主要体现在以下几方面：一是历史源远、底蕴丰厚。岳阳楼、滕王阁和黄鹤楼都是以名人诗篇得以传世，而朱元璋作为大明王朝的开国皇帝，所提出建造的阅江楼则以其“有记无楼”而更十分具有传奇色彩。无论是从文学、历史的角度，还是从人文、文化的角度，都具有深长、耐人寻味的意境。阅江楼所设想的城、山、楼、江开阔画面和恢弘气势，古往今来为人们所神往
+					</div>
+				</div>
+				<!--景点景色-->
+				<div class="originItems">
+					<div class="origin-items flexbox origin-items-border">
+						<div class="origin-items-title">景点景色</div>
+						<img class="uppic" src="img/uppic.png" />
+					</div>
+					<div class="origin-items-content">
+						阅江楼的特色主要体现在以下几方面：一是历史源远、底蕴丰厚。岳阳楼、滕王阁和黄鹤楼都是以名人诗篇得以传世，而朱元璋作为大明王朝的开国皇帝，所提出建造的阅江楼则以其“有记无楼”而更十分具有传奇色彩。无论是从文学、历史的角度，还是从人文、文化的角度，都具有深长、耐人寻味的意境。阅江楼所设想的城、山、楼、江开阔画面和恢弘气势，古往今来为人们所神往
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部购票分享-->
+		<div class="scenery-footer">
+			<div class="scenery-footer-side flexbox scenery-left"><img class="shoppingcart" src="img/shoppingcart.png"/>购票</div>
+			<div class="scenery-footer-side flexbox scenery-right"><img class="sharebackground" src="img/sharebackground.png"/> 分享</div>
+		</div>
+		<!--分享弹窗-->
+		<div class="sharePopup"><img class="circleFriends" src="img/circlefriends.png"/></div>
+		<script>
+			$('.origin-items').click(function(){				
+				if($(this).children('.uppic').hasClass('originBoxImgDown')){	
+					$(this).children('.uppic').removeClass('originBoxImgDown');
+					$(this).addClass('origin-items-border');	
+				}else{
+					$(this).children('.uppic').addClass('originBoxImgDown');
+					$(this).removeClass('origin-items-border');
+				}
+				$(this).siblings('.origin-items-content').toggle();
+			})
+			
+			$('.scenery-right').click(function(){
+				$('.sharePopup').fadeIn();
+			})
+			
+			$('.sharePopup').click(function(){
+				$(this).fadeOut();
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="gray">
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+       	<link rel="stylesheet" type="text/css" href="css/xike.css"/>
+       	<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+       	<script src="js/rem.js"></script>
+       	<script src="js/jquery3.0.min.js"></script>
+       	<script src="js/swiper.min.js"></script>
+		<title>商品详情</title>	
+		<style>
+			.productDetailPost_right .sub{
+			    font-size: 0.36rem;
+				color: #929292;
+				margin-right: 0.2rem;
+			}
+			.productDetailPost_right .add{
+				font-size: 0.36rem;
+				color: #929292;
+				margin-left: 0.2rem;
+			}
+			.productDetailPost_right p{
+				width: 0.8rem;
+				font-size: 0.3rem;
+				line-height: 0.5rem;
+				text-align: center;
+				background: #e6e6e6;
+			}
+			@-webkit-keyframes shine{
+				0%{-webkit-box-shadow: 0 0 10px #fff inset;}
+				16%{-webkit-box-shadow: 0 0 10px #ec8d1a inset;}
+				32%{-webkit-box-shadow: 0 0 10px #fff inset;}
+				64%{-webkit-box-shadow: 0 0 10px #ec8d1a inset;}
+				80%{-webkit-box-shadow: 0 0 10px #fff inset;}
+				100%{-webkit-box-shadow: 0 0 10px #ec8d1a inset;}
+			}
+			.shining{
+				animation: shine 1.5s;
+				-webkit-animation: shine 1.5s
+			}
+		</style>
+	</head>
+	<body>
+		<div class="productDetail">
+			<div class="productDetailBanner swiper-container">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide"><img src="images/productDetailBanner.jpg"></div>
+		            <div class="swiper-slide"><img src="images/productDetailBanner.jpg"></div>
+		            <div class="swiper-slide"><img src="images/productDetailBanner.jpg"></div>
+		            <div class="swiper-slide"><img src="images/productDetailBanner.jpg"></div>
+		        </div>
+		        <!-- Add Pagination -->
+		        <div class="swiper-pagination"></div>
+			</div>
+			<div class="productDetailInfo">
+				<div class="productDetailInfoHead flexbox">
+					<div class="productDetailInfoHead_left">
+						倾慕唇膏套装 滋润补水 保湿不脱妆
+					</div>
+					<div class="productDetailInfoHead_right">
+						<img src="images/post.jpg">
+					</div>
+				</div>
+				<div class="productDetailInfoMid flexbox"><img src="images/confirmPayLeft1.png"><p>290希贝</p></div>
+				<div class="productDetailInfoBot flexbox">
+					<i>原价 ¥300.00</i><p>库存5675</p><p>月销998</p>
+				</div>
+			</div>
+			<div class="productDetailPost flexbox">
+				<div class="productDetailPost_left"><p>购买数量</p></div>
+				<div class="productDetailPost_right flexbox">
+					<div class="sub">－</div>
+					<p>0</p>
+					<div class="add">＋</div>
+				</div>
+			</div>
+			<div class="productDetailNav">
+				<div class="productDetailNavHead flexbox">
+					<h1>商品详情</h1>
+				</div>
+				<div class="productDetailNavTxt">
+					<img src="images/productDetailNavTxtPic1.jpg">
+					<p>随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字
+					随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字
+					随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字
+					随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字
+					随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字
+					随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字
+					随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字
+					随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字
+					随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字
+					随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字
+					随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字
+					随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字
+					随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字
+					随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字随便写几个字</p>
+					
+				</div>
+			</div>
+			<div class="joinShopCar flexbox">
+				<div class="joinShopCar_left">
+					<img src="images/shopCar.png">
+					<p>加入购物车</p>
+				</div>
+				<div class="joinShopCar_right">立即购买</div>
+			</div>
+		</div>
+	 	<script>
+	    var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        paginationClickable: true,
+	        autoplay: 2500,
+	        loop:true,
+	    });
+	    
+	    $(function(){
+	    	$(".add").click(                                      //加
+			function(){
+				$(this).siblings("p").text(parseInt($(this).siblings("p").text())+1);
+			}
+			);
+			$(".sub").click(                                      //减
+				function(){
+					if($(this).siblings("p").text()<=0){
+						$(this).siblings("p").text(0);
+					}else{
+						$(this).siblings("p").text(parseInt($(this).siblings("p").text())-1);
+					}
+				}
+			);
+			var clientHeight = document.body.clientHeight;
+			$(".joinShopCar_right").click(        //控制scrolltop的值
+				function(){
+					$(window).scrollTop(0);
+					$(".productDetailPost").addClass("shining");
+				}
+			)
+	    })
+	    
+	    </script>
+	</body>
+</html>

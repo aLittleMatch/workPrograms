@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/judgeLoss.css"/>
+		<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>定损列表</title>
+	</head>
+	<body>
+		<div class="container widthBox lossbg">
+			<div class="loss-user widthBox">用户定损列表</div>
+			<div class="loss-user-list widthBox">
+				<!--待处理-->
+				<div class="loss-user-items wait-handle">
+					<div class="user-items-title flexbox">
+						<div class="report-case flexbox">报案号：<span class="case-color">07603008022016002361</span></div>
+						<div class="check-more">查看</div>
+					</div>
+					<div class="judge-content flexbox">
+						<div class="judge-content1 judge-add-style">
+							<div class="judge-side flexbox judge-side-content judge-add-side">
+								<div class="judge-side-left">事故地点</div>
+								<div class="judge-side-right flexright">南京市江宁开发区将军大道麻田路口</div>
+							</div>
+							<div class="judge-side flexbox judge-side-time judge-add-side">
+								<div class="judge-side-left">提交时间</div>
+								<div class="judge-side-right flexright">2016-6-28 15:00:06</div>
+							</div>
+						</div>
+						<div class="judge-content2-box">
+							<div class="judge-content2 flexbox">
+								<img class="waitfor" src="images/waitfor.png" />
+								待处理
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--处理中-->
+				<div class="loss-user-items being-handle">
+					<div class="user-items-title flexbox">
+						<div class="report-case flexbox">报案号：<span class="case-color">07603008022016002361</span></div>
+						<div class="check-more">查看</div>
+					</div>
+					<div class="judge-content flexbox">
+						<div class="judge-content1 judge-add-style">
+							<div class="judge-side flexbox judge-side-content judge-add-side">
+								<div class="judge-side-left">事故地点</div>
+								<div class="judge-side-right flexright">南京市江宁开发区将军大道麻田路口</div>
+							</div>
+							<div class="judge-side flexbox judge-side-time judge-add-side">
+								<div class="judge-side-left">提交时间</div>
+								<div class="judge-side-right flexright">2016-6-28 15:00:06</div>
+							</div>
+						</div>
+						<div class="judge-content2-box">
+							<div class="judge-content2 flexbox">
+								<img class="beingprocessed" src="images/beingprocessed.png" />
+								处理中
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--已成功-->
+				<div class="loss-user-items succeed-handle">
+					<div class="user-items-title flexbox">
+						<div class="report-case flexbox">报案号：<span class="case-color">07603008022016002361</span></div>
+						<div class="check-more">查看</div>
+					</div>
+					<div class="judge-content flexbox">
+						<div class="judge-content1 judge-add-style">
+							<div class="judge-side flexbox judge-side-content judge-add-side">
+								<div class="judge-side-left">事故地点</div>
+								<div class="judge-side-right flexright">南京市江宁开发区将军大道麻田路口</div>
+							</div>
+							<div class="judge-side flexbox judge-side-time judge-add-side">
+								<div class="judge-side-left">提交时间</div>
+								<div class="judge-side-right flexright">2016-6-28 15:00:06</div>
+							</div>
+						</div>
+						<div class="judge-content2-box">
+							<div class="judge-content2 flexbox">
+								<img class="succebg" src="images/succeedbg.png" />
+								 已成功
+							</div>
+						</div>
+					</div>
+					<div class="make-sure flexbox">
+						<div class="make-sure-case-box flexright">
+							<div class="make-sure-case flexbox">
+								<div>定损金额</div>
+								<div class="sure-case">¥<span class="style-case">10000</span></div>
+							</div>
+						</div>
+						<div class="make-sure-btn">
+							<div class="make-sure-btn-wrapper flexbox">
+								<div class="delete-sure">删除</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--待确认-->
+				<div class="loss-user-items await-notarize">
+					<div class="user-items-title flexbox">
+						<div class="report-case flexbox">报案号：<span class="case-color">07603008022016002361</span></div>
+						<div class="check-more">查看</div>
+					</div>
+					<div class="judge-content flexbox">
+						<div class="judge-content1 judge-add-style">
+							<div class="judge-side flexbox judge-side-content judge-add-side">
+								<div class="judge-side-left">事故地点</div>
+								<div class="judge-side-right flexright">南京市江宁开发区将军大道麻田路口</div>
+							</div>
+							<div class="judge-side flexbox judge-side-time judge-add-side">
+								<div class="judge-side-left">提交时间</div>
+								<div class="judge-side-right flexright">2016-6-28 15:00:06</div>
+							</div>
+						</div>
+						<div class="judge-content2-box">
+							<div class="judge-content2 flexbox">
+								<img class="notarize11" src="images/notarize11.png" />
+								 待确认
+							</div>
+						</div>
+					</div>
+					<div class="make-sure flexbox">
+						<div class="make-sure-case-box flexright">
+							<div class="make-sure-case flexbox">
+								<div>定损金额</div>
+								<div class="sure-case">¥<span class="style-case">10000</span></div>
+							</div>
+						</div>
+						<div class="make-sure-btn">
+							<div class="make-sure-btn-wrapper flexbox">
+								<div class="delete-sure">确认</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--待修改-->
+				<div class="loss-user-items await-revamp">
+					<div class="user-items-title flexbox">
+						<div class="report-case flexbox">报案号：<span class="case-color">07603008022016002361</span></div>
+						<div class="check-more">查看</div>
+					</div>
+					<div class="judge-content flexbox">
+						<div class="judge-content1 judge-add-style">
+							<div class="judge-side flexbox judge-side-content judge-add-side">
+								<div class="judge-side-left">事故地点</div>
+								<div class="judge-side-right flexright">南京市江宁开发区将军大道麻田路口</div>
+							</div>
+							<div class="judge-side flexbox judge-side-time judge-add-side">
+								<div class="judge-side-left">提交时间</div>
+								<div class="judge-side-right flexright">2016-6-28 15:00:06</div>
+							</div>
+						</div>
+						<div class="judge-content2-box">
+							<div class="judge-content2 flexbox">
+								<img class="notarize22" src="images/notarize22.png" />
+								 待确认
+							</div>
+						</div>
+					</div>
+					<div class="make-sure flexbox">
+						<div class="make-sure-case-box flexright">
+							<div class="make-sure-case flexbox">
+								<div class="await-revamp-text">信息不完善</div>
+								<div class="sure-case"></div>
+							</div>
+						</div>
+						<div class="make-sure-btn">
+							<div class="make-sure-btn-wrapper flexbox">
+								<div class="delete-sure">修改</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+			
+		</div>
+	</body>
+</html>

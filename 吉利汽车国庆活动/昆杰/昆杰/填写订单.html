@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/rem.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+        <link rel="stylesheet" type="text/css" href="css/kunjie.css"/>
+        <script src="js/zepto.min.js"></script>
+		<title>填写订单</title>
+	</head>
+	<body class="gray">
+		<div class="orderDetail">
+			<!--订单详情头部-->
+			<div class="orderDetailHead padd2">
+				<div class="orderWriteHeadLi">
+					<input type="text" value="" placeholder="输入收货人姓名" />
+				</div>
+				<div class="orderWriteHeadLi">
+					<input type="text" value="" placeholder="输入收货人手机号码" />
+				</div>
+				<div class="orderWriteHeadLi">
+					<input type="text" value="" placeholder="输入所在学校名称" />
+				</div>
+				<div class="orderWriteHeadLi">
+					<input type="text" value="" placeholder="输入所在班级" />
+				</div>
+				<div class="orderWriteHeadLi">
+					<input type="text" value="" placeholder="输入班主任姓名" />
+				</div>
+				<div class="orderWriteHeadLi">
+					<input type="text" value="" placeholder="输入班主任手机号码" />
+				</div>
+			</div>
+			<!--订单书籍-->
+			<div class="orderDetailNav">
+				<div class="orderDetailNavLi flexbox">
+					<div class="orderDetailNavLi_left"><img src="images/orderDetailNavLi_left.jpg"></div>
+					<div class="orderDetailNavLi_right flexright">
+						<h1>《最好的方法给孩子》</h1>
+						<h2 class="flexbox"><b class="marginRight1">￥<span>15.00</span></b>
+							<div class="shopNum flexbox">
+								<p>数量：</p>
+								<img class="sub" src="images/sub.png">
+								<i>0</i>
+								<img class="add" src="images/add.png">
+							</div>
+						</h2>
+					</div>
+				</div>
+				<div class="orderDetailNavLi flexbox">
+					<div class="orderDetailNavLi_left"><img src="images/orderDetailNavLi_left.jpg"></div>
+					<div class="orderDetailNavLi_right flexright">
+						<h1>《最好的方法给孩子》</h1>
+						<h2 class="flexbox"><b>￥<span>30.50</span></b>
+							<div class="shopNum flexbox">
+								<p>数量：</p>
+								<img class="sub" src="images/sub.png">
+								<i class="marginRightNone">0</i>
+								<img class="add" src="images/add.png">
+							</div>
+						</h2>
+					</div>
+				</div>
+			</div>
+			<!--配送方式-->
+			<div class="orderDetailWay flexbox">
+				<div class="orderDetailWay_left">配送方式</div>
+				<div class="orderDetailWay_right">在校自提</div>
+			</div>
+			<!--支付方式-->
+			<div class="orderDetailWay flexbox">
+				<div class="orderDetailWay_left">支付方式</div>
+				<div class="orderDetailWay_right flexbox"><img src="images/weChat.jpg">微信支付</div>
+			</div>
+			<!--商品总额-->
+			<div class="orderDetailTotal">
+				<div class="orderDetailTotalLi flexbox">
+					<div class="orderDetailTotalLi_left">商品总额</div>
+					<div class="orderDetailTotalLi_right" id="totalPrice">￥00.00</div>
+				</div>
+				<div class="orderDetailTotalLi flexbox">
+					<div class="orderDetailTotalLi_left">件数</div>
+					<div class="orderDetailTotalLi_right" id="packages">0件</div>
+				</div>
+			</div>
+			<!--提交订单-->
+			<div class="orderSubmit flexbox">
+				<div class="orderSubmitNav flexbox">
+					<p>共<span>0</span>件</p>
+					<h1>合计:<i><span>￥</span>00.00</i></h1>
+				</div>
+				<div class="orderSubmitBtn">提交订单</div>
+			</div>
+		</div>
+		<script>
+			$(function(){
+				var count =	function(){                         //计算价格
+					var num = new Array();
+					var sum = 0;
+					for(var i=0;i<$(".orderDetailNavLi").length;i++){
+						
+						num[i] = parseFloat($(".shopNum").eq(i).find("i").text())*parseFloat($(".orderDetailNavLi_right").eq(i).find("h2 b span").text());
+
+						sum = parseFloat(sum + num[i]);	
+					}
+					sum = sum.toFixed(2);
+					$(".orderSubmitNav h1 i").html('<span>￥</span>' + sum);
+					$("#totalPrice").html("￥"+sum);
+				};
+				
+				var packages = function(){                   //计算件数
+					var num = new Array();
+					var sum = 0;
+					for(var i=0;i<$(".orderDetailNavLi").length;i++){
+						
+						num[i] = parseFloat($(".shopNum").eq(i).find("i").text());
+
+						sum = parseFloat(sum + num[i]);	
+					}
+					$(".orderSubmitNav p span").html(sum);
+					$("#packages").html(sum+"件");
+				}
+				
+				$(".add").click(                                      //加
+					function(){
+						$(this).siblings("i").text(parseInt($(this).siblings("i").text())+1);
+						count();
+						packages();
+					}
+				);
+				$(".sub").click(                                      //减
+					function(){
+						if($(this).siblings("i").text()<=0){
+							$(this).siblings("i").text(0);
+						}else{
+							$(this).siblings("i").text(parseInt($(this).siblings("i").text())-1);
+						}
+						count();
+						packages();
+					}
+				);	
+				$(".orderSubmitNav p span").text(parseInt($(".shopNum i").text()));
+			})
+		</script>
+	</body>
+</html>

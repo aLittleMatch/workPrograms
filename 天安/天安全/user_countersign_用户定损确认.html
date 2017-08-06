@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/judgeLoss.css"/>
+		<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>用户定损确认</title>
+	</head>
+	<body>
+		<div class="container consignbg">
+			<!--头部-->
+			<div class="counter-number">
+				<div class="counter-number-info">
+					<div class="counter-info-left">报案号</div>
+					<div class="counter-info-right">07603008022016002361</div>
+				</div>
+				<div class="licens-plate">车牌号：苏A-87459</div>
+			</div>
+			<!--详情-->
+			<div class="counter-del">
+				<div class="judge-content1">
+					<div class="judge-side flexbox">
+						<div class="judge-side-left">姓名</div>
+						<div class="judge-side-right flexright">微小宝</div>
+					</div>
+					<div class="judge-side flexbox">
+						<div class="judge-side-left">手机号</div>
+						<div class="judge-side-right flexright">13755645534</div>
+					</div>
+					<div class="judge-side flexbox judge-side-content">
+						<div class="judge-side-left">事故地点</div>
+						<div class="judge-side-right flexright">南京市江宁开发区将军大道麻田路口</div>
+					</div>
+				</div>
+			</div>
+			<!--定损明细-->
+			<div class="loss-detail">
+				<div class="loss-detail-title">定损明细：</div>
+				<div class="loss-detail-items flexbox">
+					<div class="loss-detail-left">前保险杠：</div>
+					<div class="loss-detail-right">¥<span class="num-style">3500</span></div>
+				</div>
+				<div class="loss-detail-items flexbox">
+					<div class="loss-detail-left">右方向灯：</div>
+					<div class="loss-detail-right">¥<span class="num-style">500</span></div>
+				</div>
+				<div class="loss-detail-items flexbox">
+					<div class="loss-detail-left">右大灯：</div>
+					<div class="loss-detail-right">¥<span class="num-style">1000</span></div>
+				</div>
+				<div class="loss-detail-items flexbox">
+					<div class="loss-detail-left">前框：</div>
+					<div class="loss-detail-right">¥<span class="num-style">5000</span></div>
+				</div>
+			</div>
+			<!--提交-->
+			<div class="submit-wrapper widthBox">
+				<div class="sum-total-box widthBox">总价<span class="sum-total">¥10000</span></div>
+				<div class="confirmation-can">
+					<h1 class="confir-can">请确认以上信息和报价</h1>
+					<div class="select-confir flexbox">
+						<div class="select-confir-sider"><div class="flexbox"><img class="cirl1" src="images/cirl1.png"/><img class="cirl2" src="images/cirl2.png"/>不同意</div></div>
+						<div class="select-confir-sider confir-sider-haved"><div class="flexbox"><img class="cirl1" src="images/cirl1.png"/><img class="cirl2" src="images/cirl2.png"/>同意</div></div>
+					</div>
+				</div>
+				<div class="confir-sub">提 交</div>
+			</div>
+			
+		</div>
+		<script type="text/javascript">
+			$('.select-confir-sider').click(function(){
+				$(this).siblings().removeClass('confir-sider-haved');
+				$(this).addClass('confir-sider-haved');
+			})
+		</script>
+	</body>
+</html>

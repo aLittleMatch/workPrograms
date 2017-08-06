@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+
+*, html, body, div, span, applet, object, footer, iframe, button, select, table, caption, tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+  vertical-align: baselinebaseline;
+  font-family:Arial,"microsoft yahei";
+  outline:0;
+  padding:0;
+  margin:0;
+  border:0;
+  -webkit-tap-highlight-color: transparent;
+}
+html { 
+  font-size:62.5%;/*10 ÷ 16 × 100% = 62.5%*/
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  width: 100%;
+  }
+body { 
+  font-size:1.4rem;/*1.4 × 10px = 14px */
+  color:#727171;
+  min-width:320px;
+  margin:0;
+  padding:0;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+.*{ margin:0; padding:0;}
+button { cursor:pointer;}
+form { display:inline;}
+/* remember to define focus styles! */   
+:focus { outline:0;}
+ol, ul { list-style:none;}
+/* tables still need cellspacing="0" in the markup */   
+table {
+  border-collapse:separate;
+  border-spacing:0;
+}
+caption, th, td {
+  font-weight:normal;
+  text-align:left;
+}
+a img { border:0;}
+/* remove possible quote marks (") from <q> & <blockquote> */   
+blockquote:before, blockquote:after, q:before, q:after { content: "";}
+blockquote, q { quotes: "" "";}
+.box100{
+	width:100%;
+	}
+b,i,h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+	font-style: normal;
+}
+/* fenix' basic classes */
+/* 基本框 */
+.c { clear:both;}
+a {
+  color:#727171;
+  text-decoration:none;
+  cursor:pointer;
+}
+a:hover {
+  color:#727171;
+  text-decoration:none;
+}
+
+.flexbox {
+  display: -moz-box;
+  /* Firefox */
+  display: -webkit-box;
+  /* Safari and Chrome */
+  display: -ms-flexbox;
+  /* Internet Explorer 10 */
+  display: box;
+  -webkit-box-align: center;
+}
+.flexright {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  /* Firefox */
+  box-flex: 1;
+  position: relative;
+}
+/* 指向右的箭头*/
+.arrowRight {
+  content: " ";
+  display: inline-block;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  height: 0.15625rem;
+  width: 0.15625rem;
+  border-width: 0.015625rem 0.015625rem 0 0;
+  border-color: #9c9c9c;
+  border-style: solid;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"], button,input[type="text"]  {
+
+-webkit-appearance: none;
+
+}
+

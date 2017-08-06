@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html style="background: #f8f8f8;">
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+       	<link rel="stylesheet" type="text/css" href="css/xike.css"/>
+       	<script src="js/jquery3.0.min.js"></script>
+       	<script src="js/rem.js"></script>
+		<title>订单详情</title>
+		<style>
+			.orderDetailPostWay{
+				width: 100%;
+				background: #fafafa;
+				float: right;
+				display: none;
+			}
+			.orderDetailPostWayLi{
+				margin-left: 1.3rem;
+				padding: 0.35rem 0;
+				padding-right: 0.6rem;
+				border-bottom: 1px solid #eeeeee;
+				-webkit-box-pack: end;
+			}
+			.orderDetailPostWayLi:last-child{
+				border-bottom: none;
+			}
+			.orderDetailPostWayLi p{
+				font-size: 0.26rem;
+				color: #313131;
+			}
+			.orderDetailPostWayLi select{
+				font-size: 0.26rem;
+				color: #0e78b6;
+				margin-left: 0.2rem;
+				-webkit-appearance: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="orderDetail">
+			<div class="orderDetailHead flexbox">
+				<div class="orderDetailHeadLeft">
+					<img src="images/orderDetailHeadLeft.jpg">
+				</div>
+				<div class="orderDetailHeadRight flexbox flexright">
+					<div class="orderDetailHeadRight_left">
+						<h1>收货人：章泽恬 18088888888</h1>
+						<p>收货地址：江苏省南京市江宁区将军大道6号J6软件园16幢305-307室</p>
+					</div>
+					<div class="orderDetailHeadRight_right">
+						<img src="images/arrowRight.png">
+					</div>
+				</div>
+			</div>
+			<div class="orderDetailNav">
+				<div class="orderDetailNavHead">商品</div>
+				<div class="orderDetailNavList">
+					<div class="orderDetailNavListLi flexbox">
+						<div class="orderDetailNavListLi_left"><img src="images/orderDetailNavListLi_left.jpg"></div>
+						<div class="orderDetailNavListLi_right flexbox flexright">
+							<div class="orderDetailNavListLi_right_left">
+								<h1>倾慕唇膏套装 滋润补水保湿</h1>
+								<p>颜色分类06</p>
+							</div>
+							<div class="orderDetailNavListLi_right_right">
+								<h1 style="font-size: 0.3rem;"><img src="images/perCenterMenu1.jpg">290希贝</h1>
+								<h2>原价 ¥300.00</h2>
+								<h3>x 1</h3>
+							</div>
+						</div>
+					</div>
+					<div class="orderDetailNavListLi flexbox">
+						<div class="orderDetailNavListLi_left"><img src="images/orderDetailNavListLi_left.jpg"></div>
+						<div class="orderDetailNavListLi_right flexbox flexright">
+							<div class="orderDetailNavListLi_right_left">
+								<h1>倾慕唇膏套装 滋润补水保湿</h1>
+								<p>颜色分类06</p>
+							</div>
+							<div class="orderDetailNavListLi_right_right">
+								<h1 style="font-size: 0.3rem;"><img src="images/perCenterMenu1.jpg">290希贝</h1>
+								<h2>原价 ¥300.00</h2>
+								<h3>x 1</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="orderDetailNavLi flexbox oDPosWay">
+					<div class="orderDetailNavLi_left">配送方式</div>
+					<div class="orderDetailNavLi_right flexbox"><p>自取</p><i><img src="images/arrowUp.png"></i></div>
+				</div>
+				<div class="orderDetailPostWay">
+					<div class="orderDetailPostWayLi flexbox">
+						<p>自取</p>
+					</div>
+					<div class="orderDetailPostWayLi flexbox">
+						<P>
+							送货上门 
+							<select>
+								<option>选择城市</option>
+								<option>南京市</option>
+								<option>日本市</option>
+								<option>韩国市</option>
+							</select>
+						</P>
+					</div>
+					<div class="orderDetailPostWayLi flexbox">
+						<p>货到付款</p>
+					</div>
+				</div>
+				<div class="orderDetailNavLi flexbox">
+					<div class="orderDetailNavLi_left">买家留言</div>
+					<div class="orderDetailNavLi_right"><div class="textArea" contenteditable="true">选填，对本次交易的说明等</div></div>
+				</div>
+				<div class="orderDetailNavLi flexbox" style="padding: 0.3rem 0.25rem 0.3rem 0.1rem;">
+					<div class="orderDetailNavLi_left"></div>
+					<div class="orderDetailNavLi_right"><h1>共计1件商品，小记：290希贝</h1></div>
+				</div>
+			</div>
+			<!--以下为底部确认支付-->
+			<div class="confirmPay flexbox">
+				<div class="confirmPayLeft flexbox">
+					<p>合计：</p>
+					<h1 class="flexbox"><img src="images/confirmPayLeft1.png"><span>290希贝</span></h1>
+				</div>
+				<div class="confirmPayRight">确认支付</div>
+			</div>
+		</div>
+		<script>
+			$(function(){
+				$(".oDPosWay").click(
+					function(){
+						if($(".orderDetailPostWay").css("display")=="none"){             		//点击切换配送方式
+							$(".orderDetailPostWay").show();
+							$(this).find("i").css({"-webkit-transform":"rotate(180deg)"});
+						}else{
+							$(".orderDetailPostWay").hide();
+							$(this).find("i").css({"-webkit-transform":"rotate(0deg)"});
+						}
+						
+					}
+				);
+				
+				$(".orderDetailPostWayLi").click(              //获取不同选择的值
+					function(){
+						if($(this).index()== 1){
+							$(".oDPosWay .orderDetailNavLi_right p").text("送货上门 "+$(this).find("p select option:selected").val());
+						}else{
+							$(".oDPosWay .orderDetailNavLi_right p").text($(this).text());
+							$(".orderDetailPostWay").hide();
+						}
+					}
+				);
+				
+				$(".orderDetailPostWayLi").find("p select").change(       //当改变城市时整个选取隐藏
+					function(){
+						$(".orderDetailPostWay").hide();
+					}
+				)
+			})
+		</script>
+	</body>
+</html>

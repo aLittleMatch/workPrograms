@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/judgeLoss.css"/>
+		<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>核销详情</title>
+	</head>
+	<body>
+		<div class="container widthBox judgebg">
+			<!--头部-->
+			<div class="judge-top">我的定损列表<img src="images/search111.png" class="searchBtn"></div>
+			<!--搜索-->
+			<div class="judgeSearchBox">
+				<div class="flexbox">
+					<div class="flexright">
+						<input type="text" value="" class="search" placeholder="请在此输入您要查询的报案号" />
+					</div>
+					<div class="flexleft">
+						<span class="btn">搜索</span>
+					</div>
+				</div>
+			</div>
+			<!--搜索-->
+			
+			<!--banner-->
+			<ul class="judge-banner widthBox flexbox">
+				<li class="judge-banner-items judge-selected-items">全部</li>
+				<li class="judge-banner-items">待处理</li>
+				<li class="judge-banner-items">处理中</li>
+				<li class="judge-banner-items">已成功</li>
+			</ul>
+			<!--列表-->
+			<div class="judge-list">
+				<!--待处理-->
+				<div class="judge-schedule wait-handle">
+					<div class="judge-num">报案号：<span class="num-style">07603008022016002361</span></div>
+					<div class="judge-content flexbox">
+						<div class="judge-content1 judge-add-style">
+							<div class="judge-side flexbox judge-add-side">
+								<div class="judge-side-left">姓名</div>
+								<div class="judge-side-right flexright">微小宝</div>
+							</div>
+							<div class="judge-side flexbox judge-add-side">
+								<div class="judge-side-left">车牌号</div>
+								<div class="judge-side-right flexright">苏A-87459</div>
+							</div>
+							<div class="judge-side flexbox judge-side-content judge-add-side">
+								<div class="judge-side-left">事故地点</div>
+								<div class="judge-side-right flexright">南京市江宁开发区将军大道麻田路口</div>
+							</div>
+							<div class="judge-side flexbox judge-side-time judge-add-side">
+								<div class="judge-side-left">提交时间</div>
+								<div class="judge-side-right flexright">2016-6-28 15:00:06</div>
+							</div>
+						</div>
+						<div class="judge-content2-box">
+							<div class="judge-content2 flexbox">
+								<img class="waitfor" src="images/waitfor.png" />
+								待处理
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 处理中-->
+				<div class="judge-schedule being-handle">
+					<div class="judge-num">报案号：<span class="num-style">07603008022016002361</span></div>
+					<div class="judge-content flexbox">
+						<div class="judge-content1 judge-add-style">
+							<div class="judge-side flexbox judge-add-side">
+								<div class="judge-side-left">姓名</div>
+								<div class="judge-side-right flexright">微小宝</div>
+							</div>
+							<div class="judge-side flexbox judge-add-side">
+								<div class="judge-side-left">车牌号</div>
+								<div class="judge-side-right flexright">苏A-87459</div>
+							</div>
+							<div class="judge-side flexbox judge-side-content judge-add-side">
+								<div class="judge-side-left">事故地点</div>
+								<div class="judge-side-right flexright">南京市江宁开发区将军大道麻田路口</div>
+							</div>
+							<div class="judge-side flexbox judge-side-time judge-add-side">
+								<div class="judge-side-left">提交时间</div>
+								<div class="judge-side-right flexright">2016-6-28 15:00:06</div>
+							</div>
+						</div>
+						<div class="judge-content2-box">
+							<div class="judge-content2 flexbox">
+								<img class="beingprocessed" src="images/beingprocessed.png" />
+								 处理中
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--已成功-->
+				<div class="judge-schedule succeed-handle">
+					<div class="judge-num">报案号：<span class="num-style">07603008022016002361</span></div>
+					<div class="judge-content flexbox">
+						<div class="judge-content1 judge-add-style">
+							<div class="judge-side flexbox judge-add-side">
+								<div class="judge-side-left">姓名</div>
+								<div class="judge-side-right flexright">微小宝</div>
+							</div>
+							<div class="judge-side flexbox judge-add-side">
+								<div class="judge-side-left">车牌号</div>
+								<div class="judge-side-right flexright">苏A-87459</div>
+							</div>
+							<div class="judge-side flexbox judge-side-content judge-add-side">
+								<div class="judge-side-left">事故地点</div>
+								<div class="judge-side-right flexright">南京市江宁开发区将军大道麻田路口</div>
+							</div>
+							<div class="judge-side flexbox judge-side-time judge-add-side">
+								<div class="judge-side-left">提交时间</div>
+								<div class="judge-side-right flexright">2016-6-28 15:00:06</div>
+							</div>
+						</div>
+						<div class="judge-content2-box">
+							<div class="judge-content2 flexbox">
+								<img class="succebg" src="images/succeedbg.png" />
+								 已成功
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>	
+		</div>
+		<script type="text/javascript">
+		$(function(){
+			$('.judge-banner-items').click(function(){
+				$(this).siblings().removeClass('judge-selected-items');
+				$(this).addClass('judge-selected-items');
+			})
+			
+			//全部
+			$('.judge-banner-items').eq(0).click(function(){
+				$('.judge-schedule').css('display','block');
+			})
+			//待处理
+			$('.judge-banner-items').eq(1).click(function(){
+				$('.judge-schedule').css('display','none');
+				$('.wait-handle').css('display','block');
+			})
+			//处理中
+			$('.judge-banner-items').eq(2).click(function(){
+				$('.judge-schedule').css('display','none');
+				$('.being-handle').css('display','block');
+			})
+			//已成功
+			$('.judge-banner-items').eq(3).click(function(){
+				$('.judge-schedule').css('display','none');
+				$('.succeed-handle').css('display','block');
+			})
+			
+			$(".searchBtn").click(function(){
+				$(".judgeSearchBox").slideDown();
+				$(".search").focus();
+			});
+			
+		})
+		
+		
+			
+		</script>
+	</body>
+</html>

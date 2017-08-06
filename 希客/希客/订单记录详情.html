@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="gray">
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+       	<link rel="stylesheet" type="text/css" href="css/xike.css"/>
+       	<script src="js/jquery3.0.min.js"></script>
+       	<script src="js/rem.js"></script>
+       	<script src="js/fun.js"></script>    	
+		<title>订单记录详情</title>
+	</head>
+	<style type="text/css">
+		.star-level{
+			height: 0.34rem;
+			overflow: hidden;
+			box-sizing: border-box;
+		}
+		.star-level li{
+			width: 0.35rem;
+			height: 0.34rem;
+			background: url(images/star_grey.png) center center no-repeat;
+			background-size: 0.35rem 0.34rem;
+			margin-right: 0.26rem;
+		}
+		.star-level .starling{
+			background: url(images/star_yellow.png) center center no-repeat;
+			background-size: 0.35rem 0.34rem;
+		}
+		.star-level li:nth-child(5){
+			margin-right: 0;
+		}
+		.star-level-manner{
+			margin-right: 0.4rem;
+		}
+		.star-score{
+			margin-left: 0.3rem;
+		}
+		.oRecDetSubBtn{
+			width: 3.5rem;
+			height: 0.8rem;
+			font-size: 0.3rem;
+			color: #fff;
+			line-height: 0.8rem;
+			text-align: center;
+			-webkit-border-radius: 999rem;
+			background: #ec8d1a;
+			margin: 0 auto;
+			margin-top: 0.3rem;
+		}
+	</style>
+	<body>
+		<div class="oRecDet">
+			<div class="oRecDetHead">
+				<div class="oRecDetHeadTop flexbox">
+					<h1 class="flexbox">澳诺雅旗舰店<span class="deal1">交易成功</span></h1>
+					<i id="oRecDetShareBtn"><img src="images/shareIcon2.jpg"></i>
+				</div>
+				<div class="oRecDetHeadBot flexbox">
+					<p>2016-09-09  11:30</p>
+					<p>¥ 19.90</p>
+				</div>
+			</div>
+			<div class="oRecDetMid">
+				<div class="oRecDetMidHead flexbox">
+					<img src="images/oRecDetIcon1.png"><p>我的评价</p>
+				</div>
+				<div class="oRecDetMidBody">
+					<div class="oRecDetMidBody_top">去污效果特别好，还有淡淡的清香</div>
+					<div class="oRecDetMidBody_bot flexbox">
+						<div class="oRecDetMidBody_botLi"><img src="images/picSubmit.jpg"></div>
+						<div class="oRecDetMidBody_botLi"><img src="images/picSubmit.jpg"></div>
+						<div class="oRecDetMidBody_botLi"><img src="images/picSubmit.jpg"></div>
+						<div class="oRecDetMidBody_botLi">添加图片</div>
+					</div>
+				</div>
+				<div class="oRecDetMidFoot">
+					<div class="oRecDetMidFootLi flexbox">
+						<p class="star-level-manner">服务态度</p>
+						<div class="star-level-box flexright">
+							<ul class="star-level flexbox">
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<i class="star-score">0.0</i>
+					</div>
+					<div class="oRecDetMidFootLi flexbox">
+						<p class="star-level-manner">商品质量</p>
+						<div class="star-level-box flexright">
+							<ul class="star-level flexbox">
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<i class="star-score">0.0</i>
+					</div>
+				</div>
+				<div class="oRecDetSubBtn">提交</div>
+			</div>
+			<div class="oRecDetBotBox">
+				<div class="oRecDetBot">
+					<div class="shareMidBot padd1">
+						<h1 class="flexbox"><span><img src="images/shareIcon3.jpg"></span>澳诺雅旗舰店</h1>
+						<div class="shareMidBotTxt flexbox"><span><img src="images/shareIcon4.jpg"></span><p>主营家庭清洁用品</p></div>
+						<div class="shareMidBotTxt flexbox"><span><img src="images/shareIcon5.jpg"></span><p>江苏省南京玄武区花园路11号楼6楼</p></div>
+						<div class="shareMidBotTxt flexbox"><span><img src="images/shareIcon6.jpg"></span><p>400-088-3567</p></div>
+					</div>
+					<div class="oRecDetBot_bot flexbox">
+						<div class="oRecDetBot_botCode flexbox">
+							<img src="images/oRecDetBot_botCode.jpg">
+						</div>
+					</div>
+					<div class="oRecDetCircle_left"></div>
+					<div class="oRecDetCircle_right"></div>
+				</div>
+			</div>
+		</div>
+		<!--分享蒙层页面-->
+		<div class="oRecDetShareCover">
+			<div class="oRecDetShare">
+				<div class="oRecDetShareHead"><img src="images/oRecDetShareIcon1.png"></div>
+				<div class="oRecDetShareBot flexbox">
+					<div class="oRecDetShareBotNav flexbox">
+						<img src="images/oRecDetShareIcon2.png">
+						<p>分享给朋友or朋友圈，呼唤朋友赢取希贝！</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			window.onload=function(){
+
+				for (var a=0;a<$('.star-level').length;a++) {
+					$('.star-level').eq(a).children('li').click(function(){
+						//返回当前点击对象所在的位置
+						var index=$(this).index();
+						//填充当前星星得分
+						$(this).parents('.star-level-box').siblings('.star-score').text(index+1+'.0')
+						//填充当前星星之前
+						for(var i=0;i<index+1;i++){
+							$(this).parent().children('li').eq(i).addClass('starling');
+						}
+						//填充当前星星之后
+						for (var j=index+1;j<$('.star-level').children('li').length;j++) {
+							$(this).parent().children('li').eq(j).removeClass('starling');
+						}
+					})
+				}					
+			}	
+		</script>
+	</body>
+</html>

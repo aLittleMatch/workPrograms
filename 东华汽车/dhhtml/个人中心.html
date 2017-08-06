@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+        <link rel="stylesheet" type="text/css" href="css/donghua.css"/>
+		<title>个人中心</title>
+	</head>
+	<body style="background: #f2f2f2;">
+		<div class="personalCenter">
+			<div class="personalCenterHead flexbox">
+				<div class="personalCenterHead_left flexbox">
+					<div class="headPicBox flexbox">
+						<div class="headPic">
+							<img src="images/headPic.png">
+						</div>
+					</div>
+					<div class="headNav">
+						<h1>ShaunYRUShaunYRUShaunYRUShaunYRUShaunYRUShaunYRU</h1>
+						<div class="headTel flexbox">
+							<img src="images/personalCenterIcon1.png">
+							<p>15051863913</p>
+						</div>
+					</div>
+				</div>
+				<div class="personalCenterHead_right">
+					<img src="images/personalCenterIcon2.png">
+				</div>
+			</div>
+			<ul class="personalCenterList">
+				<li class="flexbox">
+					<div class="personalCenterListLi_left flexbox"><img src="images/personalCenterListIcon1.jpg"></div>
+					<div class="personalCenterListLi_right flexbox flexright borderBottomNone"><div class="personalCenterListLiText flexbox flexright"><p>我的订单</p><div class="listNum flexbox">20</div></div><div class="personalCenterArrowRight"><img src="images/personalCenterArrowRight.jpg"></div></div>
+				</li>		
+			</ul>
+			<ul class="personalCenterList">
+				<li class="flexbox">
+					<div class="personalCenterListLi_left flexbox"><img src="images/personalCenterListIcon3.jpg"></div>
+					<div class="personalCenterListLi_right flexbox flexright"><div class="personalCenterListLiText flexbox flexright"><p>我的预约</p></div><div class="personalCenterArrowRight"><img src="images/personalCenterArrowRight.jpg"></div></div>
+				</li>
+				<li class="flexbox">
+					<div class="personalCenterListLi_left flexbox"><img src="images/personalCenterListIcon4.jpg"></div>
+					<div class="personalCenterListLi_right flexbox flexright"><div class="personalCenterListLiText flexbox flexright"><p>我的车辆</p></div><div class="personalCenterArrowRight"><img src="images/personalCenterArrowRight.jpg"></div></div>
+				</li>
+				<li class="flexbox">
+					<div class="personalCenterListLi_left flexbox"><img src="images/personalCenterListIcon5.jpg"></div>
+					<div class="personalCenterListLi_right flexbox flexright borderBottomNone"><div class="personalCenterListLiText flexbox flexright"><p>我的驾照</p></div><div class="personalCenterArrowRight"><img src="images/personalCenterArrowRight.jpg"></div></div>
+				</li>
+			</ul>
+			<ul class="personalCenterList">
+				<li class="flexbox" id="download">
+					<div class="personalCenterListLi_left flexbox"><img src="images/personalCenterListIcon6.jpg"></div>
+					<div class="personalCenterListLi_right flexbox flexright"><div class="personalCenterListLiText flexbox flexright"><p>APP下载</p></div></div>
+				</li>
+				<li class="flexbox">
+					<div class="personalCenterListLi_left flexbox"><img src="images/personalCenterListIcon2.jpg"></div>
+					<div class="personalCenterListLi_right flexbox flexright borderBottomNone"><div class="personalCenterListLiText flexbox flexright"><p>我的积分</p><div class="myPoints flexbox"><img src="images/personalCenterListIcon7.jpg">240000</div></div><div class="personalCenterArrowRight"><img src="images/personalCenterArrowRight.jpg"></div></div>
+				</li>
+			</ul>
+			<div class="copyRight">©2016 东华汽车实业有限公司</div>
+		</div>
+		<!--以下为下载弹窗-->
+		<div class="container2">
+			<div class="downloadType">
+				<div class="downloadTypeHead">DOWNLOAD</div>
+				<div class="downloadTypeNav">
+					<div class="downloadTypeNavLi flexbox">
+						<img src="images/downloadTypeIcon1.png"><p>IOS 下载</p>
+					</div>
+					<div class="downloadTypeNavLi flexbox">
+						<img src="images/downloadTypeIcon2.png"><p>Android 下载</p>
+					</div>
+				</div>
+				<div class="noticeClose"><img src="images/noticeClose.jpg"></div>
+			</div>
+		</div>	
+		<script src="js/jquery.js"></script>
+		<script>
+			$(function(){
+				$("#download").click(
+					function(){
+						$(".container2").show();
+					}	
+				);
+				$(".noticeClose").click(
+					function(){
+						$(".container2").hide();
+					}
+				)
+			})
+		</script>
+	</body>
+</html>

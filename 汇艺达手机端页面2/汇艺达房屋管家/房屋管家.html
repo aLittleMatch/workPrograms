@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html class="gray">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+        <link rel="stylesheet" type="text/css" href="css/extra.css"/>
+		<title>房屋管家</title>
+	</head>
+	<body>
+		<div class="steward">
+			<ul class="stewardHead fBox">
+				<li class="current">租房</li>
+				<li>出租</li>
+				<li>买房</li>
+				<li>卖房</li>
+			</ul>
+			<div class="stewardNav">
+				<div class="stewardInfo">
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">业主姓名</div>
+						<div class="stewardInfoLiRight"><input type="text" value="" placeholder="徐伟新"></div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">联系电话</div>
+						<div class="stewardInfoLiRight"><input type="number" value="" placeholder="18921429510"></div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox borderBottomNone">
+						<div class="stewardInfoLiLeft">联系时间</div>
+						<div class="stewardInfoLiRight">
+							<select>
+								<option>周末</option>
+								<option>周一</option>
+								<option>周二</option>
+								<option>周三</option>
+								<option>周四</option>
+								<option>周五</option>
+								<option>周六</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="stewardInfo">
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">物业地址</div>
+						<div class="stewardInfoLiRight">
+							<select>
+								<option>江宁</option>
+								<option>玄武</option>
+								<option>建邺</option>
+								<option>浦口</option>
+								<option>六合</option>
+								<option>雨花台</option>
+							</select>
+						</div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">期望房型</div>
+						<div class="stewardInfoLiRight">
+							<select>
+								<option>2-3房</option>
+								<option>1-2房</option>
+								<option>3-4房</option>
+							</select>
+						</div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">期望楼层</div>
+						<div class="stewardInfoLiRight noLimitBox">
+							<div class="ceng alignCenterBox"><div class="cengNav"><p class="fr">层</p><input class="fr width80" type="number" value="" placeholder="请输入层数" /></div><img class="cengImg fr" src="images/arrowDown.png"></div>
+							<ul class="noLimit">
+								<li>输入楼层</li>
+								<li>不限制</li>
+							</ul>
+						</div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox borderBottomNone">
+						<div class="stewardInfoLiLeft">期望租金</div>
+						<div class="stewardInfoLiRight">
+							<select>
+								<option>2001-4000</option>
+								<option>100-2000</option>
+								<option>4001-6000</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="stewardInfo">
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">备注</div>	
+					</div>
+					<div class="stewardTxt">
+						<textarea>请输入您要表达的文字</textarea>
+					</div>
+				</div>
+			</div>
+			<!--出租-->
+			<div class="stewardNav" style="display: none;">
+				<div class="stewardInfo">
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">业主姓名</div>
+						<div class="stewardInfoLiRight"><input type="text" value="" placeholder="徐伟新"></div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">联系电话</div>
+						<div class="stewardInfoLiRight"><input type="number" value="" placeholder="18921429510"></div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox borderBottomNone">
+						<div class="stewardInfoLiLeft">联系时间</div>
+						<div class="stewardInfoLiRight">
+							<select>
+								<option>周末</option>
+								<option>周一</option>
+								<option>周二</option>
+								<option>周三</option>
+								<option>周四</option>
+								<option>周五</option>
+								<option>周六</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="stewardInfo">
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">物业地址</div>
+						<div class="stewardInfoLiRight">
+							<select>
+								<option>江宁</option>
+								<option>玄武</option>
+								<option>建邺</option>
+								<option>浦口</option>
+								<option>六合</option>
+								<option>雨花台</option>
+							</select>
+						</div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiRight width100">
+							<p class="fr">路</p><input class="addressDetail fr" type="text" value="" placeholder="请输入详细地址" />
+						</div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiRight flexright width100">
+							<p class="fr">路</p><input class="addressDetail fr" type="text" value="" placeholder="请输入详细地址" />
+						</div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiRight flexright">
+							<input class="addressDetail" type="text" value="" placeholder="请输入详细地址" /><p>路</p>
+						</div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiRight flexright">
+							<input class="addressDetail" type="text" value="" placeholder="请输入详细地址" /><p>路</p>
+						</div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">户型</div>
+						<div class="stewardInfoLiRight">
+							<select>
+								<option>2-3房</option>
+								<option>1-2房</option>
+								<option>3-4房</option>
+							</select>
+						</div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">建筑面积</div>
+						<div class="stewardInfoLiRight">
+							<select>
+								<option>89平米</option>
+								<option>90平米</option>
+								<option>91平米</option>
+							</select>
+						</div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">期望租金</div>
+						<div class="stewardInfoLiRight">
+							<select>
+								<option>2001-4000</option>
+								<option>100-2000</option>
+								<option>4001-6000</option>
+							</select>
+						</div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">配套设计</div>
+						<div class="stewardInfoLiRight">
+							<div class="equipment">床</div>
+							<div class="equipment">宽带</div>
+							<div class="equipment">电视</div>
+							<div class="equipment">洗衣机</div>
+						</div>
+					</div>
+					<div class="housePic">
+						<div class="housePicHead">房源照片</div>
+						<div class="housePicNav" id="housePicNav1">
+							<div class="housePicImg xixi"><img src="images/housePicImg.jpg"></div>
+						</div>
+						<div class="housePicNav" id="housePicNav2" style="display: none;">
+							<div class="housePicImg fl"><img src="images/housePicImg.jpg"><div class="deleteImg"><img src="images/deleteImg.png"></div></div>
+							<div class="housePicImg fl"><img src="images/housePicImg.jpg"><div class="deleteImg"><img src="images/deleteImg.png"></div></div>
+							<div class="housePicImg fl"><img src="images/housePicImg.jpg"><div class="deleteImg"><img src="images/deleteImg.png"></div></div>
+							<div class="housePicImg fl"><img src="images/housePicImg.jpg"><div class="deleteImg"><img src="images/deleteImg.png"></div></div>
+							<div class="housePicImg fl"><img src="images/housePicImg.jpg"><div class="deleteImg"><img src="images/deleteImg.png"></div></div>
+							<div class="housePicImg fl"><img src="images/housePicImg.jpg"><div class="deleteImg"><img src="images/deleteImg.png"></div></div>
+							<div class="housePicImg fl"><img src="images/housePicImg.jpg"><div class="deleteImg"><img src="images/deleteImg.png"></div></div>
+							<div class="c"></div>
+						</div>
+					</div>
+				</div>
+				<div class="stewardInfo">
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">备注</div>	
+					</div>
+					<div class="stewardTxt">
+						<textarea>请输入任意文字，方便你找到更多租客哦！</textarea>
+					</div>
+				</div>
+			</div>
+			<!--买房-->
+			<div class="stewardNav" style="display: none;">
+				<div class="stewardInfo">
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">业主姓名</div>
+						<div class="stewardInfoLiRight"><input type="text" value="" placeholder="徐伟新"></div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">联系电话</div>
+						<div class="stewardInfoLiRight"><input type="number" value="" placeholder="18921429510"></div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox borderBottomNone">
+						<div class="stewardInfoLiLeft">联系时间</div>
+						<div class="stewardInfoLiRight">
+							<select>
+								<option>周末</option>
+								<option>周一</option>
+								<option>周二</option>
+								<option>周三</option>
+								<option>周四</option>
+								<option>周五</option>
+								<option>周六</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="stewardInfo">
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">期望区域</div>
+						<div class="stewardInfoLiRight">
+							<select>
+								<option>江宁</option>
+								<option>玄武</option>
+								<option>建邺</option>
+								<option>浦口</option>
+								<option>六合</option>
+								<option>雨花台</option>
+							</select>
+						</div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiRight flexright">
+							<input class="addressDetail width100" type="text" value="" placeholder="请输入详细信息" />
+						</div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">期望房型</div>
+						<div class="stewardInfoLiRight">
+							<select>
+								<option>2-3房</option>
+								<option>1-2房</option>
+								<option>3-4房</option>
+							</select>
+						</div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox borderBottomNone">
+						<div class="stewardInfoLiLeft">期望价格</div>
+						<div class="stewardInfoLiRight">
+							<select>
+								<option>200万以下</option>
+								<option>100万以下</option>
+								<option>300万以下</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="stewardInfo">
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">备注</div>	
+					</div>
+					<div class="stewardTxt">
+						<textarea>请输入您要表达的文字</textarea>
+					</div>
+				</div>
+			</div>
+			<!--卖房-->
+			<div class="stewardNav" style="display: none;">
+				<div class="stewardInfo">
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">业主姓名</div>
+						<div class="stewardInfoLiRight"><input type="text" value="" placeholder="徐伟新"></div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">联系电话</div>
+						<div class="stewardInfoLiRight"><input type="number" value="" placeholder="18921429510"></div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox borderBottomNone">
+						<div class="stewardInfoLiLeft">联系时间</div>
+						<div class="stewardInfoLiRight">
+							<select>
+								<option>周末</option>
+								<option>周一</option>
+								<option>周二</option>
+								<option>周三</option>
+								<option>周四</option>
+								<option>周五</option>
+								<option>周六</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="stewardInfo">
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">物业地址</div>
+						<div class="stewardInfoLiRight">
+							<select>
+								<option>江宁</option>
+								<option>玄武</option>
+								<option>建邺</option>
+								<option>浦口</option>
+								<option>六合</option>
+								<option>雨花台</option>
+							</select>
+						</div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiRight flexright">
+							<input class="addressDetail width100" type="text" value="" placeholder="请输入详细信息" />
+						</div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">房屋是否已空置</div>
+						<div class="stewardInfoLiRight radioBtnBox1">
+							<label class="radioBtn fBox"><input type="radio" checked />是</label>
+							<label class="radioBtn fBox"><input type="radio" />否</label>
+						</div>
+					</div>
+					<div class="stewardInfoLi justifyBetweenBox borderBottomNone">
+						<div class="stewardInfoLiLeft">是否可托管钥匙</div>
+						<div class="stewardInfoLiRight radioBtnBox2">
+							<label class="radioBtn fBox"><input type="radio" checked />是</label>
+							<label class="radioBtn fBox"><input type="radio" />否</label>
+						</div>
+					</div>
+				</div>
+				<div class="stewardInfo">
+					<div class="stewardInfoLi justifyBetweenBox">
+						<div class="stewardInfoLiLeft">备注</div>	
+					</div>
+					<div class="stewardTxt">
+						<textarea>请输入任意文字</textarea>
+					</div>
+				</div>
+			</div>
+			<div class="confirm">确认提交</div>
+		</div>
+		<script src="js/jquery.js"></script>
+		<script>
+			$(function(){
+				$(".stewardHead li").click(
+					function(){
+						$(".stewardHead li").removeClass("current");
+						$(this).addClass("current");
+						$(".stewardNav").hide();
+						$(".stewardNav").eq($(this).index()).show();
+					}
+				);
+				$(".housePicImg").click(
+					function(){
+						$("#housePicNav1").hide();
+						$("#housePicNav2").show();
+					}
+				);
+				$(".radioBtnBox1 .radioBtn input").click(
+					function(){
+						$(".radioBtnBox1 .radioBtn input").removeAttr("checked");
+						$(this).attr("checked","checked");		
+					}
+				);
+				$(".radioBtnBox2 .radioBtn input").click(
+					function(){
+						$(".radioBtnBox2 .radioBtn input").removeAttr("checked");
+						$(this).attr("checked","checked");		
+					}
+				);
+				$(".equipment").click(
+					function(){
+						if($(this).hasClass("active")){
+							$(this).removeClass("active");
+						}else{
+							$(this).addClass("active");
+						}						
+					}
+				);
+				$(".deleteImg").click(
+					function(){
+						$(this).parent().remove();
+					}
+				);
+				
+				$(".noLimit li").click(
+					function(){
+						$(".noLimit").hide();
+						if($(this).text()=="输入楼层"){
+							$(".cengNav").html("<p class='fr'>层</p><input class='fr width80' type='number' value='' placeholder='请输入层数' />");
+						}else{
+							$(".cengNav").html("不限制 ");	
+						}	
+					}
+				);
+				$(".cengImg").click(
+					function(){
+						$(".noLimit").show();
+					}
+				);
+			})
+		</script>
+	</body>
+</html>

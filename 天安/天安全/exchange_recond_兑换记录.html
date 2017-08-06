@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" /><!-- initial-scale:页面初始缩放程度;user-scalable 禁止用户手动缩放 -->
+		<meta content="yes" name="apple-mobile-web-app-capable" /><!-- iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览 -->
+		<meta content="telephone=no" name="format-detection" /><!-- 告诉设备忽略将页面中的数字识别为电话号码 -->
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" /><!-- iphone的私有标签，它指定的iphone中safari顶端的状态条的样式 -->
+		<link href="css/default.css" rel="stylesheet" type="text/css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/shops.css"/>
+		<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.flexslider-min.js" type="text/javascript" charset="utf-8"></script>
+		<title>商品详情</title>
+	</head>
+	<body style="background-color: #f5f5f5;">
+		<div class="container widthbox">
+			<ul class="exchange-choice">
+				<li class="choice-items">全部</li>
+				<li class="choice-items">待发货</li>
+				<li class="choice-items">待收货</li>
+				<li class="choice-items choice-select">已收货</li>
+			</ul>
+			<div class="exchange-commodity-box">
+				<div class="commodity-items">
+					<div class="commodity-title flbox">
+						<div class="commodity-title-left">兑换于2016-7-1</div>
+						<div class="commodity-title-right">兑换成功</div>
+					</div>
+					<div class="shopOrder flbox shopOrder-commodity">
+						<div class="shopPicBox commodity-shopPicBox"><img class="shopPic" src="images/shopPic.png"/></div>
+						<div class="shopOrderInfo">
+							<h1 class="title">萌萌哒的健康秤</h1>
+							<h3 class="info">精准称重 健康家居</h3>
+							<h3 class="info2"><span class="price">199</span>积分/ 件</h3>
+						</div>
+					</div>
+					<div class="bottom-commodity widthbox flbox">
+							<div class="delete-order">删除订单</div>
+							<div class="convert-order">再次兑换</div>
+					</div>
+				</div>
+			
+			</div>
+			<div class="exchange-commodity-box">
+			
+			</div>
+			<div class="exchange-commodity-box">
+			
+			</div>
+			<div class="exchange-commodity-box" style="display: block;">
+				<div class="commodity-items">
+					<div class="commodity-title flbox">
+						<div class="commodity-title-left">兑换于2016-7-1</div>
+						<div class="commodity-title-right">兑换成功</div>
+					</div>
+					<div class="shopOrder flbox shopOrder-commodity">
+						<div class="shopPicBox commodity-shopPicBox"><img class="shopPic" src="images/shopPic.png"/></div>
+						<div class="shopOrderInfo">
+							<h1 class="title">萌萌哒的健康秤</h1>
+							<h3 class="info">精准称重 健康家居</h3>
+							<h3 class="info2 flexbox">
+								<div class="flexright">
+									<p>顺丰速递</p>
+									<p>320393930309</p>
+								</div>
+								<div class="flexleft">
+									<span class="price">199</span>积分/ 件
+								</div>
+							</h3>
+						</div>
+					</div>
+					<div class="bottom-commodity widthbox flbox">
+							<div class="delete-order">删除订单</div>
+							<div class="convert-order">再次兑换</div>
+					</div>
+				</div>
+				
+			
+			
+			</div>
+		</div>
+		
+		<script>
+			$('.exchange-choice li').each(function(i){
+			   $(this).click(function(){
+				    $(this).addClass('choice-select').siblings('li').removeClass('choice-select');
+					$('.container').children('.exchange-commodity-box:eq('+i+')').show().siblings('.exchange-commodity-box').hide();
+			   })
+			});
+		</script>
+	</body>
+</html>

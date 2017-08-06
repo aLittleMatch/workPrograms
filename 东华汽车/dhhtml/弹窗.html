@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+        <link rel="stylesheet" type="text/css" href="css/donghua.css"/>
+		<title>弹窗</title>
+	</head>
+	<body>
+		<div class="container" id="noticeBox">
+			<div class="notice">
+				<h1>通知</h1>
+				<div class="noticeTelNum">
+					<span>+86</span><p>18051976260</p>
+				</div>
+				<div class="noticeConfirm">确定</div>
+				<div class="noticeClose"><img src="images/noticeClose.jpg"></div>
+			</div>
+		</div>
+		<script src="js/jquery.js"></script>
+		<script type="text/javascript">
+			$(".noticeClose").click(function(){
+					$("#noticeBox").hide();
+			})
+		</script>
+	</body>
+</html>

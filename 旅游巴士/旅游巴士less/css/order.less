@@ -1,0 +1,516 @@
+/*==========less 公式==========*/
+@baserem:1rem/64;
+/*==========less 公式==========*/
+/*==========订单列表 开始==========*/
+.orderbg{
+    background-color: #ebebeb;
+    padding-bottom: 110*@baserem;
+    padding-top: 110*@baserem;
+}
+.order_select{
+    background-color: #fff;
+    overflow: hidden;
+    border-bottom: 1px solid #7bc70d;
+    margin-bottom: 16*@baserem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 30;
+}
+.order_items{
+    width: 16.6666667%;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #959595;
+    text-align: center;
+    line-height: 90*@baserem;
+    float: left;
+}
+[data-dpr="2"] .order_items{
+    font-size: 24px;
+}
+[data-dpr="3"] .order_items{
+    font-size: 36px;
+}
+.selected-order{
+    color: #7bc70d;
+    border-bottom: 2px solid #7bc70d;
+}
+.orderItems{
+    background-color: #fff;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 20*@baserem;
+}
+.serial-number{
+    width: 100%;
+    padding: 0 4%;
+    line-height: 76*@baserem;
+    text-align: left;
+    font-size: 12px;
+    color: #000000;
+    background: url(../img/serialbg.png) left center repeat-x,url(../img/serialbg2.png) 96% center no-repeat;
+    background-size: contain,26*@baserem 27*@baserem;
+    box-sizing: border-box;
+}
+[data-dpr="2"] .serial-number{
+    font-size: 24px;
+}
+[data-dpr="3"] .serial-number{
+    font-size: 36px;
+}
+.serial-wrapper{
+    padding: 0 7%;
+    position: relative;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+.serial-box{
+    width: 50%;
+    position: relative;
+}
+.serial-start,.serial-end{
+    width: 100%;
+    padding: 20*@baserem 0;
+    font-size: 13px;
+    color: #000000;
+    padding-left: 50*@baserem;
+    box-sizing: border-box;
+}
+[data-dpr="2"] .serial-start{
+    font-size: 26px;
+}
+[data-dpr="3"] .serial-start{
+    font-size: 39px;
+}
+[data-dpr="2"] .serial-end{
+    font-size: 26px;
+}
+[data-dpr="3"] .serial-end{
+    font-size: 39px;
+}
+.serial-start{
+    background: url(../img/scr1.png) left center no-repeat;
+    background-size: 20*@baserem 20*@baserem;
+    border-bottom: 1px solid #e5e5e5; 
+}
+.serial-end{
+    background: url(../img/scr2.png) left center no-repeat;
+    background-size: 20*@baserem 20*@baserem;
+}
+.serial-sign{
+    font-size: 11px;
+    color: #000;
+    width: 100*@baserem;
+    text-align: center;
+    line-height: 50*@baserem;
+    position: absolute;
+    right: -50*@baserem;
+    top: 50%;
+    margin-top: -25*@baserem;
+    border: 1px solid #e5e5e5;
+    border-radius: 50*@baserem;
+    background-color: #fff;
+}
+[data-dpr="2"] .serial-sign{
+    font-size: 22px;
+}
+[data-dpr="3"] .serial-sign{
+    font-size: 33px;
+}
+.order-state{
+    font-size: 13px;
+    color: #f46610;
+    width: 130*@baserem;
+    line-height: 54*@baserem;
+    border: 1px solid #f46610;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -27*@baserem;
+    right: 6%;
+    border-radius: 20*@baserem;
+}
+[data-dpr="2"] .order-state{
+    font-size: 26px;
+}
+[data-dpr="3"] .order-state{
+    font-size: 39px;
+}
+.serial-date{
+    padding: 20*@baserem 0;
+    font-size: 11px;
+    color: #959595;
+    overflow: hidden;
+}
+[data-dpr="2"] .serial-date{
+    font-size: 22px;
+}
+[data-dpr="3"] .serial-date{
+    font-size: 33px;
+}
+.side-date{
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+}
+.side-date:nth-child(1){
+    border-right: 1px solid #bfbfbf;
+}
+.side-date-info{
+    width: 100%;
+}
+.side-date-info:nth-child(1){
+    margin-bottom: 8*@baserem;
+}
+.payment_pending .order-state{
+    color: #f9615e;
+    border: 1px solid #f9615e;
+}
+.payment-box{
+    padding: 0 4%;
+    position: relative;
+}
+.payment-box:after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-width: 18*@baserem 22*@baserem;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #ff4a45 transparent;
+    position:absolute;
+    top: -32*@baserem;
+    right: 12%; 
+}
+.payment-side{
+    width: 50%;
+    box-sizing: border-box;
+    background-color: #f9615e;
+    color: #fff;
+    font-size: 14px;
+    float: left;
+    line-height: 70*@baserem;
+    text-align: center;
+}
+[data-dpr="2"] .payment-side{
+    font-size: 28px;
+}
+[data-dpr="3"] .payment-side{
+    font-size: 42px;
+}
+.payment-side:nth-child(1){
+    border-top-left-radius: 10*@baserem;
+    border-bottom-left-radius: 10*@baserem;
+}
+.payment-side:nth-child(2){
+    border-top-right-radius: 10*@baserem;
+    border-bottom-right-radius: 10*@baserem;
+    background-color: #ff4a45;
+}
+.payment_pending .serial-wrapper{
+    border-bottom: none;
+}
+.payment_serial-date{
+    width: 100%;
+    font-size: 11px;
+    color: #959595;
+    padding: 0 4%;
+    box-sizing: border-box;
+}
+[data-dpr="2"] .payment_serial-date{
+    font-size: 22px;
+}
+[data-dpr="3"] .payment_serial-date{
+    font-size: 33px;
+}
+.send_car_pending .order-state{
+    color: #7bc70d;
+    border: 1px solid #7bc70d;
+}
+.send_car_finish_pending .order-state{
+    color: #0294e7;
+    border: 1px solid #0294e7;
+}
+.finish_pending .order-state{
+    color: #000000;
+    border: 1px solid #000000;
+}
+.contact-tel{
+    width: 100%;
+    height: 100*@baserem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 30;
+    border-top: 1px solid #d2d2d2;
+}
+.contact-side{
+    float: left;
+    width: 40%;
+    box-sizing: border-box;
+}
+.date-side{
+    width: 60%;
+    height: 100%;
+}
+.info-text{
+    font-size: 10px;
+    color: #959595;
+}
+.info-text:nth-child(1){
+    margin-bottom: 3*@baserem;
+}
+[data-dpr="2"] .info-text{
+    font-size: 20px;
+}
+[data-dpr="3"] .info-text{
+    font-size: 30px;
+}
+.time_side_bg{
+    width: 46*@baserem;
+    height: 46*@baserem;
+    display: block;
+    margin-right: 20*@baserem;
+}
+.contactTelbg{
+    width: 51*@baserem;
+    height: 50*@baserem;
+    display: block;
+    margin-right: 17*@baserem;
+}
+.tel-side{
+    background-color: #7bc70d;
+    color: #fff;
+    height: 100%;
+    font-size: 12px;
+}
+.tel-side:hover{
+    color: #fff;
+}
+[data-dpr="2"] .tel-side{
+    font-size: 24px;
+}
+[data-dpr="3"] .tel-side{
+    font-size: 36px;
+}
+.immediate-payment{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.8);
+}
+.zhifubg{
+    width: 131*@baserem;
+    height: 130*@baserem;
+    display: block;
+    margin: auto;
+}
+.text-payment{
+    margin-top: 15*@baserem;
+    text-align: center;
+}
+.payment-btn{
+    width: 350*@baserem;
+    line-height: 80*@baserem;
+    margin: 25*@baserem auto;
+    background-color: #7bc70d;
+    border-radius: 50*@baserem;
+    text-align: center;
+    color: #fff;    
+}
+.payment-btn .weixingbg{
+    width: 44*@baserem;
+    height: 36*@baserem;
+    display: block;
+    margin-right: 24*@baserem;
+}
+.payment-btn .zhifubaobg{
+    width: 41*@baserem;
+    height: 41*@baserem;
+    display: block;
+    margin-right: 15*@baserem;
+}
+.zhifubao-payment{
+    background-color: #0294e7;
+}
+/*==========订单列表 结束==========*/
+/*==========提交成功未审核 开始==========*/
+.formDet{
+    background-color: #f4f4f4;
+    padding-bottom: 110*@baserem;
+}
+.order-form-number{
+    padding: 17*@baserem 4%;
+    -webkit-box-pack: justify;
+    background: #fff url(../img/serialbg.png) left center repeat-x;
+    background-size: cover;
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 17*@baserem;
+}
+.form-sider{
+    font-size: 15px;
+    color: #000;
+}
+[data-dpr="2"] .form-sider{
+    font-size: 30px;
+}
+[data-dpr="3"] .form-sider{
+    font-size: 45px;
+}
+.form-state{
+    width: 130*@baserem;
+    line-height: 52*@baserem;
+    display: block;
+    background-color: #f46610;
+    color: #fff;
+    text-align: center;
+    border-radius: 18*@baserem;
+}
+.state-info{
+    background-color: #fff;
+    padding: 26*@baserem 4%;
+    -webkit-box-pack: justify;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 20*@baserem;
+}
+.state-text{
+    font-size: 15px;
+    color: #000;
+}
+[data-dpr="2"] .state-text{
+    font-size: 30px;
+}
+[data-dpr="3"] .state-text{
+    font-size: 45px;
+}
+.serialbg-2,.serialbg-1{
+    width: 29*@baserem;
+    height: 21*@baserem;
+    display: block;
+}
+.state-info-detlist,.state-info-detlist2{
+    background-color: #fff;
+    padding: 26*@baserem 4%;
+    margin-top: -20*@baserem;
+}
+.info-detlist-items{
+    font-size: 12px;
+    color: #707070;
+}
+[data-dpr="2"] .info-detlist-items{
+    font-size: 24px;
+}
+[data-dpr="3"] .info-detlist-items{
+    font-size: 36px;
+}
+.detlist-items-title{
+    width: 130*@baserem;
+    line-height: 45*@baserem;
+    text-align: left;
+}
+.detlist-items-content{
+    color: #000;
+    line-height: 40*@baserem;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.state-info-list{
+    margin-top: 20*@baserem;
+}
+/*==========提交成功未审核 结束==========*/
+/*==========已报价未支付 开始==========*/
+.have-paid{
+    background-color: #f46610;
+}
+.have-paid .state-text{
+    color: #fff;
+}
+.declarative-rule{
+    background-color: #fff;
+    padding: 8*@baserem 4%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+.rule-side{
+    width: 70%;
+    height: 60*@baserem;
+    box-sizing: border-box;
+    float: left;
+    text-align: center; 
+}
+.rule-link{
+    line-height: 60*@baserem;
+    color: #f46610;
+    text-decoration: underline;
+}
+.rule-link:hover{
+    color: #f46610;
+    text-decoration: underline;
+}
+.rule-side-pay{
+    width: 30%;
+}
+.pay-now{
+    line-height: 60*@baserem;
+    width: 130*@baserem;
+    background-color: #f46610;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    border-radius: 30*@baserem;
+}
+/*==========已报价未支付 结束==========*/
+/*==========已派车 开始==========*/
+.counselbox{
+    position: relative;
+}
+.tel-counsel-icon{
+    width: 82*@baserem;
+    height: 82*@baserem;
+    display: block;
+}
+.tel-counsel{
+    position: absolute;
+    right: 4%;
+    top: 150*@baserem;
+}
+/*==========已派车 结束==========*/
+/*==========已支付未派车 开始==========*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==========已支付未派车 结束==========*/

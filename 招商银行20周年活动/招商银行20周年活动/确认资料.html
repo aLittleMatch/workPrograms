@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script>
+		(function (doc, win) {
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function () {
+					var clientWidth = docEl.clientWidth;
+					if (!clientWidth) return;
+					if (clientWidth >= 640) {
+						docEl.style.fontSize = '100px';
+					} else {
+						docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+					}
+				};
+		
+			if (!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+		</script>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+        <link rel="stylesheet" type="text/css" href="css/bank.css"/>
+        <script src="js/zepto.min.js"></script>
+		<title>确认资料</title>
+		
+		<script>
+			var height = $(window).height();
+	        $(window).resize(function() {
+	            $('.confirmInfo').height(height);
+	        });
+		</script>
+	</head>
+	<body>
+		<div class="confirmInfo">
+			<div class="confirmInfoHeadBox">
+				<div class="confirmInfoHead">
+					<h1>联系方式</h1>
+					<div class="confirmInfoHeadInput">
+						<input type="text" value="" placeholder="联系人" />
+					</div>
+					<div class="confirmInfoHeadInput">
+						<input type="text" value="" placeholder="手机号" />
+					</div>
+				</div>
+			</div>
+			<div class="confirmInfoNav">
+				<img src="images/confirmInfoTxt.png">
+			</div>
+			<div class="confirmInfoFoot">确认资料</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>客服评价</title>
+		<meta content="yes" name="apple-mobile-web-app-capable" /><!-- iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览 -->
+		<meta content="telephone=no" name="format-detection" /><!-- 告诉设备忽略将页面中的数字识别为电话号码 -->
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" /><!-- iphone的私有标签，它指定的iphone中safari顶端的状态条的样式 -->
+		<link href="css/default.css" rel="stylesheet" type="text/css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<script src="js/stars.js"></script>		
+	</head>
+	
+	<body>
+		<div class="service_evaluation">
+			<div class="service_head">
+				<span><img src="images/head.jpg"></span>
+				工号2346客服
+			</div>
+			<div class="evaluation">
+				<span>服务态度：<ul><li></li><li></li><li></li><li></li><li></li></ul></span>
+				<span>描述相符：<ul><li></li><li></li><li></li><li></li><li></li></ul></span>
+				<span>对您相助：<ul><li></li><li></li><li></li><li></li><li></li></ul></span>
+			</div>
+			<textarea class="evaluation_nav" placeholder="请在此输入评价内容"></textarea>
+			<button type="submit" class="evaluation_submit">发表评论</button>
+		</div>
+		<script>
+			var height = $(window).height();
+	        $(window).resize(function() {
+	            $('.service_evaluation').height(height);
+	        });
+		</script>
+	</body>
+</html>

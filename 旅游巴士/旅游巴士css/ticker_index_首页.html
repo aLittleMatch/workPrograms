@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/flexible_css.debug.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/default.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>支付页面</title>
+	</head>
+	<body>
+		<div class="container widthBox indexbg">
+			<!--头部-->
+			<div class="index-top widthBox">
+				<img src="img/index_topbg.jpg"/>
+			</div>
+			<div class="scenery widthBox">
+				<input type="text" class="scenery-search" placeholder="输入路线/景点快速查询" onpaste="return false"/>
+				<img class="search_img" src="img/search_img.png" />
+			</div>
+			<!--距离班车-->
+			<div class="distance-car">
+				<div class="distance-station flexbox">
+					<img class="locationPic" src="img/location.png"/>
+					<div class="location-station">距您最近的站点是<span class="location-style">L1线 中山陵站</span></div>
+				</div>
+				<h1 class="prospectTime">本班车15分钟进站, 下班车预计35分钟进站</h1>
+			</div>
+			<!--购买车票-->
+			<div class="buy-ticBox">
+				<!--一张车票-->
+				<div class="buy-tic">
+					<div class="tic-classes widthBox">
+						<div class="partbox flexbox classes-part1-box"><img class="classespic1" src="img/classespic1.png"/><div class="classes-part1">望美旅游巴士L1</div></div>
+						<div class="partbox flexbox classes-part2-box"><img class="classespic2" src="img/classespic2.png"/><div class="classes-part2">每20分钟一班车</div></div>
+					</div>
+					<div class="check-place">
+						<div class="check-place-left">
+							<h1 class="place-star">阅江楼阅江楼阅江楼阅江楼</h1>
+							<h1 class="place-end">牛首山牛首山牛首山牛首山牛首山</h1>
+							<img class="exchange-btn" src="img/exchangebtn.png"/>
+						</div>
+						<div class="check-place-right flexbox">
+							<div class="buy-btn">购票</div>
+						</div>
+					</div>
+					<div class="place-start-off">
+						<div class="place-start">阅江楼站  06:00-22:00</div>
+						<div class="place-off">牛首山站  06:15-23:00</div>
+					</div>
+				</div>
+				<!--一张车票-->
+				<div class="buy-tic">
+					<div class="tic-classes widthBox">
+						<div class="partbox flexbox classes-part1-box"><img class="classespic1" src="img/classespic1.png"/><div class="classes-part1">望美旅游巴士L1</div></div>
+						<div class="partbox flexbox classes-part2-box"><img class="classespic2" src="img/classespic2.png"/><div class="classes-part2">每20分钟一班车</div></div>
+					</div>
+					<div class="check-place">
+						<div class="check-place-left">
+							<h1 class="place-star">燕子矶燕子矶燕子矶</h1>
+							<h1 class="place-end">栖霞山栖霞山栖霞山</h1>
+							<img class="exchange-btn" src="img/exchangebtn.png"/>
+						</div>
+						<div class="check-place-right flexbox">
+							<div class="buy-btn">购票</div>
+						</div>
+					</div>
+					<div class="place-start-off">
+						<div class="place-start">燕子矶站  06:00-22:00</div>
+						<div class="place-off">栖霞山站  06:15-23:00</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!--我的车票-->
+		<div class="container widthBox checkTic-get-item">
+			<!--一日票-->
+			<div class="ticket-items">
+				<div class="ticket-items-left">
+					<div class="tic-classes flexbox widthBox tic-classes-box">
+						<div class="classes-part1 classes-tick1 part-bg">望美旅游巴士L1</div>
+					</div>
+					<div class="check-place ticket-items-place">
+						<div class="check-place-left">
+							<h1 class="place-star">阅江楼阅江楼阅江楼阅江楼</h1>
+							<h1 class="place-end">牛首山牛首山牛首山牛首山</h1>
+							<img class="exchange-btn2" src="img/exchangebtn.png"/>
+						</div>
+						<div class="check-place-right flexbox check-place-tic">
+							<div class="ticket-price">¥18.00 </div>
+						</div>
+					</div>
+				</div>
+				<div class="ticket-items-right flexbox">
+					<h1 class="right-time">2016.6.22</h1>
+					<h1 class="right-weeks">星期三</h1>
+					<div class="right-time-btn">点击检票</div>
+				</div>
+			</div>
+			<!--二日票-->
+			<div class="ticket-items">
+				<div class="ticket-items-left">
+					<div class="tic-classes flexbox widthBox tic-classes-box">
+						<div class="classes-part1 classes-tick2 part-bg">望美旅游巴士L1</div>
+					</div>
+					<div class="check-place ticket-items-place">
+						<div class="check-place-left items-place-left">
+							<h1 class="place-star">阅江楼阅江楼阅江楼</h1>
+							<h1 class="place-end">牛首山牛首山牛首山</h1>
+							<img class="exchange-btn2" src="img/exchangebtn.png"/>
+						</div>
+						<div class="check-place-right flexbox check-place-tic items-place-right">
+							<div class="ticket-price">¥18888</div>
+						</div>
+					</div>
+				</div>
+				<div class="ticket-items-right flexbox">
+					<h1 class="right-time">2016.6.22</h1>
+					<h1 class="right-weeks">星期三</h1>
+					<div class="right-time-btn">点击检票</div>
+				</div>
+			</div>
+		</div>
+		<!--底部按钮-->
+		<div class="index-footer widthBox">
+			<div class="footer-sider flexbox hoverfooter">
+				<div class="footerBox1">首页</div>
+			</div>
+			<div class="footer-sider flexbox">
+				<div class="footerBox2">我的车票</div>
+			</div>
+		</div>
+		<script>
+			$(function(){
+				$('.footer-sider').click(function(){
+					$('.footer-sider').removeClass('hoverfooter');
+					if($(this).hasClass('hoverfooter')){
+						$(this).removeClass('hoverfooter');
+					}else{
+						$(this).addClass('hoverfooter');
+					}
+					$('.container').css('display','none')
+					$('.container').eq($(this).index()).css('display','block')
+				})
+				
+				$('.exchange-btn').click(function(){
+					var content1=$(this).siblings('.place-star').text();
+					var content2=$(this).siblings('.place-end').text();
+					var content='';
+					
+					content=content2;
+					content2=content1;
+					content1=content;
+					$(this).siblings('.place-star').text('');
+					$(this).siblings('.place-end').text('');
+					$(this).siblings('.place-star').text(content1);
+					$(this).siblings('.place-end').text(content2);
+				})
+			})
+			
+		</script>
+	</body>
+</html>

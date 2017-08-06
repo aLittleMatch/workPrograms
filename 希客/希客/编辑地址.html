@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html style="background: #f8f8f8;">
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+       	<link rel="stylesheet" type="text/css" href="css/xike.css"/>
+       	<script src="js/rem.js"></script>
+       	<script src="js/jquery3.0.min.js"></script>
+       	<script src="js/fun.js"></script>
+		<title>编辑地址</title>
+	</head>
+	<body>
+		<div class="addressEdit">
+			<div class="addressEditNav">
+				<div class="addressEditNavLi flexbox">
+					<div class="addressEditNavLiLeft">
+						<p>收货人</p>
+					</div>
+					<div class="addressEditNavLiRight">
+						<input type="text" value="" placeholder="郑泽天" />
+					</div>
+				</div>
+				<div class="addressEditNavLi flexbox">
+					<div class="addressEditNavLiLeft">
+						<p>联系电话</p>
+					</div>
+					<div class="addressEditNavLiRight">
+						<input type="text" value="18088888888" placeholder="" />
+					</div>
+				</div>
+				<div class="addressEditNavLi flexbox">
+					<div class="addressEditNavLiLeft">
+						<p>所在地区</p>
+					</div>
+					<div class="addressEditNavLiRight">
+						<select>
+							<option>江苏南京</option>
+							<option>江苏苏州</option>
+							<option>江苏盐城</option>
+						</select>
+					</div>
+				</div>
+				<div class="addressEditNavLi flexbox">
+					<div class="addressEditNavLiLeft">
+						<p>详细地址</p>
+					</div>
+				</div>
+				<div class="addressEditNavLi flexbox borderBottomNone">
+					<div class="addressEditNavLiLeft">
+						<div class="addressEditNavLiLeftTxt" contenteditable="true">江苏省南京市江宁区将军大道6号J6软件园16幢305-307室</div>
+					</div>
+				</div>
+			</div>
+			<div class="addressEditNav">
+				<div class="addressEditNavLi flexbox borderBottomNone">
+					<div class="addressEditNavLiLeft">
+						<p style="color: #313131;">设为默认</p>
+					</div>
+					<div class="addressEditNavLiRight">
+						<div class="check"></div>
+					</div>
+				</div>
+			</div>
+			<div class="addressEditNav">
+				<div class="addressEditNavLi flexbox borderBottomNone">
+					<div class="addressEditNavLiLeft">
+						<p style="color: #ec8d1a;">删除地址</p>
+					</div>
+				</div>
+			</div>
+			<div class="saveBtn">保存</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html class="gray">
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+       	<link rel="stylesheet" type="text/css" href="css/xike.css"/>
+       	<script src="js/rem.js"></script>
+		<title>购物车页面</title>
+	</head>
+	<style type="text/css">
+		.boxJustify{
+			display: none;
+		}
+		@-webkit-keyframes fadeInRight {
+		  0% {
+		    opacity: 0;
+		    -webkit-transform: translate3d(100%, 0, 0);
+		    transform: translate3d(100%, 0, 0);
+		  }
+		
+		  100% {
+		    opacity: 1;
+		    -webkit-transform: none;
+		    transform: none;
+		  }
+		}
+
+		.fadeInRight {
+		  -webkit-animation-name: fadeInRight;
+		  animation-name: fadeInRight;
+		  -webkit-animation-duration: 0.5s;
+		  animation-duration: 0.5s;
+		  animation-iteration-count:1;
+		  -webkit-animation-iteration-count:1;
+		  animation-timing-function:ease-in;
+		  -webkit-animation-timing-function:ease-in;
+		}
+		
+		@-webkit-keyframes fadeOutRight {
+		  0% {
+		    opacity: 1;
+		  }
+		
+		  100% {
+		    opacity: 0;
+		    -webkit-transform: translate3d(100%, 0, 0);
+		    transform: translate3d(100%, 0, 0);
+		  }
+		}
+
+		.fadeOutRight {
+		  -webkit-animation-name: fadeOutRight;
+		  animation-name: fadeOutRight;
+		  -webkit-animation-duration: 0.5s;
+		  animation-duration: 0.5s;
+		  animation-iteration-count:1;
+		  -webkit-animation-iteration-count:1;
+		  animation-timing-function:ease-in;
+		  -webkit-animation-timing-function:ease-in;
+		}
+	</style>
+	<body>
+		<div class="shopCar">
+			<!--有两种商品-->
+			<div class="shopCarLi">
+				<div class="shopCarLiHead flexbox">
+					<div class="shopCarLiHeadLeft tit"></div>
+					<div class="shopCarLiHeadRight flexbox flexright">
+						<div class="shopCarLiHeadRight_left">澳诺雅旗舰店</div>
+						<div class="shopCarLiHeadRight_right redact">编辑</div>
+					</div>
+				</div>
+				<div class="shopCarLiList">
+					<div class="shopCarLiListNav flexbox">
+						<div class="shopCarLiHeadLeft good"></div>
+						<div class="shopCarLiListNavRight flexbox flexright">
+							<div class="shopCarLiListNavRight_left">
+								<img src="images/orderDetailNavListLi_left.jpg">
+							</div>
+							<div class="shopCarLiListNavRight_right goods-details">
+								<div class="shopCarLiListNavRight_rightTop">倾慕唇膏套装 滋润补水保湿不脱妆</div>
+								<div class="shopCarLiListNavRight_rightMid">颜色分类06</div>
+								<div class="shopCarLiListNavRight_rightBot flexbox">
+									<p><img src="images/confirmPayLeft1.png"><span>220希贝</span></p>
+									<i>原价 ¥<span>240.00</span></i>
+									<b>X1</b>
+								</div>
+							</div>
+							<!--点击编辑后显示-->
+							<div class="shopCarLiListNavRight_right goods-num flexbox boxJustify flexright">
+								<div class="shopCarLiListNavRight_rightL">
+									<div class="shopCarLiListNavRight_rightLTop flexbox">
+										<p class="sub">－</p>
+										<span>1</span>
+										<p class="add">＋</p>
+									</div>
+									<div class="shopCarLiListNavRight_rightLBot">颜色分类滋润型</div>
+								</div>
+								<div class="shopCarLiListNavRight_rightR flexbox">
+									删除
+								</div>
+							</div>
+							<!--点击编辑后显示-->
+						</div>
+					</div>
+					<div class="shopCarLiListNav flexbox">
+						<div class="shopCarLiHeadLeft good"></div>
+						<div class="shopCarLiListNavRight flexbox flexright">
+							<div class="shopCarLiListNavRight_left">
+								<img src="images/orderDetailNavListLi_left.jpg">
+							</div>
+							<div class="shopCarLiListNavRight_right goods-details">
+								<div class="shopCarLiListNavRight_rightTop">倾慕唇膏套装 滋润补水保湿不脱妆</div>
+								<div class="shopCarLiListNavRight_rightMid">颜色分类06</div>
+								<div class="shopCarLiListNavRight_rightBot flexbox">
+									<p><img src="images/confirmPayLeft1.png"><span>320希贝</span></p>
+									<i>原价 ¥<span>300.34</span></i>
+									<b>X2</b>
+								</div>
+							</div>
+							<!--点击编辑后显示-->
+							<div class="shopCarLiListNavRight_right goods-num flexbox boxJustify flexright">
+								<div class="shopCarLiListNavRight_rightL">
+									<div class="shopCarLiListNavRight_rightLTop flexbox">
+										<p class="sub">－</p>
+										<span>1</span>
+										<p class="add">＋</p>
+									</div>
+									<div class="shopCarLiListNavRight_rightLBot">颜色分类滋润型</div>
+								</div>
+								<div class="shopCarLiListNavRight_rightR flexbox">
+									删除
+								</div>
+							</div>
+							<!--点击编辑后显示-->
+						</div>
+					</div>
+					<div class="shopCarLiListNav flexbox">
+						<div class="shopCarLiHeadLeft good"></div>
+						<div class="shopCarLiListNavRight flexbox flexright">
+							<div class="shopCarLiListNavRight_left">
+								<img src="images/orderDetailNavListLi_left.jpg">
+							</div>
+							<div class="shopCarLiListNavRight_right goods-details">
+								<div class="shopCarLiListNavRight_rightTop">倾慕唇膏套装 滋润补水保湿不脱妆</div>
+								<div class="shopCarLiListNavRight_rightMid">颜色分类06</div>
+								<div class="shopCarLiListNavRight_rightBot flexbox">
+									<p><img src="images/confirmPayLeft1.png"><span>320希贝</span></p>
+									<i>原价 ¥<span>300.34</span></i>
+									<b>X2</b>
+								</div>
+							</div>
+							<!--点击编辑后显示-->
+							<div class="shopCarLiListNavRight_right goods-num flexbox boxJustify flexright">
+								<div class="shopCarLiListNavRight_rightL">
+									<div class="shopCarLiListNavRight_rightLTop flexbox">
+										<p class="sub">－</p>
+										<span>1</span>
+										<p class="add">＋</p>
+									</div>
+									<div class="shopCarLiListNavRight_rightLBot">颜色分类滋润型</div>
+								</div>
+								<div class="shopCarLiListNavRight_rightR flexbox">
+									删除
+								</div>
+							</div>
+							<!--点击编辑后显示-->
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!--以下为底部结算-->
+			<div class="shopCarCal flexbox">
+				<div class="shopCarCalLeft flexbox">
+					<div class="shopCarCalLeft_left"></div>
+					<div class="shopCarCalLeft_right">全选</div>
+				</div>
+				<div class="shopCarCalMid flexbox">
+					<div class="shopCarCalMid_left">合计：</div>
+					<div class="shopCarCalMid_right">
+						<h1 class="flexbox"><img src="images/confirmPayLeft1.png"><span>0希贝</span></h1>
+						<p>¥00.00</p>
+					</div>
+				</div>
+				<div class="shopCarCalRight">
+					结算
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery3.0.min.js"></script>
+		<script type="text/javascript">
+		window.onload=function(){
+				
+		var calculate =	function(){                         //计算价格
+			var num = new Array();
+			var sum = 0;
+			for(var i=0;i<$(".good").length;i++){
+				if($(".shopCarLiList .good").eq(i).hasClass("nike")){
+					num[i] = parseFloat($(".shopCarLiListNavRight_rightBot").eq(i).find("p span").text().replace(/[^0-9]/ig,""))*parseFloat($(".shopCarLiListNavRight_rightBot").eq(i).find("b").text().replace(/[^0-9]/ig,""));
+				}else{
+					num[i] = 0;
+				}
+				sum = parseFloat(sum + num[i]);	
+			}
+			$(".shopCarCalMid_right h1 span").html(sum.toFixed(2) +"希贝");
+		};
+		
+		var cal = function(){                         //计算价格
+			var num = new Array();
+			var sum = 0;
+			for(var i=0;i<$(".good").length;i++){
+				if($(".shopCarLiList .good").eq(i).hasClass("nike")){
+					num[i] = parseFloat($(".shopCarLiListNavRight_rightBot").eq(i).find("i span").text())*parseFloat($(".shopCarLiListNavRight_rightBot").eq(i).find("b").text().replace(/[^0-9]/ig,""));
+				}else{
+					num[i] = 0;
+				}
+				sum = sum + num[i];	
+			}
+			$(".shopCarCalMid_right p").html("¥"+sum);
+		};
+		
+		$(".add").click(                                      //加
+			function(){
+				$(this).siblings("span").text(parseInt($(this).siblings("span").text())+1);
+				$(this).parents(".goods-num").siblings(".goods-details").find(".shopCarLiListNavRight_rightBot b").text("x"+$(this).siblings("span").text());
+			}
+		);
+		$(".sub").click(                                      //减
+			function(){
+				if($(this).siblings("span").text()<=0){
+					$(this).siblings("span").text(0);
+					$(this).parents(".goods-num").siblings(".goods-details").find(".shopCarLiListNavRight_rightBot b").text("x"+$(this).siblings("span").text());
+				}else{
+					$(this).siblings("span").text(parseInt($(this).siblings("span").text())-1);
+					$(this).parents(".goods-num").siblings(".goods-details").find(".shopCarLiListNavRight_rightBot b").text("x"+$(this).siblings("span").text());
+				}
+			}
+		);	
+		$(".shopCarCalLeft_left").click(                          //全选
+			function(){
+				if($(this).hasClass("nike")){
+					$(this).removeClass("nike");
+					$(".shopCarLiHeadLeft").removeClass("nike tit1");
+				}else{
+					$(this).addClass("nike");
+					$(".shopCarLiHeadLeft").addClass("nike");
+				}
+				calculate();
+				cal();
+			}
+		);
+		
+				
+		$(".tit").click(           //店铺勾选
+			function(){
+				if($(this).hasClass("nike")){
+					$(this).removeClass("nike tit1");
+					$(this).parents(".shopCarLi").children(".shopCarLiList").find(".shopCarLiHeadLeft").removeClass("nike tit1");
+					
+				}else{
+					$(this).addClass("nike tit1");
+					$(this).parents(".shopCarLi").children(".shopCarLiList").find(".shopCarLiHeadLeft").addClass("nike tit1");
+					
+				}
+				calculate();
+				cal();
+				if($(".shopCarLiHeadLeft").length <= $(".tit1").length){
+					$(".shopCarCalLeft_left").addClass("nike");
+				}else{
+					$(".shopCarCalLeft_left").removeClass("nike");
+				}
+				
+				
+			}
+		);
+		
+		$(".good").click(
+			function(){
+				if($(this).hasClass("nike")){
+					$(this).removeClass("nike tit1");
+				}else{
+					$(this).addClass("nike tit1");				
+				};
+	
+				calculate();
+				cal();
+				
+				if($(this).parents(".shopCarLiList").find(".tit1").length==$(this).parents(".shopCarLiList").find(".good").length){
+					$(this).parents(".shopCarLi").find(".tit").addClass("nike tit1");
+				}else{
+					$(this).parents(".shopCarLi").find(".tit").removeClass("nike tit1");
+				}
+				
+				if($(".shopCarLiHeadLeft").length <= $(".tit1").length){
+					$(".shopCarCalLeft_left").addClass("nike");
+				}else{
+					$(".shopCarCalLeft_left").removeClass("nike");
+				};
+			}
+		);
+				
+				$('.redact').click(function(){
+					var btn=$(this).parents('.shopCarLi').find('.goods-details').css('display');
+					if(btn=='block'){
+						$(this).text("完成");
+						$(this).parents('.shopCarLi').find('.goods-details').css('display','none');
+						$(this).parents('.shopCarLi').find('.boxJustify').css('display','-webkit-box');
+						$(this).parents('.shopCarLi').find('.boxJustify').addClass('fadeInRight');
+						//监听动画结束
+						$(this).parents('.shopCarLi').find('.boxJustify').bind('webkitAnimationEnd',function(){
+							$(this).removeClass('fadeInRight');
+							$(this).unbind();
+						});
+					}else{
+						$(this).text("编辑");
+						$(this).parents('.shopCarLi').find('.boxJustify').addClass('fadeOutRight');
+						//监听动画结束
+						$(this).parents('.shopCarLi').find('.boxJustify').bind('webkitAnimationEnd',function(){
+							$(this).parents('.shopCarLi').find('.boxJustify').css('display','none');
+							$(this).removeClass('fadeOutRight');
+							$(this).unbind();
+							$(this).parents('.shopCarLi').find('.goods-details').css('display','block');
+						});
+					}
+					
+				});
+				
+				$(".shopCarLiListNavRight_rightR").click(                  	//删除按钮的功能
+					function(){
+						if($(this).parents(".shopCarLiList").children(".shopCarLiListNav").length == "1"){
+							$(this).parents(".shopCarLi").remove();
+						}else{
+							$(this).parents(".shopCarLiListNav").remove();
+						}	
+					}
+				)	
+			}
+		</script>
+	</body>
+</html>

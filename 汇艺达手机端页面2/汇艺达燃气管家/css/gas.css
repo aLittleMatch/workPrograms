@@ -1,0 +1,178 @@
+.flexbox {
+  display: -moz-box;
+  /* Firefox */
+  display: -webkit-box;
+  /* Safari and Chrome */
+  display: -ms-flexbox;
+  /* Internet Explorer 10 */
+  display: box;
+  -webkit-box-align: center;
+}
+.flexright {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  /* Firefox */
+  box-flex: 1;
+  flex: 1;
+}
+.fBox {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+}
+/*垂直居中*/
+.alignCenterBox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/*左右居中*/
+.justifyCenterBox {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+}
+/*分居左右，垂直居中*/
+.justifyBetweenBox {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-between;
+}
+.gray{
+	background: #eeeeee;
+}
+.gas{
+	width: 100%;
+}
+.gasHead{
+	width: 100%;
+	height: 0.8rem;
+	background: #67aa07;
+	position: relative;
+}
+.gasHeadLeft{
+	float: left;
+	height: 0.8rem;
+	margin-left: 0.22rem;
+}
+.gasHeadLeft img{
+	width: 0.18rem;
+	height: 0.31rem;
+	display: block;
+}
+.gasHeadRight{
+	font-size: 0.32rem;
+	line-height: 0.8rem;
+	color: #fff;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.gasAddress{
+	width: 100%;
+	padding: 0.33rem 0;
+	background: #fff;
+	margin-bottom: 0.2rem;
+}
+.gasAddress a{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: block;
+}
+.gasAddress a p{
+	width: 80%;
+	font-size: 0.28rem;
+	color: #8c8c8c;
+	float: left;
+	margin-left: 0.25rem;
+}
+.gasAddress a span{
+	float: right;
+	display: block;
+	margin-right: 0.2rem;
+}
+.gasAddress a span img{
+	width: 0.16rem;
+	display: block;
+}
+
+.gasRemark{
+	padding: 0.3rem;
+	background: #fff;
+	margin-bottom: 0.2rem;
+}
+.gasRemarkHead{
+	font-size: 0.3rem;
+	margin-bottom: 0.1rem;
+	color: #313131;
+}
+.gasRemark textarea{
+	resize: none;
+	width: 100%;
+	font-size: 0.3rem;
+	height: 1.4rem;
+	display: block;
+}
+
+.gasTel{
+	width: 100%;
+	background: #fff;
+	overflow: hidden;
+	padding: 0.25rem 0;
+}
+.gasTelLeft{
+	width: 1.9rem;
+	height: 0.6rem;
+	font-size: 0.22rem;
+	color: #fff;
+	background: #ff9b1d;
+	-webkit-border-radius: 2rem;
+	float: left;
+	margin-left: 0.28rem;
+	margin-right: 0.34rem;
+}
+.gasTelLeft a{
+	width: 100%;
+	height: 100%;
+	font-size: 0.22rem;
+	color: #fff;
+	-webkit-appearance: none;
+}
+.gasTelLeft a img{
+	width: 0.49rem;
+	height: 0.4rem;
+	padding-right: 0.13rem;
+}
+.gasTelRight{
+	font-size: 0.4rem;
+	line-height: 0.6rem;
+	color: #707070;
+	float: left;
+}
+.gasSubmit{
+	width: 5.9rem;
+	margin: 0 auto;
+	line-height: 0.85rem;
+	font-size: 0.3rem;
+	color: #fff;
+	text-align: center;
+	margin-top: 1.2rem;
+	background: #6cba2a;
+	-webkit-border-radius: 0.06rem;
+}

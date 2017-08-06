@@ -1,0 +1,583 @@
+/*==========less 公式==========*/
+/*==========less 公式==========*/
+/*==========s1包车 开始==========*/
+.banner-top-pic {
+  width: 100%;
+  display: block;
+}
+.top_banner {
+  margin-bottom: 1.796875rem;
+}
+.location {
+  padding-left: 4%;
+  box-sizing: border-box;
+}
+.location_side_start,
+.location_side_end,
+.location_side_passenger {
+  padding-left: 10%;
+  box-sizing: border-box;
+  background: url(../img/scr1.png) left center no-repeat;
+  background-size: 0.375rem 0.375rem;
+}
+.location_side_end {
+  background: url(../img/scr2.png) left center no-repeat;
+  background-size: 0.375rem 0.375rem;
+}
+.location_side_passenger {
+  background: url(../img/headportrait.png) left center no-repeat;
+  background-size: 0.5rem 0.515625rem;
+}
+.location_side_box {
+  -webkit-box-pack: start;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0.46875rem 0;
+}
+.location_side_end .location_side_box {
+  border-top: none;
+  border-bottom: none;
+}
+.location_side_start .location_side_box {
+  border-top: none;
+}
+.locationpic {
+  width: 0.375rem;
+  height: 0.4375rem;
+  display: block;
+  margin-right: 0.3125rem;
+}
+.address {
+  font-size: 15px;
+  color: #000000;
+}
+[data-dpr="2"] .address {
+  font-size: 30px;
+}
+[data-dpr="3"] .address {
+  font-size: 45px;
+}
+.location_side_end .address {
+  color: #f46610;
+}
+.location_side_start .location_side_box {
+  position: relative;
+}
+.locationpic2 {
+  width: 0.34375rem;
+  display: block;
+  margin-left: 0.15625rem;
+  margin-right: 0.15625rem;
+}
+.tips {
+  font-size: 12px;
+  color: #626262;
+  position: absolute;
+  top: 50%;
+  right: 4%;
+  transform: translateY(-50%);
+}
+[data-dpr="2"] .tips {
+  font-size: 24px;
+}
+[data-dpr="3"] .tips {
+  font-size: 36px;
+}
+.next-step-box {
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-top: 0.9375rem;
+}
+.next-step {
+  font-size: 15px;
+  background-color: #7bc70d;
+  line-height: 1.25rem;
+  text-align: center;
+  border-radius: 0.15625rem;
+  color: #fff;
+}
+[data-dpr="2"] .next-step {
+  font-size: 30px;
+}
+[data-dpr="3"] .next-step {
+  font-size: 45px;
+}
+.location_side_end .address::-webkit-input-placeholder {
+  color: #f46610;
+}
+.address,
+.side_passenger {
+  width: 7.5rem;
+  line-height: 0.625rem;
+  -webkit-appearance: none;
+  background-color: #fff;
+  outline: none;
+  padding-right: 0.46875rem;
+  box-sizing: border-box;
+  font-family: Tahoma;
+}
+.side_passenger {
+  width: 8.1875rem;
+  font-size: 15px;
+}
+[data-dpr="2"] .side_passenger {
+  font-size: 30px;
+}
+[data-dpr="3"] .side_passenger {
+  font-size: 45px;
+}
+/*==========s1包车 结束==========*/
+/*==========我要包车 开始==========*/
+.top_select_items {
+  width: 33.33%;
+  height: 1.5625rem;
+  line-height: 1.5625rem;
+  border: 1px solid #7bc70d;
+  border-top: none;
+  text-align: center;
+  font-size: 15px;
+  float: left;
+  box-sizing: border-box;
+  color: #7bc70d;
+  background-color: #fff;
+}
+[data-dpr="2"] .top_select_items {
+  font-size: 30px;
+}
+[data-dpr="3"] .top_select_items {
+  font-size: 45px;
+}
+.top_select {
+  overflow: hidden;
+}
+.top_select_items:nth-child(2) {
+  border-left: none;
+  border-right: none;
+}
+.selected_char {
+  color: #fff;
+  background-color: #7bc70d;
+}
+.middline {
+  background-color: #efefef;
+  height: 0.3125rem;
+  width: 100%;
+}
+.register_info,
+.choose_time_single,
+.choose_time_double {
+  padding: 0 4%;
+  background-color: #fff;
+  border-top: 1px solid #dcdcdc;
+}
+.reg_info_box {
+  -webkit-box-pack: start;
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+}
+.choose_time_single,
+.choose_time_double {
+  border-top: none;
+}
+.choose_time_double {
+  display: none;
+}
+.choose_time_double .reg_info_box:nth-child(2) {
+  border-bottom: none;
+}
+.choose_time_single .reg_info_box {
+  border-bottom: none;
+}
+.reg_info_left,
+.set_number,
+.time_single_start,
+.time_single_end {
+  width: 2.734375rem;
+  height: 1.5625rem;
+  line-height: 1.5625rem;
+  background: url(../img/headportrait.png) left center no-repeat;
+  background-size: 0.5rem 0.515625rem;
+  font-size: 14px;
+  padding-left: 0.8125rem;
+  box-sizing: border-box;
+}
+[data-dpr="2"] .reg_info_left {
+  font-size: 28px;
+}
+[data-dpr="3"] .reg_info_left {
+  font-size: 42px;
+}
+.time_single_start {
+  background: url(../img/time_start.png) left center no-repeat;
+  background-size: 0.5rem 0.484375rem;
+}
+.time_single_end {
+  background: url(../img/time_end.png) left center no-repeat;
+  background-size: 0.5rem 0.484375rem;
+}
+.set_number {
+  background: url(../img/classespic1.png) left center no-repeat;
+  background-size: 0.484375rem 0.4375rem;
+}
+.reg_info_inp {
+  width: 100%;
+  height: 0.71875rem;
+  line-height: 0.71875rem;
+  font-family: Tahoma;
+  padding: 0 0.3125rem 0 0.40625rem;
+  box-sizing: border-box;
+  display: block;
+  background-color: none;
+  outline: none;
+  -webkit-appearance: none;
+  font-size: 14px;
+  vertical-align: middle;
+}
+[data-dpr="2"] .reg_info_inp {
+  font-size: 28px;
+}
+[data-dpr="3"] .reg_info_inp {
+  font-size: 42px;
+}
+.inp_date_time {
+  background-color: #fff;
+  outline: none;
+  overflow: hidden;
+  -webkit-appearance: none;
+  display: block;
+  width: 100%;
+  font-family: Tahoma;
+}
+/*==========我要包车 结束==========*/
+/*==========提交信息 开始==========*/
+.subbg {
+  background-color: #efefef;
+}
+.contact-info {
+  padding: 0 4%;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+.contact-peo {
+  background: url(../img/contact1.png) left center no-repeat;
+  background-size: 0.4375rem 0.46875rem;
+  letter-spacing: 0.25em;
+}
+.contact-pho {
+  background: url(../img/contact2.png) left center no-repeat;
+  background-size: 0.46875rem 0.46875rem;
+}
+.contact-info .reg_info_box:nth-child(2) {
+  border-bottom: none;
+}
+.contact-note {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 4%;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin-top: 0.3125rem;
+}
+.note-box {
+  width: 100%;
+  line-height: 1.40625rem;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding-left: 1.015625rem;
+  background: url(../img/notebg.png) left center no-repeat;
+  background-size: 0.5625rem 0.515625rem;
+}
+[data-dpr="2"] .note-box {
+  font-size: 28px;
+}
+[data-dpr="3"] .note-box {
+  font-size: 42px;
+}
+.note-inp {
+  font-size: 14px;
+  font-family: Tahoma;
+  padding: 0.34375rem 0.3125rem 0.34375rem 1.015625rem;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+[data-dpr="2"] .note-inp {
+  font-size: 28px;
+}
+[data-dpr="3"] .note-inp {
+  font-size: 42px;
+}
+.leave_message {
+  background: url(../img/leave_message.png) left center no-repeat;
+  background-size: 0.59375rem 0.484375rem;
+}
+.leave_message_box {
+  width: 100%;
+  min-height: 3.4375rem;
+  padding: 0.3125rem 0.3125rem 0.3125rem 1.015625rem;
+  font-size: 14px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+[data-dpr="2"] .leave_message_box {
+  font-size: 28px;
+}
+[data-dpr="3"] .leave_message_box {
+  font-size: 42px;
+}
+.agreement-box {
+  margin-top: 0.46875rem;
+}
+.unagreement {
+  width: 0.5625rem;
+  height: 0.515625rem;
+  display: block;
+  background-color: #d2d2d2;
+}
+.reach-agreement {
+  font-size: 14px;
+  color: #626262;
+  margin-left: 0.234375rem;
+}
+[data-dpr="2"] .reach-agreement {
+  font-size: 28px;
+}
+[data-dpr="3"] .reach-agreement {
+  font-size: 42px;
+}
+.agreement-content {
+  color: #00abed;
+}
+.agreement-content:hover {
+  color: #00abed;
+}
+.reach-agreement-bg {
+  width: 0.5625rem;
+  height: 0.515625rem;
+  display: block;
+}
+.reach-agreement-pic {
+  display: none;
+}
+.sub-btn {
+  margin-top: 0.46875rem;
+}
+.successful-sub {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.sub-info {
+  width: 7.34375rem;
+  height: 8.4375rem;
+  background-color: #fff;
+  margin: 20% auto;
+  border-radius: 0.390625rem;
+  padding-top: 1.25rem;
+  box-sizing: border-box;
+  position: relative;
+}
+.sign-succ {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: block;
+  margin: auto;
+}
+.sign-text {
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  width: 100%;
+  font-weight: normal;
+  margin-top: 0.625rem;
+  line-height: 1.5em;
+}
+[data-dpr="2"] .sign-text {
+  font-size: 32px;
+}
+[data-dpr="3"] .sign-text {
+  font-size: 48px;
+}
+.sign-btn {
+  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 1.40625rem;
+  text-align: center;
+  color: #fff;
+  background-color: #f46610;
+  border-bottom-left-radius: 0.390625rem;
+  border-bottom-right-radius: 0.390625rem;
+}
+[data-dpr="2"] .sign-btn {
+  font-size: 32px;
+}
+[data-dpr="3"] .sign-btn {
+  font-size: 48px;
+}
+.no_sub {
+  width: 1.03125rem;
+  height: 1.03125rem;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -1.875rem;
+}
+/*==========提交信息 结束==========*/
+/*==========s3估算价格 开始==========*/
+.reckonbg {
+  padding-bottom: 1.40625rem;
+  background-color: #efefef;
+}
+.reckon-part {
+  border-bottom: 1px solid #dcdcdc;
+  border-top: 1px solid #dcdcdc;
+  padding: 0 4%;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.reckon-top {
+  border-top: none;
+  margin-bottom: 0.25rem;
+}
+.reckon-part-items {
+  font-size: 14px;
+  -webkit-box-pack: start;
+  border-bottom: 1px solid #e5e5e5;
+}
+[data-dpr="2"] .reckon-part-items {
+  font-size: 28px;
+}
+[data-dpr="3"] .reckon-part-items {
+  font-size: 42px;
+}
+.part1-items-left {
+  width: 3.125rem;
+  box-sizing: border-box;
+  padding: 0 0 0 0.84375rem;
+  color: #626262;
+  height: 1.1875rem;
+  line-height: 1.1875rem;
+}
+.part1-items-right {
+  color: #000000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  height: 1.1875rem;
+  line-height: 1.1875rem;
+}
+.start-station {
+  background: url(../img/scr1.png) left center no-repeat;
+  background-size: 0.375rem 0.375rem;
+  letter-spacing: 0.5em;
+}
+.end-station {
+  background: url(../img/scr2.png) left center no-repeat;
+  background-size: 0.375rem 0.375rem;
+  letter-spacing: 0.5em;
+}
+.passenger-type {
+  background: url(../img/headportrait.png) left center no-repeat;
+  background-size: 0.5rem 0.515625rem;
+}
+.chartered-bus {
+  background: url(../img/busbg.png) left center no-repeat;
+  background-size: 0.5625rem 0.34375rem;
+}
+.start-time-reckon {
+  background: url(../img/time_grey1.png) left center no-repeat;
+  background-size: 0.515625rem 0.515625rem;
+}
+.end-time-reckon {
+  background: url(../img/time_grey2.png) left center no-repeat;
+  background-size: 0.515625rem 0.515625rem;
+}
+.riding-bus {
+  background: url(../img/pers.png) left center no-repeat;
+  background-size: 0.546875rem 0.4375rem;
+}
+.bus-nub {
+  background: url(../img/classespic1.png) left center no-repeat;
+  background-size: 0.484375rem 0.4375rem;
+}
+.no-children {
+  font-size: 12px;
+  color: #626262;
+}
+[data-dpr="2"] .no-children {
+  font-size: 24px;
+}
+[data-dpr="3"] .no-children {
+  font-size: 36px;
+}
+.part-items-last {
+  border-bottom: none;
+}
+.cost-total {
+  font-size: 15px;
+  color: #626262;
+  margin-top: 0.859375rem;
+  height: 1.796875rem;
+  line-height: 1.796875rem;
+  text-align: center;
+}
+[data-dpr="2"] .cost-total {
+  font-size: 30px;
+}
+[data-dpr="3"] .cost-total {
+  font-size: 45px;
+}
+.cost-mon {
+  margin-left: 0.546875rem;
+  color: #f46610;
+}
+.chartered-bottom-bus {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  font-size: 15px;
+  background-color: #b5b5b5;
+}
+[data-dpr="2"] .chartered-bottom-bus {
+  font-size: 30px;
+}
+[data-dpr="3"] .chartered-bottom-bus {
+  font-size: 45px;
+}
+.chartered-bottom,
+.none-chartered-bottom {
+  float: left;
+  width: 50%;
+  text-align: center;
+  color: #fff;
+  height: 1.25rem;
+  line-height: 1.25rem;
+}
+.chartered-bottom {
+  background-color: #7bc70d;
+}
+.give-up {
+  width: 2.09375rem;
+  height: 2.09375rem;
+  display: block;
+  margin: auto;
+}
+.giveup-btn {
+  background-color: #7bc70d;
+}
+.giveup-info {
+  width: 6.78125rem;
+  height: 7.1875rem;
+  margin: 30% auto;
+}
+/*==========s3估算价格 结束==========*/

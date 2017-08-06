@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/flexible_css.debug.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/default.css"/>
+		<link rel="stylesheet" type="text/css" href="css/tickerstyle.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>检票</title>
+	</head>
+	<body>
+		<div class="container widthBox tourbusbg">
+			<div class="toursbus-toparea flexbox">
+				望美旅游巴士L1
+				<div class="check-route-box">
+					<a href="route_sate_路线实时状态.html" class="check-route flexbox">
+						<img class="check-route-pic1" src="img/bus.png"/>
+						线路实时状态
+						<img class="check-route-pic2" src="img/checkroute1.png"/>
+					</a>
+				</div>
+			</div>
+			<!--站点信息-->
+			<div class="arrive-station widthBox padd4">
+				<div class="scen-station flexbox">
+					<div class="scen-station-start">阅江楼站</div>
+					<img class="scen_station" src="img/scen_station.png" />
+					<div class="scen-station-end">牛首山站</div>
+					<div class="needtoknow">购票须知</div>
+				</div>
+				<div class="arrive-time">
+					<div class="arrive-time-sider flexbox">
+						<div class="time-sider-station">阅江楼站</div>
+						<div class="time-sider-content">06:00-22:00</div>
+					</div>
+					<div class="arrive-time-sider flexbox">
+						<div class="time-sider-station">牛首山站</div>
+						<div class="time-sider-content">06:15-23:00</div>
+					</div>
+					<div class="c"></div>
+				</div>
+			</div>
+			<!--线路简介-->
+			<div class="route-wrapper">
+				<div class="route-introduction">
+					<h1 class="introduction-title">线路简介</h1>
+					<p class="introduction-content">望美金陵旅游巴士L1线路途径南京主城区13个A级景点;</p> 
+					<p class="introduction-content">购买即可全日无限制乘坐LI旅游巴士。</p>
+				</div>
+				<div class="route-distribute-wrapper">
+					<ul class="route-distribute">
+						<li class="linestyle2"><p class="route-location">阅<br/>江<br/>楼</p></li>
+						<li class="linestyle1"><p class="route-location">鸡<br/>鸣<br/>寺</p></li>
+						<li class="linestyle1"><p class="route-location">燕<br/>子<br/>矶</p></li>
+						<li class="linestyle1"><p class="route-location">鸡<br/>鸣<br/>寺</p></li>
+						<li class="linestyle1"><p class="route-location">燕<br/>子<br/>矶</p></li>
+						<li class="linestyle1-top"><p class="route-location">鸡<br/>鸣<br/>寺</p></li>
+						<li class="linestyle1-bottom"><p class="route-location">燕<br/>子<br/>矶</p></li>
+						<li class="linestyle1-top"><p class="route-location">鸡<br/>鸣<br/>寺</p></li>
+						<li class="linestyle1-bottom"><p class="route-location">燕<br/>子<br/>矶</p></li>
+						<li class="linestyle1"><p class="route-location">鸡<br/>鸣<br/>寺</p></li>
+						<li class="linestyle1"><p class="route-location">燕<br/>子<br/>矶</p></li>
+						<li class="linestyle1"><p class="route-location">燕<br/>子<br/>矶</p></li>
+						<li class="linestyle1"><p class="route-location">鸡<br/>鸣<br/>寺</p></li>	
+						<div class="c"></div>
+					</ul>
+				</div>
+				<!--风景图-->
+				<div class="scenicspot">
+					<div class="inspectTipes">*半圆形的为单程站点</div>
+					<img class="dec-line" src="img/contact_line.png">
+					<img class="scenic-spot-pic1" src="img/scenicspotpic.jpg"/>
+					<div class="shadeBox">【<span class="shade-name">阅江楼</span>】</div>					
+				</div>
+			</div>
+		</div>
+		<!--底部购票分享-->
+		<div class="scenery-footer scenery-tourbus">
+			<div class="scenery-footer-side flexbox scenery-left"><img class="shoppingcart" src="img/shoppingcart.png"/>购票</div>
+			<div class="scenery-footer-side flexbox scenery-right"><img class="sharebackground" src="img/sharebackground.png"/> 分享</div>
+		</div>
+		<!--分享弹窗-->
+		<div class="sharePopup"><img class="circleFriends" src="img/circlefriends.png"/></div>
+		
+		<script type="text/javascript">
+			$(function(){
+				var len=$('.route-distribute').children('li').length;
+				var screenWidth=$(window).width();
+				var widlen1=len+'rem';
+				var widlen2=100/len+'%';
+				var widlen3=100+'%';
+				var widbtn=false;
+				
+				if(len<=10){
+					$('.route-distribute').css('width',widlen3); //小于10个，屏幕固定
+					$('.route-distribute').children('li').css('width',widlen2);
+				}else if(10<len<=20){
+					if(screenWidth<768){
+						$('.route-distribute').css('width',widlen1); //大于10个小于20个，屏幕为ipad以下，屏幕滚动
+						widbtn=true;
+					}else{
+						$('.route-distribute').css('width',widlen3); //大于10个小于20个，屏幕为ipad，屏幕固定
+						$('.route-distribute').children('li').css('width',widlen2);
+					}
+				}else if(len>20){
+					$('.route-distribute').css('width',widlen1); //大于20个，不管是否为ipad，屏幕横向滚动
+					widbtn=true;
+				}
+	
+				if(widbtn || $('.route-distribute-wrapper').scrollLeft()==0){
+					$('.dec-line').css('display','block');
+					var int=setInterval(function(){ 
+						$('.dec-line').fadeOut(1000).fadeIn(1000); 
+					},1000);
+				}else{
+					$('.dec-line').remove();
+				}
+				
+				$('.route-distribute-wrapper').scroll(function(){
+					$('.dec-line').remove();
+				});
+				
+				//图片数组
+				var arrPic=['img/scenicspotpic.jpg','img/scenicspotpic.jpg'];
+				//景点图片地址数组;
+				$('.route-distribute').children('li').click(function(){
+					if(!$(this).is(":animated")){
+						var getContent=$(this).children('p').html();
+						getContent=getContent.replace(/<br\w*\/*>/g,'');
+						
+						//去除<br/>
+						$('.shade-name').text(getContent);
+						$('.circleFriends').animate({left:'250px'});
+						
+						function removeClass(){
+							$('.route-distribute').children('li').each(function(){
+								if($(this).hasClass('linestyle2')){
+									$(this).removeClass('linestyle2')
+								}else if($(this).hasClass('linestyle2-top')){
+									$(this).removeClass('linestyle2-top');
+								}else{
+									$(this).removeClass('linestyle2-bottom');
+								}
+							})
+						}
+						
+						
+						if($(this).hasClass('linestyle1')){
+							removeClass();
+							$(this).addClass('linestyle2');
+						}else if($(this).hasClass('linestyle1-top')){
+							removeClass();
+							$(this).addClass('linestyle2-top');
+						}else{
+							removeClass();
+							$(this).addClass('linestyle2-bottom');
+						}
+						
+						
+						
+						
+						//切换图片滚动效果
+						
+						var imgAppend= $('<img class="scenic-spot-pic2" />');
+						var imgNub=$(this).index();
+						
+						imgAppend.attr('src',arrPic[0]);
+						$('.scenic-spot-pic1').after(imgAppend);
+						
+						$('.scenic-spot-pic1').animate({left:'-104%'},"slow").remove();
+						$('.scenic-spot-pic2').animate({left:'4%'},"slow").addClass('scenic-spot-pic1').removeClass('scenic-spot-pic2');
+		
+					};
+				});//点击变换状态
+				
+				//弹窗
+				$('.scenery-right').click(function(){
+					$('.sharePopup').fadeIn();
+				})
+				
+				$('.sharePopup').click(function(){
+					$(this).fadeOut();
+				});
+				
+				
+			});
+			$(document).ready(function(){
+				setTimeout(function(){
+					$('.scenicspot').animate({paddingTop:'1.09375rem'});
+			        $('.inspectTipes').addClass('animated lightSpeedIn');
+			    }, 2000);
+			    
+				setTimeout(function(){
+			        $('.inspectTipes').removeClass('lightSpeedIn').addClass('lightSpeedOut');
+			    }, 5000);
+			    
+			    setTimeout(function(){
+			       $('.scenicspot').animate({paddingTop:'0.3125rem'});
+			       $('.inspectTipes').remove();
+			    }, 6000);
+			});
+			
+			
+		
+		</script>
+	</body>
+</html>

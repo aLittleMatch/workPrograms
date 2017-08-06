@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+        <link rel="stylesheet" type="text/css" href="css/fun.css"/>
+		<title>我的订单</title>
+	</head>
+	<body class="contain-page1">
+		<div class="container widthbox">
+			<!--分类选择-->
+			<div class="classify-choose">
+				<div class="order-box flexbox">
+					<p>共有<span class="color1">209</span>条订单</p>
+					<p class="classify-show">全部</p>
+				</div>
+				<ul class="select-box">
+					<li>维修</li>
+					<li>检测</li>
+					<li>保险</li>
+					<li>学车</li>
+					<li>租车</li>
+					<li>买车</li>
+					<li>其他</li>
+					<li class="selected">全部</li>
+				</ul>
+			</div>
+			<!--订单列表-->
+			<div class="order-list widthbox">
+				<div class="order-items">
+					<h1 class="order-time flexbox order-time2">
+						<p class="order-time-del">预约时间<span class="order-time-middle">2016-10-17</span>15:30</p>
+						<p class="order-state order-particulars flexbox">
+							详情
+							<img class="rightarrows" src="images/rightarrows.png" />
+						</p>
+					</h1>
+					<div class="car-details car-details2">
+						<div class="car-details-state1 flexbox">
+							<p class="details-sider">车牌号</p>
+							<p class="details-sider">苏OH862</p>
+						</div>
+						<div class="car-details-state1 flexbox">
+							<p class="details-sider">预约门店</p>
+							<p class="details-sider">红山路名爵4S店</p>
+						</div>
+						<div class="car-details-state1 flexbox">
+							<p class="details-sider">电话</p>
+							<p class="details-sider"><a href="tel:1111" class="curs-phone">025-5417711</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="order-items">
+					<h1 class="order-time flexbox order-time2">
+						<p class="order-time-del">预约时间<span class="order-time-middle">2016-10-17</span>15:30</p>
+						<p class="order-state order-particulars flexbox">
+							详情
+							<img class="rightarrows" src="images/rightarrows.png" />
+						</p>
+					</h1>
+					<div class="car-details car-details2">
+						<div class="car-details-state1 flexbox">
+							<p class="details-sider">车牌号</p>
+							<p class="details-sider">苏OH862</p>
+						</div>
+						<div class="car-details-state1 flexbox">
+							<p class="details-sider">预约门店</p>
+							<p class="details-sider">红山路名爵4S店</p>
+						</div>
+						<div class="car-details-state1 flexbox">
+							<p class="details-sider">电话</p>
+							<p class="details-sider"><a href="tel:1111" class="curs-phone">025-5417711</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="order-items">
+					<h1 class="order-time flexbox order-time2">
+						<p class="order-time-del">预约时间<span class="order-time-middle">2016-10-17</span>15:30</p>
+						<p class="order-state order-particulars flexbox">
+							详情
+							<img class="rightarrows" src="images/rightarrows.png" />
+						</p>
+					</h1>
+					<div class="car-details car-details2">
+						<div class="car-details-state1 flexbox">
+							<p class="details-sider">车牌号</p>
+							<p class="details-sider">苏OH862</p>
+						</div>
+						<div class="car-details-state1 flexbox">
+							<p class="details-sider">预约门店</p>
+							<p class="details-sider">红山路名爵4S店</p>
+						</div>
+						<div class="car-details-state1 flexbox">
+							<p class="details-sider">电话</p>
+							<p class="details-sider"><a href="tel:1111" class="curs-phone">025-5417711</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				var offset=true;
+				$('.classify-show').click(function(){
+					//控制栏伸缩
+					if(offset){
+						$('.classify-choose').addClass('classify2');
+						$(this).addClass('classify-show2');
+						$('.select-box').slideDown("fast");
+						offset=false;
+					}else{
+						$('.classify-choose').removeClass('classify2');
+						$(this).removeClass('classify-show2');
+						$('.select-box').slideUp("fast");
+						offset=true;
+					}
+					//选择栏
+					$('.select-box').children('li').click(function(){
+						$('.select-box').children('li').removeClass('selected');
+						$(this).addClass('selected');
+						$('.select-box').slideUp("fast");
+						$('.classify-choose').removeClass('classify2');
+						$('.classify-show').removeClass('classify-show2');
+						return offset=true;
+					})
+				})
+			})
+		</script>
+	</body>
+</html>

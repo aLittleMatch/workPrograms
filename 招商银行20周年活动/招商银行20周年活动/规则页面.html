@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+        <meta content="telephone=no,email=no" name="format-detection">
+     	<script>
+		(function (doc, win) {
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function () {
+					var clientWidth = docEl.clientWidth;
+					if (!clientWidth) return;
+					if (clientWidth >= 640) {
+						docEl.style.fontSize = '100px';
+					} else {
+						docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+					}
+				};
+		
+			if (!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+		</script>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+        <link rel="stylesheet" type="text/css" href="css/bank.css"/>
+		<title>规则页面</title>
+	</head>
+	<body>
+		<div class="rule">
+			<div class="ruleHead"><img src="images/ruleHead.png"></div>
+			<div class="ruleNav">
+				<div class="ruleTxt">
+					<h1>活动时间</h1>
+					<h2>2016.11.10 —— 2016.11.29</h2>
+				</div>
+				<div class="ruleTxt">
+					<h1>参与步骤</h1>
+					<p><span>1.</span><i>上传照片</i></p>
+					<p><span>2.</span><i>将"20年老友记活动" 分享到朋友圈</i></p>
+					<p><span>3.</span><i>提交联系方式，申请20年定制银筷一双</i></p>
+					<p><span>4.</span><i>关注"招商银行南京分行"公众号，获奖结果将于11月20日以软文形式公布</i></p>
+				</div>
+				<div class="ruleTxt">
+					<h1>活动奖品</h1>
+					<p>定制礼物（共100名）</p>
+				</div>
+				<div class="ruleTxt">
+					<h1>奖品兑换</h1>
+					<p>中奖用户凭本人有效证件，在奖品兑换时间内至指定领奖点领取，逾期无效</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

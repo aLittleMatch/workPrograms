@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/default.css"/>
+		<link rel="stylesheet/less" type="text/css" href="css/style.less"/>
+		<script src="js/less.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.js"></script>
+		<title>竞猜开始</title>
+	</head>
+	<body>
+		<div class="bgBox guessBegin">
+			<div class="play"><img src="images/play.png"></div>
+			<div class="indexbtnBox flexbox">
+				<div class="flexright">
+					<img src="images/enterBtn.png">
+				</div>
+				<div class="flexright">
+					<img src="images/signBtn.png">
+				</div>
+			</div>
+		</div>
+		<!--竞猜开始蒙层开始-->
+		<div class="guessBeginHover">
+			<div class="guessBeginHoverTxt">
+				<div class="guessBeginHoverTxtTop"><img src="images/goldDown.png"><h1>+100</h1></div>
+				<p>恭喜您首次<br>参与竞猜</p>
+				<p>获得100金币</p>
+			</div>
+			<div class="select-btn flexbox">
+				<div class="flexright" id="sure"><img src="images/sure.png"></div>
+			</div>
+		</div>
+		<!--竞猜开始蒙层结束-->
+		<script>
+			$(function(){
+				$(".play").click(
+					function(){
+						$(".guessBeginHover").css("display","block");
+					})
+				$("#sure").click(
+					function(){
+						$(".guessBeginHover").css("display","none");
+					})				
+			})
+		</script>
+	</body>
+</html>

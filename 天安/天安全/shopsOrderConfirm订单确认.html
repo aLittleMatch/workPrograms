@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" /><!-- initial-scale:页面初始缩放程度;user-scalable 禁止用户手动缩放 -->
+		<meta content="yes" name="apple-mobile-web-app-capable" /><!-- iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览 -->
+		<meta content="telephone=no" name="format-detection" /><!-- 告诉设备忽略将页面中的数字识别为电话号码 -->
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" /><!-- iphone的私有标签，它指定的iphone中safari顶端的状态条的样式 -->
+		<link href="css/default.css" rel="stylesheet" type="text/css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/shops.css"/>
+		<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>确认订单</title>
+	</head>
+	<body style="background-color: #eeeeee;">
+		<div class="container widthbox padbottom">
+			<!--页头收货人信息-->
+			<div class="consigneeInfo padding4 flbox">
+				<div class="left textcenter"><img class="location" src="images/location.jpg"/></div>
+				<div class="middle">
+					<div class="contact"><span class="contactinfo  textleft">收货人：孙雷</span><span class="contactinfo textright">18262802767</span></div>
+					<div class="adress">收货地址：江苏南京江宁江宁江宁街道将军大道1号翠屏东南小区36栋404室</div>
+				</div>
+				<div class="right textcenter"><a class="next" href="javascript:;"><img class="greater" src="images/greater.jpg"/></a></div>
+			</div>
+			<!--页头收货人信息-->
+			<!--页头收货人信息-->
+			<div class="consigneeInfo padding4">
+				<div class="add"><img src="images/addIcon.jpg"></div>
+				<div class="add">点击添加收货地址</div>
+			</div>
+			<!--页头收货人信息-->
+			
+			<!--商品信息-->
+			<div class="shopwrapper widthbox">
+				<div class="shopOrder flbox">
+					<div class="shopPicBox"><img class="shopPic" src="images/shopPic.png"/></div>
+					<div class="shopOrderInfo">
+						<h1 class="title">萌萌哒的健康秤</h1>
+						<h3 class="info">精准称重 健康家居</h3>
+						<h3 class="info2"><span class="price">199</span>积分/ 件</h3>
+					</div>
+				</div>
+				<div class="shopOrder2 flbox justify Order2Deta">
+					<div class="itemsleft">商品详情</div>
+					<div class="itemsright"><a class="next" id="next" href="javascript:;"><img class="greater" src="images/greater.jpg"/></a></div>
+				</div>
+				<div class="shopOrder2 flbox justify">
+					<div class="itemsleft">购买数量</div>
+					<div class="itemsright">
+						<span class="down">-</span>
+						<input type="text" id="text" value="1" class="num"readonly="readonly" />
+						<span class="up">+</span>
+					</div>
+				</div>
+				<div class="shopOrder3 flbox justify">
+					<div class="itemsleft">配送方式</div>
+					<div class="itemsright">快递 免邮</div>
+				</div>
+			</div>
+			<!--商品信息-->
+		</div>
+		<!--页尾按钮-->
+		<div class="shopFooter">
+			<div class="footerleft">共<span class="shopNumber">1</span>件，合计<span class="score">199</span><span class="storeSpec">积分</span></div>
+			<div class="footerright">支付积分</div>
+		</div>
+		<!--页尾按钮-->
+		<!--商品详情弹窗-->
+		<div class="shopsPopupBox">
+			<div class="shopsPopup">
+				<div class="shopsArgsBox widthbox">
+					<div class="shopsArgsTitle2 widthbox">商品详情</div>
+					<div class="argsItems flbox widthbox">
+						<div class="Itemsleft">商品名称</div>
+						<div class="Itemsright">萌萌哒健康秤</div>
+					</div>
+					<div class="argsItems flbox widthbox">
+						<div class="Itemsleft">颜色<br/><span class="random">(随机)</span></div>
+						<div class="Itemsright">道奇蓝/新荧光果绿 炭灰/火星红 深红色/深邃蓝</div>
+					</div>
+					<div class="argsItems flbox widthbox">
+						<div class="Itemsleft">商品编号</div>
+						<div class="Itemsright">11116120203</div>
+					</div>
+					<div class="argsItems flbox widthbox">
+						<div class="Itemsleft">生产日期</div>
+						<div class="Itemsright">2016年5月30日</div>
+					</div>
+					<div class="argsItems flbox widthbox">
+						<div class="Itemsleft letter2">市场价</div>
+						<div class="Itemsright">56元</div>
+					</div>
+					<div class="argsItems flbox widthbox">
+						<div class="Itemsleft letter2">市场价</div>
+						<div class="Itemsright">56元</div>
+					</div>
+					<div class="argsItems flbox widthbox">
+						<div class="Itemsleft letter2">市场价</div>
+						<div class="Itemsright">56元</div>
+					</div>
+					<div class="argsItems flbox widthbox">
+						<div class="Itemsleft letter2">市场价</div>
+						<div class="Itemsright">56元</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="counterBox widthbox" id="sussbtn">完成</div>
+		</div>
+		<!--商品详情弹窗-->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var num=1;
+				$('.up').click(function(){
+						num++;
+						$('#text').val(num);
+				});
+				
+				$('.down').click(function(){
+					if($('.num').val()==0){
+						alert('购买数量不可为负')
+					}else{
+						num--;
+						$('#text').val(num);
+					}
+				});
+				
+				$('.Order2Deta').click(function(){
+					
+				});	
+				
+				//点击显示商品详情
+				$('.Order2Deta').click(function(){
+					$('.shopsPopupBox').css('display','block');
+					 var overscroll = function(el) {
+					el.addEventListener('touchstart', function() {
+					    var top = el.scrollTop
+					      , totalScroll = el.scrollHeight
+					      , currentScroll = top + el.offsetHeight
+					    if(top === 0) {
+					      el.scrollTop = 1
+					    } else if(currentScroll === totalScroll) {
+					      el.scrollTop = top - 1
+					    }
+					})
+					el.addEventListener('touchmove', function(evt) {
+					    if(el.offsetHeight < el.scrollHeight)
+					      evt._isScroller = true
+					  })
+					}
+					overscroll(document.querySelector('.shopsArgsBox'));
+					document.body.addEventListener('touchmove', function(evt) {
+					  if(!evt._isScroller) {
+					    evt.preventDefault()
+					  }
+					})
+				});
+				//点击隐藏商品详情
+				$('#sussbtn,.shopsPopupBox').click(function(){
+					$('.shopsPopupBox').css('display','none')
+				})
+			   
+			});
+		</script>
+	</body>
+</html>

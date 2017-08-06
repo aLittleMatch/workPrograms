@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>弹框</title>
+<meta content="yes" name="apple-mobile-web-app-capable" /><!-- iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览 -->
+<meta content="telephone=no" name="format-detection" /><!-- 告诉设备忽略将页面中的数字识别为电话号码 -->
+<meta content="black" name="apple-mobile-web-app-status-bar-style" /><!-- iphone的私有标签，它指定的iphone中safari顶端的状态条的样式 -->
+<link href="css/default.css" rel="stylesheet" type="text/css" media="screen"/>
+<script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<style>
+	.didalog{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 9999999;
+		background: rgba(0,0,0,0.5);
+	}
+	.dialogBox{
+		width: 6.25rem;
+		height: 4.6895rem;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		background: url(images/dialogbg.png) no-repeat left top;
+		background-size: 100% 100%;
+		-webkit-transform: translate(-50%, -50%);
+    	transform: translate(-50%, -50%);
+	}
+	.dialogImg{
+		width: 100%;
+		text-align: center;
+	}
+	.dialogImg img{
+		margin-top: 0.5rem;
+		width: 0.84375rem;
+		margin-bottom: 0.15625rem;
+	}
+	.dialogContent{
+		width: 82%;
+		margin: 0 auto;
+		color: #fff;
+		font-size: 0.4375rem;
+		text-align: center;
+	}
+	.dialogBtn{
+		position: absolute;
+		bottom: 0.3125rem;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+	.dialogBtn img{
+		width: 4.265625rem;
+	}
+</style>
+<body>
+<div class="didalog">
+	<div class="dialogBox">
+		<div class="dialogImg"><img src="images/success.png"></div>
+		<div class="dialogContent">兑换成功</div>
+		<div class="dialogBtn"><img src="images/dialogBtn.png"></div>
+	</div>
+</div>
+</body>
+</html>

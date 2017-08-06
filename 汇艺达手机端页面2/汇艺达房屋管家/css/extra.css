@@ -1,0 +1,443 @@
+.container{
+	width: 100%;
+	box-sizing: border-box;
+}
+.indexbottom{
+	padding-bottom: 1rem;
+}
+.top-fiexd{
+	width: 100%;
+	height: 3.2rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.flexbox{
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+}
+.flexright{
+	-webkit-box-flex: 1;
+}
+.swiper-container .swiper-wrapper .swiper-slide img{
+	width: 100%;
+	display: block;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+	bottom: -7px;
+}
+.serves-items{
+	width: 100%;
+	color: #fff;
+	background: #fff;
+}
+.serves-items .serves-industry{
+	width: 1.8rem;
+	height: 0.9rem;
+	font-size: 0.24rem;
+	background: #67aa07;
+	text-align: center;
+	line-height: 1.5em;
+	position: relative;
+	border-bottom: 1px solid #67aa07;
+}
+.serves-items .serves-industry:after{
+	content: '';
+	border-width: 0.17rem 0.1rem;
+	border-color: transparent transparent transparent #67aa07;
+	border-style: dashed dashed dashed solid;
+	position: absolute;
+	right: -0.17rem;
+	top: 50%;
+	margin-top: -0.17rem;
+}
+.serves-select-right{
+	height: 0.9rem;
+	border-bottom: 1px solid #e5e5e5;
+}
+.serves-items .serves-select .select-items{
+	width: 1.8rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	text-align: center;
+	border-radius: 0.4rem;
+	font-size: 0.26rem;
+	background: #f7aa26;
+}
+.serves-items .serves-select .select-items:nth-child(1){
+	margin-right: 0.16rem;
+}
+.indexbg{
+	background: #eeeeee;
+}
+.plate-itemsbox{
+	width: 100%;
+	padding: 0.14rem;
+	padding-top: 3.31rem;
+	box-sizing: border-box;
+}
+.homemaking-plate{
+	width: 100%;
+	padding: 0.18rem 0.14rem;
+	box-sizing: border-box;
+	font-size: 0.2rem;
+	color: #434343;
+	overflow: hidden;
+	background: #fff;
+	border-radius: 0.15rem;
+	margin-bottom: 0.12rem;
+}
+.homemaking-plate .homemaking-items{
+	-webkit-box-orient: vertical;
+	width: 25%;
+	float: left;
+}
+.homemaking-plate .homemaking-items img{
+	height: 0.77rem;
+	display: block;
+	margin-bottom: 0.09rem;
+}
+.child-section{
+	width: 100%;
+	overflow: hidden;
+	-webkit-user-select:none;
+}
+.child-section .section-items{
+	width: 49%;
+	min-height: 1.8rem;
+	padding: 0.1rem 0.05rem 0.1rem 0.4rem;
+	float: left;
+	background: #fff;
+	border-radius: 0.10rem;
+	box-sizing: border-box;
+	margin-bottom: 0.12rem;
+}
+.child-section .section-items:nth-child(2n+1){
+	margin-right: 2%;
+}
+.child-section .section-items .section-sign{
+	width: 0.88rem;
+	display: block;
+	margin-right: 0.05rem;
+}
+.child-section .section-items .section-text{
+	width: 0.88rem;
+	display: block;
+}
+.child-section .section-items .section-text .section-title{
+	font-size: 0.24rem;
+	color: #434343;
+	font-weight: normal;
+	margin-bottom: 0.08rem;
+	text-align: center;
+}
+.child-section .section-items .section-text .section-details{
+	font-size: 0.18rem;
+	color: #959595;
+	text-align: center;
+	margin-bottom: 0.05rem;
+}
+.child-section .section-items .section-text .section-details2{
+	margin-bottom: 0.56rem;
+}
+
+
+
+/*房屋管家页面开始*/
+.c{
+	clear: both;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.width100{
+	width: 100%;
+}
+.flexbox {
+  display: -moz-box;
+  /* Firefox */
+  display: -webkit-box;
+  /* Safari and Chrome */
+  display: -ms-flexbox;
+  /* Internet Explorer 10 */
+  display: box;
+  -webkit-box-align: center;
+}
+.flexright {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  /* Firefox */
+  box-flex: 1;
+  flex: 1;
+}
+.fBox {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+}
+/*垂直居中*/
+.alignCenterBox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/*左右居中*/
+.justifyCenterBox {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+}
+/*分居左右，垂直居中*/
+.justifyBetweenBox {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-between;
+}
+
+.gray{
+	background: #eeeeee;
+}
+.steward{
+	width: 100%;
+}
+.stewardHead{
+	width: 100%;	
+	background: #fff;
+	border-bottom: 1px solid #e6e6e6 ;
+	-webkit-justify-content: space-around;
+	position: fixed;
+	top: 0;
+}
+.stewardHead li{
+	font-size: 0.3rem;
+	color: #7d7d7d;
+	padding: 0.1rem 0.2rem;
+	line-height: 0.7rem;
+	border-bottom: 0.06rem solid #fff;
+}
+.current{
+	border-bottom: 0.06rem solid #67aa07!important;
+	color: #67aa07!important;
+}
+
+.stewardNav{
+	width: 100%;
+	margin-bottom: 1.1rem;
+	margin-top: 1.1rem;
+}
+.stewardInfo{
+	width: 100%;
+	margin-top: 0.15rem;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	background: #fff;
+}
+.stewardInfoLi{
+	font-size: 0.28rem;
+	padding: 0.3rem 0;
+	margin-left: 0.3rem;
+	border-bottom: 1px solid #eeeeee;
+}
+.stewardInfoLiLeft{
+	color: #313131;
+}
+.stewardInfoLiRight{
+	color: #7d7d7d;
+	padding-right: 0.32rem;
+}
+.stewardInfoLiRight input{
+	text-align:right;
+	color: #7d7d7d;
+	font-size: 0.28rem;
+}
+.stewardInfoLiRight input:-webkit-input-placeholder{
+	color: #7d7d7d;
+}
+.stewardTxt{
+	height: 1.4rem;
+	padding: 0.2rem 0.3rem;	
+}
+.stewardTxt textarea{
+	width: 100%;
+	height: 100%;
+	resize: none;
+	font-size: 0.28rem;
+}
+.confirm{
+	width: 100%;
+	line-height: 0.9rem;
+	background: #67aa07;
+	font-size: 0.3rem;
+	color: #fff;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+}
+select{
+	-webkit-appearance: none;
+	background: url(../images/arrowDown.png) no-repeat right center;
+	background-size: 0.25rem 0.15rem;
+	padding-right: 0.6rem;
+	font-size: 0.28rem;
+	color: #7d7d7d;
+	-webkit-appearance: none;
+}
+select option{
+	text-align: right;
+	-webkit-appearance: none;
+}
+textarea{
+	-webkit-appearance: none;
+}
+
+/*出租*/
+.addressDetail{
+	text-align: right;
+	font-size: 0.28rem;
+	color: #7d7d7d;
+}
+.addressDetail:-webkit-input-placeholder{
+	color: #7d7d7d;
+}
+.equipment{
+	width: 0.84rem;
+	padding: 0.08rem 0;
+	font-size: 0.22rem;
+	color: #bdbdbd;
+	-webkit-border-radius: 0.05rem;
+	background: #e0e0e0;
+	margin-left: 0.15rem;
+	text-align: center;
+	float: left;
+}
+.active{
+	background: #67aa07!important;
+	color: #fff!important;
+}
+.housePic{
+	padding: 0.3rem;
+}
+.housePicHead{
+	font-size: 0.28rem;
+	color: #313131;
+	margin-bottom: 0.3rem;
+}
+.housePicNav{
+	width: 100%;
+}
+
+.housePicImg{
+	width: 1.49rem;
+	height: 1.49rem;
+	border: 1px solid #bfbfbf;
+	margin-bottom: 0.25rem;
+	margin-left: 0.15rem;
+	margin-right: 0.3rem;
+	position: relative;
+}
+.housePicImg:nth-child(3n){
+	margin-right: 0rem;
+}
+.housePicImg img{
+	width: 1.49rem;
+	height: 1.49rem;
+}
+/*ipad竖屏*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait){
+	.housePicImg{
+	width: 1.49rem;
+	height: 1.49rem;
+	border: 1px solid #bfbfbf;
+	margin-bottom: 0.25rem;
+	margin-left: 0.3rem;
+	margin-right: 0.6rem;
+	}
+}
+/*ipad横屏*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape){
+	.housePicImg{
+	width: 1.49rem;
+	height: 1.49rem;
+	border: 1px solid #bfbfbf;
+	margin-bottom: 0.25rem;
+	margin-left: 0.8rem;
+	margin-right: 1rem;
+	}
+}
+.xixi{
+	margin: 0 auto!important;
+	margin-top: 0.7rem!important;
+	margin-bottom: 0.7rem!important;
+}
+.deleteImg{
+	width: 0.30rem;
+	height: 0.30rem;
+	position: absolute;
+	right: -0.15rem;
+	top: -0.15rem;
+}
+.deleteImg img{
+	width: 0.30rem;
+	height: 0.30rem;
+	display: block;
+}
+/*买房*/
+.radioBtn{
+	margin-left: 0.55rem;
+	float: left;
+}
+.radioBtn input{
+	margin-right: 0.25rem;
+}
+
+.borderBottomNone{
+	border-bottom: none!important;
+}
+.cengImg{
+	width: 0.25rem;
+	height: 0.15rem;
+	padding-left: 0.3rem;
+	display: block;
+}
+.noLimitBox{
+	position: relative;
+}
+.noLimit{
+	width: 1.5rem;
+	background: #67aa07;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	top: 0.5rem;
+	right: 0.9rem;
+	display: none;
+}
+.noLimit li{
+	font-size: 0.3rem;
+	line-height: 0.5rem;
+}
+.width80{
+	width: 2rem;
+}

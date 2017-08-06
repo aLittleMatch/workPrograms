@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<title>动画</title>
+		<script>
+		//视窗调节
+			(function (doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function () {
+						var clientWidth = docEl.clientWidth;
+						if (!clientWidth) return;
+						if (clientWidth >= 640) {
+							docEl.style.fontSize = '100px';
+						} else {
+							docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+						}
+					};
+				if (!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<title></title>
+		<style>
+			#xixi{
+				position: relative;
+			}
+			.clickBox{
+				width: 50%;
+				height: 1.6rem;
+				position: absolute;
+				top: 49%;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+			}
+			.click{
+				height: 0.8rem;
+				opacity: 0;
+			}
+			.click img{
+				height: 0.8rem;
+				display: block;
+			}
+		</style>
+		<script>
+		window.onload = function(){                                               //“20年老友记”一个个显示
+			var $click = document.getElementsByClassName("click"); 
+			var i=0;
+			var timer = setInterval(
+				function(){
+					if(i<$click.length){
+						$click[i].style.opacity = 1;
+						i++;	
+					}else{
+						i=0;
+					}	
+				},250);
+		}		
+			
+		</script>
+	</head>
+	<body>
+		<div class="loading">
+			<div class="spinner">
+			  <div class="bounce1"></div>
+			  <div class="bounce2"></div>
+			  <div class="bounce3"></div>
+			</div>
+		</div>
+		<a class="rules"><img src="images/rules.png"/></a>
+		<a class="music"><img class="change" src="images/music.png"/></a>
+		<img class="turning turn" src="images/turning.png" />
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide" id="xixi">
+		        	<img class="indexImg" src="images/siderImg1.jpg"/>
+		        	<div class="clickBox">
+		        		<div class="clickBoxTop flexbox">
+			        		<div class="click"><img src="images/click1.png"></div>
+			        		<div class="click"><img src="images/click2.png"></div>
+			        		<div class="click"><img src="images/click3.png"></div>
+		        		</div>
+		        		<div class="clickBoxBot flexbox">
+			        		<div class="click"><img src="images/click4.png"></div>
+			        		<div class="click"><img src="images/click5.png"></div>
+			        		<div class="click"><img src="images/click6.png"></div>
+		        		</div>
+		        	</div>
+		        </div>
+		        <div class="swiper-slide"><img class="indexImg1 ani" swiper-animate-effect="fade-in" swiper-animate-duration="3.5s" swiper-animate-delay="0.2s" src="images/siderImg2.jpg"/></div>
+		        <div class="swiper-slide"><img class="indexImg1 ani" swiper-animate-effect="fade-in" swiper-animate-duration="3.5s" swiper-animate-delay="0.2s" src="images/siderImg3.jpg"/></div>
+		        <div class="swiper-slide"><img class="indexImg1 ani" swiper-animate-effect="fade-in" swiper-animate-duration="3.5s" swiper-animate-delay="0.2s" src="images/siderImg4.jpg"/></div>
+		        <div class="swiper-slide"><img class="indexImg1 ani" swiper-animate-effect="fade-in" swiper-animate-duration="3.5s" swiper-animate-delay="0.2s" src="images/siderImg5.jpg"/></div>
+		        <div class="swiper-slide"><img class="indexImg1 ani" swiper-animate-effect="fade-in" swiper-animate-duration="3.5s" swiper-animate-delay="0.2s" src="images/siderImg6.jpg"/></div>
+		        <div class="swiper-slide">
+		        	<div class="roundbox" id="roundbox">
+		        		<img class="round ani" swiper-animate-effect="round1" swiper-animate-duration="2s" swiper-animate-delay="5.4s" src="images/logo.png"/>
+		        		<img class="round ani" swiper-animate-effect="round2" swiper-animate-duration="2s" swiper-animate-delay="6.8s" src="images/logo.png"/>
+		        		<img class="round ani" swiper-animate-effect="zoomIn" swiper-animate-duration="2s" swiper-animate-delay="7.4s" src="images/logo.png"/>
+		        		<img class="round ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="6.4s"  src="images/logo.png"/>
+		        		<img class="round ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="7.4s" src="images/logo.png"/>
+		        		<img class="round ani" swiper-animate-effect="round3" swiper-animate-duration="2s" swiper-animate-delay="6.4s" src="images/logo.png"/>
+		        		<img class="round ani" swiper-animate-effect="round4" swiper-animate-duration="2s" swiper-animate-delay="7.4s" src="images/logo.png"/>
+		        		<img class="round ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="8.4s" src="images/logo.png"/>
+		        		<img class="round ani" swiper-animate-effect="zoomIn" id="roundEnd" swiper-animate-duration="1s" swiper-animate-delay="10.4s" src="images/logo.png"/>
+		        		<img class="round ani" swiper-animate-effect="round5" swiper-animate-duration="3s" swiper-animate-delay="9.4s" src="images/logo.png"/>
+		        		<img class="round ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="9.4s" src="images/logo.png"/>
+		        		<img class="round ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="8.4s" src="images/logo.png"/>
+		        	</div>
+		        	<div class="fontbox b " id="fontbox">
+		        		<div class="fontbox-side b ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
+		        			<img class="font font1 ani" swiper-animate-effect="fontani1" swiper-animate-duration="1s" swiper-animate-delay="4.2s" src="images/font1.png" />
+		        			<img class="font font2 ani" swiper-animate-effect="fontani2" swiper-animate-duration="1s" swiper-animate-delay="4.2s" src="images/font2.png" />
+		        			<img class="font font3 ani" swiper-animate-effect="fontani3" swiper-animate-duration="1s" swiper-animate-delay="4.2s" src="images/font3.png" />
+		        			<img class="font font4 ani" swiper-animate-effect="fontani4" swiper-animate-duration="1s" swiper-animate-delay="4.2s" src="images/font4.png" />
+		        		</div>
+		        		<div class="fontbox-side b ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="2.2s">
+		        			<img class="font font5 ani" swiper-animate-effect="fontani5" swiper-animate-duration="1s" swiper-animate-delay="4.2s" src="images/font5.png" />
+		        			<img class="font font6 ani" swiper-animate-effect="fontani6" swiper-animate-duration="1s" swiper-animate-delay="4.2s" src="images/font6.png" />
+		        			<img class="font font7 ani" swiper-animate-effect="fontani7" swiper-animate-duration="1s" swiper-animate-delay="4.2s" src="images/font7.png" />
+		        			<img class="font font8 ani" swiper-animate-effect="fontani8" swiper-animate-duration="1s" swiper-animate-delay="4.2s" src="images/font8.png" />
+		        		</div>
+		        		<div class="c"></div>
+		        	</div>
+		        	<div class="returnImg" id="returnbox">
+	        			<img class="returnImg1" src="images/anmin3.jpg"/>
+	        			<img class="returnImg2" id="returnImg2" src="images/anmin4.jpg"/>
+	        		</div>
+		        	<div class="endAnm">
+		        		<img class="endImg" id="endImg" src="images/logo2.png"/>
+		        	</div>
+		        </div>
+		    </div>
+		</div>
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.animate.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var swiper = new Swiper('.swiper-container', {
+		        direction : 'vertical',//页面垂直切换
+				speed:500,
+		        slidesPerView: 1,
+		        mousewheelControl: true,
+				
+				//所有图片加载完成后执行
+				updateOnImagesReady : true,
+				onImagesReady: function(swiper){
+				    $('.loading').addClass('undisplay');
+				},
+				
+				onInit: function(swiper){
+				    swiperAnimate(swiper);
+				}, 
+				onSlideChangeEnd: function(swiper){ 
+				    swiperAnimate(swiper);
+				    if(swiper.activeIndex==0){
+				    	$('.rules').removeClass('dispaly');
+				    	$('.music').removeClass('dispaly');
+				    }
+					else if(swiper.activeIndex==6){//判断是否滑动到效果页面
+						//显示左右按钮
+						$('.rules').removeClass('dispaly');
+				    	$('.music').removeClass('dispaly');
+				    	$('.turning').addClass('undisplay');
+						//监听第一的阶段效果是否结束，移除第一阶段效果
+						var oAnimateEnd1=document.getElementById('roundEnd');
+						oAnimateEnd1.addEventListener('webkitAnimationEnd', function(){ //动画重复运动时的事件 
+							$('.roundbox').addClass('leaveOut');
+							$('.fontbox').addClass('leaveOut');
+							
+							//监听第一阶段是否移除，添加第二阶段效果
+							var oAnimateEnd2=document.getElementById('fontbox');
+							oAnimateEnd2.addEventListener('webkitAnimationEnd',function(){
+								$('.returnImg1').addClass('goIn1');
+								$('.returnImg2').addClass('goIn2');
+								
+								//监听第二的阶段效果是否结束，移除第二阶段效果
+								var  oAnimateEnd3=document.getElementById('returnImg2');
+								oAnimateEnd3.addEventListener('webkitAnimationEnd',function(event){
+									//取消冒泡到父元素事件
+									event.stopPropagation();
+									$('.returnImg').addClass('leaveOut');
+									
+									//监听第二阶段是否移除，添加第三阶段效果
+									var oAnimateEnd4=document.getElementById('returnbox');
+									oAnimateEnd4.addEventListener('webkitAnimationEnd',function(){
+										$('.endImg').addClass('getIn');
+										
+										var oAnimateEnd5=document.getElementById('endImg');
+										oAnimateEnd5.addEventListener('webkitAnimationEnd',function(){
+											//页面停留一秒跳转链接
+											setTimeout(function(){
+												window.location.href="上传照片.html";
+											},500);
+										},false)
+										
+									},false);
+
+								},false);
+								
+							},false);
+							
+						}, false);
+					}else{
+						//显示左右按钮
+						$('.rules').addClass('dispaly');
+				    	$('.music').addClass('dispaly');
+				    	$('.turning').removeClass('undispaly');
+					}
+				}
+		    });		
+		</script>
+	</body>
+</html>

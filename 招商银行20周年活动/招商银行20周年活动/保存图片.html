@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script>
+			(function (doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function () {
+						var clientWidth = docEl.clientWidth;
+						if (!clientWidth) return;
+						if (clientWidth >= 640) {
+							docEl.style.fontSize = '100px';
+						} else {
+							docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+						}
+					};
+			
+				if (!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/default.css"/>
+        <link rel="stylesheet" type="text/css" href="css/bank.css"/>
+		<title>保存图片</title>	
+	</head>
+	<body class="gray">
+		<div class="savePic">
+			<div class="confirmPicHead2">
+				<img src="images/expic.png">
+			</div>
+			<div class="confirmPicTxt">长按图片保存到手机</div>
+			<div class="confirmPicFoot flexbox">
+				<div class="confirmPicFootBtn" id="share">一键分享</div>
+    			<div class="confirmPicFootBtn">信息提交</div>	
+    		</div>
+		</div>
+		<!--以下是蒙层-->
+		<div class="shareCover">
+			<div class="shareCoverImgBox">
+				<img src="images/shareCover.png">
+			</div>	
+		</div>
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			//遮罩层显示
+			$("#share").click(function(){
+				$(".shareCover").show();
+			});
+			
+			//点击遮罩层，自身隐藏
+			$(".shareCover").click(function(){
+				$(this).hide();
+			});
+			
+		</script>
+	</body>
+</html>

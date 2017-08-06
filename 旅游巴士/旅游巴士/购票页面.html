@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/flexible.debug.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/default.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/jquery.js"></script>
+		<title>购票页面</title>
+	</head>
+	<body>
+		<div class="ticketsBuy">
+			<div class="ticketsBuy_top justifyBetweenBox">
+				<div class="ticketsBuy_top_left">
+					<h1 class="alignCenterBox"><img src="images/indexIcon2.png">望美旅游巴士L1</h1>
+					<h2 class="alignCenterBox"><p>阅江楼</p><img src="images/arrow.png"><p>牛首山</p></h2>
+				</div>
+				<div class="ticketsBuy_top_right">
+					<div class="ticketsKind orange">一日票</div>
+					<div class="ticketsKind">两日票</div>
+				</div>
+			</div>
+			<div class="ticketsBuy_mid">
+				<h1>2016年6月</h1>
+				<table>	
+					<thead>
+						<tr style="background: #7bc70d;">
+							<th>一</th>
+							<th>二</th>
+							<th>三</th>
+							<th>四</th>
+							<th>五</th>
+							<th>六</th>
+							<th>日</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>30</td>
+							<td>31</td>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+						</tr>
+						<tr>
+							<td>13</td>
+							<td>14</td>
+							<td>15</td>
+							<td>16</td>
+							<td class="black">17</td>
+							<td class="black ticketsBuy_midCurrent">18</td>
+							<td class="black">19</td>
+						</tr>
+						<tr>
+							<td class="black">20</td>
+							<td class="black">21</td>
+							<td class="black">22</td>
+							<td class="black">23</td>
+							<td class="black">24</td>
+							<td class="black">25</td>
+							<td class="black">26</td>
+						</tr>
+						<tr>
+							<td class="black">27</td>
+							<td class="black">28</td>
+							<td class="black">29</td>
+							<td class="black">30</td>
+							<td>7月</td>
+							<td class="black">2</td>
+							<td class="black">3</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="ticketsBuy_bot">
+				<div class="ticketsBuy_bot_left">
+					<h1>购买数量</h1>
+					<h1 class="ticketClass">一日票</h1>
+					<p>¥100.00</p>
+				</div>
+				<div class="ticketsBuy_bot_right">
+					<span class="sub">-</span><p>1</p><span class="add">+</span>
+				</div>
+			</div>
+			<div class="ticketsBuy_foot">
+				<p>应付总额</p>
+				<h1>¥10.00</h1>
+				<button>支付</button>
+			</div>
+		</div>
+		<script>
+			$(function(){
+				$(".ticketsKind").click(
+					function(){
+						$(".ticketsKind").removeClass("orange");
+						$(this).addClass("orange");
+						$(".ticketClass").text($(this).text());
+				});
+				$(".add").click(
+					function(){
+						var ticketNum = $(".ticketsBuy_bot_right p").text();
+						ticketNum++ ;	
+						$(".ticketsBuy_bot_right p").text(ticketNum);
+						$(".ticketsBuy_foot h1").text("¥"+10*(ticketNum)+".00");
+				});
+				$(".sub").click(
+					function(){
+						var ticketNum = $(".ticketsBuy_bot_right p").text();
+						ticketNum-- ;	
+						if(ticketNum<=1){
+							$(".ticketsBuy_bot_right p").text(1);
+							$(".ticketsBuy_foot h1").text("¥"+10+".00");
+						}else{
+							$(".ticketsBuy_bot_right p").text(ticketNum);
+							$(".ticketsBuy_foot h1").text("¥"+10*(ticketNum)+".00");
+						}						
+				});
+				$(".ticketsBuy_mid table tr td").click(
+					function(){
+						$(".ticketsBuy_mid table tr td").removeClass("ticketsBuy_midCurrent");
+						$(this).addClass("ticketsBuy_midCurrent");
+					}
+				)
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+        <link rel="stylesheet" type="text/css" href="css/fun.css"/>
+		<title>登陆</title>
+	</head>
+	<body>
+		<div class="container logbg">
+			<!--头部切换-->
+			<div class="login-cut flexbox">
+				<div class="login-in login-items login-select">登陆</div>
+				<div class="login-register login-items">注册</div>
+			</div>
+			<!--输入框-->
+			<div class="bindingbox">
+				<input class="binding-inp" type="text" placeholder="请输入手机号码" />
+				<div class="security-code">
+					<input class="binding-inp binding-yanzheng" type="text"  placeholder="输入验证码"/>
+					<div class="get-code">获取验证码</div>
+				</div>
+				<input class="binding-inp new-password" type="password" placeholder="请输入新密码" />
+				<input class="binding-inp quer-password" type="password" placeholder="请确认新密码" />
+				<div class="binding-btn" >绑定</div>
+			</div>
+		</div>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+		
+		$(function(){
+			//登陆注册切换
+			$('.login-items').click(function(){
+				$('.login-items').removeClass('login-select');
+				$(this).addClass('login-select');
+				if($(this).index()===0){
+					$('.new-password').css('display','none');
+					$('.quer-password').css('display','none');
+				}else{
+					$('.new-password').css('display','block');
+					$('.quer-password').css('display','block');
+				}
+			});
+			
+			//输入法改变宽口兼容
+			var height = $(window).height();
+	        $(window).resize(function() {
+	            $('.container').height(height);
+	        });
+		})
+		</script>
+	</body>
+</html>
